@@ -2,4 +2,4 @@
 
 **Wir benutzen git als Versionierungssystem.**
 
-[Diary](doc/diary.txt)
+[Diary](doc/diary.md)

@@ -2,4 +2,5 @@
 
 #### 20.02.2015
   * Setup git repository and structure.
-  * Invated all members.
+  * Invited all members.
+  * Added diary.

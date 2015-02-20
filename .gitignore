@@ -25,3 +25,4 @@ local.properties
 # sbteclipse plugin
 .target
 # TeXlipse plugin
+.DS_Store

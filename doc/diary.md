@@ -12,3 +12,6 @@
 #### 25.02.2015
   * Started analysing Task 1 & 2
   * Created first draft of Task 1 & 2
+
+#### 26.02.2015
+  * extended draft of task 2

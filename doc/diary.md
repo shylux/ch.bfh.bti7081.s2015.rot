@@ -2,7 +2,7 @@
 
 ST: Stefan Tanner
 JM: James Mayr
-TM: Thomas Buchegger
+TB: Thomas Buchegger
 LK: Lukas Knöpfel
 ML: Markus Loosli
 FH: Filip Hofer

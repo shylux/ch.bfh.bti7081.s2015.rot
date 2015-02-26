@@ -43,3 +43,50 @@ Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen.
 Wir entscheiden uns deshalb für eine Mischform. Die Vorgehensweise ist iterativ, aber die Iterationen sind länger als bei den üblichen Iterativen Prozessmodellen. Dies ermöglicht ebenfalls das Requirement Engineering umfangreicher zu gestalten.
 
 ## Aufgabe 2
+
+# Prozess Modell für MHC-PMS
+
+## Zweck des Dokuments
+Dieses Dokument soll allen Projektbeteiligten Aufzeigen welche Rolle sie im Projekt wahrnemen und in welchen Aktivitäten sie integriert sind.
+
+## Stakeholder
+Folgende Stakeholder sind im Projekt involviert.
+- Management
+- Doktoren
+- Patienten
+- Klinik Assistenten 
+- Kunde
+
+## Genereller Ablauf
+Wir verwenden eine Abwandlung von dem Prozess Model [Scrum](http://de.wikipedia.org/wiki/Scrum).
+Die Entwicklung erfolgt iterativ. Eine Iteration dauert rund sechs Wochen (2x so lang wie bei Scrum).
+
+## Prozess Model
+
+### Phase1: Planung
+
+#### Involvierte Akeute
+- Kunde
+- Entwicklungsteam
+#### Artefakte
+- User Stories
+- Requirements specifications
+### Phase2: Design\Entwicklung
+
+#### Involvierte Akeute
+- Entwicklungsteam
+#### Artefakte
+- Taks
+- Lauffähiges Produkt
+### Phase3: Testen
+#### Involvierte Akeute
+- Management
+- Doktoren
+- Patienten
+- Klinik Assistenten
+- Health Visitors
+- Entwicklungsteam
+- 
+### Artefakte
+- Testbericht
+- Feedback

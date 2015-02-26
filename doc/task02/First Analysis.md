@@ -68,17 +68,22 @@ Die Entwicklung erfolgt iterativ. Eine Iteration dauert rund sechs Wochen (2x so
 #### Involvierte Akeute
 - Kunde
 - Entwicklungsteam
+
 #### Artefakte
 - User Stories
-- Requirements specifications
+- Requirements specifications$
+
 ### Phase2: Design\Entwicklung
 
 #### Involvierte Akeute
 - Entwicklungsteam
+
 #### Artefakte
 - Taks
 - Lauffähiges Produkt
+
 ### Phase3: Testen
+
 #### Involvierte Akeute
 - Management
 - Doktoren
@@ -86,7 +91,7 @@ Die Entwicklung erfolgt iterativ. Eine Iteration dauert rund sechs Wochen (2x so
 - Klinik Assistenten
 - Health Visitors
 - Entwicklungsteam
-- 
+
 ### Artefakte
 - Testbericht
 - Feedback

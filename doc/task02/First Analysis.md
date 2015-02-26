@@ -1,4 +1,6 @@
-##Case Study1: Task2
+#Case Study1: Task2
+
+## Aufgabe 1
 
 ###Ergebnisse 1. Analyse
 Das Projekt kann in mehrere Teilprojekte aufgeteilt werden, deshalb ist es nicht notwendig alle Teilprojekte mit der selben Projektplanungsmethode durchzuführen.
@@ -29,3 +31,4 @@ Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen.
 ###Fazit
 Wir entscheiden uns deshalb für eine Mischform. Vor allem die Teilprojekte, welche Doktoren und Patienten involvieren sollten möglichst Plan-Driven entwickelt werden, da die Zusammenarbeit mit diesen Usern nur bedingt gewährleistet ist.
 
+## Aufgabe 2

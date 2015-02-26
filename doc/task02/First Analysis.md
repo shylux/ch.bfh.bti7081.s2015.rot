@@ -72,6 +72,12 @@ Zu Beginn definierten Kunde und Entwicklerteam was in dieser Iteration zu erledi
 - Kunde
 - Entwicklungsteam
 
+#### Ziele
+Backlog für diese Iteration zu erstellen.
+
+#### Beziehung zwischen anderen Phasen/Artekfaten
+Das Ergebnis der letzten Iteration beeinflusst den Backlog.
+
 #### Artefakte
 - Produkt Backlog
 
@@ -84,6 +90,12 @@ Ansonsten wird in dieser Phase die Applikation entwickelt.
 #### Involvierte Akeute
 - Entwicklungsteam
 - Kunde 
+
+#### Ziele
+Lauffähige Software anahand des Backlogs erstellt.
+
+#### Beziehung zwischen anderen Phasen/Artekfaten
+Diese Phase baut auf dem Backlog auf.
 
 #### Artefakte
 - Taks
@@ -98,7 +110,6 @@ Das lauffähige Programm wird von den Akteuren getestet.
 
 Nach dem Testen ist mit dem Kunden ein Review zu halten und gegenfalls den Backlog anzupassen.
 
-
 #### Involvierte Akeute
 - Management
 - Doktoren
@@ -107,6 +118,13 @@ Nach dem Testen ist mit dem Kunden ein Review zu halten und gegenfalls den Backl
 - Health Visitors
 - Entwicklungsteam
 - Kunde
+
+#### Ziele
+Fehler in der Software zu finden. Feedback der User zu erhalten.
+
+#### Beziehung zwischen anderen Phasen/Artekfaten
+Diese Phase benutzt das in Phase 2 erstellte Testprotokoll.
+Der Backlog wird aktualisiert.
 
 ### Artefakte
 - Testbericht

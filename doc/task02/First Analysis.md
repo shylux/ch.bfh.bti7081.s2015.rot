@@ -14,7 +14,11 @@ Die Teilprojekte sind grob wie folgt festzulegen:
 Die Teilprojekte lassen sich demnach auf einzelne Usergruppen runterbrechen.  
 Da es sich um einen komplett neuen Ablauf im Gesundheitssystem handelt, und sich generell die Prozesse im Gesundheitswesen momentan im Wandel befinden, können sich die Projektanforderungen im Laufe des Projekts verändern. Ein zu detailliertes Requirent Engineering ist demnach nicht empfehlenswert.
 Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
-Gemäss diesem Aspekt ist ein agile Prozess Modell vorzuziehen.
+
+Jedoch müssen die „Legislation Requirements“ 	im Vorfeld genau definiert und spezifiziert werden. Da es sich bei diesem Requirements um „Critical Success Factors“ handelt.
+
+Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
+Gemäss diesem Aspekt ist ein agile Prozess Modell vorzuziehen, aber mit einer detaillierteren initialen Analyse und Spezifikationsphase. 
 
 ###Customer / Users
 Die Zusammenarbeit mit dem Kunden sollte unproblematisch sein. Jedoch um die Software zu testen und realistisches Feedback zu erhalten, braucht es ein Feedback von den Usern, welche das System nutzen werden.
@@ -29,6 +33,13 @@ Alle Teammitglieder haben praktische Erfahrung in den Prozessmodellen HERMES und
 Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen.
 
 ###Fazit
-Wir entscheiden uns deshalb für eine Mischform. Vor allem die Teilprojekte, welche Doktoren und Patienten involvieren sollten möglichst Plan-Driven entwickelt werden, da die Zusammenarbeit mit diesen Usern nur bedingt gewährleistet ist.
+|Pro Agil   | Pro Plan-Driven |
+|---------- |---------------- |
+|Gesundheitsbranche befindet sich im Wandel|Patienten und Ärtze können nur begrentzt ins Projekt involviert werden|
+|Teammitglieder entwickeln lieber agil|„Legislation Requirements“ erfordern genaue Planung|
+|Anforderungen können sich ändern||
+|System wird laufend weiterentwickelt||
+
+Wir entscheiden uns deshalb für eine Mischform. Die Vorgehensweise ist iterativ, aber die Iterationen sind länger als bei den üblichen Iterativen Prozessmodellen. Dies ermöglicht ebenfalls das Requirement Engineering umfangreicher zu gestalten.
 
 ## Aufgabe 2

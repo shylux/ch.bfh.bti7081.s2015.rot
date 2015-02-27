@@ -53,10 +53,11 @@ Dieses Dokument soll allen Projektbeteiligten Aufzeigen welche Rolle sie im Proj
 
 ## Stakeholder
 Folgende Stakeholder sind im Projekt involviert.
-- Management
+- Clinical Record Staff
 - Doktoren
+- Krankenpfleger
 - Patienten
-- Klinik Assistenten 
+- Receptionisten
 - Kunde
 
 ## Genereller Ablauf
@@ -111,10 +112,10 @@ Das lauffähige Programm wird von den Akteuren getestet.
 Nach dem Testen ist mit dem Kunden ein Review zu halten und gegenfalls den Backlog anzupassen.
 
 #### Involvierte Akeute
-- Management
+- Clinical Record Staff
 - Doktoren
 - Patienten
-- Klinik Assistenten
+- Krankenpfleger
 - Health Visitors
 - Entwicklungsteam
 - Kunde

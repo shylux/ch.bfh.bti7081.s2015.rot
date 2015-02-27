@@ -30,8 +30,22 @@ additional note:  management has no direct access to the system.
 ## 4. Potential System Components And Architecture
 
 ### Components
+
+#### General
 - User management including rights management
 - Patient management including address management
+- Encryption Module
+
+####Subsystem for doctors / Nurses / Health Visitors
+
+####Subsystem for Clinical Report Staff
+- Report generator
+
+####Subsystem for receptionists
+- Appointment management
+
+####Subsystem for patients
+
 - Room / cell management
 - "Carelog" - write entries for each session with the patient
 - Report generator

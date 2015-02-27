@@ -9,8 +9,8 @@ additional note:  management has no direct access to the system.
 
 ## 2. Key Features
 - Management of personal information
-- Retrieval of important informations (meetings, prescriptions, medication, instructions)
-- Contact-function to the responsable person (questions, usw.)
+- Retrieval of important information (meetings, prescriptions, medication, instructions)
+- Contact-function to the responsable person (questions, etc.)
 - Emergency-function (If there is needed help immdiately)
 - Deploy free time, so recpetionsist can invite to a meeting
 - Creating and managing appointments
@@ -19,9 +19,9 @@ additional note:  management has no direct access to the system.
 - Report generation for hospital management
 
 ## 3. Critical Success Factors
-- Data Protection Act - personal informations are confidential
-- Provide timely informations to facilitate the treatment of patients
-- Generate management informations that allows health service managers to assess performance against local and government targets
+- Data Protection Act - personal information is confidential
+- Provide timely information to facilitate the treatment of patients
+- Generate management information which allows health service managers to assess performance against local and government targets
 - Professional project management (from Wikipedia)
 - Identifying dangers and risks (from Wikipedia)
 - Detailed planing (from Wikipedia)

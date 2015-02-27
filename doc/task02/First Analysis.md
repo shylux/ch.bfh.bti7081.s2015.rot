@@ -6,7 +6,7 @@
 Das Projekt kann in mehrere Teilprojekte aufgeteilt werden, deshalb ist es nicht notwendig alle Teilprojekte mit der selben Projektplanungsmethode durchzuführen.
 Die Teilprojekte sind grob wie folgt festzulegen:
 
-* Termine, Behandung, medikamentöse Behandlung für **patients**
+* Termine, Behandlung, medikamentöse Behandlung für **patients**
 * Termine, Behandlung, Behandlungsübersicht für **doctors/Nurses/ Health Visitors**
 * Terminplanung für **receptionists**
 * Report Generation für Management **Clinical Record Stuff**
@@ -15,7 +15,7 @@ Die Teilprojekte lassen sich demnach auf einzelne Usergruppen runterbrechen.
 Da es sich um einen komplett neuen Ablauf im Gesundheitssystem handelt, und sich generell die Prozesse im Gesundheitswesen momentan im Wandel befinden, können sich die Projektanforderungen im Laufe des Projekts verändern. Ein zu detailliertes Requirent Engineering ist demnach nicht empfehlenswert.
 Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
 
-Jedoch müssen die „Legislation Requirements“ 	im Vorfeld genau definiert und spezifiziert werden. Da es sich bei diesem Requirements um „Critical Success Factors“ handelt.
+Jedoch müssen die „Legislation Requirements“ 	im Vorfeld genau definiert und spezifiziert werden, da es sich bei diesem Requirements um „Critical Success Factors“ handelt.
 
 Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
 Gemäss diesem Aspekt ist ein agile Prozess Modell vorzuziehen, aber mit einer detaillierteren initialen Analyse und Spezifikationsphase. 
@@ -42,14 +42,14 @@ Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen.
 
 Wir entscheiden uns deshalb für eine Mischform. Die Vorgehensweise ist iterativ, aber die Iterationen sind länger als bei den üblichen Iterativen Prozessmodellen. Dies ermöglicht ebenfalls das Requirement Engineering umfangreicher zu gestalten.
 
-Aus Zeitgründen wird die Scrum-Retrospektive nur bei bedarf durchgeführt und  so kurz wie möglich gehalten. 
+Aus Zeitgründen wird die Scrum-Retrospektive nur bei Bedarf durchgeführt und  so kurz wie möglich gehalten. 
 
 ## Aufgabe 2
 
 # Prozess Modell für MHC-PMS
 
 ## Zweck des Dokuments
-Dieses Dokument soll allen Projektbeteiligten Aufzeigen welche Rolle sie im Projekt wahrnemen und in welchen Aktivitäten sie integriert sind.
+Dieses Dokument soll allen Projektbeteiligten aufzeigen welche Rolle sie im Projekt wahrnehmen und in welchen Aktivitäten sie integriert sind.
 
 ## Stakeholder
 Folgende Stakeholder sind im Projekt involviert.
@@ -62,12 +62,12 @@ Folgende Stakeholder sind im Projekt involviert.
 
 ## Genereller Ablauf
 Wir verwenden eine Abwandlung von dem Prozess Model [Scrum](http://de.wikipedia.org/wiki/Scrum).
-Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Scrum. Zusätzlich wird das Daily Scrum Meeting lediglich wöchentlich abgehalten, da das Entwicklerteam nich am selben Ort arbeitet. Dies zusätzlich ermöglicht eine präzisere Spezifikation zu beginn einer Iteration und dadurch werden insbesondere die Testakteure Doktoren und Patienten weniger belastet.
+Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Scrum. Zusätzlich wird das Daily Scrum Meeting lediglich wöchentlich abgehalten, da das Entwicklerteam nicht am selben Ort arbeitet. Dies ermöglicht zusätzlich eine präzisere Spezifikation zu Beginn einer Iteration und dadurch werden insbesondere die Testakteure Doktoren und Patienten weniger belastet.
 
 ## Prozess Model
 
 ### Phase1: Planung
-Zu Beginn definierten Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 
+Zu Beginn definieren Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 
 
 #### Involvierte Akeute
 - Kunde
@@ -84,7 +84,7 @@ Das Ergebnis der letzten Iteration beeinflusst den Backlog.
 
 ### Phase2: Design\Entwicklung
 
-Aus dem Backlog werden User Stories und Tasks generirt. Bei Uklarheiten/Bedarf Rücksprache mit dem Kunden. 
+Aus dem Backlog werden User Stories und Tasks generiert. Bei Unklarheiten/Bedarf Rücksprache mit dem Kunden. 
 1x pro Woche ist ein teaminternes Meeting, um den Projektstand und evt. Risiken zu überprüfen.
 Ansonsten wird in dieser Phase die Applikation entwickelt.
 
@@ -93,7 +93,7 @@ Ansonsten wird in dieser Phase die Applikation entwickelt.
 - Kunde 
 
 #### Ziele
-Lauffähige Software anahand des Backlogs erstellt.
+Lauffähige Software anhand des Backlogs erstellen.
 
 #### Beziehung zwischen anderen Phasen/Artekfaten
 Diese Phase baut auf dem Backlog auf.
@@ -107,9 +107,9 @@ Diese Phase baut auf dem Backlog auf.
 
 ### Phase3: Testen
 Das lauffähige Programm wird von den Akteuren getestet. 
-**Hinweis** Meistens sind nur ein Teil der Aktuere daran beteiligt. (Je nach dem ob welche Teilprojekte in der entsprechenden Iteration bearbeitet wurden)
+**Hinweis** Meistens ist nur ein Teil der Aktuere daran beteiligt. (Je nachdem welche Teilprojekte in der entsprechenden Iteration bearbeitet wurden)
 
-Nach dem Testen ist mit dem Kunden ein Review zu halten und gegenfalls den Backlog anzupassen.
+Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backlog anzupassen.
 
 #### Involvierte Akeute
 - Clinical Record Staff

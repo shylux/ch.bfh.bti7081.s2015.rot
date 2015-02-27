@@ -47,11 +47,6 @@ Aus Zeitgründen wird die Scrum-Retrospektive nur bei Bedarf durchgeführt und  
 
 # Prozess Modell für MHC-PMS
 
-## Visualisierung des Projektmodells
-
-![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/Task2%20A2.jpg)
-
-
 ## Zweck des Dokuments
 Dieses Dokument soll allen Projektbeteiligten aufzeigen welche Rolle sie im Projekt wahrnehmen und in welchen Aktivitäten sie integriert sind.
 
@@ -69,6 +64,10 @@ Wir verwenden eine Abwandlung von dem Prozess Model [Scrum](http://de.wikipedia.
 Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Scrum. Zusätzlich wird das Daily Scrum Meeting  wöchentlich abgehalten, da das Entwicklerteam nicht am selben Ort arbeiten. Dies setzt eine präzisere Spezifikation zu Beginn einer Iteration. Vorteil davon ist, dass dadurch die Testakteure (Doktoren und Patienten) weniger belastet werden.
 
 ## Prozess Model
+
+### Visualisierung des Projektmodells
+
+![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/scrumrum.png)
 
 ### Phase 1: Planung
 Zu Beginn definieren Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 

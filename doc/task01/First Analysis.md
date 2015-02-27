@@ -13,8 +13,9 @@ additional note:  management has no direct access to the system.
 - Contact-information to the responsable person (questions, etc.)
 - Creating and managing appointments
 - Automatic appointment reminders (app/sms)
-- "Health and Feel"-diary (Receiptmangamnetsystem)
+- "Health and Feel"-diary (Receipt-management)
 - Report generation for hospital management
+- Spital management
 
 ## 3. Critical Success Factors
 
@@ -34,25 +35,22 @@ additional note:  management has no direct access to the system.
 ### Components
 
 #### General
-- User management including rights management
+- Client / Server Architecture
+- User (doctors, nurses, etc.) management including rights management
 - Patient management including address management
-- Encryption Module
+- Encryption
 
-####Subsystem for doctors / Nurses / Health Visitors
+####Subsystem for receptionists
+- Room / cell management
+- Appointment management
 
 ####Subsystem for Clinical Report Staff
 - Report generator
 
-####Subsystem for receptionists
+####Subsystem for doctors / nurses
 - Appointment management
-
-####Subsystem for patients
-
-- Room / cell management
 - "Carelog" - write entries for each session with the patient
-- Report generator
-- Appointment management
-- Easy identifying (use of barcode?)
+
 
 ### Architecture
 - Encryption

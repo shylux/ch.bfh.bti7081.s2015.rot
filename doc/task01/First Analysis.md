@@ -35,7 +35,6 @@ additional note:  management has no direct access to the system.
 ### Components
 
 #### General
-- Client / Server Architecture
 - User (doctors, nurses, etc.) management including rights management
 - Patient management including address management
 - Encryption
@@ -49,15 +48,14 @@ additional note:  management has no direct access to the system.
 
 ####Subsystem for doctors / nurses
 - Appointment management
+- Receipt management
 - "Carelog" - write entries for each session with the patient
 
 
 ### Architecture
+- Client / Server Architecture
 - Encryption
-- Mobile-app or Desktop only
-- Server (central or distributed)
+- Multiplattform (Mobile, Desktop)
 - Database
-- Webinterface
-- Controlling / Authentization / Autorization
+- Authentication / Authorization
 - Networking
-

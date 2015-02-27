@@ -40,14 +40,14 @@
 - Patient management (includes relevant informations managment like addressess, names, etc.)
 - Encryption
 
-#### Subsystem for receptionists
+#### Subsystem for Receptionists
 - Room / Cell management
 - Appointment management
 
 #### Subsystem for Clinical Report Staff
 - Report generator
 
-#### Subsystem for doctors / nurses
+#### Subsystem for Doctors / Nurses
 - Appointment management
 - Receipt management
 - "Carelog" - write entries for each session with the patient
@@ -55,7 +55,7 @@
 ### Architecture
 - Client / Server Architecture
 - Encryption
-- Multiplattform (Mobile, Desktop)
+- Multiplattform (mobile, desktop)
 - Database
 - Authentication / Authorization
 - Networking

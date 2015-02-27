@@ -32,3 +32,8 @@ FH: Filip Hofer
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
+
+
+#### 27.02.2015
+  * Team-meeting, finalization of documents and presentation (Task 1 & 2)
+

@@ -12,7 +12,7 @@ Die Teilprojekte sind grob wie folgt festzulegen:
 * Report Generation für Management **Clinical Record Stuff**
 
 Die Teilprojekte lassen sich demnach auf einzelne Usergruppen runterbrechen.  
-Da es sich um einen komplett neuen Ablauf im Gesundheitssystem handelt, und sich generell die Prozesse im Gesundheitswesen momentan im Wandel befinden, können sich die Projektanforderungen im Laufe des Projekts verändern. Ein zu detailliertes Requirent Engineering ist demnach nicht empfehlenswert.
+Da es sich um einen komplett neuen Ablauf im Gesundheitssystem handelt, und sich generell die Prozesse im Gesundheitswesen momentan im Wandel befinden (Einheitskrankenkassen, Personalreduzierung Spitex), können sich die Projektanforderungen im Laufe des Projekts verändern. Ein zu detailliertes Requirent Engineering ist demnach nicht empfehlenswert.
 Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
 
 Jedoch müssen die „Legislation Requirements“ 	im Vorfeld genau definiert und spezifiziert werden, da es sich bei diesem Requirements um „Critical Success Factors“ handelt.

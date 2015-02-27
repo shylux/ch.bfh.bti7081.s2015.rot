@@ -20,6 +20,7 @@
 - Professional project management (from Wikipedia)
 - Identifying dangers and risks (from Wikipedia)
 - Detailed planning (from Wikipedia)
+- Quality Managment and Controlling
 
 ### Project-Specific
 - Data Protection Act - personal information is confidential
@@ -31,7 +32,12 @@
 - Documentation
 - Training of staff
 
-## 4. Potential System Components And Architecture
+## 4.0 Potential Module Architecture
+
+![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task01/Projekt_Aufwand.jpg)
+
+
+## 4.1 Potential System Components And Architecture
 
 ### Components
 

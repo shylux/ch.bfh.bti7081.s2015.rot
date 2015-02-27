@@ -32,12 +32,10 @@
 - Documentation
 - Training of staff
 
-## 4.0 Potential Module Architecture
+## 4 Potential System Components And Architecture
 
+### Potential Module Architecture
 ![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task01/Projekt_Aufwand.jpg)
-
-
-## 4.1 Potential System Components And Architecture
 
 ### Components
 

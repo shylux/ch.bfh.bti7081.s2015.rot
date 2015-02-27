@@ -67,7 +67,7 @@ Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Sc
 
 ### Visualisierung des Projektmodells
 
-![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/scrumrum.png)
+![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/Scrumrum.png)
 
 ### Phase 1: Planung
 Zu Beginn definieren Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 

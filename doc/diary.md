@@ -27,8 +27,16 @@ FH: Filip Hofer
 ### Tasks
 | Task Nr. | Description                            | Status    | Responsible  |
 | -------- | -------------------------------------- | --------- | ------------ |
-| 01       | CS Task 1: First Analysis              | in progress| ST, ML      |
-| 02       | CS Task 2: First Analysis              |in progress | JM, TB, FH, LK|
+| 01       | CS Task 1: First Analysis              | done | ST, ML      |
+| 01    | Creation of presentation                          | done  | FH, TB, LK, ST, JM, ML |
+| 01    | Updating document                          | done  | ST, FH, ML |
+| 02       | CS Task 2: First Analysis              | done | JM, TB, FH, LK|
+| 02    | Creation of presentation                          | done  | FH, TB, LK, ST, JM, ML |
+| 02    | Updating document                          | done  | JM, LK, TB |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
-| <Nr.>    | <Description>                          | <status>  | <who?>       |
+
+
+#### 27.02.2015
+  * Team-meeting, finalization of documents and presentation (Task 1 & 2)
+

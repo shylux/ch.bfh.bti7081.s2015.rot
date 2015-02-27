@@ -52,8 +52,8 @@ Dieses Dokument soll allen Projektbeteiligten aufzeigen welche Rolle sie im Proj
 
 ## Stakeholder
 Folgende Stakeholder sind im Projekt involviert.
-- Clinical Record Staff
-- Doktoren
+- Medizinalstab
+- Ärzte
 - Krankenpfleger
 - Patienten
 - Receptionisten
@@ -70,14 +70,14 @@ Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Sc
 ![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/Scrumrum.png)
 
 ### Phase 1: Planung
-Zu Beginn definieren Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 
+Zu Beginn definiert der Kunde und das Entwicklerteam die Aufgaben.
 
-#### Involvierte Akeute
+#### Involvierte Akeure
 - Kunde
 - Entwicklungsteam
 
 #### Ziele
-Backlog für diese Iteration zu erstellen.
+Backlog für diese Iteration erstellen.
 
 #### Beziehung zwischen anderen Phasen/Artekfaten
 Das Ergebnis der letzten Iteration beeinflusst den Backlog.
@@ -91,7 +91,7 @@ Aus dem Backlog werden User Stories und Tasks generiert. Bei Unklarheiten/Bedarf
 1x pro Woche ist ein teaminternes Meeting, um den Projektstand und evt. Risiken zu überprüfen.
 Ansonsten wird in dieser Phase die Applikation entwickelt.
 
-#### Involvierte Akeute
+#### Involvierte Akeure
 - Entwicklungsteam
 - Kunde 
 
@@ -101,7 +101,7 @@ Lauffähige Software anhand des Backlogs erstellen.
 #### Beziehung zwischen anderen Phasen/Artekfaten
 Diese Phase baut auf dem Backlog auf.
 
-#### Artefakte
+#### Artefakten
 - Taks
 - User Stories
 - Lauffähiges Produkt
@@ -109,13 +109,13 @@ Diese Phase baut auf dem Backlog auf.
 - Ergebnis Weekly Scrum
 
 ### Phase 3: Testen
-Das lauffähige Programm wird von den Akteuren getestet. 
+Das lauffähige Programm wird von den Akteuren getestet. Ergebnisse werden schriftlich festgehalten um allfällige Fehler später reproduzieren zu können. 
 **Hinweis** Meistens ist nur ein Teil der Aktuere daran beteiligt. (Je nachdem welche Teilprojekte in der entsprechenden Iteration bearbeitet wurden)
 
-Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backlog anzupassen. Wenn alle Anforderungen erfüllt sind, ist das Projekt fertig.
+Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backlog anzupassen. Wenn alle Anforderungen erfüllt und allfällige Fehler behoben sind, ist das Projekt fertig.
 
 #### Involvierte Akteure
-- Clinical Record Staff
+- Medizinalstab
 - Doktoren
 - Patienten
 - Krankenpfleger
@@ -126,7 +126,7 @@ Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backl
 #### Ziele
 Fehler in der Software zu finden. Feedback der User zu erhalten.
 
-#### Beziehung zwischen anderen Phasen/Artekfaten
+#### Beziehung zwischen anderen Phasen/Artefakten
 Diese Phase benutzt das in Phase 2 erstellte Testprotokoll.
 Der Backlog wird aktualisiert.
 

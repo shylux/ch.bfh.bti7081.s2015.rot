@@ -8,7 +8,7 @@ Die Teilprojekte sind grob wie folgt festzulegen:
 
 * Termine, Behandung, medikamentöse Behandlung für **patients**
 * Termine, Behandlungsübersicht für  **healt visitors**
-* Behandlung, Behandlungsübersicht für **doctors**
+* Behandlung, Behandlungsübersicht für **doctors/Nurses**
 * Medikamentöse Behandlungsübersicht, Reports für Management erstellen für **receptionists**
 
 Die Teilprojekte lassen sich demnach auf einzelne Usergruppen runterbrechen.  

@@ -47,6 +47,11 @@ Aus Zeitgründen wird die Scrum-Retrospektive nur bei Bedarf durchgeführt und  
 
 # Prozess Modell für MHC-PMS
 
+## Visualisierung des Projektmodells
+
+![alt tag](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/blob/master/doc/task02/Task2%20A2.jpg)
+
+
 ## Zweck des Dokuments
 Dieses Dokument soll allen Projektbeteiligten aufzeigen welche Rolle sie im Projekt wahrnehmen und in welchen Aktivitäten sie integriert sind.
 

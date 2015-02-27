@@ -7,9 +7,9 @@ Das Projekt kann in mehrere Teilprojekte aufgeteilt werden, deshalb ist es nicht
 Die Teilprojekte sind grob wie folgt festzulegen:
 
 * Termine, Behandung, medikamentöse Behandlung für **patients**
-* Termine, Behandlungsübersicht für  **healt visitors**
-* Behandlung, Behandlungsübersicht für **doctors/Nurses**
-* Medikamentöse Behandlungsübersicht, Reports für Management erstellen für **receptionists**
+* Termine, Behandlung, Behandlungsübersicht für **doctors/Nurses/ Health Visitors**
+* Terminplanung für **receptionists**
+* Report Generation für Management **Clinical Record Stuff**
 
 Die Teilprojekte lassen sich demnach auf einzelne Usergruppen runterbrechen.  
 Da es sich um einen komplett neuen Ablauf im Gesundheitssystem handelt, und sich generell die Prozesse im Gesundheitswesen momentan im Wandel befinden, können sich die Projektanforderungen im Laufe des Projekts verändern. Ein zu detailliertes Requirent Engineering ist demnach nicht empfehlenswert.

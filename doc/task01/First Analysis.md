@@ -8,23 +8,25 @@
 additional note:  management has no direct access to the system.
 
 ## 2. Key Features
-- Management of personal information
+- Management of personal information (Patientenverwaltung)
 - Retrieval of important information (meetings, prescriptions, medication, instructions)
-- Contact-function to the responsable person (questions, etc.)
-- Emergency-function (If there is needed help immdiately)
-- Deploy free time, so recpetionsist can invite to a meeting
+- Contact-information to the responsable person (questions, etc.)
 - Creating and managing appointments
-- Automatic appointment reminders
-- "Health and Feel"-diary
+- Automatic appointment reminders (app/sms)
+- "Health and Feel"-diary (Receiptmangamnetsystem)
 - Report generation for hospital management
 
 ## 3. Critical Success Factors
+
+### General
+- Professional project management (from Wikipedia)
+- Identifying dangers and risks (from Wikipedia)
+- Detailed planning (from Wikipedia)
+
+### Specific
 - Data Protection Act - personal information is confidential
 - Provide timely information to facilitate the treatment of patients
 - Generate management information which allows health service managers to assess performance against local and government targets
-- Professional project management (from Wikipedia)
-- Identifying dangers and risks (from Wikipedia)
-- Detailed planing (from Wikipedia)
 - Project specific factors (privacy, availability, ease of use, documentation, training of staff)
 
 ## 4. Potential System Components And Architecture

@@ -18,7 +18,7 @@ Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiter
 Jedoch müssen die „Legislation Requirements“ 	im Vorfeld genau definiert und spezifiziert werden, da es sich bei diesem Requirements um „Critical Success Factors“ handelt.
 
 Weiterhin kann davon ausgegangen werden, dass die Software kontinuierlich weiterentwickelt wird.
-Gemäss diesem Aspekt ist ein agile Prozess Modell vorzuziehen, aber mit einer detaillierteren initialen Analyse und Spezifikationsphase. 
+Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen, aber mit einer detaillierteren initialen Analyse und Spezifikationsphase. 
 
 ###Customer / Users
 Die Zusammenarbeit mit dem Kunden sollte unproblematisch sein. Jedoch um die Software zu testen und realistisches Feedback zu erhalten, braucht es ein Feedback von den Usern, welche das System nutzen werden.
@@ -29,13 +29,12 @@ Für die Teilprojekte 2 und 4 erachten wir die agile Vorgehensweise als unproble
 Gemäss diesem Aspekt ist ein Plan-Driven Prozessmodell oder Mischform vorzuziehen.
 
 ###Team
-Alle Teammitglieder haben praktische Erfahrung in den Prozessmodellen HERMES und Extreme Programming.  Unser Team besteht aus 6 Personen. Die Kommunikation ist über mehrere Kanäle sichergestellt. Wobei die meisten Entwickler am liebsten agil entwickleln.
-Gemäss diesem Aspekt ist ein agiles Prozess Modell vorzuziehen.
+Alle Teammitglieder haben praktische Erfahrung in den Prozessmodellen HERMES und Extreme Programming. Unser Team besteht aus 6 Personen. Wobei die meisten Entwickler am liebsten agil entwickeln. Die Kommunikation ist über mehrere Kanäle sichergestellt und stellt kein Problem dar. Aus diesem Grund ist ein agiles Prozess Modell vorzuziehen.
 
 ###Fazit
 |Pro Agil   | Pro Plan-Driven |
 |---------- |---------------- |
-|Gesundheitsbranche befindet sich im Wandel|Patienten und Ärtze können nur begrentzt ins Projekt involviert werden|
+|Gesundheitsbranche befindet sich im Wandel|Patienten und Ärtzte können nur begrentzt ins Projekt involviert werden|
 |Teammitglieder entwickeln lieber agil|„Legislation Requirements“ erfordern genaue Planung|
 |Anforderungen können sich ändern||
 |System wird laufend weiterentwickelt||
@@ -62,11 +61,11 @@ Folgende Stakeholder sind im Projekt involviert.
 
 ## Genereller Ablauf
 Wir verwenden eine Abwandlung von dem Prozess Model [Scrum](http://de.wikipedia.org/wiki/Scrum).
-Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Scrum. Zusätzlich wird das Daily Scrum Meeting lediglich wöchentlich abgehalten, da das Entwicklerteam nicht am selben Ort arbeitet. Dies ermöglicht zusätzlich eine präzisere Spezifikation zu Beginn einer Iteration und dadurch werden insbesondere die Testakteure Doktoren und Patienten weniger belastet.
+Die Entwicklung erfolgt iterativ. Jedoch sind die Iterationen länger als bei Scrum. Zusätzlich wird das Daily Scrum Meeting  wöchentlich abgehalten, da das Entwicklerteam nicht am selben Ort arbeiten. Dies setzt eine präzisere Spezifikation zu Beginn einer Iteration. Vorteil davon ist, dass dadurch die Testakteure (Doktoren und Patienten) weniger belastet werden.
 
 ## Prozess Model
 
-### Phase1: Planung
+### Phase 1: Planung
 Zu Beginn definieren Kunde und Entwicklerteam was in dieser Iteration zu erledigen ist. Der Kunde 
 
 #### Involvierte Akeute
@@ -82,7 +81,7 @@ Das Ergebnis der letzten Iteration beeinflusst den Backlog.
 #### Artefakte
 - Produkt Backlog
 
-### Phase2: Design\Entwicklung
+### Phase 2: Design / Entwicklung
 
 Aus dem Backlog werden User Stories und Tasks generiert. Bei Unklarheiten/Bedarf Rücksprache mit dem Kunden. 
 1x pro Woche ist ein teaminternes Meeting, um den Projektstand und evt. Risiken zu überprüfen.
@@ -105,13 +104,13 @@ Diese Phase baut auf dem Backlog auf.
 - Testprotokoll
 - Ergebnis Weekly Scrum
 
-### Phase3: Testen
+### Phase 3: Testen
 Das lauffähige Programm wird von den Akteuren getestet. 
 **Hinweis** Meistens ist nur ein Teil der Aktuere daran beteiligt. (Je nachdem welche Teilprojekte in der entsprechenden Iteration bearbeitet wurden)
 
-Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backlog anzupassen.
+Nach dem Testen ist mit dem Kunden ein Review zu halten und allenfalls der Backlog anzupassen. Wenn alle Anforderungen erfüllt sind, ist das Projekt fertig.
 
-#### Involvierte Akeute
+#### Involvierte Akteure
 - Clinical Record Staff
 - Doktoren
 - Patienten
@@ -130,4 +129,4 @@ Der Backlog wird aktualisiert.
 ### Artefakte
 - Testbericht
 - Feedback an Kunde/Entwicklerteam
-- Ergbenis Sprint Review
+- Ergebnis Sprint Review

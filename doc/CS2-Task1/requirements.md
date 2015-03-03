@@ -29,7 +29,7 @@
 - Schulung
 
 ###External Requiements
--Anforderungen gemäss Medizinreglementen 
+- Anforderungen gemäss Medizinreglementen 
 
 ##Domain Specific Requirements
 - medizinisch state of the art (z.B. wieviel Zucker musss abgegeben werden)

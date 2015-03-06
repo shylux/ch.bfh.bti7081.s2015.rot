@@ -34,6 +34,7 @@ FH: Filip Hofer
 | 02    | Creation of presentation                          | done  | FH, TB, LK, ST, JM, ML |
 | 02    | Updating document                          | done  | JM, LK, TB |
 | 03    | CS2 Task 1: Analysis and Documentation | done  | ST, LK, FH, ML, JM |
+| 04    | CS2 Task 2: Analysis and Documentation | progress  | ST, TB, FH, ML, JM |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 
 
@@ -43,3 +44,9 @@ FH: Filip Hofer
 #### 03.03.2015
  * Analysing CS2-Task1 ([PIP-System](/doc/CS2-Task1/requirements.md))
  * Present Team-Members: ST, LK, FH, ML, JM
+
+#### 06.03.2015
+ * Analysing CS2-Task 2 
+ * Creating Use-Case of Task 2
+ * Present Team-Members: ST, TB, FH, ML, JM
+ * Absente Team-Members: LK (Military)

@@ -49,4 +49,4 @@ FH: Filip Hofer
  * Analysing CS2-Task 2 
  * Creating Use-Case of Task 2
  * Present Team-Members: ST, TB, FH, ML, JM
- * Absente Team-Members: LK (Military)
+ * Absent Team-Members: LK (Military)

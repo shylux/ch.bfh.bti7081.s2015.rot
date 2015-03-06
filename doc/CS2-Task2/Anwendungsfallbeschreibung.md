@@ -6,7 +6,7 @@
 | Kurzbeschreibung | Blutzuckerspiegel wird gemessen und ausgwertet |
 | Beteiligte Akteure  | Sensor, Patient  |
 | Auslöser / Vorbedingung  | Vordefiniertes Zeitinterval, eingeschaltetes System  |
-| Ergebnisse / Nachbedingung  |   |
+| Ergebnisse / Nachbedingung  | Entscheid Verabreichung Insulin, Warnmeldung  |
 
 ##Ablauf
 | Nr. | Wer | Was |

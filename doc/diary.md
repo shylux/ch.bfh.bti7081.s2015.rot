@@ -35,7 +35,7 @@ FH: Filip Hofer
 | 02    | Updating document                          | done  | JM, LK, TB |
 | 03    | CS2 Task 1: Analysis and Documentation | done  | ST, LK, FH, ML, JM |
 | 04    | CS2 Task 2: Analysis and Documentation | done  | ST, TB, FH, ML, JM |
-| 05    | CS2 Task 3: Analysis and Documentation | progress  | ST, TB, FH, ML, JM |
+| 05    | CS2 Task 3: Analysis and Documentation | done  | ST, TB, FH, ML, JM |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 
 

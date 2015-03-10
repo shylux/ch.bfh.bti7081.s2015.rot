@@ -57,7 +57,7 @@ FH: Filip Hofer
 #### 10.03.2015
  * Team-meeting
  * Introducing in Design Thinking
- * Start of [CS1-Task 3](/doc/CS1-Task3) (Design Thinking)
+ * Start of [CS1-Task 3](/doc/task03) (Design Thinking)
  * [Balsamiq](http://balsamiq.com/products/mockups/) is a tool for creating mockups
  * Present Team-Members: ST, TB, FH, ML, JM
  * Absent Team-Members: LK (Military)

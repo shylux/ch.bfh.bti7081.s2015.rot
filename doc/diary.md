@@ -57,6 +57,6 @@ FH: Filip Hofer
 #### 10.03.2015
  * Team-meeting
  * Introducing in Design Thinking
- * ([Balsamiq](http://balsamiq.com/products/mockups/)) is a tool for creating mockups
+ * [Balsamiq](http://balsamiq.com/products/mockups/) is a tool for creating mockups
  * Present Team-Members: ST, LK, FH, ML, JM
  * Absent Team-Members: LK (Military)

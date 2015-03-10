@@ -59,8 +59,6 @@ FH: Filip Hofer
  * Introducing in Design Thinking
  * Start of [CS1-Task 3](/doc/task03) (Design Thinking)
  * [Balsamiq](http://balsamiq.com/products/mockups/) is a tool for creating mockups
- * Present Team-Members: ST, TB, FH, ML, JM
- * Absent Team-Members: LK (Military)
  * Subtasks "researching" of Task 3
  * Gesetze, Standards, generelle Restriktionen (verantwortlich ST)
  * Abläufe in Apotheken, Rezeptbeschaffung (verantwortlich TB)
@@ -68,3 +66,5 @@ FH: Filip Hofer
  * Interview Militärspital (verantwortlich LK)
  * Wissensbeschaffung Krankheitsbilder (FH, ST)
  * Analyse Terminmodul (ML)
+ * Present Team-Members: ST, TB, FH, ML, JM
+ * Absent Team-Members: LK (Military)

@@ -61,3 +61,10 @@ FH: Filip Hofer
  * [Balsamiq](http://balsamiq.com/products/mockups/) is a tool for creating mockups
  * Present Team-Members: ST, TB, FH, ML, JM
  * Absent Team-Members: LK (Military)
+ * Subtasks "researching" of Task 3
+ * Gesetze, Standards, generelle Restriktionen (verantwortlich ST)
+ * Abläufe in Apotheken, Rezeptbeschaffung (verantwortlich TB)
+ * Interview (verantwortlich JM, verantwortlich TB)
+ * Interview Militärspital (verantwortlich LK)
+ * Wissensbeschaffung Krankheitsbilder (FH, ST)
+ * Analyse Terminmodul (ML)

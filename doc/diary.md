@@ -53,3 +53,8 @@ FH: Filip Hofer
  * Creating Activity-Diagram
  * Present Team-Members: ST, TB, FH, ML, JM
  * Absent Team-Members: LK (Military)
+
+#### 10.03.2015
+ * Team-meeting
+ * Present Team-Members: ST, LK, FH, ML, JM
+ * Absent Team-Members: LK (Military)

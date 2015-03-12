@@ -5,6 +5,7 @@
 
 ###Alltag eines Patienten / Typische Muster
 * Arbeitslos / Leben vom Sozialamt
+* Selten: Teilzeitbeschäftig beim Sozialamt; einigermassen strukturierter Tagesablauf
 * Wenig bis keine Tagesstruktur
 * Zyklus verdreht (am Tag schlafen, in der Nacht wach)
 * Tätigkeiten: Fernsehen

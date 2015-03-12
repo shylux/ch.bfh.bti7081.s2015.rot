@@ -57,10 +57,12 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 
 ###Main features
 
+**Generell**
+* Gute Navigationsstruktur, um alle Bereiche zu erreichen
+
 **Appointment**
 * An Termine erinnern
 * Terminübersicht anzeigen
-* 
 
 **Treatment**
 * Notfallnumern anzeigen

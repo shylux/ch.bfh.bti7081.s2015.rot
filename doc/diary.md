@@ -71,4 +71,7 @@ FH: Filip Hofer
 
 #### 12.03.2015
 * Short interview with drugstore staff about recipes
-* Present Team-Memmbers: TB
+* Hinzufügen der [Interviewresultate](auswertung Inverview.md)
+* Hinzufügen der [Rezept-Normen](normen.md)
+* Hinzufügen der Storyboards in der [Dokumentationsdatei](Dokumentation.md)
+* Present Team-Memmbers: TB, ST, JM

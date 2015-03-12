@@ -55,7 +55,26 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
 * Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
 
-###Mainfeatures
+###Main features
+
+**Appointment**
+* An Termine erinnern
+* Terminübersicht anzeigen
+* 
+
+**Treatment**
+* Notfallnumern anzeigen
+* Notfallplan anzeigen
+* Behandlung soll Struktur in den Alltag des Patienten bringen
+* Behandlung soll den Patienten zum Mitmachen animieren
+* An Behandlung/ Aufgaben erinnern
+* persönliche wichtigste Kontakte anzeigen
+* Notfallbutton für aussenstehende Personen
+
+**Medication**
+* An Einnahme der Medimamente erinnern
+* Medikation der Medikamente anzeigen
+* Medikation der Notfall-Medikamente anzeigen
 
 ##4. Design
 design storyboards

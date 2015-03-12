@@ -133,4 +133,33 @@
 ####Zukunftsvision Treatment
 * Mehr Angebote für Therapie zu Hause
 * Mehr ambulante Stelle ohne Voranmeldung (wie City Notfall in Bern)
-* 
+
+###Medication Management
+* Was gehört alles in eine medizinische Akte:
+  * Diagnose
+  * Krankheitsverlauf (Care Log)
+  * Medikation (Wann, wie und wie oft Medikament einnehmen)
+* Rezept (loslgelöst von Akte)
+  * Patient erhält dies beim Austritt
+  * Wird sehr wenig verloren
+  * Ermöglicht **einmaligen** Bezug von Medikamenten in der Apotheke
+  * Nur Arzt darf ein Rezept ausstellen
+  * leicht fälschbar
+  * Praxis: Medikamentenhandel nicht lukrativ
+  * Digitales Rezept möglich
+  * Rezept als QR-Code?
+  * Norm:
+    * 1/2 A6 Papier
+    * Patient
+    * Medikament
+    * Dosierung
+    * Bezugsmenge
+    * Stempel und Unterschrift für Plausibilisierung
+* Erinnerungsfunktion für Medikamenteinnahme
+* Medikation für Patient
+* Hintergrundinformation fürs Medikament (Warum erhält der Patient Medikament x)
+
+**Krakenakte:** Patient darf Einsicht in eigene Akte nehmen
+Grundsätzlich: Aktenzugriff gute Idee, Bei Suchtpatienten sehr sinnvoll
+Aber: Gefahrenpotenzial, da Akte in Fachsprache verfasst (Missverständnisse)
+    

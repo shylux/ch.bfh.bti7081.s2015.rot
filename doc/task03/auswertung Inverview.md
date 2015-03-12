@@ -41,7 +41,7 @@
 * Strategien für Suchtdruck fehlen im Altag
 * Ablenkung zu Hause nicht vorhanden
 * Kontakt mit Patienten: Spitex, aufsuchende Pflege (wie Spitex für Psychiatre)
-  *Versuch Alltag zu strukturieren
+  * Versuch Alltag zu strukturieren
 
 ###Ablauf Tagesklinik (Nach stationärem Entzug empfohlen)
 * Schlafen zu Hause

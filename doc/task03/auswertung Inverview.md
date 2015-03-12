@@ -114,3 +114,23 @@
 * **Häufig scheiterts schon an der Terminwahrnemung!**
 * Zuviele Informationen sind eher kontraproduktiv (nur beim soz. Amt Dokumente benötigt)
 * **Patient zur Terminwahrnehmung motivieren!**
+
+###Treatment
+* Notfallszenario
+* Aufgaben trivial: Jeden Tag draussen laufen, Einkaufen, Zug fahren, Morgen aufstehen, sich anziehen, ect
+* **Ziel:** Struktur in Alltag bringen
+* evt. Entspannungsübungen
+* Regelmässig nach draussen gehen (exposition)
+* Treatment ist sehr individuell
+* Spielerisch mit Punkte- und Belohnungssystem: 
+  * Mit GPS Sensor auswerten: Wenn Patitent ins Migros geht, bekommt er x Punkte, nach y Punkten gib's ein Level-Up
+  * Tägliche und wöchentliche Aufgaben 
+  * Ziel: Strukturierung des Alltags
+* Je nach Patient verschiedene Darstellungen (z.B textuell, im Comic-Style)
+* Interaktion spornt den Patienten an
+* Für Personen, die ein Flair für Gadgets ein Vorteil
+
+####Zukunftsvision Treatment
+* Mehr Angebote für Therapie zu Hause
+* Mehr ambulante Stelle ohne Voranmeldung (wie City Notfall in Bern)
+* 

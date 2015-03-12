@@ -8,10 +8,28 @@ define: project scope, out of scope, and success measures
 ##2. Research
 investigate: literature, case studies, state of the art systems, …
 conduct: one interview and/or field study
+
+###Interview
+Wir haben ein Konezpt für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. 
+[Download Interview Fragen](Interview Fragen.md)
+
+**Interview mit Anna V.(Name geändert)**
+Wir hatten ein spannendes Interview mit Anna V. 
+Die strukturierte Auswertung des Interview befindet sich im Repository.
+[Auswertung Interview](auswertung Inverview.md)
+
+
 ##3. Synthesize
 collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)
+###Personas
+Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
+
+####Persona "Heinz"
+
+
+
 ##4. Design
 design storyboards
 at least 2 storyboards per team member

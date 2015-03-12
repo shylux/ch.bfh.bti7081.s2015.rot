@@ -94,8 +94,12 @@ then how you will find the answer
 #Iteration2
 
 ##1. Scoping
-@Loosli: einfüllen
-define: project scope, out of scope, and success measures
+
+###Out of Scope
+* Rezeptverwaltung
+* digitales Rezept mit QR-Code
+Das System würde dadurch nur unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem werden die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
+
 ##2. Research
 investigate: literature, case studies, state of the art systems, …
 conduct: one interview and/or field study

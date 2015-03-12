@@ -51,3 +51,32 @@
 * gilt ast "Best Practise" für Wiedereinglieduerung ins soziale Leben
 
 
+###Welche Hilfsmittel gibt's schon (nach stationärer Behandlung)
+* feste Ansprechspartner sind sehr wichtig
+* Mit Patient in Kontakt bleiben
+* **Notfalltelefon** für alle ehemaligen Patienten
+  * sehr hilfreich
+  * wird oft genutzt
+  * nach Telefon wird das weitere Vorgehen besprochen
+* **Notfallplan** mit Patient erstellt
+  * Was gibt's für Möglichkeiten, um eigenen Absturz zu bemerken
+  * Was kann der patient dagegen unternehmen / Wer kann ihm helfem
+  * Schriftlich festgehalten
+  * sehr wichtig!
+ 
+###Schwachstellen des Systems
+* Wenn Patient nach Entzug wieder nach Hause geht, ist der Rückfall extrem hoch
+* Therapie ist in diesem Fall nicht nachhaltig
+
+###Was Verbessern / Anders machen
+* Patient in Behandlung mehr einbeziehen
+  * Je nach Arzt: "Ich habe Medizin studiert, ich weiss was meinem Patient gut tut"
+* Vor ca. 30 Jahren hatte Patient überhaupt kein Mitspracherecht
+* Konkret: Behandlung *mit* dem Patient planen, auf Wünsche / Anregungen des Patienten eingehen
+* Patient soll gleichwertiger Verhandlungspartner sein, keine Arzt-Patient-Hirarchie
+* Recovery (Schlagwort)
+  * Früher: Wenn einmal krank, dann immer krank
+  * Heute: Es kann sich auch nach einem 10 jährigen psychischen Leiden ändern
+  * Glaube an Genesung des Patienten
+  * 
+**Ziel:** Das Schlagwort "Recovery" mit mehr Inhalt füllen und die "Recovery"-Punkte auch umsetzen.

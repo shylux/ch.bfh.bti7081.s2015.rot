@@ -159,7 +159,7 @@
 * Medikation für Patient
 * Hintergrundinformation fürs Medikament (Warum erhält der Patient Medikament x)
 
-**Krakenakte:** Patient darf Einsicht in eigene Akte nehmen
+**Krankenakte:** Patient darf Einsicht in eigene Akte nehmen
 Grundsätzlich: Aktenzugriff gute Idee, Bei Suchtpatienten sehr sinnvoll
 Aber: Gefahrenpotenzial, da Akte in Fachsprache verfasst (Missverständnisse)
     

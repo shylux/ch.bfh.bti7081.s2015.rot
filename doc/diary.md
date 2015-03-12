@@ -68,3 +68,7 @@ FH: Filip Hofer
  * Analyse Terminmodul (ML)
  * Present Team-Members: ST, TB, FH, ML, JM
  * Absent Team-Members: LK (Military)
+
+#### 12.03.2015
+* Short interview with drugstore staff about recipes
+* Present Team-Memmbers: TB

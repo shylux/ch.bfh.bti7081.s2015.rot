@@ -27,8 +27,35 @@ define: main features (i.e., user requirements)
 Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 
 ####Persona "Heinz"
+* Arbeitslos / lebt seit 7 Jahren vom Sozialamt
+* Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und restliches wird dann zur Nebensache
+* Alter: 47
+* lebt allein in 2-Zimmerwohung
+* Schläft bis Mittags, bleibt dafür aber bis früh morgens wach
+* Tätigkeiten: Fernsehen, PC Spiele, verlässt selten das Haus
+* Sein Freundeskreis beschränkt sich auf 3 Personen, welche ebenfalls ein Alkoholsuchtproblem aufweisen
+* Verpasst Termine für ärztliche Behandlung, beim RAV
+* hat generell Mühe gesellschaftliche Verpflichtungen wahrzunehmen (Rechnungen bezahlen, Briefkasten leeren, Termine einhalten, sich an Abmachungen halten,ect )
+* Ist verschuldet, Wohnung ist schmutzig und chaotsch
+* hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
 
 
+####Persona "Ingrit"
+* Arbeitet 40% bei einem Sozialhilfeprogramm
+* Methadonabhängig
+* Ist in einem Methadonprogramm (2x pro Tag besucht sie die Methadonabgabestelle)
+* lebt allein in 2-Zimmerwohung; häufiger Beziehungswechsel
+* Arbeitet an 4 Tagen morgens
+* Sie hat Mühe mit gesellschaftlichen Verpflichtungen
+* Nimmt aber die meisten Termine wahr
+* Die "aufsuchende Pflege" unterstützt sie bei den Administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
+* Ihr letzter Entzug liegt 2 Jahre zurück
+* Alter: 35
+* die meisten Ihrer Freunde haben Suchtprobleme
+* Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
+* Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
+
+###Mainfeatures
 
 ##4. Design
 design storyboards

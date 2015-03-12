@@ -80,3 +80,37 @@
   * Glaube an Genesung des Patienten
   * 
 **Ziel:** Das Schlagwort "Recovery" mit mehr Inhalt füllen und die "Recovery"-Punkte auch umsetzen.
+
+###Trend in der psychiatrischen Behandlung
+* Patient bekommt mehr Eigenverantwortung
+  * kann mitbestimmen, mehr mitverhandeln (z.B. Ich möchte lieber Medikament x)
+* Weg von grossen Kliniken (Münsingen, Waldau) zu Spital mit kleinen Abteilungen
+  * Psychiatrische Dieste ins Grundversorgungsnetz integrieren
+* Es gibt immer mehr psychiatrische Diagnosen (Krankheiten werden erfunden)
+
+##Technische Aspekte
+
+###Must-have-Features eines Gadgets
+* Nutzungsanleitung für Medikamente (3 Tabletten am Morgen, 2 am Nachmittag von Medikament x)
+* Erinnerungsfunktion für Medikamenteinnahme
+* Anleitung für resever Medikation (für Notfall, wenn Rückfallgefahr)
+* Nummer vom Psychiater/Ansprechsperson
+* Notfallnummer
+* Terminfunktion: Wiederkehrende Termine darin verwalte, erinnern
+* Patientenverfügung: Was will der Patient, wenn er Ambulant eingeliefert wird.
+* Wunsch zu Klinikeintritt (Wenn Patient z.B. nicht ansprechbar ist)
+  * Auf dem Gerät ist ersichtlich in welches Spital der Patient eingeliefert werden will
+* Krankenakte für Ärzte hinterlegt
+* "Best practise" für Ärzte: Welches Medikament hat besonders geholfen,ect
+* Notfallnumern von engsten Angehörigen: Damit sie beim Spitalaufenthalt immer darauf Zugriff haben
+
+
+###Appointment
+* Allgemeine Termine: Rechnungen einzahlen, Briefkasten leeren, Sozialamt erscheinen
+* für Tagesstrukturbildung: Briefkasten leeren, Wohnung aufräumen
+  * Todo-Liste, Punkte System, Spielerisch von Vorteil
+* Es werden keine speziellen Dokumente für Klinikbesuch benötigt.
+* "Wenn Patient erscheint ist's gut, wenn er nüchtern erscheint noch besser"
+* **Häufig scheiterts schon an der Terminwahrnemung!**
+* Zuviele Informationen sind eher kontraproduktiv (nur beim soz. Amt Dokumente benötigt)
+* **Patient zur Terminwahrnehmung motivieren!**

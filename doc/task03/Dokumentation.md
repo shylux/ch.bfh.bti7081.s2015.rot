@@ -2,12 +2,37 @@
 
 #Iteration1
 
-##1. Scoping
-@Loosli: einfüllen
-define: project scope, out of scope, and success measures
-##2. Research
+##Scoping
+
+###Terminverwaltung
+####Scope
+* Anzeigen
+* Erinnern
+
+####Out-of-scope
+* Termine vereinbaren
+
+###Behandlung
+####Scope
+* An Handlung erinnern
+
+
+###Verwaltung medikamentöse Behandlung
+####Scope
+* "Rezeptakte"
+* Ausdruck um Rezepte abzuholen
+
+####Out-of-scope
+* Rezeptverwaltung
+* Rezeptdatenkbank
+
+###Success measures
+* Weniger Termine gehen vergessen
+* Keine/weniger Rezepte gehen verloren
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+
+##Research
 investigate: literature, case studies, state of the art systems, …
-conduct: one interview and/or field study
 
 ###Interview
 Wir haben ein Konezpt für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. 
@@ -19,7 +44,7 @@ Die strukturierte Auswertung des Interview befindet sich im Repository.
 [Auswertung Interview](auswertung Inverview.md)
 
 
-##3. Synthesize
+##Synthesize
 collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)
@@ -35,8 +60,8 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Tätigkeiten: Fernsehen, PC Spiele, verlässt selten das Haus
 * Sein Freundeskreis beschränkt sich auf 3 Personen, welche ebenfalls ein Alkoholsuchtproblem aufweisen
 * Verpasst Termine für ärztliche Behandlung, beim RAV
-* hat generell Mühe gesellschaftliche Verpflichtungen wahrzunehmen (Rechnungen bezahlen, Briefkasten leeren, Termine einhalten, sich an Abmachungen halten,ect )
-* Ist verschuldet, Wohnung ist schmutzig und chaotsch
+* hat generell Mühe gesellschaftliche Verpflichtungen wahrzunehmen (Rechnungen bezahlen, Briefkasten leeren, Termine einhalten, sich an Abmachungen halten, etc.)
+* Ist verschuldet, Wohnung ist schmutzig und chaotisch
 * hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
 
 
@@ -46,9 +71,9 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Ist in einem Methadonprogramm (2x pro Tag besucht sie die Methadonabgabestelle)
 * lebt allein in 2-Zimmerwohung; häufiger Beziehungswechsel
 * Arbeitet an 4 Tagen morgens
-* Sie hat Mühe mit gesellschaftlichen Verpflichtungen
-* Nimmt aber die meisten Termine wahr
-* Die "aufsuchende Pflege" unterstützt sie bei den Administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
+* hat Mühe mit gesellschaftlichen Verpflichtungen
+* nimmt die meisten Termine wahr
+* die "aufsuchende Pflege" unterstützt sie bei den Administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
 * Ihr letzter Entzug liegt 2 Jahre zurück
 * Alter: 35
 * die meisten Ihrer Freunde haben Suchtprobleme
@@ -74,9 +99,9 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Notfallbutton für aussenstehende Personen
 
 **Medication**
-* An Einnahme der Medimamente erinnern
-* Medikation der Medikamente anzeigen
-* Medikation der Notfall-Medikamente anzeigen
+* An Einnahme der Medikamente erinnern
+* Dosierung der Medikamente anzeigen
+* Dosierung der Notfall-Medikamente anzeigen
 
 ##4. Design
 design storyboards
@@ -85,14 +110,10 @@ discuss and iterate
 make sure your storyboards are detailed enough to show the usage of a real system
 
 ### Storyboards
-![alt tag](storyboard1.png)
-![alt tag](storyboard2.png)
-![alt tag](storyboard3.png)
-![alt tag](storyboard4.png)
-![alt tag](storyboard5.png)
-![alt tag](storyboard6.png)
-![alt tag](storyboard7.png)
-![alt tag](storyboard8.png)
+![alt tag](userstory1.png)
+![alt tag](userstory2.png)
+![alt tag](userstory3.png)
+![alt tag](userstory4.png)
 
 ##5. Prototype
 build cardboard-based prototypes for your most promising storyboards
@@ -103,58 +124,59 @@ first define your evaluation questions
 then how you will find the answer
 
 
-#Iteration2
+#Iteration 2
+Idee: Soll das Rezept digital auf dem Bildschirm erscheinen, ggf. mit QR-Code? Das System soll verhindern, dass das Rezept weitergegeben wird oder allenfalls verloren geht.
 
-##1. Scoping
+##Scoping
+* Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben
 
 ###Out of Scope
-* Rezeptverwaltung
 * digitales Rezept mit QR-Code
-Das System würde dadurch nur unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem werden die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
+Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
 
-##2. Research
+##Research
 investigate: literature, case studies, state of the art systems, …
 conduct: one interview and/or field study
-##3. Synthesize
+##Synthesize
 collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)
-##4. Design
+##Design
 design storyboards
 at least 2 storyboards per team member
 discuss and iterate
 make sure your storyboards are detailed enough to show the usage of a real system
 
-##5. Prototype
+##Prototype
 build cardboard-based prototypes for your most promising storyboards
 
-##6. Validate
+##Validate
 test your storyboards/prototypes with friends or family (i.e., outside this class)
 first define your evaluation questions
 then how you will find the answer
 
 #Iteration3
 
-##1. Scoping
+##Scoping
 @Loosli: einfüllen
 define: project scope, out of scope, and success measures
-##2. Research
+##Research
 investigate: literature, case studies, state of the art systems, …
 conduct: one interview and/or field study
-##3. Synthesize
+##Synthesize
 collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)
-##4. Design
+##Design
 design storyboards
 at least 2 storyboards per team member
 discuss and iterate
 make sure your storyboards are detailed enough to show the usage of a real system
 
-##5. Prototype
+##Prototype
 build cardboard-based prototypes for your most promising storyboards
 
-##6. Validate
+##Validate
 test your storyboards/prototypes with friends or family (i.e., outside this class)
 first define your evaluation questions
 then how you will find the answer

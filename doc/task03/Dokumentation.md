@@ -19,7 +19,7 @@
 
 ###Verwaltung medikamentöse Behandlung
 ####Scope
-* "Rezeptakte"
+* "Medikation"
 * Ausdruck um Rezepte abzuholen
 
 ####Out-of-scope
@@ -32,17 +32,8 @@
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
 ##Research
-investigate: literature, case studies, state of the art systems, …
-
-###Interview
-Wir haben ein Konezpt für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. 
-[Download Interview Fragen](Interview Fragen.md)
-
-**Interview mit Anna V.(Name geändert)**
-Wir hatten ein spannendes Interview mit Anna V. 
-Die strukturierte Auswertung des Interview befindet sich im Repository.
-[Auswertung Interview](auswertung Inverview.md)
-
+Bei Stationsleiterung Anna V. nachfragen, wie genau so ein Notfallplanu aussieht.
+Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorherigen Phase genügend Informationen gesammelt haben.
 
 ##Synthesize
 collect, order, and analyze all material in your group
@@ -63,7 +54,6 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * hat generell Mühe gesellschaftliche Verpflichtungen wahrzunehmen (Rechnungen bezahlen, Briefkasten leeren, Termine einhalten, sich an Abmachungen halten, etc.)
 * Ist verschuldet, Wohnung ist schmutzig und chaotisch
 * hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
-
 
 ####Persona "Ingrit"
 * Arbeitet 40% bei einem Sozialhilfeprogramm
@@ -123,20 +113,39 @@ make sure your storyboards are detailed enough to show the usage of a real syste
 build cardboard-based prototypes for your most promising storyboards
 
 ##6. Validate
-test your storyboards/prototypes with friends or family (i.e., outside this class)
-first define your evaluation questions
-then how you will find the answer
+Wie haben im Plenum die Prototypes validiert.
+**Prototype 1:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
 
+**Prototype 2:**OK
+
+**Prototype 3:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
+
+**Prototype 4:**OK
+
+**Prototpye 5:**OK
+
+**Prototype 6:**Terminanzeige wie in Prototpye 5
+
+**Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
 #Iteration 2
-Idee: Soll das Rezept digital auf dem Bildschirm erscheinen, ggf. mit QR-Code? Das System soll verhindern, dass das Rezept weitergegeben wird oder allenfalls verloren geht.
 
 ##Scoping
 * Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben
+* Idee mit Treatment ausarbeiten, verbessern
+
+###Success measures
+* Weniger Termine gehen vergessen (bisher)
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
+* Hilfe bei Sturktierung des Tages (neu)
+  * 80% nutzen das Behandlungssystem, haben demnach 
+* weniger Rückfälle, wegen selbstständiger Beschäftigung
+
 
 ###Out of Scope
 * digitales Rezept mit QR-Code
 Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
+* alle Patienten, die keine Suchtpatienten sind.
 
 ##Research
 investigate: literature, case studies, state of the art systems, …

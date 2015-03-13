@@ -144,6 +144,10 @@ Idee: Soll das Rezept digital auf dem Bildschirm erscheinen, ggf. mit QR-Code? D
 ##Scoping
 * Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben
 
+###Success measures
+* Weniger Termine gehen vergessen
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+
 ###Out of Scope
 * digitales Rezept mit QR-Code
 Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).

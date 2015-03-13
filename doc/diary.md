@@ -75,3 +75,8 @@ FH: Filip Hofer
 * Hinzufügen der [Rezept-Normen](/doc/task03/normen.md)
 * Hinzufügen der Storyboards in der [Dokumentationsdatei](/doc/task03/Dokumentation.md)
 * Present Team-Memmbers: TB, ST, JM
+
+#### 13.03.2015
+ * Weitere Arbeiten an Task 03
+ * Weitere Iterationschritte
+ * Anwesend Team-Mitglieder: ST, TB, FH, ML, JM, LK

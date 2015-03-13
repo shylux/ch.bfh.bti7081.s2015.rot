@@ -79,4 +79,15 @@ FH: Filip Hofer
 #### 13.03.2015
  * Weitere Arbeiten an Task 03
  * Weitere Iterationschritte
- * Anwesend Team-Mitglieder: ST, TB, FH, ML, JM, LK
+ * Abschluss Iterationsschritt 1
+ * Start Iterationsschritt 2
+ * Planung Iterationsschritt 3
+ * Zu erledigende Arbeiten:
+ * ML: Storyboards
+ * JM: Research
+ * FH: Vortrag & Persona
+ * TB: Prototypes
+ * LK: Spezifizieren
+ * ST: Mockup, Spezifizeren
+ * Anwesende Team-Mitglieder: ST, TB, FH, ML, JM, LK
+ * Abwesende: 

@@ -148,10 +148,9 @@ Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch f
 * alle Patienten, die keine Suchtpatienten sind.
 
 ##Research
-investigate: literature, case studies, state of the art systems, …
-conduct: one interview and/or field study
+tbd. Notfallplan (JM)
 ##Synthesize
-collect, order, and analyze all material in your group
+tbd. collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)
 ##Design

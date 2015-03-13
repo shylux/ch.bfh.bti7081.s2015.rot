@@ -123,9 +123,14 @@ make sure your storyboards are detailed enough to show the usage of a real syste
 build cardboard-based prototypes for your most promising storyboards
 
 ##6. Validate
-test your storyboards/prototypes with friends or family (i.e., outside this class)
-first define your evaluation questions
-then how you will find the answer
+Wie haben im Plenum die Prototypes validiert.
+**Prototype 1:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
+**Prototype 2:**OK
+**Prototype 3:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
+**Prototype 4:**OK
+**Prototpye 5:**OK
+**Prototype 6:**Terminanzeige wie in Prototpye 5
+**Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
 
 #Iteration 2

@@ -19,7 +19,7 @@
 
 ###Verwaltung medikamentöse Behandlung
 ####Scope
-* "Rezeptakte"
+* "Medikation"
 * Ausdruck um Rezepte abzuholen
 
 ####Out-of-scope
@@ -139,18 +139,23 @@ Wie haben im Plenum die Prototypes validiert.
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
 #Iteration 2
-Idee: Soll das Rezept digital auf dem Bildschirm erscheinen, ggf. mit QR-Code? Das System soll verhindern, dass das Rezept weitergegeben wird oder allenfalls verloren geht.
 
 ##Scoping
 * Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben
+* Idee mit Treatment ausarbeiten, verbessern
 
 ###Success measures
-* Weniger Termine gehen vergessen
-* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+* Weniger Termine gehen vergessen (bisher)
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
+* Hilfe bei Sturktierung des Tages (neu)
+  * 80% nutzen das Behandlungssystem, haben demnach 
+* weniger Rückfälle, wegen selbstständiger Beschäftigung
+
 
 ###Out of Scope
 * digitales Rezept mit QR-Code
 Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
+* alle Patienten, die keine Suchtpatienten sind.
 
 ##Research
 investigate: literature, case studies, state of the art systems, …

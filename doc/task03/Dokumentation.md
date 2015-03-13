@@ -110,10 +110,14 @@ discuss and iterate
 make sure your storyboards are detailed enough to show the usage of a real system
 
 ### Storyboards
-![alt tag](userstory1.png)
-![alt tag](userstory2.png)
-![alt tag](userstory3.png)
-![alt tag](userstory4.png)
+[Storyboard 1](storyboard1.png)
+[Storyboard 2](storyboard2.png)
+[Storyboard 3](storyboard3.png)
+[Storyboard 4](storyboard4.png)
+[Storyboard 5](storyboard5.png)
+[Storyboard 6](storyboard6.png)
+[Storyboard 7](storyboard7.png)
+[Storyboard 8](storyboard8.png)
 
 ##5. Prototype
 build cardboard-based prototypes for your most promising storyboards

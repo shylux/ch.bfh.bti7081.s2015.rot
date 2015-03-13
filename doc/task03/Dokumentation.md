@@ -80,6 +80,25 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
 * Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
 
+###Persona "Hans"
+* Ist arbeitslos
+* Heroinabhängig
+* Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
+* Schämt sich für seine Sucht, meidet Kontakte
+* Einzige Kontakte dienen der Beschaffung von Heroin
+* Hat sich schon prostituiert, um Geld für Heroin zu beschaffen
+* Wurde straffällig, um Geld oder Heroin zu besorgen
+* Ist verschuldet, da das Geld für die Droge ausgegeben wird
+* Hat gesundheitliche Probleme, ist unterernährt
+* Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
+
+
+###Persona "Carin"
+* Kifft, nimmt Extasy
+* Hat grosse Probleme, sich zu konzentrieren
+* Arbeitet Teilzeit bei einem Detailhändler im Lager
+* Hat häufig wechselnde Partner
+
 ###Main features
 
 **Generell**

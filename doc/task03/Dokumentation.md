@@ -133,9 +133,9 @@ Wie haben im Plenum die Prototypes validiert.
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
 ###Validierung der "Success Measures"
-* Weniger Termine gehen vergessen
-* Keine/weniger Rezepte gehen verloren
-* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+* [x] Weniger Termine gehen vergessen
+* [x]Keine/weniger Rezepte gehen verloren
+* [x]Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
 
 #Iteration 2

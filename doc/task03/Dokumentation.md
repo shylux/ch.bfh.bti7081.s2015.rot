@@ -70,24 +70,6 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
 * Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
 
-###Persona "Hans"
-* Ist arbeitslos
-* Heroinabhängig
-* Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
-* Schämt sich für seine Sucht, meidet Kontakte
-* Einzige Kontakte dienen der Beschaffung von Heroin
-* Hat sich schon prostituiert, um Geld für Heroin zu beschaffen
-* Wurde straffällig, um Geld oder Heroin zu besorgen
-* Ist verschuldet, da das Geld für die Droge ausgegeben wird
-* Hat gesundheitliche Probleme, ist unterernährt
-* Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
-
-
-###Persona "Carin"
-* Kifft, nimmt Extasy
-* Hat grosse Probleme, sich zu konzentrieren
-* Arbeitet Teilzeit bei einem Detailhändler im Lager
-* Hat häufig wechselnde Partner
 
 ###Main features
 
@@ -132,6 +114,9 @@ make sure your storyboards are detailed enough to show the usage of a real syste
 build cardboard-based prototypes for your most promising storyboards
 
 ##6. Validate
+
+###Validierung der Prototypen
+
 Wie haben im Plenum die Prototypes validiert.
 **Prototype 1:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
 
@@ -147,6 +132,12 @@ Wie haben im Plenum die Prototypes validiert.
 
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
+###Validierung der "Success Measures"
+* Weniger Termine gehen vergessen
+* Keine/weniger Rezepte gehen verloren
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+
+
 #Iteration 2
 
 ##Scoping
@@ -158,8 +149,8 @@ Wie haben im Plenum die Prototypes validiert.
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
 * Hilfe bei Sturktierung des Tages (neu)
   * 80% nutzen das Behandlungssystem, haben demnach 
-* weniger Rückfälle, wegen selbstständiger Beschäftigung
-
+* weniger Rückfälle, wegen selbstständiger Beschäftigung (neu) 
+* Erleichterte Bedieung (neu)
 
 ###Out of Scope
 * digitales Rezept mit QR-Code
@@ -167,8 +158,32 @@ Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch f
 * alle Patienten, die keine Suchtpatienten sind.
 
 ##Research
-tbd. Notfallplan (JM)
+Um den Notfallplan genauer bestimmen zu können, haben wir uns von Anna V. den Notfallplan genauer beschreiben lassen. Der Notfallplan ist eine normale **Checkliste** mit Punkten, welche der Patient bei einem Notfall abarbeiten kann.
+
 ##Synthesize
+
+Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen können:
+###Persona "Hans"
+* Ist arbeitslos
+* Heroinabhängig
+* Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
+* Schämt sich für seine Sucht, meidet Kontakte
+* Einzige Kontakte dienen der Beschaffung von Heroin
+* Hat sich schon prostituiert, um Geld für Heroin zu beschaffen
+* Wurde straffällig, um Geld oder Heroin zu besorgen
+* Ist verschuldet, da das Geld für die Droge ausgegeben wird
+* Hat gesundheitliche Probleme, ist unterernährt
+* Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
+
+
+###Persona "Carin"
+* Kifft, nimmt Extasy
+* Hat grosse Probleme, sich zu konzentrieren
+* Arbeitet Teilzeit bei einem Detailhändler im Lager
+* Hat häufig wechselnde Partner
+
+[Quelle:](Entzug%20Drogen.md)
+
 tbd. collect, order, and analyze all material in your group
 define: 2 or more personas as target user(s) for your application
 define: main features (i.e., user requirements)

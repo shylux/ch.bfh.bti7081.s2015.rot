@@ -206,28 +206,30 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 
 ##Design
 Die überarbeiteten Storyboards:
-[Storyboard 1, Iteration2](i2_storyboard1.png)
-[Storyboard 2, Iteration2](i2_storyboard2.png)
+[Storyboard 1, Iteration2](Iteration2/i2_storyboard1.png)
+[Storyboard 2, Iteration2](Iteration2/i2_storyboard2.png)
+
 ##Prototype
-build cardboard-based prototypes for your most promising storyboards
+Die überarbeiteten Prototypen:
+[Prottype 1, Iteration2](Iteration2/i2_prototype0.png)
+[Prottype 2, Iteration2](Iteration2/i2_prototype1.png)
+[Prottype 3, Iteration2](Iteration2/i2_prototype2.png)
 
 ##Validate
-test your storyboards/prototypes with friends or family (i.e., outside this class)
-first define your evaluation questions
-then how you will find the answer
+Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
+In Iteration3 werden wir deshalb die entsprechenden Mockups ausarbeiten.
 
 #Iteration3
 
 ##Scoping
-@Loosli: einfüllen
-define: project scope, out of scope, and success measures
+Der Scope hat sich seit Iteration2 nicht verändert.
+
 ##Research
-investigate: literature, case studies, state of the art systems, …
-conduct: one interview and/or field study
+In dieser Iteration war kein Research notwendig.
+
 ##Synthesize
-collect, order, and analyze all material in your group
-define: 2 or more personas as target user(s) for your application
-define: main features (i.e., user requirements)
+
+
 ##Design
 design storyboards
 at least 2 storyboards per team member

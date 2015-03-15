@@ -210,18 +210,18 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 
 ##Design
 Die überarbeiteten Storyboards:
-[Storyboard 1, Iteration2](Iteration2/i2_storyboard1.png)
-[Storyboard 2, Iteration2](Iteration2/i2_storyboard2.png)
+* [Storyboard 1, Iteration2](Iteration2/i2_storyboard1.png)
+* [Storyboard 2, Iteration2](Iteration2/i2_storyboard2.png)
 
 ##Prototype
 Die überarbeiteten Prototypen:
-[Prottype 1, Iteration2](Iteration2/i2_prototype0.png)
-[Prottype 2, Iteration2](Iteration2/i2_prototype1.png)
-[Prottype 3, Iteration2](Iteration2/i2_prototype2.png)
+* [Prottype 1, Iteration2](Iteration2/i2_prototype0.png)
+* [Prottype 2, Iteration2](Iteration2/i2_prototype1.png)
+* [Prottype 3, Iteration2](Iteration2/i2_prototype2.png)
 
 ##Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
-In Iteration3 werden wir deshalb die entsprechenden Mockups ausarbeiten.
+In Iteration3 werden wir deshalb nur noch die entsprechenden Prototypes verbessern.
 
 #Iteration3
 
@@ -232,16 +232,23 @@ Der Scope hat sich seit Iteration2 nicht verändert.
 In dieser Iteration war kein Research notwendig.
 
 ##Synthesize
+In dieser Iteration sind keine neuen Informationen dazugekommen, haben sich geändert.
+Der Scope hat sich seit Iteration2 nicht geändert.
 
+Deshalb sind in dieser Iteration aus den ]bestehenden Storyboards die überarbeiteten Prototypes zu erstellen.
 
 ##Design
-design storyboards
-at least 2 storyboards per team member
-discuss and iterate
-make sure your storyboards are detailed enough to show the usage of a real system
+Keine Storyboardanpassungen in dieser Iteration.
 
 ##Prototype
-build cardboard-based prototypes for your most promising storyboards
+[Prototype Navigation/Hauptmenü](Iteration3/it3_prototype10.png)
+[Prototype Notfall](Iteration3/it3_prototype_notfall.png)
+[Prototype Medikamente](Iteration3/it3_prototype_medikamente.png)
+[Prototype Erinnerung Medikamente](it3_prototype_erinnerung_medikament.png)
+[Prototype Treatment](Iteration3/it3_prototype_lifeUp.png)
+[Prototype Kalender](Iteration3/it3_prototype_kalender.png)
+
+
 
 ##Validate
 test your storyboards/prototypes with friends or family (i.e., outside this class)

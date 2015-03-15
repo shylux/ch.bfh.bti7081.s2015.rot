@@ -201,7 +201,7 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 * Hat eine kleine 2-Zimmer Wohnung in der Agglomeration
 * Versucht sich teilweise einzureden, dass ihre Drogen nur "weiche" Drogen sind und es nicht so schlimm ist
 
-[Quelle:](Entzug%20Drogen.md)
+[Quelle Drogenentzug](Entzug%20Drogen.md)
 
 ##Main Features dieser Iteration
 * **Gute Navigationsstruktur, um alle Bereiche zu erreichen**
@@ -241,12 +241,12 @@ Deshalb sind in dieser Iteration aus den ]bestehenden Storyboards die überarbei
 Keine Storyboardanpassungen in dieser Iteration.
 
 ##Prototype
-[Prototype Navigation/Hauptmenü](Iteration3/it3_prototype10.png)
-[Prototype Notfall](Iteration3/it3_prototype_notfall.png)
-[Prototype Medikamente](Iteration3/it3_prototype_medikamente.png)
-[Prototype Erinnerung Medikamente](it3_prototype_erinnerung_medikament.png)
-[Prototype Treatment](Iteration3/it3_prototype_lifeUp.png)
-[Prototype Kalender](Iteration3/it3_prototype_kalender.png)
+* [Prototype Navigation/Hauptmenü](Iteration3/it3_prototype10.png)
+* [Prototype Notfall](Iteration3/it3_prototype_notfall.png)
+* [Prototype Medikamente](Iteration3/it3_prototype_medikamente.png)
+* [Prototype Erinnerung Medikamente](it3_prototype_erinnerung_medikament.png)
+* [Prototype Treatment](Iteration3/it3_prototype_lifeUp.png)
+* [Prototype Kalender](Iteration3/it3_prototype_kalender.png)
 
 
 

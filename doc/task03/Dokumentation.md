@@ -221,7 +221,8 @@ Die überarbeiteten Prototypen:
 
 ##Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
-In Iteration3 werden wir deshalb nur noch die entsprechenden Prototypes verbessern.
+Allgemein ist aufgefallen, dass das Navigationskonzept noch nicht vollständig geklärt ist.
+In Iteration3 werden wir deshalb die Navigation in den Prototypes noch besser integrieren.
 
 #Iteration3
 

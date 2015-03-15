@@ -210,14 +210,14 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 
 ##Design
 Die überarbeiteten Storyboards:
-* [Storyboard 1, Iteration2](Iteration2/i2_storyboard1.png)
-* [Storyboard 2, Iteration2](Iteration2/i2_storyboard2.png)
+* [Storyboard 1, Iteration2](Iteration 2/i2_storyboard1.png)
+* [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
 
 ##Prototype
 Die überarbeiteten Prototypen:
-* [Prottype 1, Iteration2](Iteration2/i2_prototype0.png)
-* [Prottype 2, Iteration2](Iteration2/i2_prototype1.png)
-* [Prottype 3, Iteration2](Iteration2/i2_prototype2.png)
+* [Prottype 1, Iteration2](Iteration 2/i2_prototype0.png)
+* [Prottype 2, Iteration2](Iteration 2/i2_prototype1.png)
+* [Prottype 3, Iteration2](Iteration 2/i2_prototype2.png)
 
 ##Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
@@ -241,16 +241,12 @@ Deshalb sind in dieser Iteration aus den ]bestehenden Storyboards die überarbei
 Keine Storyboardanpassungen in dieser Iteration.
 
 ##Prototype
-* [Prototype Navigation/Hauptmenü](Iteration3/it3_prototype10.png)
-* [Prototype Notfall](Iteration3/it3_prototype_notfall.png)
-* [Prototype Medikamente](Iteration3/it3_prototype_medikamente.png)
-* [Prototype Erinnerung Medikamente](it3_prototype_erinnerung_medikament.png)
-* [Prototype Treatment](Iteration3/it3_prototype_lifeUp.png)
-* [Prototype Kalender](Iteration3/it3_prototype_kalender.png)
-
-
+* [Prototype Navigation/Hauptmenü](Iteration 3/it3_prototype10.png)
+* [Prototype Notfall](Iteration 3/it3_prototype_notfall.png)
+* [Prototype Medikamente](Iteration 3/it3_prototype_medikamente.png)
+* [Prototype Erinnerung Medikamente](Iteration 3/it3_prototype_erinnerung_medikament.png)
+* [Prototype Treatment](Iteration 3/it3_prototype_lifeUp.png)
+* [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
 ##Validate
-test your storyboards/prototypes with friends or family (i.e., outside this class)
-first define your evaluation questions
-then how you will find the answer
+Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.

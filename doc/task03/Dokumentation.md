@@ -181,6 +181,10 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 * Hat grosse Probleme, sich zu konzentrieren
 * Arbeitet Teilzeit bei einem Detailhändler im Lager
 * Hat häufig wechselnde Partner
+* Geht häufig an Partys, um die Drogen zu konsumieren
+* War noch nicht in Therapie, dies ist der erste Versuch
+* Hat eine kleine 2-Zimmer Wohnung in der Agglomeration
+* Versucht sich teilweise einzureden, dass ihre Drogen nur "weiche" Drogen sind und es nicht so schlimm ist
 
 [Quelle:](Entzug%20Drogen.md)
 

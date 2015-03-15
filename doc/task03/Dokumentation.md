@@ -32,13 +32,23 @@
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
 ##Research
-Bei Stationsleiterung Anna V. nachfragen, wie genau so ein Notfallplanu aussieht.
-Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorherigen Phase genügend Informationen gesammelt haben.
+
+###Interview 
+Wir haben ein Konezpt für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. [Download Interview Fragen](Interview Fragen.md)
+
+Interview mit Anna V.(Name geändert) Wir hatten ein spannendes Interview mit Anna V. Die strukturierte Auswertung des Interview befindet sich im Repository. [Auswertung Interview](auswertung Inverview.md)
+
+###digitales Rezept
+Wir haben eine Internetrecherche durchgeführt, um herauszufinden, ob ein digitales Rezept überhaupt gesetzlich erlaubt ist.
+Die Auswertung der Recherche befindet sich im Repository. [Auswertung Recherche digitales Rezept](normen.md)
+**Fazit:** Wenn die Daten ausreichend geschützt (verschlüsselt) werden, ist ein digitales Rezept umsetzbar.
+
 
 ##Synthesize
-collect, order, and analyze all material in your group
-define: 2 or more personas as target user(s) for your application
-define: main features (i.e., user requirements)
+
+###Generell
+Das digitale Rezept kann umgesetzt werden, sofern die Daten entsprechend verschlüsselt werden.
+
 ###Personas
 Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 
@@ -93,12 +103,9 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * An Einnahme der Medikamente erinnern
 * Dosierung der Medikamente anzeigen
 * Dosierung der Notfall-Medikamente anzeigen
+* Verwaltung von digitalen Rezepten
 
 ##4. Design
-design storyboards
-at least 2 storyboards per team member
-discuss and iterate
-make sure your storyboards are detailed enough to show the usage of a real system
 
 ### Storyboards
 * [Storyboard 1](storyboard1.png)
@@ -153,7 +160,14 @@ Wie haben im Plenum die Prototypes validiert.
 
 * [x] Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
-Gerade das Interview mit Anna V. schaffte viel klarheit und so war es uns möglich möglichst brauchbare Storyboards/Prototypen zu entwerfen. Weiter geht's mit Iteration 2.
+Gerade das Interview mit Anna V. schaffte viel klarheit und so war es uns möglich möglichst brauchbare Storyboards/Prototypen zu entwerfen. Weiter geht's mit Iteration2
+
+**Research für Iteration2**
+* Bei Stationsleiterung Anna V. nachfragen, wie genau so ein Notfallplanu aussieht.
+Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorherigen Phase genügend Informationen gesammelt haben.
+
+* Genauer über Dorgen informieren.
+
 
 #Iteration 2
 
@@ -178,6 +192,7 @@ Um den Notfallplan genauer bestimmen zu können, haben wir uns von Anna V. den N
 ##Synthesize
 
 Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen können:
+
 ###Persona "Hans"
 * Ist arbeitslos
 * Heroinabhängig

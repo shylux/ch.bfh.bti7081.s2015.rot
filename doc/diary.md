@@ -91,3 +91,7 @@ FH: Filip Hofer
  * ST: Mockup, Spezifizeren
  * Anwesende Team-Mitglieder: ST, TB, FH, ML, JM, LK
  * Abwesende: 
+
+#### 15.03.2015
+ * Mockup für Iteration 3 & Upload
+ * Anwesende Team-Mitglieder: ST, TB, JM

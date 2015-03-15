@@ -36,6 +36,10 @@ FH: Filip Hofer
 | 03    | CS2 Task 1: Analysis and Documentation | done  | ST, LK, FH, ML, JM |
 | 04    | CS2 Task 2: Analysis and Documentation | done  | ST, TB, FH, ML, JM |
 | 05    | CS2 Task 3: Analysis and Documentation | done  | ST, TB, FH, ML, JM |
+| 06    | CS Task 3: Interview mit Anna V.| done  | JM |
+| 07    | CS Task 3: Nachfrage Notfallplan bei Anna V. | done  | JM |
+| 08    | CS Task 3: Nachfrage digitales Rezept in Apotheke | done  | TB |
+| 09   | CS Task 3: Recherche Drogenkonsum | done  | FH |
 | <Nr.>    | <Description>                          | <status>  | <who?>       |
 
 
@@ -94,4 +98,5 @@ FH: Filip Hofer
 
 #### 15.03.2015
  * Mockup für Iteration 3 & Upload
+ * Anpassung / Überarbeitung Dokumentation
  * Anwesende Team-Mitglieder: ST, TB, JM

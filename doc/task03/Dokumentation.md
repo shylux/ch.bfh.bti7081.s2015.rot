@@ -111,7 +111,17 @@ make sure your storyboards are detailed enough to show the usage of a real syste
 * [Storyboard 8](storyboard8.png)
 
 ##5. Prototype
-build cardboard-based prototypes for your most promising storyboards
+
+Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
+* [Prototype 1](prototype1.png)
+* [Prototype 2](prototype2.png)
+* [Prototype 3](prototype3.png)
+* [Prototype 4](prototype4.png)
+* [Prototype 5](prototype5.png)
+* [Prototype 6](prototype6.png)
+* [Prototype 7](prototype7.png)
+* [Prototype 8](prototype8.png)
+* [Prototype 9](prototype9.png)
 
 ##6. Validate
 
@@ -132,24 +142,29 @@ Wie haben im Plenum die Prototypes validiert.
 
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
-###Validierung der "Success Measures"
-* Weniger Termine gehen vergessen
-* Keine/weniger Rezepte gehen verloren
-* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+**Prototpye 8:**OK
 
+**Prototyp 9:**Unklar in welcher Forn der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
+
+###Validierung der "Success Measures"
+* [x] Weniger Termine gehen vergessen
+
+* [x] Keine/weniger Rezepte gehen verloren
+
+* [x] Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+
+Gerade das Interview mit Anna V. schaffte viel klarheit und so war es uns möglich möglichst brauchbare Storyboards/Prototypen zu entwerfen. Weiter geht's mit Iteration 2.
 
 #Iteration 2
 
 ##Scoping
-* Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben
+* Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben (Digitales Rezept ist Out of Scope)
 * Idee mit Treatment ausarbeiten, verbessern
 
 ###Success measures
 * Weniger Termine gehen vergessen (bisher)
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
 * Hilfe bei Sturktierung des Tages (neu)
-  * 80% nutzen das Behandlungssystem, haben demnach 
-* weniger Rückfälle, wegen selbstständiger Beschäftigung (neu) 
 * Erleichterte Bedieung (neu)
 
 ###Out of Scope
@@ -188,35 +203,37 @@ Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen könne
 
 [Quelle:](Entzug%20Drogen.md)
 
-tbd. collect, order, and analyze all material in your group
-define: 2 or more personas as target user(s) for your application
-define: main features (i.e., user requirements)
+##Main Features dieser Iteration
+* **Gute Navigationsstruktur, um alle Bereiche zu erreichen**
+* Treatment für Patient verbessern.
+* Alle noch vorhandenen Features aus Iteration1 vertiefen und verbessern.
+
 ##Design
-design storyboards
-at least 2 storyboards per team member
-discuss and iterate
-make sure your storyboards are detailed enough to show the usage of a real system
+Die überarbeiteten Storyboards:
+[Storyboard 1, Iteration2](Iteration2/i2_storyboard1.png)
+[Storyboard 2, Iteration2](Iteration2/i2_storyboard2.png)
 
 ##Prototype
-build cardboard-based prototypes for your most promising storyboards
+Die überarbeiteten Prototypen:
+[Prottype 1, Iteration2](Iteration2/i2_prototype0.png)
+[Prottype 2, Iteration2](Iteration2/i2_prototype1.png)
+[Prottype 3, Iteration2](Iteration2/i2_prototype2.png)
 
 ##Validate
-test your storyboards/prototypes with friends or family (i.e., outside this class)
-first define your evaluation questions
-then how you will find the answer
+Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
+In Iteration3 werden wir deshalb die entsprechenden Mockups ausarbeiten.
 
 #Iteration3
 
 ##Scoping
-@Loosli: einfüllen
-define: project scope, out of scope, and success measures
+Der Scope hat sich seit Iteration2 nicht verändert.
+
 ##Research
-investigate: literature, case studies, state of the art systems, …
-conduct: one interview and/or field study
+In dieser Iteration war kein Research notwendig.
+
 ##Synthesize
-collect, order, and analyze all material in your group
-define: 2 or more personas as target user(s) for your application
-define: main features (i.e., user requirements)
+
+
 ##Design
 design storyboards
 at least 2 storyboards per team member

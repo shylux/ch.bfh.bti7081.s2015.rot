@@ -270,6 +270,7 @@ Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozes
 #Zusammenfassung
 
 ##Scoping
+Wir beschränken uns in unserer Anwendung im Wesentlichen auf die Anzeige von Informationen - Termine, Erinnerungen, Dosierung der Medikamente, usw. Aus diesem Grund ist sämtliche Interaktion aus dem Scope gefallen.
 ###Iteration 1
 Schon früh konnte sämtliche Interaktion des Patienten mit Rezepten in unserer Applikation out-of-scope gesetzt werden. Weiter Weiter setzten wir den Fokus auf die Anzeige von Informationen, wie Termine und Erinnerungen.
 ###Iteration 2
@@ -279,6 +280,7 @@ Weiter fiel die Idee der digitalen Rezepte aus dem Scope.
 Kein weiteres Scoping für diese Iteration notwendig.
 
 ##Research
+Interview durchgeführt und bezüglich (digitalen) Rezepten Internetrecherche betrieben.
 ###Iteration 1
 Fragen für persönliches Interview erarbeitet. Anschliessend dieses mit Anna V., Mitarbeiterin einer Psychiatrie, durchgeführt. 
 Internetrecherche bezüglich digitaler Rezepte gemacht. Dies, um herauszufinden ob und inwieweit digitale Rezepte akzeptiert werden.
@@ -288,14 +290,16 @@ Unser Notfallplan brauchte Überarbeitung, weswegen wir nochmals die Interviewan
 Keine weitere Reserach durchgeführt in dieser Iteration.
 
 ##Synthesize
+Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
 ###Iteration 1
-Anhand der vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.
+Durch die vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.
 ###Iteration 2
 Weitere Persona "Hans" und "Carin" anhand von Internetrecherche erstellt
 ###Iteration 3
 Keine neuen Informationen gegenüber Iteration 2.
 
 ##Prototype
+Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche anhand der verschiedenen Prototypen erstellt.
 ###Iteration 1
 Anhand der gewonnenen Informationen haben wir folgende #Prototypen<120> herausgearbeitet
 ###Iteration 2
@@ -310,6 +314,7 @@ Folgende Prototypen wurden in dieser Iteration erstellt:
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
 ##Validate
+Prototypen sind fehlerfrei und die Applikation kann gemäss derer entwickelt werden.
 ###Iteration 1
 Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png)
 ###Iteration 2

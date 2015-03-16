@@ -270,11 +270,49 @@ Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozes
 #Zusammenfassung
 
 ##Scoping
+###Iteration 1
+Schon früh konnte sämtliche Interaktion des Patienten mit Rezepten in unserer Applikation out-of-scope gesetzt werden. Weiter Weiter setzten wir den Fokus auf die Anzeige von Informationen, wie Termine und Erinnerungen.
+###Iteration 2
+Der Kreis unserer Patienten wurde auf Suchtpatienten begrenzt. Dies ermöglicht uns die Anwendung speziell auf eine Zielgruppe zu entwickeln. 
+Weiter fiel die Idee der digitalen Rezepte aus dem Scope.
+###Iteration 3
+Kein weiteres Scoping für diese Iteration notwendig.
 
 ##Research
+###Iteration 1
+Fragen für persönliches Interview erarbeitet. Anschliessend dieses mit Anna V., Mitarbeiterin einer Psychiatrie, durchgeführt. 
+Internetrecherche bezüglich digitaler Rezepte gemacht. Dies, um herauszufinden ob und inwieweit digitale Rezepte akzeptiert werden.
+###Iteration 2
+Unser Notfallplan brauchte Überarbeitung, weswegen wir nochmals die Interviewantworten diesbezüglich durchgelesen haben.
+###Iteration 3
+Keine weitere Reserach durchgeführt in dieser Iteration.
 
 ##Synthesize
+###Iteration 1
+Anhand der vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.
+###Iteration 2
+Weitere Persona "Hans" und "Carin" anhand von Internetrecherche erstellt
+###Iteration 3
+Keine neuen Informationen gegenüber Iteration 2.
 
 ##Prototype
+###Iteration 1
+Anhand der gewonnenen Informationen haben wir folgende #Prototypen<120> herausgearbeitet
+###Iteration 2
+Prototyp [1](Iteration 2/i2_prototype0.png), [2](Iteration 2/i2_prototype1.png) und [3](Iteration 2/i2_prototype2.png) überarbeitet
+###Iteration 3
+Folgende Prototypen wurden in dieser Iteration erstellt:
+* [Prototype Navigation/Hauptmenü](Iteration 3/it3_prototype10.png)
+* [Prototype Notfall](Iteration 3/it3_prototype_notfall.png)
+* [Prototype Medikamente](Iteration 3/it3_prototype_medikamente.png)
+* [Prototype Erinnerung Medikamente](Iteration 3/it3_prototype_erinnerung_medikament.png)
+* [Prototype Treatment](Iteration 3/it3_prototype_lifeUp.png)
+* [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
 ##Validate
+###Iteration 1
+Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png)
+###Iteration 2
+Fehler der Prototypen konnten ausgemerzt werden. Die Navigation muss noch überarbeitet werden, Aufgabe für Iteration 3.
+###Iteration 3
+Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.

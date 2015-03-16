@@ -266,3 +266,15 @@ Keine Storyboardanpassungen in dieser Iteration.
 
 ##Validate
 Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.
+
+#Zusammenfassung
+
+##Scoping
+
+##Research
+
+##Synthesize
+
+##Prototype
+
+##Validate

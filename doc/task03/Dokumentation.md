@@ -136,23 +136,24 @@ Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
 ###Validierung der Prototypen
 
 Wie haben im Plenum die Prototypes validiert.
-**Prototype 1:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
+
+**Prototype 1:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
 
 **Prototype 2:**OK
 
-**Prototype 3:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
+**Prototype 3:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
 
 **Prototype 4:**OK
 
-**Prototpye 5:**OK
+**Prototype 5:**Terminanzeige wie in Prototpye 4
 
-**Prototype 6:**Terminanzeige wie in Prototpye 5
+**Prototpye 6:**OK
 
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
-**Prototpye 8:**OK
+**Prototype 8:**Unklar in welcher Form der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
 
-**Prototyp 9:**Unklar in welcher Forn der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
+**Prototpye 9:**OK
 
 ###Validierung der "Success Measures"
 * [x] Weniger Termine gehen vergessen

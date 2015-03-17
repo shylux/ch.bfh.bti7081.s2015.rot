@@ -116,6 +116,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * [Storyboard 6](storyboard6.png)
 * [Storyboard 7](storyboard7.png)
 * [Storyboard 8](storyboard8.png)
+* [Storyboard 9](storyboard9.png)
 
 ##5. Prototype
 

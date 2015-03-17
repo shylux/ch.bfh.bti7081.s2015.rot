@@ -306,7 +306,6 @@ Unsere App bezieht sich auf **Suchtpatienten**
 * Medikation
 * Medikamentenübersicht
 
-
 ####Out-of-scope
 * Rezeptverwaltung
 * Rezeptdatenkbank
@@ -332,10 +331,10 @@ Unsere App bezieht sich auf **Suchtpatienten**
 * Interview mit Anna V.,Stationsleiterin Psychiatrische Klinik Langnau i.E. durchgeführt: [Auswertung Interview](auswertung Inverview.md)
 * Recherche rechtliche [Normen bei Rezepten](normen.md)
 * Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
-
+* Internetrecherche Drogen allgemein: [Dokument](Entzug%20Drogen.md)
 
 ##Synthesize
-Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
+Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden.
 
 ###Personas
 

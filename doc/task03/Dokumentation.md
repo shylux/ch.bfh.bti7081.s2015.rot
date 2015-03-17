@@ -291,7 +291,7 @@ Unsere App bezieht sich auf **Suchtpatienten**
 ####Scope
 * Anzeigen
 * Erinnern
-* 
+
 ####Out-of-scope
 * Termine vereinbaren
 

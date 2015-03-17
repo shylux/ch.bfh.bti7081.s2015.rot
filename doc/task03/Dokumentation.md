@@ -192,7 +192,7 @@ Um den Notfallplan genauer bestimmen zu können, haben wir uns von Anna V. den N
 
 ##Synthesize
 
-Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen können:
+Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Personas erstellen können:
 
 ###Persona "Hans"
 * Ist arbeitslos

@@ -1,4 +1,4 @@
-#Dokumentation Desgin Thinking
+#Dokumentation Design Thinking
 
 #Iteration1
 
@@ -136,23 +136,24 @@ Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
 ###Validierung der Prototypen
 
 Wie haben im Plenum die Prototypes validiert.
-**Prototype 1:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
+
+**Prototype 1:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
 
 **Prototype 2:**OK
 
-**Prototype 3:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
+**Prototype 3:** Notfallnummer wird nicht auf Homescreen angezeigt. Dieses Storyboard wird in der nächsten Iteration verbessert.
 
 **Prototype 4:**OK
 
-**Prototpye 5:**OK
+**Prototype 5:**Terminanzeige wie in Prototpye 4
 
-**Prototype 6:**Terminanzeige wie in Prototpye 5
+**Prototpye 6:**OK
 
 **Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
 
-**Prototpye 8:**OK
+**Prototype 8:**Unklar in welcher Form der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
 
-**Prototyp 9:**Unklar in welcher Forn der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
+**Prototpye 9:**OK
 
 ###Validierung der "Success Measures"
 * [x] Weniger Termine gehen vergessen
@@ -192,7 +193,7 @@ Um den Notfallplan genauer bestimmen zu können, haben wir uns von Anna V. den N
 
 ##Synthesize
 
-Aufgrund der Internetrecherche haben wir noch weintere Personas erstellen können:
+Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Personas erstellen können:
 
 ###Persona "Hans"
 * Ist arbeitslos
@@ -231,9 +232,9 @@ Die überarbeiteten Storyboards:
 
 ##Prototype
 Die überarbeiteten Prototypen:
-* [Prottype 1, Iteration2](Iteration 2/i2_prototype0.png)
-* [Prottype 2, Iteration2](Iteration 2/i2_prototype1.png)
-* [Prottype 3, Iteration2](Iteration 2/i2_prototype2.png)
+* [Prottype 8, Iteration2](Iteration 2/i2_prototype0.png)
+* [Prottype 8, Iteration2](Iteration 2/i2_prototype2.png)
+* [Prottype 9, Iteration2](Iteration 2/i2_prototype1.png)
 
 ##Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
@@ -291,7 +292,7 @@ Unsere App bezieht sich auf **Suchtpatienten**
 ####Scope
 * Anzeigen
 * Erinnern
-* 
+
 ####Out-of-scope
 * Termine vereinbaren
 
@@ -305,7 +306,6 @@ Unsere App bezieht sich auf **Suchtpatienten**
 ####Scope
 * Medikation
 * Medikamentenübersicht
-
 
 ####Out-of-scope
 * Rezeptverwaltung
@@ -332,10 +332,10 @@ Unsere App bezieht sich auf **Suchtpatienten**
 * Interview mit Anna V.,Stationsleiterin Psychiatrische Klinik Langnau i.E. durchgeführt: [Auswertung Interview](auswertung Inverview.md)
 * Recherche rechtliche [Normen bei Rezepten](normen.md)
 * Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
-
+* Internetrecherche Drogen allgemein: [Dokument](Entzug%20Drogen.md)
 
 ##Synthesize
-Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
+Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden.
 
 ###Personas
 
@@ -434,4 +434,4 @@ Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche an
 
 ##Validate
 In dieser Phase haben wir die Prototypen getestet und validiert. für genauere Informationen konsultieren sie das Kapiel Validate der jeweiligen Iterationen.
-(Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png))
+(Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 1 IT 1](prototype1.png) und [Prototype 3 IT 1](prototype3.png). Die Restlichen haben wir überarbeitet.

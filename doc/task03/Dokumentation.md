@@ -34,12 +34,12 @@
 ##Research
 
 ###Interview 
-Wir haben ein Konezpt für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. [Download Interview Fragen](Interview Fragen.md)
+Wir haben ein Konzept für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. [Download Interview Fragen](Interview Fragen.md)
 
-Interview mit Anna V.(Name geändert) Wir hatten ein spannendes Interview mit Anna V. Die strukturierte Auswertung des Interview befindet sich im Repository. [Auswertung Interview](auswertung Inverview.md)
+Interview mit Anna V.(Name geändert) Wir hatten ein spannendes Interview mit Anna V. Die strukturierte Auswertung des Interviews befindet sich im Repository. [Auswertung Interview](auswertung Inverview.md)
 
 ###digitales Rezept
-Wir haben eine Internetrecherche durchgeführt, um herauszufinden, ob ein digitales Rezept überhaupt gesetzlich erlaubt ist.
+Wir haben eine Internetrecherche durchgeführt um herauszufinden, ob ein digitales Rezept überhaupt gesetzlich erlaubt ist.
 Die Auswertung der Recherche befindet sich im Repository. [Auswertung Recherche digitales Rezept](normen.md)
 **Fazit:** Wenn die Daten ausreichend geschützt (verschlüsselt) werden, ist ein digitales Rezept umsetzbar.
 
@@ -50,14 +50,14 @@ Die Auswertung der Recherche befindet sich im Repository. [Auswertung Recherche 
 Das digitale Rezept kann umgesetzt werden, sofern die Daten entsprechend verschlüsselt werden.
 
 ###Personas
-Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
+Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 
 ####Persona "Heinz"
-* Arbeitslos / lebt seit 7 Jahren vom Sozialamt
-* Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und restliches wird dann zur Nebensache
+* Arbeitslos / lebt seit sieben Jahren vom Sozialamt
+* Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und Sonstiges wird dann zur Nebensache
 * Alter: 47
 * lebt allein in 2-Zimmerwohung
-* Schläft bis Mittags, bleibt dafür aber bis früh morgens wach
+* Schläft bis mittags, bleibt dafür aber bis früh morgens wach
 * Tätigkeiten: Fernsehen, PC Spiele, verlässt selten das Haus
 * Sein Freundeskreis beschränkt sich auf 3 Personen, welche ebenfalls ein Alkoholsuchtproblem aufweisen
 * Verpasst Termine für ärztliche Behandlung, beim RAV
@@ -73,7 +73,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * Arbeitet an 4 Tagen morgens
 * hat Mühe mit gesellschaftlichen Verpflichtungen
 * nimmt die meisten Termine wahr
-* die "aufsuchende Pflege" unterstützt sie bei den Administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
+* die "aufsuchende Pflege" unterstützt sie bei administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
 * Ihr letzter Entzug liegt 2 Jahre zurück
 * Alter: 35
 * die meisten Ihrer Freunde haben Suchtprobleme
@@ -139,7 +139,7 @@ Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
 
 Wie haben im Plenum die Prototypes validiert.
 
-**Prototype 1:**OK, aber wird nicht benötigt, da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
+**Prototype 1:**OK, aber wird nicht benötigt da Rezepte kaum verloren gehen und dies den Prozess nur erschweren würde. Wird in nächster Iteration entfernt.
 
 **Prototype 2:**OK
 
@@ -151,7 +151,7 @@ Wie haben im Plenum die Prototypes validiert.
 
 **Prototpye 6:**OK
 
-**Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haker wird in der nächsten Iteration entfernent. 
+**Prototpye 7:**In Bild 2 ist der Haken für die Bestätigung überfüssig. Der Haken wird in der nächsten Iteration entfernent. 
 
 **Prototype 8:**Unklar in welcher Form der Notfallplan vorliegt. Aufgaben für Iteration 2: Bei Anna V. nachfragen.
 
@@ -164,13 +164,13 @@ Wie haben im Plenum die Prototypes validiert.
 
 * [x] Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
-Gerade das Interview mit Anna V. schaffte viel klarheit und so war es uns möglich möglichst brauchbare Storyboards/Prototypen zu entwerfen. Weiter geht's mit Iteration2
+Gerade das Interview mit Anna V. schaffte viel Klarheit und so war es uns möglich, brauchbare Storyboards/Prototypen zu entwerfen. Weiter geht's mit Iteration2
 
 **Research für Iteration2**
-* Bei Stationsleiterung Anna V. nachfragen, wie genau so ein Notfallplanu aussieht.
+* Bei Stationsleitering Anna V. nachfragen, wie genau so ein Notfallplanu aussieht.
 Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorherigen Phase genügend Informationen gesammelt haben.
 
-* Genauer über Dorgen informieren.
+* Genauer über Drogen informieren.
 
 
 #Iteration 2
@@ -183,11 +183,11 @@ Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorher
 * Weniger Termine gehen vergessen (bisher)
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
 * Hilfe bei Sturktierung des Tages (neu)
-* Erleichterte Bedieung (neu)
+* Erleichterte Bedienung (neu)
 
 ###Out of Scope
 * digitales Rezept mit QR-Code
-Das System würde unnötig komplizierter (sowohl für die Entwickler, als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
+Das System würde unnötig komplizierter (sowohl für die Entwickler als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
 * alle Patienten, die keine Suchtpatienten sind.
 
 ##Research
@@ -212,7 +212,7 @@ Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Per
 
 ###Persona "Carin"
 * Kifft, nimmt Extasy
-* Hat grosse Probleme, sich zu konzentrieren
+* Hat grosse Probleme sich zu konzentrieren
 * Arbeitet Teilzeit bei einem Detailhändler im Lager
 * Hat häufig wechselnde Partner
 * Geht häufig an Partys, um die Drogen zu konsumieren
@@ -252,10 +252,10 @@ Der Scope hat sich seit Iteration2 nicht verändert.
 In dieser Iteration war kein Research notwendig.
 
 ##Synthesize
-In dieser Iteration sind keine neuen Informationen dazugekommen, haben sich geändert.
+In dieser Iteration sind keine neuen Informationen dazugekommen/ haben sich geändert.
 Der Scope hat sich seit Iteration2 nicht geändert.
 
-Deshalb sind in dieser Iteration aus den ]bestehenden Storyboards die überarbeiteten Prototypes zu erstellen.
+Deshalb sind in dieser Iteration aus den bestehenden Storyboards die überarbeiteten Prototypes zu erstellen.
 
 ##Design
 Keine Storyboardanpassungen in dieser Iteration.
@@ -265,7 +265,7 @@ Keine Storyboardanpassungen in dieser Iteration.
 Generell kann immer mit dem Zurück-Button (ganz oben) zu einer übergeordneten Stufe gewechselt werden.
 
 * [Prototype Navigation/Hauptmenü](Iteration 3/it3_prototype10.png)
-Das ist das Hauptmenü der Applikation. Oben rechts befindet sich der Notfallknopf, im oberen dritten ist zudem die nächste anstehende Tätigkeit ersichtlich. Mittels Knopf unterhalb kann man zu dieser wechseln, welche dann jeweils in die entsprechende Unterkategorie springt. Im unteren Teil sind die Knöpfe, mit denen zu den Unterkategorien der Applikation gewechselt werden kann. Die Liste ist erweiterbar - daher der Scrollbalken.
+Das ist das Hauptmenü der Applikation. Oben rechts befindet sich der Notfallknopf, im oberen Drittel ist zudem die nächste anstehende Tätigkeit ersichtlich. Mittels Knopf unterhalb kann man zu dieser wechseln, welche dann jeweils in die entsprechende Unterkategorie springt. Im unteren Teil sind die Knöpfe, mit denen zu den Unterkategorien der Applikation gewechselt werden kann. Die Liste ist erweiterbar - daher der Scrollbalken.
 
 * [Prototype Notfall](Iteration 3/it3_prototype_notfall.png)
 Beim Klick auf den SOS-Knopf (oben rechts im Hauptmenü) öffnet sich der zweite Screen von links. Ganz oben befindet sich der Zurückknopf, mit der eine Stufe zurückgegangen werden kann (in diesem Fall zum Hauptmenü). Die beiden Knöpfe "Übungen" und "Anrufen" öffnen eine weitere Stufe. In den Übungen sind Ablenkungsvorschläge aufgeführt (Screen rechts), im "Anrufen" sind die behandelnden Kontaktpersonen ersichtlich (Screen unten mitte). Durch Klick auf einer dieser Personen wird diesen angerufen.
@@ -301,8 +301,8 @@ Unsere App bezieht sich auf **Suchtpatienten**
 ###Behandlung
 ####Scope
 * An Behandlung erinnern
-* Iteraktive Behandlung mit Live Up Behandlungsmethode
-* Übersicht Errungenschaften im Live UP Behandlungssystem
+* Iteraktive Behandlung mit Life Up Behandlungsmethode
+* Übersicht Errungenschaften im Life UP Behandlungssystem
 
 ###Verwaltung medikamentöse Behandlung
 ####Scope
@@ -437,5 +437,5 @@ Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche an
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
 ##Validate
-In dieser Phase haben wir die Prototypen getestet und validiert. für genauere Informationen konsultieren sie das Kapiel Validate der jeweiligen Iterationen.
+In dieser Phase haben wir die Prototypen getestet und validiert. Für genauere Informationen konsultieren sie das Kapitel Validate der jeweiligen Iterationen.
 (Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 1 IT 1](prototype1.png) und [Prototype 3 IT 1](prototype3.png). Die Restlichen haben wir überarbeitet.

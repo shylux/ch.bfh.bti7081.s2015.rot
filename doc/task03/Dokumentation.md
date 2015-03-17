@@ -285,7 +285,9 @@ Kein weiteres Scoping für diese Iteration notwendig.
 * Recherche rechtliche [Normen bei Rezepten](normen.md)
 * Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
 
+
 ##Synthesize
+Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
 
 ###Personas
 
@@ -340,8 +342,6 @@ Kein weiteres Scoping für diese Iteration notwendig.
 * Hat eine kleine 2-Zimmer Wohnung in der Agglomeration
 * Versucht sich teilweise einzureden, dass ihre Drogen nur "weiche" Drogen sind und es nicht so schlimm ist
 
-
-Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
 ###Iteration 1
 Durch die vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.
 ###Iteration 2
@@ -349,14 +349,39 @@ Weitere Persona "Hans" und "Carin" anhand von Internetrecherche erstellt
 ###Iteration 3
 Keine neuen Informationen gegenüber Iteration 2.
 
+
+##Design
+Folgene Storyboards haben wir in unserem Design-Prozess erarbeitet.
+
+* [Storyboard 1](storyboard1.png)
+* [Storyboard 2](storyboard2.png)
+* [Storyboard 3](storyboard3.png)
+* [Storyboard 4](storyboard4.png)
+* [Storyboard 5](storyboard5.png)
+* [Storyboard 6](storyboard6.png)
+* [Storyboard 7](storyboard7.png)
+* [Storyboard 8](storyboard8.png)
+* [Storyboard 1, Iteration2](Iteration 2/i2_storyboard1.png)
+* [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
+
+
 ##Prototype
 Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche anhand der verschiedenen Prototypen erstellt.
-###Iteration 1
-Anhand der gewonnenen Informationen haben wir folgende #Prototypen<120> herausgearbeitet
-###Iteration 2
-Prototyp [1](Iteration 2/i2_prototype0.png), [2](Iteration 2/i2_prototype1.png) und [3](Iteration 2/i2_prototype2.png) überarbeitet
-###Iteration 3
-Folgende Prototypen wurden in dieser Iteration erstellt:
+
+* [Prototype 1](prototype1.png)
+* [Prototype 2](prototype2.png)
+* [Prototype 3](prototype3.png)
+* [Prototype 4](prototype4.png)
+* [Prototype 5](prototype5.png)
+* [Prototype 6](prototype6.png)
+* [Prototype 7](prototype7.png)
+* [Prototype 8](prototype8.png)
+* [Prototype 9](prototype9.png)
+* [Prototype 10](Iteration 2/i2_prototype0.png) 
+* [Prototype 11](Iteration 2/i2_prototype1.png)
+* [Prototype 12](Iteration 2/i2_prototype2.png)
+
+**Überarbeitete Prototypen**
 * [Prototype Navigation/Hauptmenü](Iteration 3/it3_prototype10.png)
 * [Prototype Notfall](Iteration 3/it3_prototype_notfall.png)
 * [Prototype Medikamente](Iteration 3/it3_prototype_medikamente.png)
@@ -365,10 +390,5 @@ Folgende Prototypen wurden in dieser Iteration erstellt:
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
 ##Validate
-Prototypen sind fehlerfrei und die Applikation kann gemäss derer entwickelt werden.
-###Iteration 1
-Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png)
-###Iteration 2
-Fehler der Prototypen konnten ausgemerzt werden. Die Navigation muss noch überarbeitet werden, Aufgabe für Iteration 3.
-###Iteration 3
-Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.
+In dieser Phase haben wir die Prototypen getestet und validiert. für genauere Informationen konsultieren sie das Kapiel Validate der jeweiligen Iterationen.
+(Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png))

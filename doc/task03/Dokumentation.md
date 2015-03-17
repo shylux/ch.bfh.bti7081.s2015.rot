@@ -271,17 +271,50 @@ Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozes
 #Resultate
 
 ##Scoping
-Wir beschränken uns in unserer Anwendung im Wesentlichen auf die Anzeige von Informationen - Termine, Erinnerungen, Dosierung der Medikamente, usw. Aus diesem Grund ist sämtliche Interaktion aus dem Scope gefallen.
-###Iteration 1
-Schon früh konnte sämtliche Interaktion des Patienten mit Rezepten in unserer Applikation out-of-scope gesetzt werden. Weiter Weiter setzten wir den Fokus auf die Anzeige von Informationen, wie Termine und Erinnerungen.
-###Iteration 2
-Der Kreis unserer Patienten wurde auf Suchtpatienten begrenzt. Dies ermöglicht uns die Anwendung speziell auf eine Zielgruppe zu entwickeln. 
-Weiter fiel die Idee der digitalen Rezepte aus dem Scope.
-###Iteration 3
-Kein weiteres Scoping für diese Iteration notwendig.
+
+Unsere App bezieht sich auf **Suchtpatienten**
+###Terminverwaltung
+####Scope
+* Anzeigen
+* Erinnern
+* 
+####Out-of-scope
+* Termine vereinbaren
+
+###Behandlung
+####Scope
+* An Behandlung erinnern
+* Iteraktive Behandlung mit Live Up Behandlungsmethode
+* Übersicht Errungenschaften im Live UP Behandlungssystem
+
+###Verwaltung medikamentöse Behandlung
+####Scope
+* Medikation
+* Medikamentenübersicht
+
+
+####Out-of-scope
+* Rezeptverwaltung
+* Rezeptdatenkbank
+* Digitales Rezept
+* Rezept als QR-Code
+
+###Notfall
+###Scope
+* Notfallplan anzeigen
+* Notfallmedikamentenübersicht anzeigen
+* Notfalltelefon wählen
+* Kontakte von Angehörigen anrufen
+
+###Success measures
+* Weniger Termine gehen vergessen
+* Patient wird selbstständiger
+* Tagesstruktur des Patienten wird verbessert.
+* Patienten müssen zur Behandlung weniger nachfragen (anrufen)
+* Patient kann sich besser in Rückfasssituationen beruhigen
 
 ##Research
-* [Interview Fragen](Interview Fragen.md) erstellt
+* [Interview Fragen](Interview Fragen.md) erstellt.
 * Interview mit Anna V.,Stationsleiterin Psychiatrische Klinik Langnau i.E. durchgeführt: [Auswertung Interview](auswertung Inverview.md)
 * Recherche rechtliche [Normen bei Rezepten](normen.md)
 * Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
@@ -343,12 +376,6 @@ Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona
 * Hat eine kleine 2-Zimmer Wohnung in der Agglomeration
 * Versucht sich teilweise einzureden, dass ihre Drogen nur "weiche" Drogen sind und es nicht so schlimm ist
 
-###Iteration 1
-Durch die vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.
-###Iteration 2
-Weitere Persona "Hans" und "Carin" anhand von Internetrecherche erstellt
-###Iteration 3
-Keine neuen Informationen gegenüber Iteration 2.
 
 
 ##Design

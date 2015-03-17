@@ -113,6 +113,6 @@ FH: Filip Hofer
  * Präsentation halten
  * Dokument fertigstellen
  * Beginn Task 04 - Requirements Specification
- * Aufsetzen [Google Doc] https://docs.google.com/document/d/1ZFQJo9BQZULIdBEKbE8_pK0YfCqPQ65s8XmzAibY4uU/edit
+ * Aufsetzen [Google Doc] (https://docs.google.com/document/d/1ZFQJo9BQZULIdBEKbE8_pK0YfCqPQ65s8XmzAibY4uU/edit)
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder: 

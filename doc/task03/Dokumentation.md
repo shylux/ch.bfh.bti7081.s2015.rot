@@ -258,20 +258,26 @@ Deshalb sind in dieser Iteration aus den ]bestehenden Storyboards die überarbei
 Keine Storyboardanpassungen in dieser Iteration.
 
 ##Prototype
+
+Generell kann immer mit dem Zurück-Button (ganz oben) zu einer übergeordneten Stufe gewechselt werden.
+
 * [Prototype Navigation/Hauptmenü](Iteration 3/it3_prototype10.png)
-* Das ist das Hauptmenü der Applikation. Oben rechts befindet sich der Notfallknopf, im oberen dritten ist zudem die nächste anstehende Tätigkeit ersichtlich. Mittels Knopf unterhalb kann man zu dieser wechseln, welche dann jeweils in die entsprechende Unterkategorie springt. Im unteren Teil sind die Knöpfe, mit denen zu den Unterkategorien der Applikation gewechselt werden kann. Die Liste ist erweiterbar - daher der Scrollbalken.
+Das ist das Hauptmenü der Applikation. Oben rechts befindet sich der Notfallknopf, im oberen dritten ist zudem die nächste anstehende Tätigkeit ersichtlich. Mittels Knopf unterhalb kann man zu dieser wechseln, welche dann jeweils in die entsprechende Unterkategorie springt. Im unteren Teil sind die Knöpfe, mit denen zu den Unterkategorien der Applikation gewechselt werden kann. Die Liste ist erweiterbar - daher der Scrollbalken.
 
 * [Prototype Notfall](Iteration 3/it3_prototype_notfall.png)
-* Beim Klick auf den SOS-Knopf (oben rechts im Hauptmenü) öffnet sich der zweite Screen von links. Ganz oben befindet sich der Zurückknopf, mit der eine Stufe zurückgegangen werden kann (in diesem Fall zum Hauptmenü). Die beiden Knöpfe "Übungen" und "Anrufen" öffnen eine weitere Stufe. In den Übungen sind Ablenkungsvorschläge aufgeführt (Screen rechts), im "Anrufen" sind die behandelnden Kontaktpersonen ersichtlich (Screen unten mitte). Durch Klick auf einer dieser Personen wird diesen angerufen.
+Beim Klick auf den SOS-Knopf (oben rechts im Hauptmenü) öffnet sich der zweite Screen von links. Ganz oben befindet sich der Zurückknopf, mit der eine Stufe zurückgegangen werden kann (in diesem Fall zum Hauptmenü). Die beiden Knöpfe "Übungen" und "Anrufen" öffnen eine weitere Stufe. In den Übungen sind Ablenkungsvorschläge aufgeführt (Screen rechts), im "Anrufen" sind die behandelnden Kontaktpersonen ersichtlich (Screen unten mitte). Durch Klick auf einer dieser Personen wird diesen angerufen.
+
 * [Prototype Medikamente](Iteration 3/it3_prototype_medikamente.png)
-* Beim Klick auf die Medikamente-Kachel im Hauptmenü öffnet sich die Übersicht aller erhaltenen Medikamente (Screen Mitte). Bei Klick auf ein Medikamentknopf öffnet sich die Detailstufe zum Medikament (Screen rechts). Darin sind die Informationen zur Medikamentation ersichtlich.
+Beim Klick auf die Medikamente-Kachel im Hauptmenü öffnet sich die Übersicht aller erhaltenen Medikamente (Screen Mitte). Bei Klick auf ein Medikamentknopf öffnet sich die Detailstufe zum Medikament (Screen rechts). Darin sind die Informationen zur Medikamentation ersichtlich.
 
 * [Prototype Erinnerung Medikamente](Iteration 3/it3_prototype_erinnerung_medikament.png)
-* Die Applikation startet nach einer bestimmten Zeit (Abhängig von der Medikamentationskonfiguration) ein Popup, das den Patienten fragt, ob er bereits das Medikament eingenommen hat. Bei Klick auf "Nein" wird zur nächsten Stufe (Screen mitte) gesprungen. Auf dieser ist die aktuelle Dosis und Informationen des einzunehmenden Medikamentes ersichtlich. Sobald er es eingenommen hat, bestätigt der Patient mit Klick auf "Medikament eingenommen". Es wird dann die letzte Stufe geöffnet (Screen rechts), wo Inforamtionen zur nächsten Einnahme des Medikamentes ersichtlich sind. Klick auf Schliessen-Knopf schliesst das Fenster.
+Die Applikation startet nach einer bestimmten Zeit (Abhängig von der Medikamentationskonfiguration) ein Popup, das den Patienten fragt, ob er bereits das Medikament eingenommen hat. Bei Klick auf "Nein" wird zur nächsten Stufe (Screen mitte) gesprungen. Auf dieser ist die aktuelle Dosis und Informationen des einzunehmenden Medikamentes ersichtlich. Sobald er es eingenommen hat, bestätigt der Patient mit Klick auf "Medikament eingenommen". Es wird dann die letzte Stufe geöffnet (Screen rechts), wo Inforamtionen zur nächsten Einnahme des Medikamentes ersichtlich sind. Klick auf Schliessen-Knopf schliesst das Fenster.
 
 * [Prototype Treatment](Iteration 3/it3_prototype_lifeUp.png)
-* Beim Klick auf die LifeUp-Kachel im Hauptmenü öffnet sich das Treatment-Programm (Screen mitte). Darauf enthalten sind der "Heute", "Morgen" und der "Übersichts"-Knopf. Bei Klick auf "Heute" oder "Morgen" öffnet sich die Details zur Beschäftigung (Screen rechts). Darauf kann der Patient die Aktivitäten, die er bereits erledigt hat, abhäckeln. Bei Klick auf "Übersicht" öffnet sich der Status vom LifeUp-Spiel (Screen unten). Auf dieser Seite sind die Punkte ersichtlich, für die
+Beim Klick auf die LifeUp-Kachel im Hauptmenü öffnet sich das Treatment-Programm (Screen mitte). Darauf enthalten sind der "Heute", "Morgen" und der "Übersichts"-Knopf. Bei Klick auf "Heute" oder "Morgen" öffnet sich die Details zur Beschäftigung (Screen rechts). Darauf kann der Patient die Aktivitäten, die er bereits erledigt hat, abhäckeln. Bei Klick auf "Übersicht" öffnet sich der Status vom LifeUp-Spiel (Screen unten). Auf dieser Seite sind die Punkte ersichtlich, die der Patient beim Erledigen der Arbeiten zu seinem Punktestand dazugerechnet bekommt. Der Ladebalken zeigt an, wie viele Punkte dass noch fehlen bis zum nächsten "Level". Es soll als Motivation dienen.
+
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
+Beim Klick auf die Kalender-Kachel im Hauptmenü öffnet sich die Terminübersicht (Screen mitte). Im oberen dritten kann zwischen der Monatsansicht, die den ganzen Monat auf dem Bildschirm anzeigt und Tage mit Terminen fett druckt (Bei Klick darauf wird zum jeweiligen chronologischen Eintrag gesprungen (Screen rechts)), und der Chronologie gewechslet werden (Screen rechts). In der chronologischen Ansicht sind die Termine nacht Datum sortiert. Bei jedem Termin sind Informationen und Details ersichtlich. Ein Link zum Öffnen von Google Maps ist auch vorhanden.
 
 ##Validate
 Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.

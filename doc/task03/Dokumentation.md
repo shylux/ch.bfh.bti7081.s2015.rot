@@ -362,6 +362,7 @@ Folgene Storyboards haben wir in unserem Design-Prozess erarbeitet.
 * [Storyboard 6](storyboard6.png)
 * [Storyboard 7](storyboard7.png)
 * [Storyboard 8](storyboard8.png)
+* [Storyboard 9](storyboard9.png)
 * [Storyboard 1, Iteration2](Iteration 2/i2_storyboard1.png)
 * [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
 

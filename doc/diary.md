@@ -48,7 +48,7 @@ FH: Filip Hofer
 
 #### 03.03.2015
  * Analysing CS2-Task1 ([PIP-System](/doc/CS2-Task1/requirements.md))
- * Present Team-Members: ST, LK, FH, ML, JM
+ * Present Teammitglieder: ST, LK, FH, ML, JM
 
 #### 06.03.2015
  * Analysing CS2-Task 2 
@@ -56,7 +56,7 @@ FH: Filip Hofer
  * Analysing CS2-Task 3
  * Creating Activity-Diagram
  * Present Team-Members: ST, TB, FH, ML, JM
- * Absent Team-Members: LK (Military)
+ * Absent Teammitglieder: LK (Military)
 
 #### 10.03.2015
  * Team-meeting
@@ -71,14 +71,14 @@ FH: Filip Hofer
  * Wissensbeschaffung Krankheitsbilder (FH, ST)
  * Analyse Terminmodul (ML)
  * Present Team-Members: ST, TB, FH, ML, JM
- * Absent Team-Members: LK (Military)
+ * Absent Teammitglieder: LK (Military)
 
 #### 12.03.2015
 * Short interview with drugstore staff about recipes
 * Hinzufügen der [Interviewresultate](/doc/task03/auswertung Inverview.md)
 * Hinzufügen der [Rezept-Normen](/doc/task03/normen.md)
 * Hinzufügen der Storyboards in der [Dokumentationsdatei](/doc/task03/Dokumentation.md)
-* Present Team-Memmbers: TB, ST, JM
+* Present Teammitglieder: TB, ST, JM
 
 #### 13.03.2015
  * Weitere Arbeiten an Task 03
@@ -93,10 +93,14 @@ FH: Filip Hofer
  * TB: Prototypes
  * LK: Spezifizieren
  * ST: Mockup, Spezifizeren
- * Anwesende Team-Mitglieder: ST, TB, FH, ML, JM, LK
+ * Anwesende Teammitglieder: ST, TB, FH, ML, JM, LK
  * Abwesende: 
 
 #### 15.03.2015
  * Mockup für Iteration 3 & Upload
  * Anpassung / Überarbeitung Dokumentation
- * Anwesende Team-Mitglieder: ST, TB, JM
+ * Anwesende Teammitglieder: ST, TB, JM
+ 
+#### 16.03.2015
+ * Dokumentation um Abschnitt Zusammenfassung ergänzt
+ * Anwesende Teammitglieder: TB

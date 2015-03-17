@@ -1,4 +1,4 @@
-#Dokumentation Desgin Thinking
+#Dokumentation Design Thinking
 
 #Iteration1
 

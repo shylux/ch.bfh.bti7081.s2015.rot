@@ -103,4 +103,14 @@ FH: Filip Hofer
  
 #### 16.03.2015
  * Dokumentation um Abschnitt Zusammenfassung ergänzt
- * Anwesende Teammitglieder: TB
+ * Überarbeitung Dokumentation
+ * Präsentation erstellen
+ * Anwesende Teammitglieder: TB, JM, ML, FH, ST
+ * Abwesende Teammitglieder: LK (Militär)
+ 
+#### 17.03.2015
+ * Präsentation ausarbeiten
+ * Präsentation halten
+ * Dokument fertigstellen
+ * Anwesende Teammitglieder: 
+ * Abwesende Teammitglieder: 

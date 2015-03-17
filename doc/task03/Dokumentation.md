@@ -267,7 +267,7 @@ Keine Storyboardanpassungen in dieser Iteration.
 ##Validate
 Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.
 
-#Zusammenfassung
+#Resultate
 
 ##Scoping
 Wir beschränken uns in unserer Anwendung im Wesentlichen auf die Anzeige von Informationen - Termine, Erinnerungen, Dosierung der Medikamente, usw. Aus diesem Grund ist sämtliche Interaktion aus dem Scope gefallen.
@@ -280,16 +280,67 @@ Weiter fiel die Idee der digitalen Rezepte aus dem Scope.
 Kein weiteres Scoping für diese Iteration notwendig.
 
 ##Research
-Interview durchgeführt und bezüglich (digitalen) Rezepten Internetrecherche betrieben.
-###Iteration 1
-Fragen für persönliches Interview erarbeitet. Anschliessend dieses mit Anna V., Mitarbeiterin einer Psychiatrie, durchgeführt. 
-Internetrecherche bezüglich digitaler Rezepte gemacht. Dies, um herauszufinden ob und inwieweit digitale Rezepte akzeptiert werden.
-###Iteration 2
-Unser Notfallplan brauchte Überarbeitung, weswegen wir nochmals die Interviewantworten diesbezüglich durchgelesen haben.
-###Iteration 3
-Keine weitere Reserach durchgeführt in dieser Iteration.
+* [Interview Fragen](Interview Fragen.md) erstellt
+* Interview mit Anna V.,Stationsleiterin Psychiatrische Klinik Langnau i.E. durchgeführt: [Auswertung Interview](auswertung Inverview.md)
+* Recherche rechtliche [Normen bei Rezepten](normen.md)
+* Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
 
 ##Synthesize
+
+###Personas
+
+####Persona "Heinz"
+* Arbeitslos / lebt seit 7 Jahren vom Sozialamt
+* Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und restliches wird dann zur Nebensache
+* Alter: 47
+* lebt allein in 2-Zimmerwohung
+* Schläft bis Mittags, bleibt dafür aber bis früh morgens wach
+* Tätigkeiten: Fernsehen, PC Spiele, verlässt selten das Haus
+* Sein Freundeskreis beschränkt sich auf 3 Personen, welche ebenfalls ein Alkoholsuchtproblem aufweisen
+* Verpasst Termine für ärztliche Behandlung, beim RAV
+* hat generell Mühe gesellschaftliche Verpflichtungen wahrzunehmen (Rechnungen bezahlen, Briefkasten leeren, Termine einhalten, sich an Abmachungen halten, etc.)
+* Ist verschuldet, Wohnung ist schmutzig und chaotisch
+* hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
+
+####Persona "Ingrit"
+* Arbeitet 40% bei einem Sozialhilfeprogramm
+* Methadonabhängig
+* Ist in einem Methadonprogramm (2x pro Tag besucht sie die Methadonabgabestelle)
+* lebt allein in 2-Zimmerwohung; häufiger Beziehungswechsel
+* Arbeitet an 4 Tagen morgens
+* hat Mühe mit gesellschaftlichen Verpflichtungen
+* nimmt die meisten Termine wahr
+* die "aufsuchende Pflege" unterstützt sie bei den Administrativen Dingen (z.B. Rechnungen bezahlen, Wohnung aufräumen)
+* Ihr letzter Entzug liegt 2 Jahre zurück
+* Alter: 35
+* die meisten Ihrer Freunde haben Suchtprobleme
+* Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
+* Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
+
+###Persona "Hans"
+* Ist arbeitslos
+* Heroinabhängig
+* Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
+* Schämt sich für seine Sucht, meidet Kontakte
+* Einzige Kontakte dienen der Beschaffung von Heroin
+* Hat sich schon prostituiert, um Geld für Heroin zu beschaffen
+* Wurde straffällig, um Geld oder Heroin zu besorgen
+* Ist verschuldet, da das Geld für die Droge ausgegeben wird
+* Hat gesundheitliche Probleme, ist unterernährt
+* Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
+
+
+###Persona "Carin"
+* Kifft, nimmt Extasy
+* Hat grosse Probleme, sich zu konzentrieren
+* Arbeitet Teilzeit bei einem Detailhändler im Lager
+* Hat häufig wechselnde Partner
+* Geht häufig an Partys, um die Drogen zu konsumieren
+* War noch nicht in Therapie, dies ist der erste Versuch
+* Hat eine kleine 2-Zimmer Wohnung in der Agglomeration
+* Versucht sich teilweise einzureden, dass ihre Drogen nur "weiche" Drogen sind und es nicht so schlimm ist
+
+
 Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden. Weiter konnten wir die Menüführung erheblich vereinfachen.
 ###Iteration 1
 Durch die vom Interview gewonnenen Daten haben wir zwei Persona "Heinze" und "Ingrit" ausgearbeitet. Weiter konnten dank den Antworten die main features aufgestellt werden. Diese sind in view Unterkategorien eingeteilt: Allgemeines wie gute Navigation, Terminverwaltung, Behandlung und Medikamentation welche unter anderem die Dosierung anzeigt.

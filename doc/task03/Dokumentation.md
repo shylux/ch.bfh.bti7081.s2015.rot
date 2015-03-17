@@ -117,6 +117,8 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt.
 * [Storyboard 7](storyboard7.png)
 * [Storyboard 8](storyboard8.png)
 * [Storyboard 9](storyboard9.png)
+* [Storyboard 10](storyboard10.png)
+* [Storyboard 11](storyboard11.png)
 
 ##5. Prototype
 
@@ -404,6 +406,8 @@ Folgene Storyboards haben wir in unserem Design-Prozess erarbeitet.
 * [Storyboard 7](storyboard7.png)
 * [Storyboard 8](storyboard8.png)
 * [Storyboard 9](storyboard9.png)
+* [Storyboard 10](storyboard10.png)
+* [Storyboard 11](storyboard11.png)
 * [Storyboard 1, Iteration2](Iteration 2/i2_storyboard1.png)
 * [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
 

@@ -434,4 +434,4 @@ Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche an
 
 ##Validate
 In dieser Phase haben wir die Prototypen getestet und validiert. für genauere Informationen konsultieren sie das Kapiel Validate der jeweiligen Iterationen.
-(Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 3](prototype3.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png))
+(Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 1](prototype1.png) und kleinere Änderungen bei [Prototype 7](prototype7.png) und [Prototype 9](prototype9.png))

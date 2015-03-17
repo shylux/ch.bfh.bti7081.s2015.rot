@@ -112,5 +112,5 @@ FH: Filip Hofer
  * Präsentation ausarbeiten
  * Präsentation halten
  * Dokument fertigstellen
- * Anwesende Teammitglieder: 
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder: 

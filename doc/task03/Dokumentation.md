@@ -232,9 +232,9 @@ Die überarbeiteten Storyboards:
 
 ##Prototype
 Die überarbeiteten Prototypen:
-* [Prottype 1, Iteration2](Iteration 2/i2_prototype0.png)
-* [Prottype 2, Iteration2](Iteration 2/i2_prototype1.png)
-* [Prottype 3, Iteration2](Iteration 2/i2_prototype2.png)
+* [Prottype 8, Iteration2](Iteration 2/i2_prototype0.png)
+* [Prottype 8, Iteration2](Iteration 2/i2_prototype2.png)
+* [Prottype 9, Iteration2](Iteration 2/i2_prototype1.png)
 
 ##Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.

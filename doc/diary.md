@@ -116,3 +116,8 @@ FH: Filip Hofer
  * Aufsetzen [Google Doc] (https://docs.google.com/document/d/1ZFQJo9BQZULIdBEKbE8_pK0YfCqPQ65s8XmzAibY4uU/edit)
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder: 
+ 
+#### 20.03.2015
+ * Arbeit an Task 04 - Requirements Specification
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Abwesende Teammitglieder:  LK (Militär)

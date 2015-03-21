@@ -121,3 +121,6 @@ FH: Filip Hofer
  * Arbeit an Task 04 - Requirements Specification
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder:  LK (Militär)
+ 
+#### 21.03.2015
+ * Ausarbeiten Systemarchitektur (ST) 

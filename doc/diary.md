@@ -124,3 +124,12 @@ FH: Filip Hofer
  
 #### 21.03.2015
  * Ausarbeiten Systemarchitektur (ST) 
+
+#### 22.03.2015
+ * Arbeit an Task 04
+ * Zusammenfügen der Teildokumente
+ * Appendix erstellen
+ * System Requirements verfeineren
+ * Rechtschreibefehler korrigieren
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Abwesende Teammitglieder:  LK (Militär)

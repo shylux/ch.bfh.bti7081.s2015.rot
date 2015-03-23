@@ -133,3 +133,6 @@ FH: Filip Hofer
  * Rechtschreibefehler korrigieren
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder:  LK (Militär)
+ 
+#### 23.03.2015
+ * Präsentation erstellt (TB)

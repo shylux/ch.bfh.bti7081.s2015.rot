@@ -139,6 +139,7 @@ FH: Filip Hofer
  * Korrekturen (ML)
 
 #### 24.03.2015
+ * Upload der Dateien in Task 04
  * Präsentation halten
  * Team-Meeting
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK

@@ -143,5 +143,6 @@ FH: Filip Hofer
  * Präsentation halten
  * Team-Meeting
  * Revision Requirements Specification "Gruppe Grüne"
+ * Einchecken vom Revisions-Dokument
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder:  LK (Militär)

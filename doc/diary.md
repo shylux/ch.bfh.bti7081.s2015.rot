@@ -136,3 +136,10 @@ FH: Filip Hofer
  
 #### 23.03.2015
  * Präsentation erstellt (TB)
+ * Korrekturen (ML)
+
+#### 24.03.2015
+ * Präsentation halten
+ * Team-Meeting
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Abwesende Teammitglieder:  LK (Militär)

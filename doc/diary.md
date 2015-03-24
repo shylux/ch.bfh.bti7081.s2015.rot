@@ -142,5 +142,6 @@ FH: Filip Hofer
  * Upload der Dateien in Task 04
  * Präsentation halten
  * Team-Meeting
+ * Revision Requirements Specification "Gruppe Grüne"
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder:  LK (Militär)

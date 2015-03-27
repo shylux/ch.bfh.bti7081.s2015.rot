@@ -119,7 +119,7 @@ FH: Filip Hofer
  
 #### 20.03.2015
  * Arbeit an Task 04 - Requirements Specification
- * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM
  * Abwesende Teammitglieder:  LK (Militär)
  
 #### 21.03.2015
@@ -131,7 +131,7 @@ FH: Filip Hofer
  * Appendix erstellen
  * System Requirements verfeineren
  * Rechtschreibefehler korrigieren
- * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM
  * Abwesende Teammitglieder:  LK (Militär)
  
 #### 23.03.2015
@@ -144,5 +144,13 @@ FH: Filip Hofer
  * Team-Meeting
  * Revision Requirements Specification "Gruppe Grüne"
  * Einchecken vom Revisions-Dokument
- * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Anwesende Teammitglieder:  ST, TB, FH, L, JM, LK
  * Abwesende Teammitglieder:  LK (Militär)
+
+#### 27.03.2015
+ * Präsentation Task 06
+ * Besprechung Requierements Specification
+ * Team-Meeting  
+ * Einchecken Task06
+ * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Abwesende Teammitglieder:  ML (Persönliche Absenz)

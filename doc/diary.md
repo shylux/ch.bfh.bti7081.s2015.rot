@@ -156,5 +156,5 @@ FH: Filip Hofer
  * Abwesende Teammitglieder:  ML (Persönliche Absenz)
 
 #### 07.05.2015
-* Anwesende Teammitglieder : JM, FH, LK
-* Abwesende Teammitglieder : ST(Militär), TB (Ferien Japan), ML (Abwesend)
+* Anwesende Teammitglieder : JM, FH, LK, ST
+* Abwesende Teammitglieder : TB (Ferien Japan), ML (Abwesend, Ferien)

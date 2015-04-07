@@ -156,5 +156,6 @@ FH: Filip Hofer
  * Abwesende Teammitglieder:  ML (Persönliche Absenz)
 
 #### 07.05.2015
+* Übung Excercise 4 in Zweierteams (JM und FH, LK und ST)
 * Anwesende Teammitglieder : JM, FH, LK, ST
 * Abwesende Teammitglieder : TB (Ferien Japan), ML (Abwesend, Ferien)

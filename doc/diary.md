@@ -154,3 +154,7 @@ FH: Filip Hofer
  * Einchecken Task06
  * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
  * Abwesende Teammitglieder:  ML (Persönliche Absenz)
+
+#### 07.05.2015
+* Anwesende Teammitglieder : JM, FH, LK
+* Abwesende Teammitglieder : ST(Militär), TB (Ferien Japan), ML (Abwesend)

@@ -152,10 +152,19 @@ FH: Filip Hofer
  * Besprechung Requierements Specification
  * Team-Meeting  
  * Einchecken Task06
- * Anwesende Teammitglieder:  ST, TB, FH, ML, JM, LK
+ * Anwesende Teammitglieder:  ST, TB, FH, JM, LK
  * Abwesende Teammitglieder:  ML (Persönliche Absenz)
 
-#### 07.05.2015
+#### 07.04.2015
 * Übung Excercise 4 in Zweierteams (JM und FH, LK und ST)
 * Anwesende Teammitglieder : JM, FH, LK, ST
 * Abwesende Teammitglieder : TB (Ferien Japan), ML (Abwesend, Ferien)
+* 
+#### 10.04.2015
+* Übung Sequenzdiagramm Reservationssystem
+* Start Task 07
+* Bearbeiten der CRC-Cards
+* Einchecken Order für Task 07
+* Aufteilung der Arbeiten für Task 07
+* Anwesende Teammitglieder : ST, TB, FH, ML, JM, LK
+* Abwesende Teammitglieder : 

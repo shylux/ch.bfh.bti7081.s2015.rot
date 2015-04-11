@@ -1,0 +1,22 @@
+title System remindes User for Daily Events
+
+
+loop for all CalendarEntries
+
+alt CalendarEntry is Actvity
+Calendar->+Actvity :isToday()
+Actvity-->-Calendar: response
+else CalendarEntry is Appointment
+Calendar->+Appointment :isToday()
+Appointment-->-Calendar :response
+else CalendarEntry is MedicationEntry
+Calendar->+MedicationEntry :isToday()
+MedicationEntry-->-Calendar :response
+end
+
+
+
+end
+opt if it has entries today
+Calendar->+Patient :displayDailyEvents()
+Patient-->-Calendar :response

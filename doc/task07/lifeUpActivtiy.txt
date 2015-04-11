@@ -1,0 +1,25 @@
+title Update LifeUp Activity
+
+
+Patient->+LifeUp :getActivty(Actvity Nr)
+LifeUp-->-Patient : activty
+Patient->+Activity :addPhoto()
+Activity->+Activity :checkSuccess()
+
+
+Activity-->-Activity :isSuccessful
+
+opt if isSuccessful
+
+Activity ->+LifeUp :addPoints()
+opt if LevelUp
+LifeUp->+LifeUp :levelUp()
+LifeUp-->-LifeUp : response
+end
+LifeUp-->-Activity : response
+
+end
+Activity ->+ClinicSystem :reportLog()
+ClinicSystem-->-Activity :response
+Activity-->-Patient:response
+

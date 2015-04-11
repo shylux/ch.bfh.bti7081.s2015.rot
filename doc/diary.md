@@ -168,3 +168,9 @@ FH: Filip Hofer
 * Aufteilung der Arbeiten für Task 07
 * Anwesende Teammitglieder : ST, TB, FH, ML, JM, LK
 * Abwesende Teammitglieder : 
+
+
+#### 11.04.2014
+* Domain Model digitalisiert (JM)
+* Sequenzdiagramme erstellt (JM)
+* Class Diagramm erstellt (JM)

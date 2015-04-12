@@ -175,5 +175,5 @@ FH: Filip Hofer
 * Sequenzdiagramme erstellt (JM)
 * Class Diagramm erstellt (JM)
 
-#### 11.04.2014
+#### 12.04.2014
 * Anpassungen Sequenzdiagramme, Domainmodel und Klassendiagramm (JM,ST,ML)

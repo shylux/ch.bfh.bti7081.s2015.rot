@@ -1,9 +1,9 @@
 title Update LifeUp Activity
 
 
-Patient->+LifeUp :getActivty(Actvity Nr)
-LifeUp-->-Patient : activty
-Patient->+Activity :addPhoto()
+PatientApp->+LifeUp :getActivty(Actvity Nr)
+LifeUp-->-PatientApp : activty
+PatientApp->+Activity :addPhoto()
 Activity->+Activity :checkSuccess()
 
 
@@ -19,7 +19,6 @@ end
 LifeUp-->-Activity : response
 
 end
-Activity ->+ClinicSystem :reportLog()
-ClinicSystem-->-Activity :response
-Activity-->-Patient:response
-
+Activity ->+ClinicConnector :reportLog()
+ClinicConnector-->-Activity :response
+Activity-->-PatientApp:response

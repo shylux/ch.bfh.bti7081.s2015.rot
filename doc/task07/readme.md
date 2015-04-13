@@ -11,7 +11,7 @@ Das System erinnert den User an alle, für diesen Tag, anstehenden Events (=Ding
 z.B. 
 * im LifeUp "einkaufen gehen"
 * Medikamente einnehmen
-* Termin beim Artz wahrnehmen
+* Termin beim Arzt wahrnehmen
 
 ##Class Diagramm
 ![Classdiagramm](classDiagrammSED.png)

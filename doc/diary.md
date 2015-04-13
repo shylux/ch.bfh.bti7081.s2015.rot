@@ -177,3 +177,6 @@ FH: Filip Hofer
 
 #### 12.04.2014
 * Anpassungen Sequenzdiagramme, Domainmodel und Klassendiagramm (JM,ST,ML)
+* 
+#### 13.04.2014
+* Präsentation erstellt (JM,FH)

@@ -180,3 +180,9 @@ FH: Filip Hofer
 
 #### 13.04.2014
 * Präsentation erstellt (JM,FH)
+
+
+#### 14.04.2015
+ * Präsentation Task 07
+ * Team-Meeting  
+ * Anwesende Teammitglieder:  ST, TB, FH, JM, LK, ML

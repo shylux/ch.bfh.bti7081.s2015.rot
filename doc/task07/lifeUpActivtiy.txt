@@ -3,11 +3,11 @@ title Update LifeUp Activity
 
 PatientApp->+LifeUp :getActivty(Actvity Nr)
 LifeUp-->-PatientApp : activty
-PatientApp->+Activity :addPhoto()
-Activity->+Activity :checkSuccess()
+PatientApp->+PhotoActivity :addPhoto()
+PhotoActivity->+PhotoActivity :checkSuccess()
 
 
-Activity-->-Activity :isSuccessful
+PhotoActivity-->-Activity :isSuccessful
 
 opt if isSuccessful
 
@@ -19,6 +19,6 @@ end
 LifeUp-->-Activity : response
 
 end
-Activity ->+ClinicConnector :reportLog()
-ClinicConnector-->-Activity :response
-Activity-->-PatientApp:response
+PhotoActivity ->+ClinicConnector :reportLog()
+ClinicConnector-->-PhotoActivity :response
+PhotoActivity-->-PatientApp:response

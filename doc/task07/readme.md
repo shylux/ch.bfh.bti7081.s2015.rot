@@ -1,7 +1,7 @@
 #Desgin
 
 ###Präsentation
-[design.pptx](Präsentation)
+[Präsentation](design.pptx)
 
 ##Domain Model Diagramm
 ![Domain Model](domainModelSED.png)

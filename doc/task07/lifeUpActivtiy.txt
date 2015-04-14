@@ -7,16 +7,16 @@ PatientApp->+PhotoActivity :addPhoto()
 PhotoActivity->+PhotoActivity :checkSuccess()
 
 
-PhotoActivity-->-Activity :isSuccessful
+PhotoActivity-->-PhotoActivity :isSuccessful
 
 opt if isSuccessful
 
-Activity ->+LifeUp :addPoints()
+PhotoActivity ->+LifeUp :addPoints()
 opt if LevelUp
 LifeUp->+LifeUp :levelUp()
 LifeUp-->-LifeUp : response
 end
-LifeUp-->-Activity : response
+LifeUp-->-PhotoActivity : response
 
 end
 PhotoActivity ->+ClinicConnector :reportLog()

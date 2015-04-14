@@ -9,12 +9,17 @@
 ![Sequenzdiagramm1](lifeUpActivtiy.png)
 Der User erfüllt eine Aufgabe (Actitvity) im Spiel Life up: Er läuft z.B. zum Briefkasten und fotografiert ein Objekt.
 
+
+
 ![Sequenzdiagramm2](remideDailyEvents.png)
 Das System erinnert den User an alle, für diesen Tag, anstehenden Events (=Dinge, die der Patient zu erledigen hat)
 z.B. 
 * im LifeUp "einkaufen gehen"
 * Medikamente einnehmen
 * Termin beim Arzt wahrnehmen
+
+Das Sequenzdiagramm wird mit der Methode *getDailyEntries()* aufgerufen.
+
 
 ##Class Diagramm
 | Klasse| Verantwortlichkeit                             

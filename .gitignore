@@ -26,3 +26,4 @@ local.properties
 .target
 # TeXlipse plugin
 .DS_Store
+*Thumbs.db

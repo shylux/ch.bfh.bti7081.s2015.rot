@@ -9,7 +9,7 @@
 ![Sequenzdiagramm1](lifeUpActivtiy.png)
 Der User erfüllt eine Aufgabe (Actitvity) im Spiel Life up: Er läuft z.B. zum Briefkasten und fotografiert ein Objekt.
 
-
+Das Sequenzdiagramm wird mit der Methode *updateActivty(int number)* aufgerufen.
 
 ![Sequenzdiagramm2](remideDailyEvents.png)
 Das System erinnert den User an alle, für diesen Tag, anstehenden Events (=Dinge, die der Patient zu erledigen hat)

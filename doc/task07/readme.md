@@ -21,7 +21,7 @@ z.B.
 Das Sequenzdiagramm wird mit der Methode *getDailyEntries()* aufgerufen.
 
 
-##Class Diagramm
+##Klassendiagramm
 | Klasse| Verantwortlichkeit                             
 | -------- | -------------------------------------- |
 | PatientApp  | Bündelt die App, Schnittstelle für z.B. View / Controller| 
@@ -39,4 +39,5 @@ Das Sequenzdiagramm wird mit der Methode *getDailyEntries()* aufgerufen.
 | GPSActivity  | Spezialaktivität mit GPS Messung (z.B. für Aktivität "ins Migros gehen")
 | PhotoActivity  | Spezialaktivität für Foto-Aktivitäten z.B Briefkasten im Behandlungssystem LifeUp fotografieren|
 
+###Klassendiagramm
 ![Classdiagramm](classDiagrammSED.png)

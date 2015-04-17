@@ -159,7 +159,7 @@ FH: Filip Hofer
 * Übung Excercise 4 in Zweierteams (JM und FH, LK und ST)
 * Anwesende Teammitglieder : JM, FH, LK, ST
 * Abwesende Teammitglieder : TB (Ferien Japan), ML (Abwesend, Ferien)
-* 
+
 #### 10.04.2015
 * Übung Sequenzdiagramm Reservationssystem
 * Start Task 07
@@ -191,4 +191,4 @@ FH: Filip Hofer
 #### 17.04.2015
  * Exercise 6 
  * Anwesende Teammitglieder:  TB, FH, JM, LK, ML
- * Abwesende: ST
+ * Abwesende: ST (Militär)

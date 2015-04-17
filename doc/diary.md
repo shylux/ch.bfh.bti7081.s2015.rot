@@ -186,3 +186,9 @@ FH: Filip Hofer
  * Präsentation Task 07
  * Team-Meeting  
  * Anwesende Teammitglieder:  ST, TB, FH, JM, LK, ML
+
+
+#### 17.04.2015
+ * Exercise 6 
+ * Anwesende Teammitglieder:  TB, FH, JM, LK, ML
+ * Abwesende: ST

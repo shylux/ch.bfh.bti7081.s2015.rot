@@ -192,3 +192,8 @@ FH: Filip Hofer
  * Exercise 6 
  * Anwesende Teammitglieder:  TB, FH, JM, LK, ML
  * Abwesende: ST (Militär)
+
+#### 21.04.2015
+ * Behandlung "Architectural Patterns"
+ * Selbststudium und Aufarbeitung "Layering Pattern"
+ * Anwesende Teammitglieder:  TB, FH, JM, LK, ML, ST

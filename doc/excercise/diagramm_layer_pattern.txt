@@ -1,0 +1,11 @@
+title Layering Sequence
+
+Actor User->+Presentation: Request webpage
+Presentation->+Business: Get data for user
+Business->+Database: Get dataset 1
+Database->-Business: Return dataset 1
+Business->+Database: Get dataset 2
+Database->-Business: Return dataset 2
+Business->-Presentation: Return processed data
+Presentation->-Presentation: Build webpage
+Presentation->Actor User: Return webpage

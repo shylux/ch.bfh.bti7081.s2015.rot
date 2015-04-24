@@ -197,3 +197,9 @@ FH: Filip Hofer
  * Behandlung "Architectural Patterns"
  * Selbststudium und Aufarbeitung "Layering Pattern"
  * Anwesende Teammitglieder:  TB, FH, JM, LK, ML, ST
+
+### 24.04.2015
+ * Fertigstellen von Exercise 7 inkl. UML-Diagramme
+ * Präsentation
+ * Anwesende Teammitglieder:  TB, FH, JM, LK, ML
+ * Abwesende: ST (Militär)

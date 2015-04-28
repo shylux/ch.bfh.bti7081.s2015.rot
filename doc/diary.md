@@ -203,3 +203,9 @@ FH: Filip Hofer
  * Präsentation
  * Anwesende Teammitglieder:  TB, FH, JM, LK, ML
  * Abwesende: ST (Militär)
+ * 
+### 28.04.2015
+ * Einführung in Vaadin-Framework
+ * Repetition Software Design
+ * Übung Oberserver Pattern
+ * Anwesende Teammitglieder:  TB, FH, JM, LK, ML, ST

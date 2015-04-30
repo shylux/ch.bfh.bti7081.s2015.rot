@@ -209,3 +209,6 @@ FH: Filip Hofer
  * Repetition Software Design
  * Übung Oberserver Pattern
  * Anwesende Teammitglieder:  TB, FH, JM, LK, ML, ST
+### 30.04.2015	
+ * Erste Iteration Achitektur erstellt: JM
+ 

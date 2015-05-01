@@ -212,3 +212,10 @@ FH: Filip Hofer
 ### 30.04.2015	
  * Erste Iteration Achitektur erstellt: JM
  
+### 01.05.2015
+ * Aufsetzen von Vaadin & Maven
+ * Ausarbeiten Task 09
+ * Verfeinern Klassendiagramme
+ * Umsetzen des MVP-Patterns
+ * Anwesende Teammitglieder: JM, FH, ST
+ * Abwesende Teammitglieder: TB, LK (persönliche Gründe), ML (Krankheit)

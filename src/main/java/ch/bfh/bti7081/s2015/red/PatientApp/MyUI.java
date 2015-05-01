@@ -1,4 +1,4 @@
-package ch.bfh.bti7081.s2015.blue.PatientApp;
+package ch.bfh.bti7081.s2015.red.PatientApp;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -17,7 +17,7 @@ import com.vaadin.ui.VerticalLayout;
  *
  */
 @Theme("mytheme")
-@Widgetset("ch.bfh.bti7081.s2015.blue.PatientApp.MyAppWidgetset")
+@Widgetset("ch.bfh.bti7081.s2015.red.PatientApp.MyAppWidgetset")
 public class MyUI extends UI {
 
     @Override

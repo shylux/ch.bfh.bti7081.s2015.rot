@@ -219,3 +219,10 @@ FH: Filip Hofer
  * Umsetzen des MVP-Patterns
  * Anwesende Teammitglieder: JM, FH, ST
  * Abwesende Teammitglieder: TB, LK (persönliche Gründe), ML (Krankheit)
+
+### 02.05.2015
+ * Einchecken der Präsentation
+
+### 03.05.2015
+ * Weiterarbeit an der Präsentation
+ * Erstellung und Arbeit an der Dokumentationsdatei

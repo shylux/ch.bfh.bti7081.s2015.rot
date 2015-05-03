@@ -7,16 +7,20 @@ Die PatientApp benötigt lokale Daten, da eine Verbindung zum Klinikserver nicht 
 
 ### GPS & Foto
 
-Die zu entwickelnde Applikation benutzt für das Spiel "LifeUp" in gewissen Fällen GPS-Koordinaten, um beispielsweise das Erreichen oder Besuchen eines bestimmten Ortes zu überprüfen. Das Framework Vaadin, das verwendet wird, übersetzt mithilfe des GWTKs das in Java geschrieben Progamm in eine Webapplikation. Während in der Standard Androidentwicklungsumgebung GPS eine häufige und unterstüzte Komponente ist, kann das Vaadin-Framework eine solche Unterstützung nicht vollständig gewährleisten. Die HTMl5 Funktion, die Vaadin verwendet, nennt sich GPS.getIfSupported(). Falls das GPS auf dem Endgerät nicht benutzt werden kann, muss eine solche GPS-Funktionalität simuliert, respektive darauf reagiert werden, damit das LifeUp-Spiel keine Aktivitäten vorschreiben kann, die nicht überprüfbar sind. Das genaue Vorgehen für das Simulieren ist nocht ausstehend.
+Die zu entwickelnde Applikation benutzt für das Spiel "LifeUp" in gewissen Fällen GPS-Koordinaten, um beispielsweise das Erreichen oder Besuchen eines bestimmten Ortes zu überprüfen. Das Framework Vaadin, das verwendet wird, übersetzt mithilfe des GWTKs das in Java geschrieben Progamm in eine Webapplikation. Während in der Standard Androidentwicklungsumgebung GPS eine häufige und unterstüzte Komponente ist, kann das Vaadin-Framework eine solche Unterstützung nicht vollständig gewährleisten. Die HTML5 Funktion, die Vaadin verwendet, nennt sich GPS.getIfSupported(). Falls das GPS auf dem Endgerät nicht benutzt werden kann, muss eine solche GPS-Funktionalität simuliert, respektive darauf reagiert werden, damit das LifeUp-Spiel keine Aktivitäten vorschreiben kann, die nicht überprüfbar sind. Das genaue Vorgehen für das Simulieren ist nocht ausstehend.
 
 Ein ähnliches Problem existiert auch für die Foto-Komponente, die im Spiel verwendet werden soll. Vaadin hat keinen Zugriff auf solche Bauteile. Das Problem, dass das Aufnehmen von Fotos nicht möglich ist, wird durch eine einfache Umgehung gelöst: Es können lokale Bilder, die sich auf dem Endgerät befinden, hochgeladen werden. Diese werden dann wie als neues Foto behandelt. 
  
  
 ## Patterns
 ### MVC
-#### Modell
+Das Model-View-Controller Pattern ist eine weit verbreitete Struktur, Software in der Art zu implementieren, damit eine Trennung von den Daten, der Logik und der Visualisierung möglich ist. Der Vorteil ist die Austauschbarkeit der einzelnen Komponenten, beispielsweise für Applikationen, die auf verschiedenen Plattformen erstellt werden sollen. Es müssen nur die Komponenten ausgetauscht werden, die auf dme Zielsystem anders funktionieren.
+#### Model
+Das Model enthält die Daten der Applikation. Häufig wird es mithilfe des Obserable-Pattern verwendet - es bildet hier das Subjekt (Falls sich Daten ändern).
 #### View
+Die View oder Präsentationsschicht bereitet die Daten vom Model auf und visualisiert diese. Die implementierte Logik kennt sie, aber sie verarbeitet Events nicht weiter, da das der Aufgabenbereich des Controllers ist. 
 #### Controller
+Der Controller nimmt Benutzerinteraktionen entgegegen und löst die entsprechenden Abläufe aus. Er ist das Bindeglied zwischen der View und dem Model. In manchen Implementation verwendet er auch das Observable-Pattern, um bei Änderungen in den Daten direkt die View zu aktualisieren. 
 
 ### MVP
 #### Modell

@@ -16,18 +16,18 @@ Ein ähnliches Problem existiert auch für die Foto-Komponente, die im Spiel ver
 ### MVC
 Das Model-View-Controller Pattern ist eine weit verbreitete Struktur um Software zu implementieren. MVC bietet die Trennung der Daten, der Logik und der Visualisierung. Der Vorteil ist die Austauschbarkeit der einzelnen Komponenten. So müssen beispielsweise bei einer Applikationen die für verschiedene Plattformen erstellt werden soll, nur diejenigen Komponenten ausgetauscht werden, die auf dem Zielsystem anders funktionieren.
 #### Model
-Das Model enthält die Daten der Applikation. Häufig wird es mithilfe des Obserable-Pattern verwendet - es bildet hier das Subjekt (Falls sich Daten ändern).
+Das Model enthält die Daten der Applikation. Häufig wird es mithilfe des Observable-Pattern verwendet - es stellt hier das Subjekt dar (Falls sich Daten ändern).
 #### View
 Die View oder Präsentationsschicht bereitet die Daten vom Model auf und visualisiert diese. Die implementierte Logik kennt sie, aber sie verarbeitet Events nicht weiter, da das der Aufgabenbereich des Controllers ist. 
 #### Controller
-Der Controller nimmt Benutzerinteraktionen entgegegen und löst die entsprechenden Abläufe aus. Er ist das Bindeglied zwischen der View und dem Model. In manchen Implementation verwendet er auch das Observable-Pattern, um bei Änderungen in den Daten direkt die View zu aktualisieren. 
+Der Controller nimmt Benutzerinteraktionen entgegegen und löst die entsprechenden Abläufe aus. Er ist das Bindeglied zwischen der View und dem Model. In manchen Implementation verwendet er auch das Observable-Pattern, um bei Änderungen der Daten direkt die View zu aktualisieren. 
 
 ### MVP
-Das Model-View-Presenter Pattern ist eine Überarbeitung von MVC. Jede Schicht ist viel strenger abgekapselt und lediglich über den Presenter findet die Kommunikation statt. Anders als beim MVC verknüfpt der Presenter nur über Schnittstellen das Model und die View, die die beiden Komponenten implementieren. 
+Das Model-View-Presenter Pattern ist eine Überarbeitung von MVC. Jede Schicht ist strenger abgekapselt und lediglich über den Presenter findet die Kommunikation statt. Anders als beim MVC verknüpft der Presenter nur über Schnittstellen das Model und die View. 
 #### Model
 Das Model kennt nur sich selber und stellt auch wie beim MVC die Datenschicht dar. 
 #### View
-Die View ist nur für die Visualisierung und die Aktionsein- und ausgänge verantowrtlich. Auch sie kennt nur sich selber. 
+Die View ist nur für die Visualisierung und die Aktionsein- und ausgänge verantwortlich. Auch sie kennt nur sich selber. 
 #### Presenter
 Der Presenter ist das Bindeglied zwischen Model und View und steuert die logischen Abläufe. Er stellt die Verknüpfung des Model und Views her.
 ### Vaadin MVP

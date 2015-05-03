@@ -23,9 +23,13 @@ Die View oder Präsentationsschicht bereitet die Daten vom Model auf und visualis
 Der Controller nimmt Benutzerinteraktionen entgegegen und löst die entsprechenden Abläufe aus. Er ist das Bindeglied zwischen der View und dem Model. In manchen Implementation verwendet er auch das Observable-Pattern, um bei Änderungen in den Daten direkt die View zu aktualisieren. 
 
 ### MVP
-#### Modell
+Das Model-View-Presenter Pattern ist eine Überarbeitung von MVC. Jede Schicht ist viel strenger abgekapselt und lediglich über den Presenter findet die Kommunikation statt. Anders als beim MVC verknüfpt der Presenter nur über Schnittstellen das Model und die View, die die beiden Komponenten implementieren. 
+#### Model
+Das Model kennt nur sich selber und stellt auch wie beim MVC die Datenschicht dar. 
 #### View
+Die View ist nur für die Visualisierung und die Aktionsein- und ausgänge verantowrtlich. Auch sie kennt nur sich selber. 
 #### Presenter
+Der Presenter ist das Bindeglied zwischen Model und View und steuert die logischen Abläufe. Er stellt die Verknüpfung des Model und Views her.
 ### Vaadin MVP
 ### Implementation
 

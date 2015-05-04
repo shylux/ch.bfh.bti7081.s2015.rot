@@ -41,6 +41,44 @@ Der Presenter ist das Bindeglied zwischen Model und View und steuert die logisch
 **Unsere Architektur basiert auf dem MVP-Pattern.**
 
 ### Implementation
+Main View
+- StartPagePresenter
+- ViewController
 
+- Life Up
+	- Presenter
+		- LifeUpPresenter
+		- CalendarPresenter
+	- Views
+		- CalendarView
+		- LifeUp View
+	- Models
+		- CalendarModel
+		- LifeUp Model
+		- CalendarEntry Model
+- Calendar
+	- Presenter
+		- CalendarPresenter
+	- Views
+		- CalendarView
+	- Model
+		- CalendarModel
+		- LifeUp Model
+		- Medication Model
+- Medications
+	- Presenter
+		- CalendarPresenter
+		- MedicationPresenter
+	- Views
+		- MedicationView
+	- Model
+		- Medication Model
+- Emergency
+	- Presenter
+		- EmergencyPresenter
+	- Views
+		- EmergencyView
+	- Model
+		- Contact Model
 ## Softwarearchitektur
 ## Appendix

@@ -1,6 +1,6 @@
 # Softwarearchitektur
 ## Vaadin Framework
-Vaadin ist ein freies Java Web-Framework, gedacht um mit einfachen Mitteln sogenannte RIA (Rich Internet Application) zu bauen. Anders als z.B. bei JavaScript bietet Vaadin eine serverseitige Architektur, welche es ermöglicht den Grossteil der Programmlogik auf dem Server laufen zu lassen. Clientseitig baut Vaadin auf Googles Web Toolkit auf. Dieses wird zum Darstellen von Webseiten verwendet.
+Vaadin ist ein freies Java Web-Framework, gedacht um in Java sogenannte RIA (Rich Internet Application) zu bauen. Anders als z.B. bei JavaScript bietet Vaadin eine serverseitige Architektur, welche es ermöglicht den Grossteil der Programmlogik auf dem Server laufen zu lassen. Clientseitig baut Vaadin auf Googles Web Toolkit auf. Dieses wird zum Darstellen von Webseiten verwendet.
 
 Vaadin bietet eine grosse Auswahl an UI-Komponenten.
 

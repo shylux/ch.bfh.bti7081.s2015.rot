@@ -34,6 +34,8 @@ Die View ist nur für die Visualisierung und die Aktionsein- und ausgänge veran
 #### Presenter
 Der Presenter ist das Bindeglied zwischen Model und View und steuert die logischen Abläufe. Er stellt die Verknüpfung des Model und Views her.
 ### Vaadin MVP
+*Unsere Architektur basiert auf dem MVP-Pattern.*
+
 ### Implementation
 
 ## Softwarearchitektur

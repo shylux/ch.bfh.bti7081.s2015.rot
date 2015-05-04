@@ -80,5 +80,7 @@ Main View
 		- EmergencyView
 	- Model
 		- Contact Model
+
+
 ## Softwarearchitektur
 ## Appendix

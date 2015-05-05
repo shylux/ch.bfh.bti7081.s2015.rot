@@ -57,7 +57,9 @@ Folgende Presenter, Views und Models werden ebenfalls implementiert:
 
 - Life Up
 	- Presenter
-		- LifeUpPresenter
+		- ListAchievmentsPresenter
+		- ListDailyActivitesPresenter
+		- ShowActivityPresenter
 	- Views
 		- ListAchievments
 		- ListDailyActivities
@@ -67,7 +69,8 @@ Folgende Presenter, Views und Models werden ebenfalls implementiert:
 		- ActivityModel
 - Appointment
 	- Presenter
-		- Appointment
+		- ShowAppointmentPresenter
+		- ListAppointmentsPresenter
 	- Views
 		- ShowAppointment
 		- ListAppointments
@@ -75,10 +78,11 @@ Folgende Presenter, Views und Models werden ebenfalls implementiert:
 		- CalendarEntryModel
 - Medications
 	- Presenter
-		- ShowmedicationList
-		- MedicationPresenter
+		- ShowMedicationPresenter
+		- ListMedicationPresenter
 	- Views
-		- MedicationView
+		- ShowMedicationList
+		- ListMedicationPresenter
 	- Model
 		- MedicationModel
 - Emergency
@@ -89,5 +93,3 @@ Folgende Presenter, Views und Models werden ebenfalls implementiert:
 	- Model
 		- EmergergencyModel
 
-
-## Appendix

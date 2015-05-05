@@ -4,4 +4,4 @@
 [Presentation Software Architektur](Softwarearchitektur.pptx)
 
 ##Dokumentation
-[Presentation Software Architektur](documentation.md)
+[Dokumentation](documentation.md)

@@ -2,7 +2,11 @@
 ## Vaadin Framework
 Vaadin ist ein freies Java Web-Framework, gedacht um in Java sogenannte RIA (Rich Internet Application) zu bauen. Anders als z.B. bei JavaScript bietet Vaadin eine serverseitige Architektur, welche es ermöglicht den Grossteil der Programmlogik auf dem Server laufen zu lassen. Clientseitig baut Vaadin auf Googles Web Toolkit auf. Dieses wird zum Darstellen von Webseiten verwendet.
 
-Vaadin bietet eine grosse Auswahl an UI-Komponenten.
+Das unten eingefügte Bild ist eine Illustration der Vaadin-Architektur und wie diese während der Laufzeit durch die einzelnen Schichten hindurch kommuniziert. Das Vaadin-Framework besteht aus einer Server- und einer Client-seitigen API, sowie eine Menge von UI-Komponenten, auch Widgets genannt. Es beinhaltet Themes um das Aussehen zu kontrollieren sowie ein DataModel um die server-seitigen Komponenten direkt in Java zu binden. Für die Client-seitige Entwicklung steht der Vaadin-Compiler bereit, dieser kompiliert Java in JavaScript.
+
+Eine serverseitige Vaadin-Applikation läuft als Servlet in einem Java Web server. Das Servlet erhält eine Client Anfrage und interpretiert diese als Event für die jeweilige Session. Events sind mit UI-Komponenten assoziiert werden dem Event-Listener übergeben. Wenn die UI Änderungen zu serverseitigen UI-Komponenten macht, werden diese vom Servlet im Browser gerendert und eine Antwort wird erzeugt. Die clientseitige Engine im Browser erhält die Antwort und braucht dise um die nötigen Änderungen im Browser zu machen.
+
+![Vaadin-Architektur Schema](vaadinArchitecture.png)
 
 ## Systemanforderungen
 ### Datenpersistenz

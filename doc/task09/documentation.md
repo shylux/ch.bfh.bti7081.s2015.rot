@@ -40,6 +40,10 @@ Der Presenter ist das Bindeglied zwischen Model und View und steuert die logisch
 ### Vaadin MVP
 **Unsere Architektur basiert auf dem MVP-Pattern.**
 ![architektur patientenapp](architectureStartScreenPatientApp.png)
+Das Architekturdiagramm ist bloss ein Snapshot für das Hauptmenü. 
+Folgende Presenter, Views und Models werden ebenfalls implementiert:
+
+
 ### Implementation
 Main View
 - StartPagePresenter
@@ -48,38 +52,36 @@ Main View
 - Life Up
 	- Presenter
 		- LifeUpPresenter
-		- CalendarPresenter
 	- Views
-		- CalendarView
-		- LifeUp View
+		- ListAchievments
+		- ListDailyActivities
+		- ShowActivity
 	- Models
-		- CalendarModel
-		- LifeUp Model
-		- CalendarEntry Model
-- Calendar
+		- LifeUpModel
+		- ActivityModel
+- Appointment
 	- Presenter
-		- CalendarPresenter
+		- Appointment
 	- Views
-		- CalendarView
+		- ShowAppointment
+		- ListAppointments
 	- Model
-		- CalendarModel
-		- LifeUp Model
-		- Medication Model
+		- CalendarEntryModel
 - Medications
 	- Presenter
-		- CalendarPresenter
+		- ShowmedicationList
 		- MedicationPresenter
 	- Views
 		- MedicationView
 	- Model
-		- Medication Model
+		- MedicationModel
 - Emergency
 	- Presenter
 		- EmergencyPresenter
 	- Views
 		- EmergencyView
 	- Model
-		- Contact Model
+		- EmergergencyModel
 
 
 ## Softwarearchitektur

@@ -39,15 +39,12 @@ Die View ist nur für die Visualisierung und die Aktionsein- und ausgänge veran
 Der Presenter ist das Bindeglied zwischen Model und View und steuert die logischen Abläufe. Er stellt die Verknüpfung des Model und Views her.
 ### Vaadin MVP
 **Unsere Architektur basiert auf dem MVP-Pattern.**
+
+### Software-Architektur
+
 ![architektur patientenapp](architectureStartScreenPatientApp.png)
 Das Architekturdiagramm ist bloss ein Snapshot für das Hauptmenü. 
 Folgende Presenter, Views und Models werden ebenfalls implementiert:
-
-
-### Implementation
-Main View
-- StartPagePresenter
-- ViewController
 
 - Life Up
 	- Presenter
@@ -84,5 +81,4 @@ Main View
 		- EmergergencyModel
 
 
-## Softwarearchitektur
 ## Appendix

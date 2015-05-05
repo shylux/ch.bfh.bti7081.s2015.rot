@@ -226,3 +226,9 @@ FH: Filip Hofer
 ### 03.05.2015
  * Weiterarbeit an der Präsentation
  * Erstellung und Arbeit an der Dokumentationsdatei
+
+### 05.05.2015
+ * Abschluss der Präsentation
+ * Einchecken der restlichen Dokumente
+ * Anwesende Teammitglieder:  TB, FH, JM, ML, ST
+ * Abwesende Teammitglieder: LK (persönliche Gründe)

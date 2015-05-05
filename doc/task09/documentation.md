@@ -47,6 +47,11 @@ Als Grundlage verwenden wir unser überarbeitetes Klassendiagramm und betten die
 
 Die Architektur mit useren eingebettenten Klassen :
 ![architektur patientenapp](architectureStartScreenPatientApp.png)
+**Legende:**
+* Blau: Vaadin Komponenten
+* Grün: Third-Party-Komponenten
+* Weiss: Eigene Komponenten
+
 Das Architekturdiagramm ist bloss ein Snapshot für das Hauptmenü. 
 Folgende Presenter, Views und Models werden ebenfalls implementiert:
 

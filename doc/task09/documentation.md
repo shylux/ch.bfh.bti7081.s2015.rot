@@ -45,6 +45,9 @@ Der Presenter ist das Bindeglied zwischen Model und View und steuert die logisch
 **Unsere Architektur basiert auf dem MVP-Pattern.**
 
 ### Software-Architektur
+Unsere Applikation basiert auf folgendem Package-Diagram:
+![Packagediagramm](packageDiagramm.png)
+
 Als Grundlage verwenden wir unser überarbeitetes Klassendiagramm und betten dieses in eine MVP-Architektur ein.
 ![classdiagramm überarbeitet](classdiagramm.png)
 

@@ -6,7 +6,7 @@ Das unten eingefügte Bild ist eine Illustration der Vaadin-Architektur und wie 
 
 Eine serverseitige Vaadin-Applikation läuft als Servlet in einem Java Web server. Das Servlet erhält eine Client Anfrage und interpretiert diese als Event für die jeweilige Session. Events sind mit UI-Komponenten assoziiert werden dem Event-Listener übergeben. Wenn die UI Änderungen zu serverseitigen UI-Komponenten macht, werden diese vom Servlet im Browser gerendert und eine Antwort wird erzeugt. Die clientseitige Engine im Browser erhält die Antwort und braucht dise um die nötigen Änderungen im Browser zu machen.
 
-![Vaadin-Architektur Schema](vaadinArchitecture.png)
+![Vaadin-Architektur Schema](http://vaadin.com/download/book-of-vaadin/review/review-2013-02/img/application/application-architecture-lo.png)
 
 ## Systemanforderungen
 ### Datenpersistenz

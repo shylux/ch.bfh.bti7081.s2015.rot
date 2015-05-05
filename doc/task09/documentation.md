@@ -41,7 +41,11 @@ Der Presenter ist das Bindeglied zwischen Model und View und steuert die logisch
 **Unsere Architektur basiert auf dem MVP-Pattern.**
 
 ### Software-Architektur
+Als Grundlage verwenden wir unser überarbeitetes Klassendiagramm und betten dieses in eine MVP-Architektur ein.
+![classdiagramm überarbeitet](classdiagramm.png)
 
+
+Die Architektur mit useren eingebettenten Klassen :
 ![architektur patientenapp](architectureStartScreenPatientApp.png)
 Das Architekturdiagramm ist bloss ein Snapshot für das Hauptmenü. 
 Folgende Presenter, Views und Models werden ebenfalls implementiert:

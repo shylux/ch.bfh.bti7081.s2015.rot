@@ -230,5 +230,7 @@ FH: Filip Hofer
 ### 05.05.2015
  * Abschluss der Präsentation
  * Einchecken der restlichen Dokumente
+ * Erstellen Backlog, Planung für 1. Scrumphase
+ * Präsentation Task 9 & 10
  * Anwesende Teammitglieder:  TB, FH, JM, ML, ST
  * Abwesende Teammitglieder: LK (persönliche Gründe)

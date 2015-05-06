@@ -2,13 +2,11 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
-public class StartPagePresenter  extends BasePresenter implements ViewListener{
+public class MedicationPresenter extends BasePresenter implements ViewListener {
 
-	
-
-	public StartPagePresenter(View view) {
+	public MedicationPresenter(View view) {
 		super(view);
-
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override

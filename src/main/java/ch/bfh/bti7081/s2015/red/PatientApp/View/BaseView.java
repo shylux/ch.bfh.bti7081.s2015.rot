@@ -13,21 +13,13 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-public abstract class BaseView extends UI implements View{
+public abstract class BaseView extends VerticalLayout implements View{
 
 	protected HashMap<String,ViewListener> listener=  new HashMap<String,ViewListener>();
-	
 
 	@Override
-	protected void init(VaadinRequest request) {
-
-
-}
-
-
-	@Override
-	public void addListener(ViewListener viewListener) {
-		// TODO Auto-generated method stub
+	public void addListener(String name,ViewListener viewListener) {
+		listener.put(name,viewListener);
 		
 	}
 

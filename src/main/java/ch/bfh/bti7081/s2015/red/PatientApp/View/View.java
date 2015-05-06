@@ -13,7 +13,7 @@ public interface View extends Button.ClickListener
 	/*
 	 * add a new Viewlistener that the view could notiyfy
 	 */
-	public void addListener(ViewListener viewListener);
+	public void addListener(String name, ViewListener viewListener);
 	/*
 	 * (non-Javadoc)
 	 * @see com.vaadin.ui.Button.ClickListener#buttonClick(com.vaadin.ui.Button.ClickEvent)
@@ -29,4 +29,5 @@ public interface View extends Button.ClickListener
 	 * update a collection of models
 	 */
 	public void update(ArrayList<Model> models);
+	
 }

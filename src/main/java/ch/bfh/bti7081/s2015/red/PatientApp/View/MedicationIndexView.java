@@ -40,7 +40,7 @@ public class MedicationIndexView extends BaseView implements View, com.vaadin.na
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-
+		beforeRender();
 		
         //setContent(layout);
 

@@ -17,11 +17,10 @@ public interface ViewListener {
 	public void triggerEvent(String event,Object data);
 	
 	/**
-	 * for displaying the specific view
+	 * Initialize the Presenter
+	 * @param data
 	 */
-	public void displayView();
-	
-	
+	public  void init(Object data);
 	
 	
 }

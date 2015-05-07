@@ -50,7 +50,7 @@ public class StartScreenView extends BaseView implements View, com.vaadin.naviga
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-	
+		beforeRender();
 		
 		Notification.show("You're welcome");
 		

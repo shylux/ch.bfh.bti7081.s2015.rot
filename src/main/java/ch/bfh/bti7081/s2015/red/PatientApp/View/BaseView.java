@@ -15,27 +15,21 @@ import com.vaadin.ui.VerticalLayout;
 
 public abstract class BaseView extends VerticalLayout implements View{
 
-	protected HashMap<String,ViewListener> listener=  new HashMap<String,ViewListener>();
+	protected HashMap<String,ViewListener> listeners=  new HashMap<String,ViewListener>();
 
 	@Override
 	public void addListener(String name,ViewListener viewListener) {
-		listener.put(name,viewListener);
+		listeners.put(name,viewListener);
 		
 	}
-
-
-	@Override
-	public void buttonClick(ClickEvent event) {
-		// TODO Auto-generated method stub
-		
+	
+	/**
+	 * 
+	 */
+	public void beforeRender()
+	{
+		for(ViewListener listener : listeners.values())
+			listener.init(null);
 	}
-
-
-	@Override
-	public void update(Model model) {
-		// TODO Auto-generated method stub
 		
-	}
-
-		
-	}
+}

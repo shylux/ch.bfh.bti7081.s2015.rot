@@ -9,5 +9,7 @@ public abstract class BasePresenter implements ViewListener{
 	{
 		this.view = view;
 	}
+	
+	
 
 }

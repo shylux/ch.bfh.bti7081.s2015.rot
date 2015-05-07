@@ -10,23 +10,28 @@ import com.vaadin.ui.Button;
 
 public interface View extends Button.ClickListener  
 {
-	/*
+	/**
 	 * add a new Viewlistener that the view could notiyfy
+	 * @param name
+	 * @param viewListener
 	 */
 	public void addListener(String name, ViewListener viewListener);
-	/*
+
+	/**
 	 * (non-Javadoc)
 	 * @see com.vaadin.ui.Button.ClickListener#buttonClick(com.vaadin.ui.Button.ClickEvent)
 	 */
 	public void buttonClick(Button.ClickEvent event);
 	
-	/*
+	/**
 	 * update a specific model
+	 * @param model
 	 */
 	public void update(Model model);
 
-	/*
-	 * update a collection of models
+	/**
+	 * update a specific model
+	 * @param models
 	 */
 	public void update(ArrayList<Model> models);
 	

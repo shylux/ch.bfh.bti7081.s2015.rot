@@ -21,9 +21,10 @@ public class MedicationIndexPresenter extends BasePresenter implements ViewListe
 		
 	}
 
-	@Override
-	public void displayView() {
 
+	@Override
+	public void init(Object data) {
+		// TODO Auto-generated method stub
 		
 	}
 

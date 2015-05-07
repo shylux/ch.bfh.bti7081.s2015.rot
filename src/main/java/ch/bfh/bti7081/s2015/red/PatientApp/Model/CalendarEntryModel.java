@@ -8,6 +8,12 @@ public class CalendarEntryModel implements Model {
 	protected CalendarEntry calendarEntry;
 	
 	
+	public CalendarEntryModel(CalendarEntry calendarEntry)
+	{
+		this.calendarEntry = calendarEntry;
+	
+	}
+	
 	@Override
 	public void update(Object data) {
 		// TODO Auto-generated method stub

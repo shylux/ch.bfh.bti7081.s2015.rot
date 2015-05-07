@@ -8,7 +8,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 import com.vaadin.ui.Button;
 
-public interface View extends Button.ClickListener  
+public interface View <T> extends Button.ClickListener  
 {
 	/**
 	 * add a new Viewlistener that the view could notiyfy
@@ -27,12 +27,12 @@ public interface View extends Button.ClickListener
 	 * update a specific model
 	 * @param model
 	 */
-	public void update(Model model);
+	public void update(T model);
 
 	/**
 	 * update a specific model
 	 * @param models
 	 */
-	public void update(ArrayList<Model> models);
+	public void update(ArrayList<T> data);
 	
 }

@@ -44,8 +44,8 @@ public class NavigatorUI  extends UI{
 		 * Medication Index MVP
 		 */
 		MedicationIndexView mediIndexView = new MedicationIndexView();
-		MedicationIndexPresenter mediIndexPresenter = new MedicationIndexPresenter(startScreenView);
-		mediIndexView.addListener(MEDICATIONINDEX,startScreenPresenter);
+		MedicationIndexPresenter mediIndexPresenter = new MedicationIndexPresenter(mediIndexView);
+		mediIndexView.addListener(MEDICATIONINDEX,mediIndexPresenter);
 		
 		navigator.addView("",startScreenView);
 		navigator.addView(MEDICATIONINDEX,mediIndexView);

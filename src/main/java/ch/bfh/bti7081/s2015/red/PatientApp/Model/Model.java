@@ -1,13 +1,31 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-public interface Model {
-	/*
-	 * update model data
-	 */
-	public void update(Object data);
+import java.util.ArrayList;
+
+public interface Model <T> {
 	
-	/*
-	 * get model data
+	
+	/**
+	 * update model data
+	 * @param data
 	 */
-	public Object getData();
+	public void update(T data);
+	
+	/**
+	 * get model data
+	 * @return
+	 */
+	public T getData();
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public ArrayList<T> getCollection();
+	
+	/**
+	 * 
+	 * @param o
+	 */
+	public void add(T o);
 }

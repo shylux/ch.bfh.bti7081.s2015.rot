@@ -1,29 +1,46 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
+import java.util.ArrayList;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.App.CalendarEntry;
 
 
-public class CalendarEntryModel implements Model {
+public class CalendarEntryModel implements Model<CalendarEntry> {
 
-	protected CalendarEntry calendarEntry;
+	protected ArrayList<CalendarEntry> entries = new ArrayList<CalendarEntry>();
 	
-	
-	public CalendarEntryModel(CalendarEntry calendarEntry)
-	{
-		this.calendarEntry = calendarEntry;
-	
-	}
-	
-	@Override
-	public void update(Object data) {
-		// TODO Auto-generated method stub
-		calendarEntry = (CalendarEntry)data;
-	}
 
 	@Override
-	public Object getData() {
-		// TODO Auto-generated method stub
-		return calendarEntry;
+	public void update(CalendarEntry data) {
+		int index = entries.indexOf(data);
+		entries.set(index, data);
 	}
+
+
+
+
+
+	@Override
+	public ArrayList<CalendarEntry> getCollection() {
+		// TODO Auto-generated method stub
+		return entries;
+	}
+
+
+
+	@Override
+	public void add(CalendarEntry o) {
+		entries.add(o);
+		
+	}
+
+
+	@Override
+	public CalendarEntry getData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 
 }

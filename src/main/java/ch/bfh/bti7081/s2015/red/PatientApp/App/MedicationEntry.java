@@ -18,16 +18,7 @@ public class MedicationEntry extends CalendarEntry{
 		display = data;
 		
 	}
-	@Override
-	public String serialize() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public void deserialize(String json) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 	@Override
 	public String getId() {
 		// TODO Auto-generated method stub

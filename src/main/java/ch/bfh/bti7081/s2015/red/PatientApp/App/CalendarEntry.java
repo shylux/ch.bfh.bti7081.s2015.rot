@@ -2,7 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
 import java.util.Date;
 
-public abstract class CalendarEntry {
+public abstract class CalendarEntry implements Persistable{
 	
 	public abstract String display();
 	

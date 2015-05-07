@@ -13,7 +13,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.App.MedicationEntry;
 
 @Theme("mytheme")
 @Widgetset("ch.bfh.bti7081.s2015.red.PatientApp.MyAppWidgetset")
-public class MedicationIndexView extends BaseView<MedicationEntry> implements View<MedicationEntry>, com.vaadin.navigator.View
+public class MedicationIndexView extends BaseView<MedicationEntry>
 {
 	
 

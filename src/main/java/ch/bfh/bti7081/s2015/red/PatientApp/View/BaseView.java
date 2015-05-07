@@ -7,7 +7,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 import com.vaadin.ui.VerticalLayout;
 
-public abstract class BaseView<T> extends VerticalLayout implements View<T>{
+public abstract class BaseView<T> extends VerticalLayout implements View<T>,com.vaadin.navigator.View{
 
 	protected ArrayList<ViewListener> listeners=  new ArrayList<ViewListener>();
 

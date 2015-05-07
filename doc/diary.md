@@ -234,3 +234,8 @@ FH: Filip Hofer
  * Präsentation Task 9 & 10
  * Anwesende Teammitglieder:  TB, FH, JM, ML, ST
  * Abwesende Teammitglieder: LK (persönliche Gründe)
+
+
+### 06.05.20145
+* skeleton inkl. Navigation erstellt. (JM)
+  * View <-> Presenter <-> Model Kommunikation fehlt noch (JM)

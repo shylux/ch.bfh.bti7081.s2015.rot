@@ -1,8 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
+import java.util.ArrayList;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.App.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
-public class MedicationIndexPresenter extends BasePresenter implements ViewListener {
+public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> implements ViewListener<CalendarEntry>  {
 
 	public MedicationIndexPresenter(View view) {
 		super(view);
@@ -10,22 +13,28 @@ public class MedicationIndexPresenter extends BasePresenter implements ViewListe
 	}
 
 	@Override
-	public void buttonClick(String property, Object data) {
+	public void buttonClick(String property, CalendarEntry data) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void triggerEvent(String event, Object data) {
+	public void triggerEvent(String event, CalendarEntry data) {
 		// TODO Auto-generated method stub
 		
 	}
-
 
 	@Override
-	public void init(Object data) {
+	public void init(CalendarEntry data) {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void buttonClick(String property, ArrayList<CalendarEntry> data) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

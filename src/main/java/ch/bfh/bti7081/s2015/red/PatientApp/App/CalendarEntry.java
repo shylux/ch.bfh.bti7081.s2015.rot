@@ -12,4 +12,16 @@ public abstract class CalendarEntry {
 	protected String description;
 	
 	
+	/**
+	 * for testing only
+	 * @return
+	 */
+	protected String display;
+	
+	/**
+	 * for testing only 
+	 */
+	public abstract void setDisplay(String data);
+	
+	
 }

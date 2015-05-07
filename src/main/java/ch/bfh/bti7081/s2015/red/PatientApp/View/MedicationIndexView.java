@@ -5,15 +5,10 @@ import java.util.ArrayList;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Button.ClickEvent;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.App.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.App.MedicationEntry;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Model;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 
 @Theme("mytheme")

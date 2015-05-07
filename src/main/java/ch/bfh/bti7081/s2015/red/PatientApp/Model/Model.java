@@ -12,6 +12,13 @@ public interface Model <T> {
 	public void update(T data);
 	
 	/**
+	 * update model data
+	 * @param data
+	 */
+	public void update(ArrayList<T> collection);
+	
+	
+	/**
 	 * get model data
 	 * @return
 	 */

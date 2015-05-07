@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.App.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
+import com.google.gwt.layout.client.Layout;
+import com.google.gwt.thirdparty.guava.common.collect.Multiset.Entry;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button;
@@ -35,13 +37,11 @@ public class StartScreenView extends  BaseView<CalendarEntry> implements View<Ca
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-	
 		
-		for(CalendarEntry entry: collection)
-		{
-			Label tf = new Label(entry.display());
-			addComponent(tf);
-		}
+		final TextField tf1 = new TextField("TextField",collection.get(0).display());
+		final TextField tf2 = new TextField("TextField",collection.get(1).display());
+		addComponent(tf1);
+		addComponent(tf2);
 		
 		Notification.show("You're welcome");
 		
@@ -53,6 +53,23 @@ public class StartScreenView extends  BaseView<CalendarEntry> implements View<Ca
 	         getUI().getNavigator().navigateTo(NavigatorUI.MEDICATIONINDEX);
 		      }
 		  });
+		Button button1 = new Button("Update data");
+		addComponent(button1);
+		button1.addClickListener(new Button.ClickListener() {
+		      @Override
+		      public void buttonClick(ClickEvent event) {
+		    	  
+		    	  collection.get(0).setDisplay(tf1.getValue());
+		    	  collection.get(1).setDisplay(tf2.getValue());
+		   
+		         for(ViewListener listener: listeners)
+		         {
+		        	 
+		        	 listener.buttonClick("UPDATE",collection);
+			     }
+		      }
+			  });
+		
 		
 		
 	}

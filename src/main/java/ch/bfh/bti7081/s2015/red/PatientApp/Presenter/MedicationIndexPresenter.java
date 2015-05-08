@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
-public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> implements ViewListener<CalendarEntry>  {
+public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> {
 
 	public MedicationIndexPresenter(View view) {
 		super(view);

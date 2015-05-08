@@ -2,7 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.App.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 import com.google.gwt.layout.client.Layout;
@@ -56,8 +56,8 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 	@Override
 	public void enter(ViewChangeEvent event) {
 		
-		tf1.setValue(collection.get(0).display());
-		tf2.setValue(collection.get(1).display());
+		//tf1.setValue(collection.get(0).display());
+		//tf2.setValue(collection.get(1).display());
 		
 		addComponent(tf1);
 		addComponent(tf2);

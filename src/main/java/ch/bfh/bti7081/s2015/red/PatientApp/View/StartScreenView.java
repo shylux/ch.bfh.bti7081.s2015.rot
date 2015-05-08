@@ -22,6 +22,7 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 	
 	ArrayList<CalendarEntry> collection = new ArrayList<>();
 	final Button medication = new Button("Medication");
+	final Button emergency = new Button("Emergency");
 	final Button update = new Button("Update");
 	final TextField tf1 = new TextField("TextField");
 	final TextField tf2 = new TextField("TextField");
@@ -32,6 +33,7 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 		Label label = new Label("Start Page");
 		addComponent(label);
 		medication.addClickListener(this);
+		emergency.addClickListener(this);
 		update.addClickListener(this);
 	}
 
@@ -40,6 +42,9 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 		
 		if(event.getSource() == medication)
 			getUI().getNavigator().navigateTo(NavigatorUI.MEDICATIONINDEX);
+		else if (event.getSource() == emergency) {
+			getUI().getNavigator().navigateTo(NavigatorUI.EMERGENCY);
+		}
 		else if(event.getSource() == update)
 		{
 			  collection.get(0).setDisplay(tf1.getValue());
@@ -62,6 +67,7 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 		addComponent(tf1);
 		addComponent(tf2);
 		addComponent(medication);
+		addComponent(emergency);
 		addComponent(update);
 	}
 

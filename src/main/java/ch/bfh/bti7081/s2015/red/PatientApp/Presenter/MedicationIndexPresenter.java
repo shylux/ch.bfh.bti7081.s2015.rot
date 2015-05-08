@@ -25,12 +25,6 @@ public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> {
 	}
 
 	@Override
-	public void init(CalendarEntry data) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void buttonClick(String property, ArrayList<CalendarEntry> data) {
 		// TODO Auto-generated method stub
 		

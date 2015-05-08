@@ -32,11 +32,5 @@ public interface ViewListener<T> {
 	 */
 	public void triggerEvent(String event,T data);
 	
-	/**
-	 * Initialize the Presenter
-	 * @param data
-	 */
-	public  void init(T data);
-	
 	
 }

@@ -32,8 +32,8 @@ public class CalendarEntryModel implements Model<CalendarEntry> {
 		return null;
 	}
 	@Override
-	public void update(ArrayList<CalendarEntry> collection) {
-		entries = collection;
+	public void update() {
+		
 		
 	}
 }

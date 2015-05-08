@@ -52,11 +52,10 @@ public class StartPagePresenter  extends BasePresenter<CalendarEntry> implements
 	@Override
 	public void buttonClick(String property, ArrayList<CalendarEntry> data) {
 		
-		for(CalendarEntry entry : this.model.getCollection())
-			System.out.println(entry.display());
+
 		if(property.equals("UPDATE"))
 		{
-			this.model.update(data);
+			this.model.update();
 			for(CalendarEntry entry : this.model.getCollection())
 				System.out.println(entry.display());
 		}

@@ -15,7 +15,7 @@ public interface Model <T> {
 	 * update model data
 	 * @param data
 	 */
-	public void update(ArrayList<T> collection);
+	public void update();
 	
 	
 	/**

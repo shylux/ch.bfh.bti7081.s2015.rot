@@ -17,7 +17,7 @@ public class NavigatorUI  extends UI{
 
 	protected Navigator navigator;
 	
-	final public static String MEDICATIONINDEX = "MedicationIndex";
+	final static public String MEDICATIONINDEX = "MedicationIndex";
 	
 	
 	@Override
@@ -49,8 +49,6 @@ public class NavigatorUI  extends UI{
 		
 		navigator.addView("",startScreenView);
 		navigator.addView(MEDICATIONINDEX,mediIndexView);
-		
-		//navigator.navigateTo("");
 		
 	}
 

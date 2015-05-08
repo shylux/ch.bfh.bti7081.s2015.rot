@@ -2,6 +2,13 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 import java.util.ArrayList;
 
+
+/**
+ * 
+ * @author James Mayr
+ *
+ * @param <T>
+ */
 public interface ViewListener<T> {
 	
 	/**

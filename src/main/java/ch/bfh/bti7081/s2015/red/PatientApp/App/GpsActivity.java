@@ -2,8 +2,8 @@ package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
 public class GpsActivity extends Activity {
 
-	private double lat;
-	private double lng;
+	private double latitude;
+	private double longitude;
 	@Override
 	public String getId() {
 		// TODO Auto-generated method stub
@@ -21,11 +21,24 @@ public class GpsActivity extends Activity {
 		// TODO Auto-generated method stub
 		
 	}
-
 	@Override
 	public boolean checkSuccess() {
 		// TODO Auto-generated method stub
 		return false;
+	}
+	
+	public void setLatLn(double lat,double lng)
+	{
+		this.latitude = lat;
+		this.longitude = lng;
+	}
+	public double getLat(double lat)
+	{
+		return latitude;
+	}
+	public double getLng(double lng)
+	{
+		return longitude;
 	}
 
 }

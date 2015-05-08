@@ -239,3 +239,10 @@ FH: Filip Hofer
 ### 06.05.20145
 * skeleton inkl. Navigation erstellt. (JM)
   * View <-> Presenter <-> Model Kommunikation fehlt noch (JM)
+  * 
+### 08.05.20145
+ * Arbeit State-Pattern
+ * Teammeeting
+ * Weiterarbeit an Umsetzung Scrum 1
+ * Anwesende Teammitglieder:  TB, FH, JM, ML, ST, LK
+ * Abwesende Teammitglieder: 

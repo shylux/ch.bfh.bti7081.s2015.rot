@@ -7,8 +7,8 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Button.ClickEvent;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.App.Emergency;
-import ch.bfh.bti7081.s2015.red.PatientApp.App.EmergencyStep;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 
 public class EmergencyView extends BaseView<Emergency> {
 	

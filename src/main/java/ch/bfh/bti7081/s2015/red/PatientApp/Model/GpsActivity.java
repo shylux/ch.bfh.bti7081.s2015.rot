@@ -4,11 +4,6 @@ public class GpsActivity extends Activity {
 
 	private double latitude;
 	private double longitude;
-	@Override
-	public String getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public String display() {

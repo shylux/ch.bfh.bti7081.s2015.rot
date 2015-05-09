@@ -18,12 +18,6 @@ public class MedicationEntry extends CalendarEntry{
 		display = data;
 		
 	}
-	
-	@Override
-	public String getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 }

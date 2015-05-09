@@ -60,6 +60,8 @@ public class StartScreenView extends  BaseView<CalendarEntry>{
 		//tf1.setValue(collection.get(0).display());
 		//tf2.setValue(collection.get(1).display());
 		
+		
+		
 		addComponent(tf1);
 		addComponent(tf2);
 		addComponent(medication);

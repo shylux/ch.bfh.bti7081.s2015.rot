@@ -20,9 +20,16 @@ public class MongoDbAdapter {
 	private DB db;
 	private DBCollection collection;
 	
-	public MongoDbAdapter() throws UnknownHostException
+	public MongoDbAdapter()
 	{
-		mongoDbClient = new MongoClient("192.168.193.135");
+		try {
+			mongoDbClient = new MongoClient("192.168.193.135");
+		} 
+		catch (UnknownHostException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		db = mongoDbClient.getDB("patientapp");
 		collection = db.getCollection("patient-data");
 	}
@@ -88,8 +95,9 @@ public class MongoDbAdapter {
 	    	   {
 	    		   DBObject record = cursor.next();
 	    		   Gson gson = new Gson();
-	    		   Object createdClass  =  generateClassFromDbObject(record,persistable);
-	    		   persistables.add((Persistable) createdClass);
+	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistable);
+	    		   createdClass.setId(record.get("_id").toString());
+	    		   persistables.add(createdClass);
 	    	   }
 	    } 
 	    finally 
@@ -97,6 +105,25 @@ public class MongoDbAdapter {
 	    	   cursor.close();
 	    	   return persistables;
 	    }
+	}
+	public void insertIntoDatabase(ArrayList<Persistable>entries)
+	{
+		for(Persistable entry: entries)
+		{
+			insertIntoDatabase(entry);
+		}
+	}
+	public void insertIntoDatabase(Persistable entry)
+	{
+		/*
+		 * convert from json string to a mongo db specific format 
+		 */
+		String json = entry.serialize();
+		
+		Object object = JSON.parse(json);
+		BasicDBObject document = (BasicDBObject) object;
+		
+		collection.insert(document);
 	}
 	private Persistable generateClassFromDbObject(DBObject record,Persistable persistable)
 	{

@@ -2,7 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 public class Appointment extends CalendarEntry{
 
-	private Contact contact = new Contact();
+	private Contact contact = new Contact("Minch Yoda", "+12 345 67 89");
 	
 	public Appointment()
 	{

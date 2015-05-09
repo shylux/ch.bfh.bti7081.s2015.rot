@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
-public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> implements ViewListener<CalendarEntry>  {
+public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> {
 
 	public MedicationIndexPresenter(View view) {
 		super(view);
@@ -20,12 +20,6 @@ public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> imple
 
 	@Override
 	public void triggerEvent(String event, CalendarEntry data) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void init(CalendarEntry data) {
 		// TODO Auto-generated method stub
 		
 	}

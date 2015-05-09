@@ -1,4 +1,4 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.Model;
+package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
 import java.net.UnknownHostException;

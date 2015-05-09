@@ -5,15 +5,11 @@ import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.thirdparty.guava.common.collect.Multiset.Entry;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
-import com.vaadin.ui.VerticalLayout;
 
 
 

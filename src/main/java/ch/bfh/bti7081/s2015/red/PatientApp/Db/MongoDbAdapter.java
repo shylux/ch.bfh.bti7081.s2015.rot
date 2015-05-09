@@ -45,19 +45,27 @@ public class MongoDbAdapter {
 		 */
 		for(Persistable entry : entries)
 		{
-			
-			/*
-			 * convert from json string to a mongo db specific format 
-			 */
-			String json = entry.serialize();
-			BasicDBObject updateQuery = new BasicDBObject();
-			updateQuery.append("_id", entry.getId());
-			
-			Object object = JSON.parse(json);
-			BasicDBObject document = (BasicDBObject) object;
-			
-			collection.update(updateQuery, document);
+			updateEntry(entry);
 		}
+	}
+	
+	/**
+	 * update  a given entry and stores the update into database 
+	 * @param entry
+	 */
+	public void updateEntry(Persistable entry)
+	{
+		/*
+		 * convert from json string to a mongo db specific format 
+		 */
+		String json = entry.serialize();
+		BasicDBObject updateQuery = new BasicDBObject();
+		updateQuery.append("_id", new ObjectId(entry.getId()));
+		
+		Object object = JSON.parse(json);
+		BasicDBObject document = (BasicDBObject) object;
+		
+		collection.update(updateQuery, document);
 	}
 	
 	/**
@@ -73,7 +81,8 @@ public class MongoDbAdapter {
 	    DBObject dbObj = collection.findOne(query);
 	    
 		Gson gson = new Gson();
-		Object createdClass  =  generateClassFromDbObject(dbObj,persistable);
+		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable);
+		createdClass.setId(dbObj.get("_id").toString());
 		
 		return (Persistable)createdClass;
 	}
@@ -106,6 +115,11 @@ public class MongoDbAdapter {
 	    	   return persistables;
 	    }
 	}
+	
+	/**
+	 * insert a new collection into database
+	 * @param entries
+	 */
 	public void insertIntoDatabase(ArrayList<Persistable>entries)
 	{
 		for(Persistable entry: entries)
@@ -113,6 +127,10 @@ public class MongoDbAdapter {
 			insertIntoDatabase(entry);
 		}
 	}
+	/**
+	 * insert a single persistable entry into database
+	 * @param entry
+	 */
 	public void insertIntoDatabase(Persistable entry)
 	{
 		/*
@@ -128,11 +146,7 @@ public class MongoDbAdapter {
 	private Persistable generateClassFromDbObject(DBObject record,Persistable persistable)
 	{
 		Gson gson = new Gson();
-		Object createdClass  =  gson.fromJson(record.toString(),persistable.getClass());
-		return (Persistable)createdClass;
+		Persistable createdClass  =  gson.fromJson(record.toString(),persistable.getClass());
+		return createdClass;
 	}
-	
-	
-	
-	
 }

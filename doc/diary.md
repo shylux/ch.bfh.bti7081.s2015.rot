@@ -246,3 +246,7 @@ FH: Filip Hofer
  * Weiterarbeit an Umsetzung Scrum 1
  * Anwesende Teammitglieder:  TB, FH, JM, ML, ST, LK
  * Abwesende Teammitglieder: 
+ 
+### 10.05.2015
+ * Abschluss des StartPage-Konstrukt mit MVP (ST)
+ * Git-Push noch ausstehend -> Konflikte. Absprache mit Team erfordelich

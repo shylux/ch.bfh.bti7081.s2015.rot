@@ -239,7 +239,8 @@ FH: Filip Hofer
 ### 06.05.20145
 * skeleton inkl. Navigation erstellt. (JM)
   * View <-> Presenter <-> Model Kommunikation fehlt noch (JM)
-  * 
+  
+
 ### 08.05.2015
  * Arbeit State-Pattern
  * Teammeeting
@@ -253,7 +254,7 @@ FH: Filip Hofer
 ### 10.05.2015
  * Abschluss des StartPage-Konstrukt mit MVP (ST)
  * Git-Push noch ausstehend -> Konflikte. Absprache mit Team erfordelich
- * 
+
  ###11.05.2014
 * Pull Request Architekturfehlerbehebung / Datenbankanbindung hinzugefügt. (ST, JM)
 * Branches für Medication / Life Up erstellt (FH,TB)

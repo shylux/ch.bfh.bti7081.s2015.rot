@@ -8,12 +8,12 @@ public class Calendar {
 	private ArrayList<CalendarEntry>entries = new ArrayList<CalendarEntry>();
 	public ArrayList<CalendarEntry> getDailyEntries()
 	{
-		return null;
+		return entries;
 		
 	}
 	public ArrayList<CalendarEntry> getTomorrowEntries()
 	{
-		return null;
+		return entries;
 	}
 	public void updateCalendarEntries()
 	{

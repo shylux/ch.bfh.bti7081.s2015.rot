@@ -3,7 +3,6 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Calendar;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 

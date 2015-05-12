@@ -37,10 +37,10 @@ public class NavigatorUI extends UI {
 		/*
 		 * startstreen MVP
 		 */
-		StartScreenView startScreenView = new StartScreenView();
+		StartPageView startPageView = new StartPageView();
 		StartPagePresenter startScreenPresenter = new StartPagePresenter(
-				startScreenView);
-		startScreenView.addListener("StartScreen", startScreenPresenter);
+				startPageView);
+		startPageView.addListener("StartScreen", startScreenPresenter);
 
 		/*
 		 * Medication Index MVP
@@ -57,7 +57,7 @@ public class NavigatorUI extends UI {
 		EmergencyPresenter emergPresenter = new EmergencyPresenter(emergView);
 		emergView.addListener(EMERGENCY, emergPresenter);
 
-		navigator.addView("", startScreenView);
+		navigator.addView("", startPageView);
 		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
 

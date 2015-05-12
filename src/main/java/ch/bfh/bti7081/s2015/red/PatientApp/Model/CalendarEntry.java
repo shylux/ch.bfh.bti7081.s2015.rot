@@ -17,7 +17,7 @@ public abstract class CalendarEntry implements Persistable{
 
 	private String id; //unique id, necessary for db storage
 	/*
-	 * class type, necessary for type specific serach in the database
+	 * class type, necessary for type specific search in the database
 	 */
 	private String type = this.getClass().toString(); 
 	

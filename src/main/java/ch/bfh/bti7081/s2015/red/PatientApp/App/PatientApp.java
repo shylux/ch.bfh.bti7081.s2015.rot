@@ -18,14 +18,14 @@ public class PatientApp {
 	private LifeUp lifeUp = new LifeUp();
 	private Emergency emergency = new Emergency();
 	private Patient patient = new Patient();
-	
+
 	/**
 	 * get all events from today
 	 * @return
 	 */
-	public ArrayList<CalendarEntry>getDailyEvents()
+	public ArrayList<CalendarEntry> getTodayEntries()
 	{
-		return null;
+		return calendar.getTodayEntries();
 	}
 	/**
 	 * update the data of a specific activity
@@ -33,6 +33,6 @@ public class PatientApp {
 	 */
 	public void updateActivity(Activity activity)
 	{
-		
+
 	}
 }

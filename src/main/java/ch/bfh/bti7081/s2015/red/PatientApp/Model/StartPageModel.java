@@ -18,9 +18,8 @@ public class StartPageModel {
 		System.out.println("CollectionSize() " + collection.size());
 		System.out.println("Calender() " + calendar);
 		
-		collection = calendar.getDailyEntries();
+		collection = calendar.getTodayEntries();
 		if ( collection.size() == 0 ) {
-			collection = calendar.getTomorrowEntries();
 			
 			Appointment dummy0 = new Appointment();
 			dummy0.setDescription("Besprechung Dr. Wechsler Rückfall"); 

@@ -7,6 +7,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.View.NavigatorUI;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinServlet;
 
+/**
+ * Entry Point of the application
+ * @author James Mayr
+ *
+ */
 public class PatientAppStarter {
 	
 	

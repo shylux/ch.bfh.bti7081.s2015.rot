@@ -1,5 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
+
+/**
+ * Every Class that could be stored into an document base database
+ * must implement this interface
+ * @author James Mayr
+ *
+ */
 public interface Persistable {
 	
 	/**

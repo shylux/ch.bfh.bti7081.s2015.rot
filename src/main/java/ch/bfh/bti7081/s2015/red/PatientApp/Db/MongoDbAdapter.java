@@ -15,6 +15,13 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.util.JSON;
 
+
+/**
+ * An adapter for the document base database mongoDb
+ * 
+ * @author James Mayr
+ *
+ */
 public class MongoDbAdapter {
 	private MongoClient mongoDbClient;
 	private DB db;
@@ -115,7 +122,6 @@ public class MongoDbAdapter {
 	    	   return persistables;
 	    }
 	}
-	
 	/**
 	 * insert a new collection into database
 	 * @param entries

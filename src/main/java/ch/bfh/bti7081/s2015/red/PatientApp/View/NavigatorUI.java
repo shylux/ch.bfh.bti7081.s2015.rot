@@ -14,6 +14,13 @@ import com.vaadin.ui.VerticalLayout;
 
 @Theme("mytheme")
 @Widgetset("ch.bfh.bti7081.s2015.red.PatientApp.MyAppWidgetset")
+
+/**
+ * First called Class 
+ * Setup the navigation entries
+ * @author James Mayr
+ *
+ */
 public class NavigatorUI extends UI {
 
 	protected Navigator navigator;

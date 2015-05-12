@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 /**
  * 
+ * an interface for presenters
+ * 
  * @author James Mayr
  *
  * @param <T>

@@ -9,14 +9,14 @@ public interface Persistable {
 	public String serialize();
 	
 	/**
-	 * initialize a class with json code
-	 * @param json
+	 * a db specific unique hash id
+	 * @return
 	 */
-	public void deserialize(String json);
+	public String getId();
 	
 	/**
 	 * a db specific unique hash id
 	 * @return
 	 */
-	public String getId();
+	public void setId(String id);
 }

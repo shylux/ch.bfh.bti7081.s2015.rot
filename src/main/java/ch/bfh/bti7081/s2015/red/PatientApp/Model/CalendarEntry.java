@@ -14,7 +14,12 @@ public abstract class CalendarEntry implements Persistable{
 	protected String shortName;
 	protected String description;
 	protected Date startTime;
-	
+
+	private String id; //unique id, necessary for db storage
+	/*
+	 * class type, necessary for type specific serach in the database
+	 */
+	private String type = this.getClass().toString(); 
 	
 	/**
 	 * for testing only
@@ -29,24 +34,17 @@ public abstract class CalendarEntry implements Persistable{
 	
 
 	public String serialize() {
-		// TODO Auto-generated method stub
 		Gson gson = new Gson();
 		return gson.toJson(this);
+ 
 	}
-
-	
-	public void deserialize(String json) {
-
-	}
-	
 	/*
 	 * Getter's and Setters 
 	 */
 	public Date getStartTime() {
 		return startTime;
 	}
-
-
+	
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
@@ -78,4 +76,14 @@ public abstract class CalendarEntry implements Persistable{
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	public String getId()
+	{
+		return id;
+	}
+	public void setId(String id)
+	{
+		this.id = id;
+	}
+
 }

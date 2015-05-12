@@ -20,9 +20,16 @@ public class MongoDbAdapter {
 	private DB db;
 	private DBCollection collection;
 	
-	public MongoDbAdapter() throws UnknownHostException
+	public MongoDbAdapter()
 	{
-		mongoDbClient = new MongoClient("192.168.193.135");
+		try {
+			mongoDbClient = new MongoClient("192.168.193.135");
+		} 
+		catch (UnknownHostException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		db = mongoDbClient.getDB("patientapp");
 		collection = db.getCollection("patient-data");
 	}
@@ -38,19 +45,27 @@ public class MongoDbAdapter {
 		 */
 		for(Persistable entry : entries)
 		{
-			
-			/*
-			 * convert from json string to a mongo db specific format 
-			 */
-			String json = entry.serialize();
-			BasicDBObject updateQuery = new BasicDBObject();
-			updateQuery.append("_id", entry.getId());
-			
-			Object object = JSON.parse(json);
-			BasicDBObject document = (BasicDBObject) object;
-			
-			collection.update(updateQuery, document);
+			updateEntry(entry);
 		}
+	}
+	
+	/**
+	 * update  a given entry and stores the update into database 
+	 * @param entry
+	 */
+	public void updateEntry(Persistable entry)
+	{
+		/*
+		 * convert from json string to a mongo db specific format 
+		 */
+		String json = entry.serialize();
+		BasicDBObject updateQuery = new BasicDBObject();
+		updateQuery.append("_id", new ObjectId(entry.getId()));
+		
+		Object object = JSON.parse(json);
+		BasicDBObject document = (BasicDBObject) object;
+		
+		collection.update(updateQuery, document);
 	}
 	
 	/**
@@ -66,7 +81,8 @@ public class MongoDbAdapter {
 	    DBObject dbObj = collection.findOne(query);
 	    
 		Gson gson = new Gson();
-		Object createdClass  =  generateClassFromDbObject(dbObj,persistable);
+		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable);
+		createdClass.setId(dbObj.get("_id").toString());
 		
 		return (Persistable)createdClass;
 	}
@@ -88,8 +104,9 @@ public class MongoDbAdapter {
 	    	   {
 	    		   DBObject record = cursor.next();
 	    		   Gson gson = new Gson();
-	    		   Object createdClass  =  generateClassFromDbObject(record,persistable);
-	    		   persistables.add((Persistable) createdClass);
+	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistable);
+	    		   createdClass.setId(record.get("_id").toString());
+	    		   persistables.add(createdClass);
 	    	   }
 	    } 
 	    finally 
@@ -98,14 +115,38 @@ public class MongoDbAdapter {
 	    	   return persistables;
 	    }
 	}
+	
+	/**
+	 * insert a new collection into database
+	 * @param entries
+	 */
+	public void insertIntoDatabase(ArrayList<Persistable>entries)
+	{
+		for(Persistable entry: entries)
+		{
+			insertIntoDatabase(entry);
+		}
+	}
+	/**
+	 * insert a single persistable entry into database
+	 * @param entry
+	 */
+	public void insertIntoDatabase(Persistable entry)
+	{
+		/*
+		 * convert from json string to a mongo db specific format 
+		 */
+		String json = entry.serialize();
+		
+		Object object = JSON.parse(json);
+		BasicDBObject document = (BasicDBObject) object;
+		
+		collection.insert(document);
+	}
 	private Persistable generateClassFromDbObject(DBObject record,Persistable persistable)
 	{
 		Gson gson = new Gson();
-		Object createdClass  =  gson.fromJson(record.toString(),persistable.getClass());
-		return (Persistable)createdClass;
+		Persistable createdClass  =  gson.fromJson(record.toString(),persistable.getClass());
+		return createdClass;
 	}
-	
-	
-	
-	
 }

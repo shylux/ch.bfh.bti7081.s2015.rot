@@ -26,10 +26,12 @@ public class EmergencyView extends BaseView<Emergency> {
 
 	@Override
 	public void update(Emergency model) {
+	
 		for (EmergencyStep emergStep: model.getSteps())
 		{
 			addComponent(new EmergencyStepComponent(emergStep));
 		}
+
 	}
 
 	@Override

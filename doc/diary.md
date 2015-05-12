@@ -254,6 +254,7 @@ FH: Filip Hofer
 ### 10.05.2015
  * Abschluss des StartPage-Konstrukt mit MVP (ST)
  * Git-Push noch ausstehend -> Konflikte. Absprache mit Team erfordelich
+ * LiveUP MVP erstellt (TB)
 
  ###11.05.2014
 * Pull Request Architekturfehlerbehebung / Datenbankanbindung hinzugefügt. (ST, JM)

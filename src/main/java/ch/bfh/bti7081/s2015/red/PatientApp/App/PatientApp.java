@@ -7,6 +7,12 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Patient;
 
+/**
+ * public interface for the patient app
+ * all relevant data are stored here
+ * @author James Mayr
+ *
+ */
 public class PatientApp {
 	private Calendar calendar = new Calendar();
 	private LifeUp lifeUp = new LifeUp();

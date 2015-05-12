@@ -7,6 +7,15 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 import com.vaadin.ui.Button;
 
+
+/**
+ * Interface for all View Components
+ * this Interface allow to notify all registred
+ * presenters
+ * @author James Mayr
+ *
+ * @param <T>
+ */
 public interface View <T> extends Button.ClickListener  
 {
 	/**

@@ -14,6 +14,13 @@ import com.vaadin.ui.VerticalLayout;
 
 @Theme("mytheme")
 @Widgetset("ch.bfh.bti7081.s2015.red.PatientApp.MyAppWidgetset")
+
+/**
+ * First called Class 
+ * Setup the navigation entries
+ * @author James Mayr
+ *
+ */
 public class NavigatorUI extends UI {
 
 	protected Navigator navigator;
@@ -37,10 +44,10 @@ public class NavigatorUI extends UI {
 		/*
 		 * startstreen MVP
 		 */
-		StartScreenView startScreenView = new StartScreenView();
+		StartPageView startPageView = new StartPageView();
 		StartPagePresenter startScreenPresenter = new StartPagePresenter(
-				startScreenView);
-		startScreenView.addListener("StartScreen", startScreenPresenter);
+				startPageView);
+		startPageView.addListener("StartScreen", startScreenPresenter);
 
 		/*
 		 * Medication Index MVP
@@ -57,7 +64,7 @@ public class NavigatorUI extends UI {
 		EmergencyPresenter emergPresenter = new EmergencyPresenter(emergView);
 		emergView.addListener(EMERGENCY, emergPresenter);
 
-		navigator.addView("", startScreenView);
+		navigator.addView("", startPageView);
 		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
 

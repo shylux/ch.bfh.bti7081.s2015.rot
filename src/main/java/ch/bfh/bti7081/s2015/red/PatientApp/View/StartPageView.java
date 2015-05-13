@@ -2,6 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
@@ -101,6 +102,8 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 			buttonSOS.setStyleName("red");
 			buttonSOS.setWidth("70px");
 			buttonSOS.setHeight("70px");
+			
+			
 			
 			
 			// Crafts the layout

@@ -47,10 +47,10 @@ public class MongoDbAdapter {
 			
 			prop.load(input);
 		
-			MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"), 
-					prop.getProperty("db"), prop.getProperty("pass").toCharArray());
+			/*MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"), 
+					prop.getProperty("db"), prop.getProperty("pass").toCharArray());*/
 
-			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")),Arrays.asList(credential));
+			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")));
 		} 
 		catch (IOException e) 
 		{
@@ -115,7 +115,7 @@ public class MongoDbAdapter {
 	    DBObject dbObj = collection.findOne(query);
 	    
 		Gson gson = new Gson();
-		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable);
+		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		
 		return (Persistable)createdClass;
@@ -125,27 +125,28 @@ public class MongoDbAdapter {
 	 * inclusive it's subtypes
 	 * @param persistable
 	 */
-	public ArrayList<Persistable> getSpecificCollection(Persistable persistable,boolean withSubclasses)
+	public ArrayList<Persistable> getSpecificCollection(Class<? extends Persistable> persistableClass,boolean withSubclasses)
 	{
-		String condition ="";
-		BasicDBObject query = new BasicDBObject();
 		if(withSubclasses)
-		{
-			BasicDBList or = new BasicDBList();
-			
+		{	
 			Reflections reflections = new Reflections("ch.bfh.bti7081.s2015.red.PatientApp.Model");
-			Set<?> subTypes = reflections.getSubTypesOf(persistable.getClass());
+			ArrayList<Persistable> entries = new ArrayList<Persistable>();
+			/*
+			 * get all subtypes with reflection
+			 */
+			Set<?> subTypes = reflections.getSubTypesOf(persistableClass);
 			for(Object subtype : subTypes )
 			{
-				or.add(new BasicDBObject("type",subtype.getClass().toString()));
+				BasicDBObject query =new BasicDBObject("type",subtype.toString());
+				entries.addAll(getQueryResult(query,(Class<? extends Persistable>) subtype));
 			}
-			or.add(new BasicDBObject("type",persistable.getClass().toString()));
-			query.put("$or", or);
-			return getQueryResult(query,persistable);
+			
+			entries.addAll(getSpecificCollection(persistableClass));
+			return entries;
 		}
 		else
 		{
-			return getSpecificCollection(persistable);
+			return getSpecificCollection(persistableClass);
 		}
 		
 
@@ -154,13 +155,22 @@ public class MongoDbAdapter {
 	 * get a collection of the given datatype
 	 * @param persistable
 	 */
-	public ArrayList<Persistable> getSpecificCollection(Persistable persistable)
+	public ArrayList<Persistable> getSpecificCollection(Class<? extends Persistable> persistableClass)
 	{
 		BasicDBObject query = new BasicDBObject();
-		query.put("type", persistable.getClass().toString());
-		return getQueryResult(query,persistable);
+		query.put("type", persistableClass.toString());
+		return getQueryResult(query,persistableClass);
 
 	}
+	/**
+	 * erase Collection
+	 */
+	public void erase()
+	{
+		collection.drop();
+		collection = db.getCollection("patient-data");
+	}
+	
 	/**
 	 * insert a new collection into database
 	 * @param entries
@@ -187,6 +197,8 @@ public class MongoDbAdapter {
 		BasicDBObject document = (BasicDBObject) object;
 		
 		collection.insert(document);
+		ObjectId id = (ObjectId)document.get( "_id" );
+		entry.setId(id.toString());
 	}
 	/**
 	 * generate a object from a json string
@@ -194,10 +206,10 @@ public class MongoDbAdapter {
 	 * @param persistable
 	 * @return
 	 */
-	private Persistable generateClassFromDbObject(DBObject record,Persistable persistable)
+	private Persistable generateClassFromDbObject(DBObject record,Class<? extends Persistable> persistableClass)
 	{
 		Gson gson = new Gson();
-		Persistable createdClass  =  gson.fromJson(record.toString(),persistable.getClass());
+		Persistable createdClass  =  gson.fromJson(record.toString(),persistableClass);
 		return createdClass;
 	}
 	/**
@@ -206,7 +218,7 @@ public class MongoDbAdapter {
 	 * @param persistable
 	 * @return
 	 */
-	private ArrayList<Persistable> getQueryResult(BasicDBObject query,Persistable persistable)
+	private ArrayList<Persistable> getQueryResult(BasicDBObject query,Class<? extends Persistable> persistableClass)
 	{
 		DBCursor cursor = collection.find(query);
 	    
@@ -218,7 +230,7 @@ public class MongoDbAdapter {
 	    	   {
 	    		   DBObject record = cursor.next();
 	    		   Gson gson = new Gson();
-	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistable);
+	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistableClass);
 	    		   createdClass.setId(record.get("_id").toString());
 	    		   persistables.add(createdClass);
 	    	   }

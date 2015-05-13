@@ -1,18 +1,25 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.bson.types.ObjectId;
 
 import com.google.gson.Gson;
+import com.google.gwt.core.server.ServerGwtBridge.Properties;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.ServerAddress;
 import com.mongodb.util.JSON;
 
 
@@ -29,13 +36,31 @@ public class MongoDbAdapter {
 	
 	public MongoDbAdapter()
 	{
+		FileInputStream input = null;
+		java.util.Properties prop = new java.util.Properties();
 		try {
-			mongoDbClient = new MongoClient("192.168.193.135");
+			input = new FileInputStream("db.properties"); 	
+			
+			prop.load(input);
+		
+			MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"), 
+					prop.getProperty("db"), prop.getProperty("pass").toCharArray());
+
+			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")),Arrays.asList(credential));
 		} 
-		catch (UnknownHostException e) 
+		catch (IOException e) 
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		finally
+		{
+			try {
+				input.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		db = mongoDbClient.getDB("patientapp");
 		collection = db.getCollection("patient-data");

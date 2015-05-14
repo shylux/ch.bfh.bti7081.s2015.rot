@@ -256,6 +256,9 @@ FH: Filip Hofer
  * Git-Push noch ausstehend -> Konflikte. Absprache mit Team erfordelich
  * LiveUP MVP erstellt (TB)
 
- ###11.05.2014
+ ### 11.05.2015
 * Pull Request Architekturfehlerbehebung / Datenbankanbindung hinzugefügt. (ST, JM)
 * Branches für Medication / Life Up erstellt (FH,TB)
+
+### 14.05.2015
+* Erster Entwurf für die Implementation des State-Patterns (ST)

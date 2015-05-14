@@ -32,3 +32,4 @@ local.properties
 target
 *.log
 *.cache
+*.properties

@@ -15,7 +15,7 @@ public abstract class CalendarEntry implements Persistable{
 	protected String description;
 	protected Date startTime;
 
-	private String id; //unique id, necessary for db storage
+	private String id =""; //unique id, necessary for db storage
 	/*
 	 * class type, necessary for type specific search in the database
 	 */

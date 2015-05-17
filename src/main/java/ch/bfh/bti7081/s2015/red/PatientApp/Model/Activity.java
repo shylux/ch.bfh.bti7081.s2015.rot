@@ -2,15 +2,35 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.Date;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.ActivityState;
+
 public abstract class Activity extends CalendarEntry {
+	protected ActivityState activityState;
 	protected Date softTimeLimit;
 	protected Date hardTimeLimit;
 	int givenPoints  = 0;
 	boolean done;
 
 	public abstract boolean checkSuccess();
-	
 
+	///////// STATE PATTERN
+	
+	public void displayCurrentState() {
+		activityState.debugName();
+	}
+	
+	// Clickevent or whatever
+	public void nextState() {
+		activityState.handle();
+	}
+	
+	public void setActivityState(ActivityState nextActivityState) {
+		activityState = nextActivityState;
+	}
+	
+	///////// STATE PATTERN
+	
+	
 	public Date getSoftTimeLimit() {
 		return softTimeLimit;
 	}

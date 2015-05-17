@@ -2,16 +2,24 @@ package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
 public class Circle extends Geofence{
 
+	private GpsCoordinate center;
+	private double radius;
+	
+	public Circle(GpsCoordinate center, double radius)
+	{
+		this.center = center;
+		this.radius = radius;
+	}
+	
+	
 	@Override
-	public boolean contains(double latitude, double longitude) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean contains(GpsCoordinate point) {
+		return (center.calcDistance(point) < radius);
 	}
 
 	@Override
-	public double getDistance(double latitude, double longitude) {
-		// TODO Auto-generated method stub
-		return 0;
+	public double getDistance(GpsCoordinate point) {
+		return Math.max(center.calcDistance(point) - radius,0);
 	}
 
 }

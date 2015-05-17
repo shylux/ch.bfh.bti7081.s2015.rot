@@ -262,3 +262,6 @@ FH: Filip Hofer
 
 ### 14.05.2015
 * Erster Entwurf für die Implementation des State-Patterns (ST)
+
+### 17.05.2015
+* Einchecken des StatePattern-Astes (ST)

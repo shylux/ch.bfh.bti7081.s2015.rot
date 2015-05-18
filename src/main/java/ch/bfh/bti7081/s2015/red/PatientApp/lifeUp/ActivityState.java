@@ -10,21 +10,9 @@ public abstract class ActivityState {
 		activity.setActivityState(activityState);
 	}
 	
-	protected void OnEnter(ActivityState lastState) {
-		lastState = null;
-		System.out.println("Status entfernt.");
-	}
-	
-	protected void OnExit() {
-		
-	}
-	
-	public void handle() {
-		
-	}
-
-	public void debugName() {
-		 
-	}
+	protected abstract void OnEnter(ActivityState lastState);
+	protected abstract void OnExit();
+	public abstract void handle();
+	public abstract void debugName();
 	 
 }

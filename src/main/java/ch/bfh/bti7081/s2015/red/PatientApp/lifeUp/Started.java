@@ -9,13 +9,24 @@ public class Started extends NormalActivity {
 		super.setActivityState(this); 
 		OnEnter(lastState);
 	}
-  
+
+	@Override
+	protected void OnEnter(ActivityState lastState) {
+		lastState = null; 
+	}
+	
+	@Override
 	public void handle() {
 		new Finished(this, activity); 
 	}	
 
-	public void debugName() {
-		System.out.println("Started");
-	}
+	@Override
+	protected void OnExit() {
+		// TODO Auto-generated method stub
+	}	
 	
+	@Override
+	public void debugName() {
+		System.out.println(this.getClass().getName());
+	}
 }

@@ -10,8 +10,24 @@ public class Closed extends ActivityState {
 		OnEnter(lastState);
 	}
 	
-	public void debugName() {
-		System.out.println("Closed");
+	@Override
+	protected void OnEnter(ActivityState lastState) {
+		lastState = null; 
+	}
+	
+	@Override
+	public void handle() {
+		// TODO Auto-generated method stub
 	}	
+	
+	@Override
+	protected void OnExit() {
+		// TODO Auto-generated method stub	
+	}
+
+	@Override
+	public void debugName() {
+		System.out.println(this.getClass().getName());
+	}
 	
 }

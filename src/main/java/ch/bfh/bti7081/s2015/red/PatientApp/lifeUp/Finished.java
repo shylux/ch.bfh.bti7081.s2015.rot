@@ -10,12 +10,23 @@ public class Finished extends NormalActivity {
 		OnEnter(lastState);
 	}
 
+	@Override
+	protected void OnEnter(ActivityState lastState) {
+		lastState = null; 
+	}
+	
+	@Override
 	public void handle() {
 		new Closed(this, activity); 
 	}
 	
-	public void debugName() {
-		System.out.println("Finished");
+	@Override
+	protected void OnExit() {
+		// TODO Auto-generated method stub
 	}
 	
+	@Override
+	public void debugName() {
+		System.out.println(this.getClass().getName());
+	}
 }

@@ -53,5 +53,8 @@ public class GpsCoordinate {
 	{
 		return angle/180*Math.PI;
 	}
-	
+	public String toString()
+	{
+		return Double.toString(latitude)+", "+Double.toString(longitude);
+	}
 }

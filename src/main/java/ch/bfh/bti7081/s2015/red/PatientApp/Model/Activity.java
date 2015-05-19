@@ -15,8 +15,8 @@ public abstract class Activity extends CalendarEntry {
 
 	///////// STATE PATTERN
 	
-	public void displayCurrentState() {
-		activityState.debugName();
+	public String getStateName() {
+		return activityState.getStateName();
 	}
 	
 	// Clickevent or whatever

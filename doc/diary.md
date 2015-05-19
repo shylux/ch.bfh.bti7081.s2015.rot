@@ -269,3 +269,10 @@ FH: Filip Hofer
 ### 17.05.2015
 * Einchecken des StatePattern-Astes (ST)
 * GeoTracking Routine erstellt (JM)
+
+### 20.05.2015
+* Diverse Merges und Weiterarbeiten ScrumSprint 2
+* Daily Scrum Meeting
+* Einführung und Sensibilisierung in Qualität und Sicherheit
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST
+* Abwesende Teammitglieder: LK (VKU)

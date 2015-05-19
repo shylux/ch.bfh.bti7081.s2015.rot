@@ -1,6 +1,7 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
@@ -27,6 +28,7 @@ public class NavigatorUI extends UI {
 
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
+	final public static String LIFEUP = "LifeUp";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -67,6 +69,14 @@ public class NavigatorUI extends UI {
 		navigator.addView("", startPageView);
 		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
+		
+		/*
+		 * LifeUp MVP
+		 */
+		LifeUpMainView lupMView = new LifeUpMainView();
+		LifeUpPresenter luPresenter = new LifeUpPresenter(lupMView);
+		lupMView.addListener(LIFEUP, luPresenter);
+		navigator.addView(LIFEUP, lupMView);
 
 		// navigator.navigateTo("");
 	}

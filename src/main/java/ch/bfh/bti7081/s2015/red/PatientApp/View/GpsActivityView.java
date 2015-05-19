@@ -11,9 +11,14 @@ import com.google.gwt.geolocation.client.PositionError;
 
 
 
+
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.ExternalResource;
 import com.vaadin.server.Page;
+import com.vaadin.tapio.googlemaps.GoogleMap;
+import com.vaadin.tapio.googlemaps.client.LatLon;
+import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
+import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.JavaScript;
 import com.vaadin.ui.JavaScriptFunction;
@@ -24,6 +29,7 @@ import com.vaadin.ui.Notification;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
 public class GpsActivityView extends BaseView<GpsActivity>{
@@ -36,6 +42,8 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	private Label distance 				= new Label();
 	private Label name					= new Label();	 
 	private Label description 			= new Label();
+	private GoogleMap googleMap;
+	private GoogleMapMarker positionMarker;
 	
 	@Override
 	public void buttonClick(ClickEvent event) {
@@ -44,7 +52,30 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 
 	@Override
 	public void update(GpsActivity model) {
+		
 		activity = model;
+		googleMap = new GoogleMap(null,null,null);
+
+		positionMarker = new GoogleMapMarker(
+		            "Your Position", new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()),
+		            true, null);
+		
+        googleMap.setCenter(new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()));
+        googleMap.setZoom(17);
+        googleMap.setSizeFull();
+        googleMap.addMarker(positionMarker);
+        Circle activityCircle = activity.getCirlce();
+        GoogleMapCircle circle = new GoogleMapCircle();
+        circle.setFillColor("#FF0000");
+        circle.setFillOpacity(0.5);
+        googleMap.setHeight("700px");
+        circle.setPosition(new LatLon(activityCircle.getCenter().getLatitude(),
+        			activityCircle.getCenter().getLongitude()));
+        circle.setRadius((int) activityCircle.getRadius()*10);
+        googleMap.addCircleOverlay(circle);
+        
+		
+		
 		HorizontalLayout line1 = new HorizontalLayout();
 		HorizontalLayout line2 = new HorizontalLayout();
 		HorizontalLayout line3 = new HorizontalLayout();
@@ -64,6 +95,7 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		this.addComponent(line1);
 		this.addComponent(line2);
 		this.addComponent(line3);
+		this.addComponent(googleMap);
 		
 		
 		

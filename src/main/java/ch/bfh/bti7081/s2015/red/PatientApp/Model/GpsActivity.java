@@ -34,5 +34,9 @@ public class GpsActivity extends Activity {
 	{
 		return this.circle.getDistance(coordinate);
 	}
+	public Circle getCirlce()
+	{
+		return this.circle;
+	}
 
 }

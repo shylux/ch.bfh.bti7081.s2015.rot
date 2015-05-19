@@ -4,6 +4,7 @@ public class Circle extends Geofence{
 
 	private GpsCoordinate center;
 	private double radius;
+
 	
 	public Circle(GpsCoordinate center, double radius)
 	{
@@ -20,6 +21,12 @@ public class Circle extends Geofence{
 	@Override
 	public double getDistance(GpsCoordinate point) {
 		return Math.max(center.calcDistance(point) - radius,0);
+	}
+	public GpsCoordinate getCenter() {
+		return center;
+	}
+	public double getRadius() {
+		return radius;
 	}
 
 }

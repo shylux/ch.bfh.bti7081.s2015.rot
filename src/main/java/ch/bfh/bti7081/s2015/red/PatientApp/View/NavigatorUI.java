@@ -1,6 +1,7 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
@@ -27,6 +28,7 @@ public class NavigatorUI extends UI {
 
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
+	final public static String GPSACTIVTY ="GpsActivity";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -40,7 +42,7 @@ public class NavigatorUI extends UI {
 		ComponentContainerViewDisplay viewDisplay = new ComponentContainerViewDisplay(
 				layout);
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
-
+		
 		/*
 		 * startstreen MVP
 		 */
@@ -69,6 +71,14 @@ public class NavigatorUI extends UI {
 		navigator.addView(EMERGENCY, emergView);
 
 		// navigator.navigateTo("");
+		
+		/*
+		 * Life Up Gps Activity
+		 */
+		GpsActivityView gpsActvitivyView = new GpsActivityView();
+		GpsActivityPresenter presenter= new GpsActivityPresenter(gpsActvitivyView);
+		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
+		
+		navigator.addView(GPSACTIVTY, gpsActvitivyView);
 	}
-
 }

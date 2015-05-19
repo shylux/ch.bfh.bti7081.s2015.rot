@@ -3,7 +3,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.App.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
 
 public class TestGpsCoordinate {

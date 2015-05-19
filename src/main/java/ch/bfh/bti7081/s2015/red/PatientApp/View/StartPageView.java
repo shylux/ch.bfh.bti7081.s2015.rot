@@ -65,7 +65,7 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 			 
 			if ( property.equals(stringLifeUp) ) {
 				// TO DO: Update the NavigatorUI with the targetclass
-				// getUI().getNavigator().navigateTo(NavigatorUI.XYZ); 
+				getUI().getNavigator().navigateTo(NavigatorUI.LIFEUP); 
 			}
 			else if ( property.equals(stringMedication) ) {
 				getUI().getNavigator().navigateTo(NavigatorUI.MEDICATIONINDEX); 

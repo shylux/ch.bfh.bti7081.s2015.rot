@@ -10,9 +10,12 @@ public abstract class ActivityState {
 		activity.setActivityState(activityState);
 	}
 	
-	protected abstract void OnEnter(ActivityState lastState);
+	public String getStateName() {
+		return this.getClass().getName();
+	}
+	
+	protected abstract void OnEnter();
 	protected abstract void OnExit();
-	public abstract void handle();
-	public abstract void debugName();
+	public abstract void handle(); 
 	 
 }

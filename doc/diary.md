@@ -260,5 +260,12 @@ FH: Filip Hofer
 * Pull Request Architekturfehlerbehebung / Datenbankanbindung hinzugefügt. (ST, JM)
 * Branches für Medication / Life Up erstellt (FH,TB)
 
+### 13.05.2015
+* MongoDbAdapter erweitert, MongDbServer installiert (JM)
+
 ### 14.05.2015
 * Erster Entwurf für die Implementation des State-Patterns (ST)
+
+### 17.05.2015
+* Einchecken des StatePattern-Astes (ST)
+* GeoTracking Routine erstellt (JM)

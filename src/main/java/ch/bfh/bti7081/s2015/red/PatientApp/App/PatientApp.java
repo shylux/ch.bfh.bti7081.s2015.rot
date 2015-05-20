@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Patient;
 

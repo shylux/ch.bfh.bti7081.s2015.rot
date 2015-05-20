@@ -23,4 +23,5 @@ public class PhotoActivity extends Activity{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	public String getUrl(){ return "#!PhotoActivity/"+id;}
 }

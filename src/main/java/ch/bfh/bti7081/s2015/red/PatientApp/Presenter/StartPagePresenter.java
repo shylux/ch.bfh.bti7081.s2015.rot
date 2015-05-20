@@ -45,5 +45,4 @@ public class StartPagePresenter  extends BasePresenter<CalendarEntry> {
 	public void buttonClick(String property, ArrayList<CalendarEntry> data) {
 		// Not used required in the StartPage
 	}
-
 }

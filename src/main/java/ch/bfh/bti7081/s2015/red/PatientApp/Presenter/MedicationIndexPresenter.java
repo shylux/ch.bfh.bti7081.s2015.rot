@@ -29,6 +29,4 @@ public class MedicationIndexPresenter extends BasePresenter<CalendarEntry> {
 		// TODO Auto-generated method stub
 		
 	}
-
-
 }

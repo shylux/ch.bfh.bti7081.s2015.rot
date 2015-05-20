@@ -71,7 +71,7 @@ public class TestMongoDbAdapter {
 		
 		adapter.insertIntoDatabase(persistables);
 		
-		ArrayList<Persistable> listFromDb = adapter.getSpecificCollection(CalendarEntry.class,true);
+		ArrayList<CalendarEntry> listFromDb = adapter.getSpecificCollection(CalendarEntry.class,true);
 		Assert.assertEquals(5,listFromDb.size());
 	}
 	@Test

@@ -11,6 +11,10 @@ public class Circle extends Geofence{
 		this.center = center;
 		this.radius = radius;
 	}
+	public Circle(GpsCoordinate center)
+	{
+		this(center,20);
+	}
 	
 	
 	@Override

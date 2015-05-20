@@ -1,5 +1,7 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
+import java.util.Date;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
@@ -8,9 +10,15 @@ public class GpsActivity extends Activity {
 	private Circle circle;
 
 	public GpsActivity(){}
+	public GpsActivity(String id){super(id);}
 	public GpsActivity(String shortName,String description,Circle circle)
 	{
 		super(shortName,description);
+		this.circle = circle;
+	}
+	public GpsActivity(String shortName,String description,Circle circle,Date start,Date end)
+	{
+		super(shortName,description,start,end);
 		this.circle = circle;
 	}
 	
@@ -38,5 +46,6 @@ public class GpsActivity extends Activity {
 	{
 		return this.circle;
 	}
+	public String getUrl(){ return "#!GpsActivity/"+id;}
 
 }

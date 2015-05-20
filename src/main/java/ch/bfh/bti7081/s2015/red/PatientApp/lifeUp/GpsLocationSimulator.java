@@ -18,6 +18,8 @@ public class GpsLocationSimulator {
 	private GpsCoordinate start;
 	private GpsCoordinate end;
 	private GpsCoordinate currentPos;
+	private ArrayList<GpsCoordinate>path;
+	private int currentPosition = -1;
 	
 	public GpsLocationSimulator(GpsCoordinate start,GpsCoordinate end)
 	{
@@ -27,7 +29,7 @@ public class GpsLocationSimulator {
 	public ArrayList<GpsCoordinate> path(int steps)
 	{
 		
-		ArrayList<GpsCoordinate>stepList = new ArrayList<>();
+		path = new ArrayList<>();
 		Vector2D startVector = toVector(start);
 		Vector2D endVector = toVector(end);
 		
@@ -36,9 +38,9 @@ public class GpsLocationSimulator {
 		for(int i = 0; i < steps; i++)
 		{
 			startVector = startVector.add(direction);
-			stepList.add(toGpsCoordinate(startVector));
+			path.add(toGpsCoordinate(startVector));
 		}
-		return stepList;
+		return path;
 		
 	}
 	private Vector2D toVector(GpsCoordinate point)
@@ -63,6 +65,25 @@ public class GpsLocationSimulator {
 		
 		return new GpsCoordinate(lat,lng);
 	
+	}
+	public GpsCoordinate getNextOrLast()
+	{
+		if(path == null || path.size() ==0)return null;
+		if(currentPosition+1 >= path.size())
+		{
+			return path.get(path.size()-1);
+		}
+		return path.get(++currentPosition);
+			
+	}
+	public GpsCoordinate getPreviousOrFirst()
+	{
+		if(path == null || path.size() ==0)return null;
+		if(currentPosition-1 < 0)
+		{
+			return path.get(0);
+		}
+		return path.get(--currentPosition);
 	}
 	
 }

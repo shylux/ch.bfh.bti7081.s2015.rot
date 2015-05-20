@@ -1,7 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
+import java.util.Enumeration;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
@@ -29,11 +33,15 @@ public class NavigatorUI extends UI {
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
 	final public static String GPSACTIVTY ="GpsActivity";
+	final public static String LIFEUPINDEX = "LifeUpIndex";
 
 	@Override
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
 
+		//init testdata
+		DbInitializer.restore();
+		
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);
 		layout.setSpacing(true);
@@ -80,5 +88,16 @@ public class NavigatorUI extends UI {
 		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
 		
 		navigator.addView(GPSACTIVTY, gpsActvitivyView);
+		
+		/*
+		 * Life Up Activity overview
+		 */
+		LifeUpIndexView lifeUpIndexView = new LifeUpIndexView();
+		LifeUpIndexPresenter lifeUpIndexPresenter = new LifeUpIndexPresenter(lifeUpIndexView);
+		lifeUpIndexView.addListener(LIFEUPINDEX,lifeUpIndexPresenter);
+		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
+		
+		//navigator.navigateTo(GPSACTIVTY+"/personalData");
+		 
 	}
 }

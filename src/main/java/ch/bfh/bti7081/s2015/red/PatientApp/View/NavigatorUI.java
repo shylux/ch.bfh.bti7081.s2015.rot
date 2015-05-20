@@ -40,7 +40,7 @@ public class NavigatorUI extends UI {
 		// TODO Auto-generated method stub
 
 		//init testdata
-		DbInitializer.restore();
+		//DbInitializer.restore();
 		
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);

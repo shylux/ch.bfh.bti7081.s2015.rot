@@ -39,9 +39,7 @@ public class NavigatorUI extends UI {
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
 
-		//init testdata
-		//DbInitializer.restore();
-		
+
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);
 		layout.setSpacing(true);

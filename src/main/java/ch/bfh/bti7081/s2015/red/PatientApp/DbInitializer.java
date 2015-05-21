@@ -18,11 +18,9 @@ public class DbInitializer
 	/*
 	 * setup up db data here (for testing only)
 	 */
-	public static boolean isRestored = false;
 	public static void restore()
 	{
-		if(isRestored)
-			return;
+
 		
 		 Calendar cal = Calendar.getInstance(); 
 	    cal.setTime(new Date()); 
@@ -55,7 +53,6 @@ public class DbInitializer
 		
 		adapter.erase();
 		adapter.insertIntoDatabase(activities);
-		
-		isRestored = true;
+
 	}
 }

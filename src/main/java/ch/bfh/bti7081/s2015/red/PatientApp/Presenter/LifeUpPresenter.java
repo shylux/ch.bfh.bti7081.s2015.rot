@@ -2,7 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 import java.util.ArrayList;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.App.LifeUp;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
 public class LifeUpPresenter extends BasePresenter<LifeUp> {

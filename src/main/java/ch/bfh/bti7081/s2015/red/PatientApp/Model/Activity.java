@@ -11,6 +11,17 @@ public abstract class Activity extends CalendarEntry {
 	int givenPoints  = 0;
 	boolean done;
 
+	public Activity(){}
+	public Activity(String id){super(id);}
+	public Activity(String shortName,String description)
+	{
+		super(shortName,description);
+	}
+	public Activity(String shortName,String description,Date start, Date end)
+	{
+		super(shortName,description,start,end);
+	}
+	
 	public abstract boolean checkSuccess();
 
 	///////// STATE PATTERN

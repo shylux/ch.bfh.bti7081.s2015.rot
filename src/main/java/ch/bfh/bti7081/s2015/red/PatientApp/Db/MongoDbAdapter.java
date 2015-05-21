@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Set;
 
 import org.bson.types.ObjectId;
@@ -125,12 +126,13 @@ public class MongoDbAdapter {
 	 * inclusive it's subtypes
 	 * @param persistable
 	 */
-	public ArrayList<Persistable> getSpecificCollection(Class<? extends Persistable> persistableClass,boolean withSubclasses)
+	public <T>ArrayList<T> getSpecificCollection(Class<? extends Persistable> persistableClass,boolean withSubclasses)
 	{
+		
 		if(withSubclasses)
 		{	
 			Reflections reflections = new Reflections("ch.bfh.bti7081.s2015.red.PatientApp.Model");
-			ArrayList<Persistable> entries = new ArrayList<Persistable>();
+			ArrayList<T> entries = new ArrayList<T>();
 			/*
 			 * get all subtypes with reflection
 			 */
@@ -138,28 +140,27 @@ public class MongoDbAdapter {
 			for(Object subtype : subTypes )
 			{
 				BasicDBObject query =new BasicDBObject("type",subtype.toString());
-				entries.addAll(getQueryResult(query,(Class<? extends Persistable>) subtype));
+				ArrayList<T> tmpList = (ArrayList<T>)((Object)getQueryResult(query,(Class<? extends Persistable>) subtype));
+				entries.addAll(tmpList);
 			}
 			
-			entries.addAll(getSpecificCollection(persistableClass));
+			entries.addAll(((ArrayList<T>)(Object)getSpecificCollection(persistableClass)));
 			return entries;
 		}
 		else
 		{
 			return getSpecificCollection(persistableClass);
 		}
-		
-
 	}
 	/**
 	 * get a collection of the given datatype
 	 * @param persistable
 	 */
-	public ArrayList<Persistable> getSpecificCollection(Class<? extends Persistable> persistableClass)
+	public <T>ArrayList<T> getSpecificCollection(Class<? extends Persistable> persistableClass)
 	{
 		BasicDBObject query = new BasicDBObject();
 		query.put("type", persistableClass.toString());
-		return getQueryResult(query,persistableClass);
+		return (ArrayList<T>)((Object)getQueryResult(query,persistableClass));
 
 	}
 	/**

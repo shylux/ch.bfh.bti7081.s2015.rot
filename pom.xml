@@ -104,7 +104,30 @@
 		<artifactId>junit</artifactId>
 		<version>4.12</version>
 </dependency>
-		
+<dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-math3</artifactId>
+	<version>3.5</version>
+</dependency>
+	 <dependency>
+            <groupId>com.github.branflake2267</groupId>
+            <artifactId>gwt-maps-api</artifactId>
+            <version>3.10.0-alpha-7</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.gwt</groupId>
+                    <artifactId>gwt-user</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.gwt</groupId>
+                    <artifactId>gwt-servlet</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.gwt</groupId>
+                    <artifactId>gwt-dev</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>	
 	</dependencies>
 
 	<build>

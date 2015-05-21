@@ -18,6 +18,7 @@ public class MedicationEntry extends CalendarEntry{
 		display = data;
 		
 	}
+	public String getUrl(){ return "#!MedicationEntry/"+id;}
 
 
 }

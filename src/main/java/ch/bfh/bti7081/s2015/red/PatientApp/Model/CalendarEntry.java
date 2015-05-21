@@ -15,7 +15,22 @@ public abstract class CalendarEntry implements Persistable{
 	protected String description;
 	protected Date startTime;
 
-	private String id =""; //unique id, necessary for db storage
+	public CalendarEntry(){}
+	public CalendarEntry(String shortName,String description)
+	{
+		this.shortName = shortName;
+		this.description = description;
+	}
+	public CalendarEntry(String shortName,String description,Date start, Date end)
+	{
+		this(shortName,description);
+		this.startTime = start;
+		this.endTime = end;
+	}
+	public CalendarEntry(String id){this.id = id;}
+	public abstract String getUrl();
+	
+	protected String id =""; //unique id, necessary for db storage
 	/*
 	 * class type, necessary for type specific search in the database
 	 */

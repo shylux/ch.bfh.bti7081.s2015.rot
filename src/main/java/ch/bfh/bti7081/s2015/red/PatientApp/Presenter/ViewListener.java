@@ -33,6 +33,4 @@ public interface ViewListener<T> {
 	 * @param data data e.g. specific model
 	 */
 	public void triggerEvent(String event,T data);
-	
-	
 }

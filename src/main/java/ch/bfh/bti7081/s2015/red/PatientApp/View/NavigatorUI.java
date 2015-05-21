@@ -1,7 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
+import java.util.Enumeration;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
@@ -29,10 +34,13 @@ public class NavigatorUI extends UI {
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
 	final public static String LIFEUP = "LifeUp";
+	final public static String GPSACTIVTY ="GpsActivity";
+	final public static String LIFEUPINDEX = "LifeUpIndex";
 
 	@Override
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
+
 
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);
@@ -42,7 +50,7 @@ public class NavigatorUI extends UI {
 		ComponentContainerViewDisplay viewDisplay = new ComponentContainerViewDisplay(
 				layout);
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
-
+		
 		/*
 		 * startstreen MVP
 		 */
@@ -79,6 +87,25 @@ public class NavigatorUI extends UI {
 		navigator.addView(LIFEUP, lupMView);
 
 		// navigator.navigateTo("");
+		
+		/*
+		 * Life Up Gps Activity
+		 */
+		GpsActivityView gpsActvitivyView = new GpsActivityView();
+		GpsActivityPresenter presenter= new GpsActivityPresenter(gpsActvitivyView);
+		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
+		
+		navigator.addView(GPSACTIVTY, gpsActvitivyView);
+		
+		/*
+		 * Life Up Activity overview
+		 */
+		LifeUpIndexView lifeUpIndexView = new LifeUpIndexView();
+		LifeUpIndexPresenter lifeUpIndexPresenter = new LifeUpIndexPresenter(lifeUpIndexView);
+		lifeUpIndexView.addListener(LIFEUPINDEX,lifeUpIndexPresenter);
+		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
+		
+		//navigator.navigateTo(GPSACTIVTY+"/personalData");
+		 
 	}
-
 }

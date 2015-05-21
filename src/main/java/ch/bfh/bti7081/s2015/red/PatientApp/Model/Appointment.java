@@ -20,4 +20,6 @@ public class Appointment extends CalendarEntry{
 		display = data;
 		
 	}
+	public String getUrl(){ return "#!Appointment/"+id;}
 }
+

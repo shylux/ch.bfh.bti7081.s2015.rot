@@ -1,10 +1,27 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
+import java.util.Date;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
+
 public class GpsActivity extends Activity {
 
-	private double latitude;
-	private double longitude;
+	private Circle circle;
 
+	public GpsActivity(){}
+	public GpsActivity(String id){super(id);}
+	public GpsActivity(String shortName,String description,Circle circle)
+	{
+		super(shortName,description);
+		this.circle = circle;
+	}
+	public GpsActivity(String shortName,String description,Circle circle,Date start,Date end)
+	{
+		super(shortName,description,start,end);
+		this.circle = circle;
+	}
+	
 	@Override
 	public String display() {
 		// TODO Auto-generated method stub
@@ -21,19 +38,14 @@ public class GpsActivity extends Activity {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	public void setLatLn(double lat,double lng)
+	public double getDistance(GpsCoordinate coordinate)
 	{
-		this.latitude = lat;
-		this.longitude = lng;
+		return this.circle.getDistance(coordinate);
 	}
-	public double getLat(double lat)
+	public Circle getCirlce()
 	{
-		return latitude;
+		return this.circle;
 	}
-	public double getLng(double lng)
-	{
-		return longitude;
-	}
+	public String getUrl(){ return "#!GpsActivity/"+id;}
 
 }

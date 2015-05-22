@@ -3,6 +3,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import java.util.Enumeration;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
@@ -36,6 +37,7 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUP = "LifeUp";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
+	final public static String CALENDARINDEX = "Kalender";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -96,6 +98,14 @@ public class NavigatorUI extends UI {
 		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
 		
 		navigator.addView(GPSACTIVTY, gpsActvitivyView);
+		
+		/*
+		 * Life Up Activity overview
+		 */
+		CalendarView calendarView = new CalendarView();
+		CalendarPresenter calendarPresenter = new CalendarPresenter(calendarView);
+		calendarView.addListener(CALENDARINDEX, calendarPresenter);
+		navigator.addView(CALENDARINDEX, calendarView);
 		
 		/*
 		 * Life Up Activity overview

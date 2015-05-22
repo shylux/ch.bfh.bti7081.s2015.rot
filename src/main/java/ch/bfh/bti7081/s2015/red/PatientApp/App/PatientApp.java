@@ -42,6 +42,10 @@ public class PatientApp {
 	{
 		return calendar.getTodayEntries();
 	}
+	public Calendar getCalendar()
+	{
+		return calendar;
+	}
 	/**
 	 * update the data of a specific activity
 	 * @param activity

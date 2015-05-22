@@ -1,8 +1,5 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.Enumeration;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
@@ -30,7 +27,12 @@ import com.vaadin.ui.VerticalLayout;
  */
 public class NavigatorUI extends UI {
 
-	protected Navigator navigator;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 614340462216711328L;
+
+	Navigator navigator;
 
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
@@ -102,7 +104,7 @@ public class NavigatorUI extends UI {
 		/*
 		 * Life Up Activity overview
 		 */
-		CalendarView calendarView = new CalendarView();
+		CalendarView calendarView = new CalendarView(navigator);
 		CalendarPresenter calendarPresenter = new CalendarPresenter(calendarView);
 		calendarView.addListener(CALENDARINDEX, calendarPresenter);
 		navigator.addView(CALENDARINDEX, calendarView);

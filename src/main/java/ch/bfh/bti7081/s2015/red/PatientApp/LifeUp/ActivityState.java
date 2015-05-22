@@ -24,6 +24,10 @@ public abstract class ActivityState {
 		String[] count = this.getClass().getName().split("\\.");
 		return this.getClass().getName().split("\\.")[count.length - 1];
 	}
+	public String getStateShortName()
+	{
+		return this.getClass().getSimpleName();
+	}
 	
 	protected abstract void OnEnter();
 	protected abstract void OnExit();

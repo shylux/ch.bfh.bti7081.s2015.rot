@@ -15,6 +15,20 @@ import java.util.ArrayList;
  *
  */
 public class PatientApp {
+	
+	private static PatientApp patientAppInstance = null;
+	
+	public static PatientApp getInstance()
+	{
+		if(patientAppInstance == null)
+		{
+			patientAppInstance = new PatientApp();
+		}
+		return patientAppInstance;
+	}
+	
+	private PatientApp(){}
+	
 	private Calendar calendar = new Calendar();
 	private LifeUp lifeUp = new LifeUp();
 	private Emergency emergency = new Emergency();

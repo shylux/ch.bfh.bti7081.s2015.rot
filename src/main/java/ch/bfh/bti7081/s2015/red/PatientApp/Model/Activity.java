@@ -72,4 +72,9 @@ public abstract class Activity extends CalendarEntry {
 	public boolean isDone() {
 		return false;
 	}
+	public ActivityState getActivityState()
+	{
+		return activityState;
+	}
+	
 }

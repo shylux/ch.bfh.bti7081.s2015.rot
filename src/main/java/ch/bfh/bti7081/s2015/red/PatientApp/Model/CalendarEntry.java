@@ -12,6 +12,7 @@ public abstract class CalendarEntry implements Persistable{
 	protected String shortName;
 	protected String description;
 	protected Date startTime;
+	protected Date reminderTime;
 
 	public CalendarEntry(){}
 	public CalendarEntry(String shortName,String description)
@@ -24,6 +25,7 @@ public abstract class CalendarEntry implements Persistable{
 		this(shortName,description);
 		this.startTime = start;
 		this.endTime = end;
+		
 	}
 	public CalendarEntry(String id){this.id = id;}
 	public abstract String getUrl();

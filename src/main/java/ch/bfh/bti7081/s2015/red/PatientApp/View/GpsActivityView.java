@@ -75,7 +75,7 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		if(activity.getCirlce().contains(currentLocation))
 		{
 			/*
-			 * Insert GpsActivity Change here... 
+			 * TODO: Insert GpsActivity Change here... 
 			 */
 		}
 		googleMap.removeMarker(positionMarker);

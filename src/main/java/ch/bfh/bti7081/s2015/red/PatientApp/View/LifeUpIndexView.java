@@ -33,7 +33,6 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		{
 			this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
 		}
-		
 	}
 
 	@Override

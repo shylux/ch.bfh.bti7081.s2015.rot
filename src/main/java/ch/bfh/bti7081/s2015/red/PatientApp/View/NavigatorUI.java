@@ -1,8 +1,13 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Enumeration;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
@@ -15,8 +20,11 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
+import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.shared.Position;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -41,12 +49,13 @@ public class NavigatorUI extends UI {
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
 	final protected VerticalLayout layout = new VerticalLayout();
+	
+
 
 	
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
 		
-
 		
 		layout.setMargin(true);
 		layout.setSpacing(true);
@@ -111,24 +120,39 @@ public class NavigatorUI extends UI {
 		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
 		
 		//navigator.navigateTo(GPSACTIVTY+"/personalData");
-		new FeederThread().start();
+		new NotificationThread().start();
 		 
 	}
-	class FeederThread extends Thread {
-        int count = 0;
-        
+	class NotificationThread extends Thread {
 	
+	ArrayList<Activity>entries;	
+
 	@Override
     public void run() {
         try {
             // Update the data for a while
             while (true) {
-                Thread.sleep(1000);
-            
+                Thread.sleep(20000);
+                entries = PatientApp.getInstance().getCalendar().getUnfinishedActivity();
                 access(new Runnable() {
                     @Override
-                    public void run() {
-                    	layout.addComponent(new Label("alert..."));
+                    public void run() 
+                    {
+                    	StringBuilder reminderText = new StringBuilder();
+                    	reminderText.append("<strong>Reminder</strong>");
+                    	reminderText.append("</br>these things are to do:");
+                    	
+                    	for(CalendarEntry entry: entries)
+                    	{
+                    		reminderText.append(entry.getShortName()+"<br />"+entry.getDescription());
+                    		reminderText.append("<br />"+entry.getUrl());
+                    	}
+                    	Notification notification = new Notification(reminderText.toString());
+                    	notification.setPosition(Position.MIDDLE_CENTER);
+                    	notification.setDelayMsec(Notification.DELAY_FOREVER);
+                    	notification.setHtmlContentAllowed(true);
+                    	notification.show(Page.getCurrent());
+                    	
                     }
                 });
             }

@@ -58,6 +58,13 @@ public class LifeUpIndexView extends BaseView <Activity>{
 	@Override
 	public void update(ArrayList<Activity> data) {
 
+		Label title = new Label("Activities todo");
+		title.addStyleName("h2");
+		this.addComponent(title);
+		for(Activity activity : data)
+		{
+			this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
+		}
 	}
 
 	@Override

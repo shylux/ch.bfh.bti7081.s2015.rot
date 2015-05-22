@@ -162,17 +162,17 @@ public class Calendar {
 	}
 
 	/**
-	 * Returns the first not finished Activity (also activities from the past are shown)
+	 * Returns all unfinished Activities
 	 * @return CalendarEntry
 	 */
-	public Activity getUnfinishedActivity()
+	public ArrayList<Activity> getUnfinishedActivity()
 	{
 		ArrayList<Activity> activities = new ArrayList<Activity>();
 
 		for(int i = 0; i < entries.size(); i++) {
 			if(entries.get(i) instanceof Activity){
 				Activity a = (Activity)entries.get(i);
-				if(a.getActivityState().getStateShortName().equals("Started") ||
+				if(a.getActivityState() == null||a.getActivityState().getStateShortName().equals("Started") ||
 					a.getActivityState().getStateShortName().equals("Ready")||
 					a.getActivityState().getStateShortName().equals("InProgress")) 
 				{
@@ -183,7 +183,7 @@ public class Calendar {
 
 		Collections.sort(activities, new CalendarEntryComparator());
 
-		return activities.get(0);
+		return activities;
 	}
 
 

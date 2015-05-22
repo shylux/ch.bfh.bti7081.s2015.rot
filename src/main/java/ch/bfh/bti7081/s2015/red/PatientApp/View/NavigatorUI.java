@@ -10,11 +10,13 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
+import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -27,6 +29,8 @@ import com.vaadin.ui.VerticalLayout;
  * @author James Mayr
  *
  */
+
+@Push
 public class NavigatorUI extends UI {
 
 	protected Navigator navigator;
@@ -36,17 +40,18 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUP = "LifeUp";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
+	final protected VerticalLayout layout = new VerticalLayout();
 
-	@Override
+	
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
+		
 
-
-		final VerticalLayout layout = new VerticalLayout();
+		
 		layout.setMargin(true);
 		layout.setSpacing(true);
 		setContent(layout);
-
+		
 		ComponentContainerViewDisplay viewDisplay = new ComponentContainerViewDisplay(
 				layout);
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
@@ -106,6 +111,31 @@ public class NavigatorUI extends UI {
 		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
 		
 		//navigator.navigateTo(GPSACTIVTY+"/personalData");
+		new FeederThread().start();
 		 
 	}
+	class FeederThread extends Thread {
+        int count = 0;
+        
+	
+	@Override
+    public void run() {
+        try {
+            // Update the data for a while
+            while (true) {
+                Thread.sleep(1000);
+            
+                access(new Runnable() {
+                    @Override
+                    public void run() {
+                    	layout.addComponent(new Label("alert..."));
+                    }
+                });
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+	
 }

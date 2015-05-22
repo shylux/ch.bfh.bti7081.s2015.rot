@@ -73,4 +73,9 @@ public abstract class Activity extends CalendarEntry {
 	public void setDone(boolean done) {
 		this.done = done;
 	}
+	public ActivityState getActivityState()
+	{
+		return activityState;
+	}
+	
 }

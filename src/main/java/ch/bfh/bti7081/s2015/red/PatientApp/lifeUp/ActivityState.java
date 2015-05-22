@@ -13,6 +13,10 @@ public abstract class ActivityState {
 	public String getStateName() {
 		return this.getClass().getName();
 	}
+	public String getStateShortName()
+	{
+		return this.getClass().getSimpleName();
+	}
 	
 	protected abstract void OnEnter();
 	protected abstract void OnExit();

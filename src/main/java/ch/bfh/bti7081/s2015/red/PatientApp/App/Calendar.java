@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
@@ -18,6 +19,13 @@ public class Calendar {
      * @return true if the first date day is after the second date day.
      * @throws IllegalArgumentException if the date is <code>null</code>
      */
+	
+	public Calendar()
+	{
+		
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		entries = mongoDb.getSpecificCollection(CalendarEntry.class,true);
+	}
 	
 	
 	/**
@@ -163,7 +171,10 @@ public class Calendar {
 		for(int i = 0; i < entries.size(); i++) {
 			if(entries.get(i) instanceof Activity){
 				Activity a = (Activity)entries.get(i);
-				if(!a.isDone()) {
+				if(a.getActivityState().getStateShortName().equals("Started") ||
+					a.getActivityState().getStateShortName().equals("Ready")||
+					a.getActivityState().getStateShortName().equals("InProgress")) 
+				{
 					activities.add((Activity)entries.get(i));
 				}
 			}
@@ -173,6 +184,7 @@ public class Calendar {
 
 		return activities.get(0);
 	}
+
 
 	public void updateCalendarEntries()
 	{

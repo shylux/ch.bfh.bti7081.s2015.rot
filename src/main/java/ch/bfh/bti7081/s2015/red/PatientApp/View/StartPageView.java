@@ -3,13 +3,21 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
+import java.util.ArrayList;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
+
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
 import java.util.ArrayList;
-
-
+import com.vaadin.ui.Button;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Label;
+import com.vaadin.ui.VerticalLayout;
 
 public class StartPageView extends  BaseView<CalendarEntry>{
 
@@ -54,7 +62,7 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 			System.out.println("buttonClicked!");
 			 
 			if ( property.equals(stringLifeUp) ) {
-				getUI().getNavigator().navigateTo(NavigatorUI.LIFEUP); 
+				getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPINDEX); 
 			}
 			else if ( property.equals(stringMedication) ) {
 				getUI().getNavigator().navigateTo(NavigatorUI.MEDICATIONINDEX); 
@@ -79,7 +87,6 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 		         {
 		        	 listener.buttonClick(property, appointmentCurrent);
 			     }	
-				
 			}		
 		}
 		
@@ -94,10 +101,7 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 			buttonSOS.setStyleName("red");
 			buttonSOS.setWidth("70px");
 			buttonSOS.setHeight("70px");
-			
-			
-			
-			
+
 			// Crafts the layout
 			VerticalLayout dailyEventsContainer = new VerticalLayout ();
 			

@@ -8,6 +8,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.TimeActivityManager;
 
 public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 
@@ -31,12 +32,47 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 	@Override
 	public void triggerEvent(String event, GpsActivity data) {
 		if(event.equals("loadActivity"))
-		{
+		{  
 			MongoDbAdapter adapter = new MongoDbAdapter();
 			data = (GpsActivity) adapter.getEntryFromDatabase(data);
 			
+			// TODO: AddCaleneder
+			TimeActivityManager manager = TimeActivityManager.getInstance();
+
+			/* System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			
+			
+			System.out.println(data.getId());
+			System.out.println(manager.getActivity(0).getId());
+			System.out.println(manager.getActivity(1).getId());
+			System.out.println(manager.getActivity(2).getId());
+			System.out.println(manager.getActivity(3).getId());
+			
+
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");	*/		
+			
+			manager.chooseActivity(data);
+		
+			//data = (GpsActivity)manager.getActivity(manager.getActivityIndex());
+			data = (GpsActivity)manager.getActivity();
+
 			view.update(data);
 			
+		}
+		else if(event.equals("enteredToTarget")) { 
+			TimeActivityManager manager = TimeActivityManager.getInstance();
+			manager.chooseActivity(data);
+			manager.nextState();
 		}
 		
 	}

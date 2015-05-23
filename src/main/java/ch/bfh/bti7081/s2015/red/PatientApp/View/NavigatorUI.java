@@ -33,7 +33,7 @@ public class NavigatorUI extends UI {
 
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
-	final public static String LIFEUP = "LifeUp";
+	final public static String LIFEUP = "LifeUpIndex";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
 

@@ -77,6 +77,12 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 			/*
 			 * TODO: Insert GpsActivity Change here... 
 			 */
+			//load gpsActivity
+			for(ViewListener listener: listeners)
+			{
+				listener.triggerEvent("enteredToTarget", activity);
+			}
+			
 		}
 		googleMap.removeMarker(positionMarker);
 		positionMarker.setPosition(new LatLon(currentLocation.getLatitude(),currentLocation.getLongitude()));
@@ -92,6 +98,9 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	{
 		this.removeAllComponents();
 		activity = model;
+		
+		System.out.println("Setze Zielaktivität");
+		System.out.println(model);
 		
 		gpsLocationSimulator = new GpsLocationSimulator(this.currentLocation,activity.getCirlce().getCenter());
 		gpsLocationSimulator.path(15);
@@ -169,8 +178,10 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		
 		//load gpsActivity
 		for(ViewListener listener: listeners)
-		{
+		{ 
+			
 			listener.triggerEvent("loadActivity", new GpsActivity(event.getParameters()));
+			// listener.triggerEvent("loadActivity", activity);
 		}
 
 	}

@@ -74,7 +74,8 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 			}
 			else if ( property.equals(stringCalendar) ) {
 				// TO DO: Update the NavigatorUI with the targetclass
-				// getUI().getNavigator().navigateTo(NavigatorUI.XYZ); 	
+				// getUI().getNavigator().navigateTo(NavigatorUI.XYZ); 
+				getUI().getNavigator().navigateTo(NavigatorUI.CALENDARINDEX); 	
 			}
 			else if ( property.equals(stringContacts) ) {
 				// TO DO: Update the NavigatorUI with the targetclass
@@ -95,7 +96,9 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 		
 		@Override
 		public void enter(ViewChangeEvent event) { 
-
+			//Fixed Bug that all components got redrawn after forward/back navigation.
+			this.removeAllComponents();
+			
 			String stringMenuButtonSize = "130px";
 			
 			buttonSOS.setStyleName("red");

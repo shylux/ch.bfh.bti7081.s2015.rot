@@ -1,31 +1,17 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Set;
-
+import com.google.gson.Gson;
+import com.mongodb.*;
+import com.mongodb.util.JSON;
 import org.bson.types.ObjectId;
 import org.reflections.Reflections;
 
-import com.google.gson.Gson;
-import com.google.gwt.core.server.ServerGwtBridge.Properties;
-import com.mongodb.BasicDBList;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
-import com.mongodb.MongoClient;
-import com.mongodb.MongoCredential;
-import com.mongodb.ServerAddress;
-import com.mongodb.util.JSON;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Set;
 
 
 /**

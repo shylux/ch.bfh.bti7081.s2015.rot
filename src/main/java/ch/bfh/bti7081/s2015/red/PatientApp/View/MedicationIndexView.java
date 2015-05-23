@@ -1,14 +1,13 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.ArrayList;
-
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Label;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
+import java.util.ArrayList;
 
 
 @Theme("mytheme")

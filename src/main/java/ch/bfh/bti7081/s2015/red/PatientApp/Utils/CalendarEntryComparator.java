@@ -1,8 +1,8 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Utils;
 
-import java.util.Comparator;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+
+import java.util.Comparator;
 
 
 public class CalendarEntryComparator implements Comparator<CalendarEntry> {

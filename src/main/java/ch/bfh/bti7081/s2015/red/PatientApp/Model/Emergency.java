@@ -1,11 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-import java.util.ArrayList;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+import java.util.ArrayList;
 
 public class Emergency implements Persistable{
 	private ArrayList<EmergencyStep> steps = new ArrayList<EmergencyStep>();

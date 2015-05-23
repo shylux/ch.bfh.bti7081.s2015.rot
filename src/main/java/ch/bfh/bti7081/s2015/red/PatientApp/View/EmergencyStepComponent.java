@@ -1,7 +1,6 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
-
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;

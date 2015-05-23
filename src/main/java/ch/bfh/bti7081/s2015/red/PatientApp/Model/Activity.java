@@ -9,7 +9,6 @@ public abstract class Activity extends CalendarEntry {
 	protected Date softTimeLimit;
 	protected Date hardTimeLimit;
 	int givenPoints  = 0;
-	boolean done;
 
 	public Activity(){}
 	public Activity(String id){super(id);}
@@ -41,7 +40,6 @@ public abstract class Activity extends CalendarEntry {
 	
 	///////// STATE PATTERN
 	
-	
 	public Date getSoftTimeLimit() {
 		return softTimeLimit;
 	}
@@ -65,12 +63,9 @@ public abstract class Activity extends CalendarEntry {
 	public void setGivenPoints(int givenPoints) {
 		this.givenPoints = givenPoints;
 	}
-
+	
+	
 	public boolean isDone() {
-		return done;
-	}
-
-	public void setDone(boolean done) {
-		this.done = done;
+		return false;
 	}
 }

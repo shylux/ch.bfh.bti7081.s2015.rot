@@ -11,7 +11,7 @@ public class Ready extends NormalActivity {
 	
 	@Override
 	public void handle() { 
-		new Started(this, activity); 
+		new Started(activity); 
 	}	 
 	
 }

@@ -1,19 +1,14 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
- 
-public class Closed extends ActivityState {
 
-	public Closed(Activity activity) {
+public class FinishedInTime extends TimeActivity {
+
+	public FinishedInTime(Activity activity) { 
 		this.activity = activity;
-		setActivityState(this); 
-	} 
+		setActivityState(this);
+	}	 	
 	
-	@Override
-	public void handle() {
-		// TODO Auto-generated method stub
-	}	 
- 
 	@Override
 	protected void OnEnter() {
 		// TODO Auto-generated method stub
@@ -22,6 +17,13 @@ public class Closed extends ActivityState {
 	@Override
 	protected void OnExit() {
 		// TODO Auto-generated method stub
+		
 	}
-	
+
+	@Override
+	public void handle() {
+		// TODO Auto-generated method stub 
+		new Closed(activity);
+	}
+
 }

@@ -33,12 +33,6 @@ public class EmergencyStep implements Persistable
 	}
 
 	@Override
-	public String serialize() {
-		Gson gson = new Gson();
-		return gson.toJson(this);
-	}
-
-	@Override
 	public String getId() {
 		return id;
 	}

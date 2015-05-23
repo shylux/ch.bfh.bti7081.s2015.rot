@@ -23,24 +23,24 @@ public interface View <T> extends Button.ClickListener
 	 * @param name
 	 * @param viewListener
 	 */
-	public void addListener(String name, ViewListener viewListener);
+	void addListener(String name, ViewListener viewListener);
 
 	/**
 	 * (non-Javadoc)
 	 * @see com.vaadin.ui.Button.ClickListener#buttonClick(com.vaadin.ui.Button.ClickEvent)
 	 */
-	public void buttonClick(Button.ClickEvent event);
+	void buttonClick(Button.ClickEvent event);
 	
 	/**
 	 * update a specific model
 	 * @param model
 	 */
-	public void update(T model);
+	void update(T model);
 
 	/**
 	 * update a specific model
 	 * @param models
 	 */
-	public void update(ArrayList<T> data);
+	void update(ArrayList<T> data);
 	
 }

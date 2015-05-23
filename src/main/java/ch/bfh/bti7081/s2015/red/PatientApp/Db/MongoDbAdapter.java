@@ -44,7 +44,7 @@ public class MongoDbAdapter {
 		InputStream input = null;
 		java.util.Properties prop = new java.util.Properties();
 		try {
-			input = new FileInputStream("src/main/resources/ch/bfh/bti7081/s2015/red/PatientApp/db.properties");
+			input = new FileInputStream("db.properties");
 			
 			prop.load(input);
 		
@@ -119,7 +119,7 @@ public class MongoDbAdapter {
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		
-		return (Persistable)createdClass;
+		return createdClass;
 	}
 	/**
 	 * get a collection of the given datatype
@@ -140,11 +140,11 @@ public class MongoDbAdapter {
 			for(Object subtype : subTypes )
 			{
 				BasicDBObject query =new BasicDBObject("type",subtype.toString());
-				ArrayList<T> tmpList = (ArrayList<T>)((Object)getQueryResult(query,(Class<? extends Persistable>) subtype));
+				ArrayList<T> tmpList = (ArrayList<T>) getQueryResult(query,(Class<? extends Persistable>) subtype);
 				entries.addAll(tmpList);
 			}
 			
-			entries.addAll(((ArrayList<T>)(Object)getSpecificCollection(persistableClass)));
+			entries.addAll(((ArrayList<T>) getSpecificCollection(persistableClass)));
 			return entries;
 		}
 		else
@@ -160,7 +160,7 @@ public class MongoDbAdapter {
 	{
 		BasicDBObject query = new BasicDBObject();
 		query.put("type", persistableClass.toString());
-		return (ArrayList<T>)((Object)getQueryResult(query,persistableClass));
+		return (ArrayList<T>) getQueryResult(query,persistableClass);
 
 	}
 	/**

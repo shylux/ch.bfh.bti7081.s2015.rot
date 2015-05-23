@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
-import com.google.gson.Gson;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
-import com.ibm.icu.impl.duration.PeriodFormatterService;
 
 public class Emergency implements Persistable{
 	private ArrayList<EmergencyStep> steps = new ArrayList<EmergencyStep>();
@@ -32,10 +30,6 @@ public class Emergency implements Persistable{
 		this.steps = steps;
 	}
 
-	public String serialize() {
-		Gson gson = new Gson();
-		return gson.toJson(this);
-	}
 	public String getId() {
 		return id;
 	}

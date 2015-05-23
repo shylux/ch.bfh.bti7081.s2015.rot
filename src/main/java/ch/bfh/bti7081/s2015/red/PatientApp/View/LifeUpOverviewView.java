@@ -7,14 +7,8 @@ import com.vaadin.ui.Label;
 
 import java.util.ArrayList;
 
-public class LifeUpMainView extends BaseView<LifeUp> {
+public class LifeUpOverviewView extends BaseView<LifeUp>{
 
-	@Override
-	public void enter(ViewChangeEvent event) {
-		Label label = new Label("LifeUp");
-        addComponent(label);
-	}
-	
 	@Override
 	public void buttonClick(ClickEvent event) {
 		// TODO Auto-generated method stub
@@ -33,6 +27,10 @@ public class LifeUpMainView extends BaseView<LifeUp> {
 		
 	}
 
-
+	@Override
+	public void enter(ViewChangeEvent event) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

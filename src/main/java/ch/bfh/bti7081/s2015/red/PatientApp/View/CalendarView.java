@@ -1,9 +1,6 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
-import java.util.Date;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 
 import com.vaadin.annotations.Theme;
@@ -11,13 +8,11 @@ import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.Page;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.components.calendar.CalendarComponentEvents.EventClick;
 import com.vaadin.ui.components.calendar.event.BasicEvent;
 import com.vaadin.ui.components.calendar.event.BasicEventProvider;
-import com.vaadin.ui.components.calendar.event.CalendarEvent;
 
 
 
@@ -52,7 +47,7 @@ public class CalendarView extends BaseView<CalendarEntry>
 			public void eventClick(EventClick event) {
 				BasicEvent e = (BasicEvent) event.getCalendarEvent();
 
-				m_navigator.navigateTo(NavigatorUI.LIFEUP);
+				m_navigator.navigateTo(NavigatorUI.LIFEUPINDEX);
 				// Do something with it
 				new Notification("Event clicked: " + e.getCaption(),
 						e.getDescription()).show(Page.getCurrent());

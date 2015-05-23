@@ -48,8 +48,8 @@ public class MongoDbAdapter {
 			
 			prop.load(input);
 		
-			/*MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"), 
-					prop.getProperty("db"), prop.getProperty("pass").toCharArray());*/
+			MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"),
+					prop.getProperty("db"), prop.getProperty("pass").toCharArray());
 
 			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")));
 		} 
@@ -176,7 +176,7 @@ public class MongoDbAdapter {
 	 * insert a new collection into database
 	 * @param entries
 	 */
-	public void insertIntoDatabase(ArrayList<Persistable>entries)
+	public void insertIntoDatabase(ArrayList<? extends Persistable> entries)
 	{
 		for(Persistable entry: entries)
 		{

@@ -1,6 +1,14 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.*;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
+
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
@@ -20,13 +28,19 @@ import com.vaadin.ui.VerticalLayout;
  */
 public class NavigatorUI extends UI {
 
-	protected Navigator navigator;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 614340462216711328L;
+
+	Navigator navigator;
 
 	final public static String MEDICATIONINDEX = "MedicationIndex";
 	final public static String EMERGENCY = "Emergency";
 	final public static String LIFEUP = "LifeUpIndex";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
+	final public static String CALENDARINDEX = "Kalender";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -87,6 +101,14 @@ public class NavigatorUI extends UI {
 		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
 		
 		navigator.addView(GPSACTIVTY, gpsActvitivyView);
+		
+		/*
+		 * Life Up Activity overview
+		 */
+		CalendarView calendarView = new CalendarView(navigator);
+		CalendarPresenter calendarPresenter = new CalendarPresenter(calendarView);
+		calendarView.addListener(CALENDARINDEX, calendarPresenter);
+		navigator.addView(CALENDARINDEX, calendarView);
 		
 		/*
 		 * Life Up Activity overview

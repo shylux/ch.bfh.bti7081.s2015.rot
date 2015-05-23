@@ -2,16 +2,13 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 import java.util.ArrayList;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
 
-public class LifeUpPresenter extends BasePresenter<LifeUp> {
+public class LifeUpDetailPreseter extends BasePresenter<LifeUp>{
 
-	LifeUp lup = new LifeUp();
-	
-	public LifeUpPresenter(View view) {
+	public LifeUpDetailPreseter(View view) {
 		super(view);
-		view.update(lup);
 		// TODO Auto-generated constructor stub
 	}
 

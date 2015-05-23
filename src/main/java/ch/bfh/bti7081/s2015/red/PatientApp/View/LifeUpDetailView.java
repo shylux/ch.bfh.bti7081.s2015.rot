@@ -1,6 +1,9 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
 
@@ -8,13 +11,10 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Button.ClickEvent;
 
-public class LifeUpMainView extends BaseView<LifeUp> {
+public class LifeUpDetailView extends BaseView<LifeUp> {
 
-	@Override
-	public void enter(ViewChangeEvent event) {
-		Label label = new Label("LifeUp");
-        addComponent(label);
-	}
+	Calendar localCalendar = Calendar.getInstance(TimeZone.getDefault());
+	int currentDay = localCalendar.get(Calendar.DATE);
 	
 	@Override
 	public void buttonClick(ClickEvent event) {
@@ -34,6 +34,12 @@ public class LifeUpMainView extends BaseView<LifeUp> {
 		
 	}
 
-
+	@Override
+	public void enter(ViewChangeEvent event) {
+		
+		Label label = new Label(" " + currentDay);
+        addComponent(label);
+		
+	}
 
 }

@@ -6,6 +6,26 @@ import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import java.io.*;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import com.google.gson.JsonArray;
+import com.google.gwt.core.client.Callback;
+import com.google.gwt.dev.js.rhino.ObjToIntMap.Iterator;
+import com.google.gwt.geolocation.client.Geolocation;
+import com.google.gwt.geolocation.client.Position;
+import com.google.gwt.geolocation.client.PositionError;
+
+
+
+
+import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.server.ExternalResource;
+import com.vaadin.server.FileResource;
+import com.vaadin.server.Page;
 import com.vaadin.tapio.googlemaps.GoogleMap;
 import com.vaadin.tapio.googlemaps.client.LatLon;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
@@ -14,11 +34,13 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.*;
+import com.vaadin.ui.Button.ClickEvent;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class GpsActivityView extends BaseView<GpsActivity>{
+public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Receiver, Upload.SucceededListener {
 
 	GpsActivity activity;
 	GpsCoordinate currentLocation = new GpsCoordinate(46.9644149,7.4563786);
@@ -30,6 +52,8 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	private Label description 			= new Label();
 	private Button walkForward 			= new Button("walk forward");
 	private Button walkBackward		= new Button("walk backward");
+    private Upload upload;
+    private Image image = new Image();
 	private GoogleMap googleMap;
 	private GoogleMapMarker positionMarker;
 	private GpsLocationSimulator gpsLocationSimulator;
@@ -82,7 +106,12 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		
 		System.out.println("Setze Zielaktivität");
 		System.out.println(model);
-		
+
+        upload = new Upload("Bild hochladen", this);
+        upload.addSucceededListener(this);
+        image.setVisible(false);
+        image.setWidth("300px");
+
 		gpsLocationSimulator = new GpsLocationSimulator(this.currentLocation,activity.getCirlce().getCenter());
 		gpsLocationSimulator.path(15);
 		
@@ -112,6 +141,7 @@ public class GpsActivityView extends BaseView<GpsActivity>{
         
         HorizontalLayout line1 = new HorizontalLayout();
 		HorizontalLayout line2 = new HorizontalLayout();
+        VerticalLayout line25 = new VerticalLayout();
 		HorizontalLayout line3 = new HorizontalLayout();
 		HorizontalLayout line4 = new HorizontalLayout();
 		
@@ -121,6 +151,8 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		line1.addComponent(name);
 		line2.addComponent(descriptionLabel);
 		line2.addComponent(description);
+        line25.addComponent(upload);
+        line25.addComponent(image);
 		line4.addComponent(walkBackward);
 		line4.addComponent(walkForward);
 		
@@ -133,6 +165,7 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		line3.addComponent(distance);
 		this.addComponent(line1);
 		this.addComponent(line2);
+        this.addComponent(line25);
 		this.addComponent(line3);
 		this.addComponent(line4);
 		this.addComponent(googleMap);
@@ -166,6 +199,22 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		}
 
 	}
-}
 
-	
+    @Override
+    public OutputStream receiveUpload(String filename, String mimetype) {
+        try {
+            this.activity.photo = File.createTempFile(filename, ".tmp");
+            return new FileOutputStream(this.activity.photo);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Notification.show("Can't create temp file for upload!");
+            throw new RuntimeException("Can't create temp file for upload!");
+        }
+    }
+
+    @Override
+    public void uploadSucceeded(Upload.SucceededEvent succeededEvent) {
+        image.setVisible(true);
+        image.setSource(new FileResource(this.activity.photo));
+    }
+}

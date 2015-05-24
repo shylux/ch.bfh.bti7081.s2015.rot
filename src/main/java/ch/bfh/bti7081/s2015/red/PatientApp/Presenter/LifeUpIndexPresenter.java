@@ -1,14 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
+
+import java.util.ArrayList;
 
 public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 

@@ -233,10 +233,7 @@ public class DateUtils {
         if (c.get(Calendar.SECOND) > 0) {
             return true;
         }
-        if (c.get(Calendar.MILLISECOND) > 0) {
-            return true;
-        }
-        return false;
+        return c.get(Calendar.MILLISECOND) > 0;
     }
 
     /** Returns the given date with time set to the end of the day */

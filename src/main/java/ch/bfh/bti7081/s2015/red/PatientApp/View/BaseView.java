@@ -1,9 +1,9 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
-
 import com.vaadin.ui.VerticalLayout;
+
+import java.util.ArrayList;
 
 
 /**

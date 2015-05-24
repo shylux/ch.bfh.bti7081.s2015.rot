@@ -1,10 +1,8 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-import java.util.Date;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 
-import com.google.gson.Gson;
+import java.util.Date;
 
 public abstract class CalendarEntry implements Persistable{
 	
@@ -46,13 +44,7 @@ public abstract class CalendarEntry implements Persistable{
 	 * for testing only 
 	 */
 	public abstract void setDisplay(String data);
-	
 
-	public String serialize() {
-		Gson gson = new Gson();
-		return gson.toJson(this);
- 
-	}
 	/*
 	 * Getter's and Setters 
 	 */

@@ -1,13 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-import java.util.ArrayList;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
+
+import java.util.ArrayList;
 
 public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 

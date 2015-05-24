@@ -1,6 +1,4 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp; 
-
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
 
 public abstract class NormalActivity extends ActivityState {
 	

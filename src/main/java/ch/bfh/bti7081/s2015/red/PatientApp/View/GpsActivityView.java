@@ -1,41 +1,22 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.ListIterator;
-
-import com.google.gson.JsonArray;
-import com.google.gwt.core.client.Callback;
-import com.google.gwt.dev.js.rhino.ObjToIntMap.Iterator;
-import com.google.gwt.geolocation.client.Geolocation;
-import com.google.gwt.geolocation.client.Position;
-import com.google.gwt.geolocation.client.PositionError;
-
-
-
-
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.server.ExternalResource;
-import com.vaadin.server.Page;
-import com.vaadin.tapio.googlemaps.GoogleMap;
-import com.vaadin.tapio.googlemaps.client.LatLon;
-import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
-import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.JavaScript;
-import com.vaadin.ui.JavaScriptFunction;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Link;
-import com.vaadin.ui.Notification;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
+import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.tapio.googlemaps.GoogleMap;
+import com.vaadin.tapio.googlemaps.client.LatLon;
+import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
+import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Label;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class GpsActivityView extends BaseView<GpsActivity>{
 

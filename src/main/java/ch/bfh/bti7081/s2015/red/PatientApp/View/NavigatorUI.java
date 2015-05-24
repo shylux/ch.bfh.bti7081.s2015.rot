@@ -1,15 +1,6 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.Enumeration;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
-
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.*;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;

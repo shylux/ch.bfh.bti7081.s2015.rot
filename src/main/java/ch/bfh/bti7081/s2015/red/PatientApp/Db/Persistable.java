@@ -1,6 +1,8 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
+import com.google.gson.Gson;
+
 /**
  * Every Class that could be stored into an document base database
  * must implement this interface
@@ -10,20 +12,23 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 public interface Persistable {
 	
 	/**
+	 * a db specific unique hash id
+	 * @return
+	 */
+    String getId();
+	
+	/**
+	 * a db specific unique hash id
+	 * @return
+	 */
+    void setId(String id);
+
+	/**
 	 * covert the class properties to json
 	 * @return
 	 */
-	public String serialize();
-	
-	/**
-	 * a db specific unique hash id
-	 * @return
-	 */
-	public String getId();
-	
-	/**
-	 * a db specific unique hash id
-	 * @return
-	 */
-	public void setId(String id);
+	default String serialize() {
+		Gson gson = new Gson();
+		return gson.toJson(this);
+	}
 }

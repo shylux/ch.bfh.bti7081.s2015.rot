@@ -1,4 +1,4 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
+package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import java.util.Calendar;
 import java.util.Date;

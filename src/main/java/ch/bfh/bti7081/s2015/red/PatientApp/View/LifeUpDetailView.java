@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;

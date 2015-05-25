@@ -1,4 +1,4 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
+package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
@@ -11,7 +11,8 @@ public abstract class ActivityState {
 	}
 	
 	public String getStateName() {
-		return this.getClass().getName();
+		String[] count = this.getClass().getName().split("\\.");
+		return this.getClass().getName().split("\\.")[count.length - 1];
 	}
 	
 	protected abstract void OnEnter();

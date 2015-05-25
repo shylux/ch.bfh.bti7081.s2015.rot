@@ -7,11 +7,11 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.TimeActivityManager;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.TimeActivityReady;
 
 public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 
@@ -28,8 +28,8 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 		
 		for (int i = 0; i < activities.size(); i++) {
 			GpsActivity currentActivity = activities.get(i);
-			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (10 * SECONDS_IN_MS)));
-			currentActivity.setHardTimeLimit(new Date(now.getTime() + (180 * SECONDS_IN_MS)));
+			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (20 * SECONDS_IN_MS)));
+			currentActivity.setHardTimeLimit(new Date(now.getTime() + (50 * SECONDS_IN_MS)));
 			manager.addActivity(activities.get(i));
 			new TimeActivityReady(activities.get(i));	
 			System.out.println("Hinzüfgen Activity");

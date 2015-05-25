@@ -3,7 +3,6 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Label;
 
 import java.util.ArrayList;
 

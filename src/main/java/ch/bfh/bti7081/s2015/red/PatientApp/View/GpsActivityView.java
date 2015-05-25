@@ -6,37 +6,17 @@ import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import java.io.*;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.ListIterator;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import com.google.gson.JsonArray;
-import com.google.gwt.core.client.Callback;
-import com.google.gwt.dev.js.rhino.ObjToIntMap.Iterator;
-import com.google.gwt.geolocation.client.Geolocation;
-import com.google.gwt.geolocation.client.Position;
-import com.google.gwt.geolocation.client.PositionError;
-
-
-
-
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.server.ExternalResource;
 import com.vaadin.server.FileResource;
-import com.vaadin.server.Page;
 import com.vaadin.tapio.googlemaps.GoogleMap;
 import com.vaadin.tapio.googlemaps.client.LatLon;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 

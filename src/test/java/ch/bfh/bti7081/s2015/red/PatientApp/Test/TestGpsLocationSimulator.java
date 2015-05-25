@@ -1,12 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Test;
 
-import java.util.ArrayList;
-
-import org.junit.Test;
-import org.junit.Assert;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.ArrayList;
 
 public class TestGpsLocationSimulator {
 

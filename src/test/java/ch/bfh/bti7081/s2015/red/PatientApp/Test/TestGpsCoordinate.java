@@ -1,9 +1,8 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Test;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 import org.junit.Assert;
 import org.junit.Test;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
 
 public class TestGpsCoordinate {

@@ -1,10 +1,5 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
@@ -14,6 +9,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.TimeActivityManager;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.TimeActivityReady;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 

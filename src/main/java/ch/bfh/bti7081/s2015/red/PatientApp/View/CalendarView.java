@@ -1,8 +1,6 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.ArrayList;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
-
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
@@ -13,6 +11,8 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.components.calendar.CalendarComponentEvents.EventClick;
 import com.vaadin.ui.components.calendar.event.BasicEvent;
 import com.vaadin.ui.components.calendar.event.BasicEventProvider;
+
+import java.util.ArrayList;
 
 
 

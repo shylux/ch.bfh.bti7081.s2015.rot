@@ -130,7 +130,7 @@ public class MongoDbAdapter {
 				entries.addAll(tmpList);
 			}
 			
-			entries.addAll(((ArrayList<T>) getSpecificCollection(persistableClass)));
+			entries.addAll(getSpecificCollection(persistableClass));
 			return entries;
 		}
 		else

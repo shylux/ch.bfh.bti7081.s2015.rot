@@ -1,16 +1,15 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Test;
 
-import java.util.ArrayList;
-
-import org.junit.Assert;
-import org.junit.Test;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.ArrayList;
 
 public class TestMongoDbAdapter {
 

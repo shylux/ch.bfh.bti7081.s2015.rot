@@ -32,9 +32,9 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 	public void triggerEvent(String event, GpsActivity data) {
 		if(event.equals("loadActivity"))
 		{
+			System.out.println("DATA:"+data);
 			MongoDbAdapter adapter = new MongoDbAdapter();
 			data = (GpsActivity) adapter.getEntryFromDatabase(data);
-			
 			view.update(data);
 			
 		}

@@ -8,6 +8,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
 import com.vaadin.annotations.Theme;
@@ -36,6 +37,7 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUP = "LifeUp";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
+	public static final String MEDICATION = "Medication";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -66,6 +68,15 @@ public class NavigatorUI extends UI {
 		MedicationIndexPresenter mediIndexPresenter = new MedicationIndexPresenter(
 				mediIndexView);
 		mediIndexView.addListener(MEDICATIONINDEX, mediIndexPresenter);
+		navigator.addView(MEDICATIONINDEX, mediIndexView);
+		
+		/*
+		 * Medication MVP
+		 */
+		MedicationView mediView = new MedicationView();
+		MedicationPresenter mediPresenter = new MedicationPresenter(mediView);
+		mediView.addListener(MEDICATION, mediPresenter);
+		navigator.addView(MEDICATION, mediView);
 
 		/*
 		 * Emergency MVP
@@ -75,7 +86,6 @@ public class NavigatorUI extends UI {
 		emergView.addListener(EMERGENCY, emergPresenter);
 
 		navigator.addView("", startPageView);
-		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
 		
 		/*

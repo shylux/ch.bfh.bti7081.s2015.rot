@@ -10,6 +10,7 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
@@ -31,6 +32,11 @@ public class DbInitializer
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		
 		ArrayList<Persistable> activities = new ArrayList<>();
+		ArrayList<Persistable> medications = new ArrayList<>();
+		
+		medications.add(new MedicationEntry("mediname mongodb", "medidescription mongodb", "howMuchADay mongodb", "howToTake mongodb", new ArrayList<String>()));
+		medications.add(new MedicationEntry("mediname mongodb 1", "medidescription mongodb 1", "howMuchADay mongodb 1", "howToTake mongodb 1", new ArrayList<String>()));
+		medications.add(new MedicationEntry("mediname mongodb 2", "medidescription mongodb 2", "howMuchADay mongodb 2", "howToTake mongodb 2", new ArrayList<String>()));
 		
 		activities.add(new GpsActivity("Migros Einkaufen",
 				"a bootle a day...", new Circle(new GpsCoordinate(46.965806,7.4638448)), new Date(), end));
@@ -53,6 +59,7 @@ public class DbInitializer
 		
 		adapter.erase();
 		adapter.insertIntoDatabase(activities);
+		adapter.insertIntoDatabase(medications);
 
 	}
 }

@@ -13,7 +13,6 @@ public class FinishedTooLate extends TimeActivity {
 	@Override
 	protected void OnEnter() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override

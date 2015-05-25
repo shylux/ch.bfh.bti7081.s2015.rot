@@ -11,18 +11,16 @@ public class TimeActivityReady extends TimeActivity {
 	
 	public TimeActivityReady(Activity activity) {  
 		this.activity = activity; 
-		System.out.println(activity);
+
 		manager = TimeActivityManager.getInstance();
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);
 		
-		//setActivityState(this);  
 		startProcess();
 	}	
 	 
 	private void startProcess() {  
 		new InProgress(activity); 
-		// (new Thread(this.timeActivityManager)).start();
 	}	
 	
 	@Override

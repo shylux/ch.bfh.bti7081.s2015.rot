@@ -36,9 +36,10 @@ public class NavigatorUI extends UI {
 
 	Navigator navigator;
 
+	final public static String STARTSCREEN		= "StartScreen";
 	final public static String MEDICATIONINDEX 	= "MedicationIndex";
 	final public static String EMERGENCY 		= "Emergency";
-	final public static String GPSACTIVTY 		="GpsActivity";
+	final public static String GPSACTIVTY 		= "GpsActivity";
 	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
 	final public static String LIFEUPINDEX 		= "LifeUpIndex";
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
@@ -59,12 +60,12 @@ public class NavigatorUI extends UI {
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
 		
 		/*
-		 * startstreen MVP
+		 * Startstreen MVP
 		 */
 		StartPageView startPageView = new StartPageView();
 		StartPagePresenter startScreenPresenter = new StartPagePresenter(
 				startPageView);
-		startPageView.addListener("StartScreen", startScreenPresenter);
+		startPageView.addListener(STARTSCREEN, startScreenPresenter);
 
 		/*
 		 * Medication Index MVP
@@ -82,6 +83,7 @@ public class NavigatorUI extends UI {
 		emergView.addListener(EMERGENCY, emergPresenter);
 
 		navigator.addView("", startPageView);
+		navigator.addView(STARTSCREEN, startPageView);
 		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
 		

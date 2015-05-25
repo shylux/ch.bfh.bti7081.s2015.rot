@@ -15,15 +15,15 @@ public class TestStatePattern {
 		
 		Activity activity = new GpsActivity();
 		activity.setActivityState(new Ready(activity)); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Ready", activity.getStateName());
+		Assert.assertEquals("Ready", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Started", activity.getStateName());
+		Assert.assertEquals("Started", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Finished", activity.getStateName());
+		Assert.assertEquals("Finished", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Closed", activity.getStateName());
+		Assert.assertEquals("Closed", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Closed", activity.getStateName());
+		Assert.assertEquals("Closed", activity.getStateName());
 		
 	}
 	

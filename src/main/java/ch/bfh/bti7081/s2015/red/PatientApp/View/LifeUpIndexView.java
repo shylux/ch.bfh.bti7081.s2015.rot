@@ -34,6 +34,11 @@ public class LifeUpIndexView extends BaseView <Activity>{
 	public void buttonClick(ClickEvent event) {
 		String property = event.getButton().getCaption();
 		
+		// Navigate to startscreen
+		if (property.equals(stringStartPage)) { 
+			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
+		}		
+		
 		if ( property.equals(strToday) ) {
 			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPDETAIL); 
 		}
@@ -53,6 +58,12 @@ public class LifeUpIndexView extends BaseView <Activity>{
 
 	@Override
 	public void update(ArrayList<Activity> data) {
+	
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation	     	
+		
 		Label title = new Label(strTitle);
 		title.addStyleName("h2");
 		this.addComponent(title);
@@ -84,6 +95,7 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		buttonContainer.addComponent(lineToday);
 		buttonContainer.addComponent(lineTomorrow);		
 		buttonContainer.addComponent(lineOverview);
+		 
 		
 		addComponent(buttonContainer);
 	}

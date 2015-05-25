@@ -54,8 +54,12 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	private GpsLocationSimulator gpsLocationSimulator;
 	
 	@Override
-	public void buttonClick(ClickEvent event) {
+	public void buttonClick(ClickEvent event) { 
 		
+		// Navigate to startscreen
+		if (event.getButton().getCaption().equals(stringStartPage)) { 
+			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
+		}
 		
 		/*
 		 * Marker must detached and attached again 
@@ -145,11 +149,17 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		
 		walkBackward.addClickListener(this);
 		walkForward.addClickListener(this);
-
+	
 		
 		distance.setValue(getFormatedDistance());
 		line3.addComponent(distanceLabel);
 		line3.addComponent(distance);
+		
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation
+		
 		this.addComponent(line1);
 		this.addComponent(line2);
 		this.addComponent(line3);

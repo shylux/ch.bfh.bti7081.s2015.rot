@@ -1,6 +1,7 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 
 import com.vaadin.annotations.Theme;
@@ -53,7 +54,16 @@ public class CalendarView extends BaseView<CalendarEntry>
 						e.getDescription()).show(Page.getCurrent());
 			}
 		});
+		
+
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation		
+		
 		addComponent(cal);
+		
+		
 	}
 
 
@@ -61,7 +71,11 @@ public class CalendarView extends BaseView<CalendarEntry>
 	@Override
 	public void buttonClick(ClickEvent event) {
 		// TODO Auto-generated method stub
-
+		
+		// Navigate to startscreen
+		if (event.getButton().getCaption().equals(stringStartPage)) { 
+			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
+		}
 	}
 
 

@@ -11,6 +11,9 @@ import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Contact;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
+
+
 
 /**
  * A class that insert data into database. Used in development.
@@ -25,7 +28,6 @@ public class DbInitializer
 	public static void restore()
 	{
 
-		
 		Calendar cal = Calendar.getInstance(); 
 	    cal.setTime(new Date()); 
 	    cal.add(Calendar.HOUR_OF_DAY, 5); 
@@ -57,6 +59,15 @@ public class DbInitializer
 		dbentrys.add(new GpsActivity("YB match besuchen",
 				"Inkl. Alkfreies Bier", new Circle(new GpsCoordinate(46.9646601,7.459328)), end, end));
 
+
+		ArrayList<Persistable> activities = new ArrayList<>();
+		ArrayList<Persistable> medications = new ArrayList<>();
+		
+		medications.add(new MedicationEntry("mediname mongodb", "medidescription mongodb", "howMuchADay mongodb", "howToTake mongodb", new ArrayList<String>()));
+		medications.add(new MedicationEntry("mediname mongodb 1", "medidescription mongodb 1", "howMuchADay mongodb 1", "howToTake mongodb 1", new ArrayList<String>()));
+		medications.add(new MedicationEntry("mediname mongodb 2", "medidescription mongodb 2", "howMuchADay mongodb 2", "howToTake mongodb 2", new ArrayList<String>()));
+		
+		
 		/* EmergencySteps */
 		dbentrys.add(new EmergencyStep("Take a deep breath."));
 		dbentrys.add(new EmergencyStep("Yell at Neighbour."));
@@ -67,5 +78,8 @@ public class DbInitializer
 		
 		adapter.erase();
 		adapter.insertIntoDatabase(dbentrys);
+		adapter.insertIntoDatabase(activities);
+		adapter.insertIntoDatabase(medications);
+
 	}
 }

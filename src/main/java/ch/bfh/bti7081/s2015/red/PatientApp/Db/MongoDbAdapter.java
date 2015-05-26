@@ -110,7 +110,7 @@ public class MongoDbAdapter {
 	 */
 	public Persistable getEntryFromDatabase(Persistable persistable)
 	{
-	
+		System.out.println("PERSISTABLE: "+persistable.getClass());
 		BasicDBObject query = new BasicDBObject();
 	    query.put("_id", new ObjectId(persistable.getId()));
 	    DBObject dbObj = collection.findOne(query);
@@ -118,7 +118,7 @@ public class MongoDbAdapter {
 		Gson gson = new Gson();
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
-		
+		System.out.println("GENERATET: "+(Persistable)createdClass);
 		return (Persistable)createdClass;
 	}
 	/**

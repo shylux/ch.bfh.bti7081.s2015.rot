@@ -57,23 +57,17 @@ public class LifeUpIndexView extends BaseView <Activity>{
 
 	@Override
 	public void update(ArrayList<Activity> data) {
-	
-		// add the default homescreen button
-		this.addComponent(addStartPageNavigation());
-		buttonStartPage.addClickListener(this);
-		// end of adding default navigation	     	
-		
-		Label title = new Label(strTitle);
-		title.addStyleName("h2");
-		this.addComponent(title);
-		for(Activity activity : data)
-		{
-			this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
-		}
+
 	}
 
 	@Override
 	public void enter(ViewChangeEvent event) {
+		this.removeAllComponents();
+		
+		Label title = new Label(strTitle);
+		title.addStyleName("h2");
+		this.addComponent(title);
+		
 		String strButtonWidth = "200px";
 		
 		VerticalLayout buttonContainer	= new VerticalLayout();

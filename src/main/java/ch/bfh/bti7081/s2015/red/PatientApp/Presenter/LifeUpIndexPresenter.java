@@ -15,7 +15,7 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 	private ArrayList<GpsActivity> activities;
 	public LifeUpIndexPresenter(View view) {
 		super(view);
-		DbInitializer.restore();
+		
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);
 		

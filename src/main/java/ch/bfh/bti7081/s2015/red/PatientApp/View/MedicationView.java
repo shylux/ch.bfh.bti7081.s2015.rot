@@ -27,6 +27,7 @@ public class MedicationView extends BaseView<MedicationEntry>{
 
 	@Override
 	public void update(MedicationEntry medicatonEntry) {
+		this.removeAllComponents();
 		medication = medicatonEntry;
 		addComponent(new Label("Medikation"));
 		// TODO Auto-generated method stub

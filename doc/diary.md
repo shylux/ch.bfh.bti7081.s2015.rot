@@ -289,3 +289,12 @@ FH: Filip Hofer
 * Vortrag State Pattern
 * Anwesende Teammitglieder: JM, TB, ML, FH, ST
 * Abwesende Teammitglieder: LK (VKU)
+
+### 21 - 24.05.2015
+* Arbeit an Scrum Sprint 2
+
+### 26.05.2015
+* Daily Scrum Meeting
+* Präsentation State Pattern
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST
+* Abwesende Teammitglieder: LK (VKU)

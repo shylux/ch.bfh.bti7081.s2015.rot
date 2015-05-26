@@ -7,7 +7,6 @@ public class Failed extends TimeActivity {
 	volatile TimeActivityManager manager;
 	
 	public Failed(Activity activity) { 
-		System.out.println("Sie haben versagt!, sie oberlusche");
 		this.activity = activity;
 		this.activity.setGivenPoints(FAILED);
 		manager = TimeActivityManager.getInstance();
@@ -19,18 +18,15 @@ public class Failed extends TimeActivity {
 	@Override
 	protected void OnEnter() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	protected void OnExit() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	@Override
 	public void handle() {
-		// TODO Auto-generated method stub 
 		new Closed(activity);
 	}
 

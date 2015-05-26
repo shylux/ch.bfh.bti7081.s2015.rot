@@ -13,6 +13,16 @@ public class Finished extends NormalActivity {
 	@Override
 	public void handle() {
 		new Closed(activity); 
+	}
+
+	@Override
+	protected void OnEnter() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	protected void OnExit() {
+		// TODO Auto-generated method stub
 	} 
   
 }

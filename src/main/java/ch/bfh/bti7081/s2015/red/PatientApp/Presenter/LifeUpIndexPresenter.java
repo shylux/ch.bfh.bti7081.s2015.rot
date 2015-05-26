@@ -31,8 +31,7 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (20 * SECONDS_IN_MS)));
 			currentActivity.setHardTimeLimit(new Date(now.getTime() + (50 * SECONDS_IN_MS)));
 			manager.addActivity(activities.get(i));
-			new TimeActivityReady(activities.get(i));	
-			System.out.println("Hinzüfgen Activity");
+			new TimeActivityReady(activities.get(i));
 		}			
 			
 		view.update(activities);

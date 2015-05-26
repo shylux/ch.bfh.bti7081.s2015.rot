@@ -17,13 +17,11 @@ public class FinishedInTime extends TimeActivity {
 
 	@Override
 	protected void OnExit() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	@Override
 	public void handle() {
-		// TODO Auto-generated method stub 
 		new Closed(activity);
 	}
 

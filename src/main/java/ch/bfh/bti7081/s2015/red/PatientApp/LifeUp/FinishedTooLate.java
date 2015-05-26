@@ -18,12 +18,10 @@ public class FinishedTooLate extends TimeActivity {
 	@Override
 	protected void OnExit() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void handle() {
-		// TODO Auto-generated method stub
 		new Closed(activity);
 	}
 

@@ -16,14 +16,17 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
+import com.google.gwt.dom.client.UListElement;
 import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
+import com.vaadin.server.ExternalResource;
 import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.shared.Position;
+
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
@@ -164,20 +167,28 @@ public class NavigatorUI extends UI {
                     @Override
                     public void run() 
                     {
+                    	
+                    	//Label overlay = new Label();
+                    	//layout.addComponent(new ReminderComponent());
+                    	
+                    	/*overlay.setContentMode(ContentMode.HTML);
                     	StringBuilder reminderText = new StringBuilder();
                     	reminderText.append("<strong>Reminder</strong>");
                     	reminderText.append("</br>these things are to do:");
-                    	
+                    	reminderText.append("<ul>");
+
                     	for(CalendarEntry entry: entries)
                     	{
-                    		reminderText.append(entry.getShortName()+"<br />"+entry.getDescription());
-                    		reminderText.append("<br />"+entry.getUrl());
+                    		reminderText.append("<li><a href='"+entry.getUrl()+"'>"+entry.getShortName()+"</a></li>");
                     	}
+                    	reminderText.append("</ul>");
                     	Notification notification = new Notification(reminderText.toString());
                     	notification.setPosition(Position.MIDDLE_CENTER);
                     	notification.setDelayMsec(Notification.DELAY_FOREVER);
+                    	
                     	notification.setHtmlContentAllowed(true);
-                    	notification.show(Page.getCurrent());
+                    	notification.show(Page.getCurrent());*/
+                    	
                     	
                     }
                 });

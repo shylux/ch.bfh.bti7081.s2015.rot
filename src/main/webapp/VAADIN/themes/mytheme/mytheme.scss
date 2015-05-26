@@ -32,5 +32,18 @@
 @mixin mytheme {
   @include valo;
 
-  // Insert your own theme rules here
+  .custom-reminder-comp
+  {
+	background:rgba(0,0,255,0.2);
+  	position:absolute;
+  	height:auto;
+  	min-height:300px;
+  	width: 300px !important;
+  	left:20px;
+  	top:150px;
+  	border-radius: 4px;
+  	text-align:center;
+  	
+  	
+  }
 }

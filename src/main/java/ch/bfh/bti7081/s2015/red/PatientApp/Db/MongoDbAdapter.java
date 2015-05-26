@@ -3,9 +3,6 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityStateDeserializer;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mongodb.*;
@@ -103,7 +100,7 @@ public class MongoDbAdapter {
 	 */
 	public Persistable getEntryFromDatabase(Persistable persistable)
 	{
-	
+		System.out.println("PERSISTABLE: "+persistable.getClass());
 		BasicDBObject query = new BasicDBObject();
 	    query.put("_id", new ObjectId(persistable.getId()));
 	    DBObject dbObj = collection.findOne(query);
@@ -112,8 +109,9 @@ public class MongoDbAdapter {
 
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
-		
+
 		return createdClass;
+
 	}
 	/**
 	 * get a collection of the given datatype

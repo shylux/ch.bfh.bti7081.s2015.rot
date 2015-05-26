@@ -44,7 +44,7 @@ public class MongoDbAdapter {
 		InputStream input = null;
 		java.util.Properties prop = new java.util.Properties();
 		try {
-			input = new FileInputStream("src/main/resources/ch/bfh/bti7081/s2015/red/PatientApp/db.properties");
+			input = new FileInputStream("db.properties");
 			
 			prop.load(input);
 		

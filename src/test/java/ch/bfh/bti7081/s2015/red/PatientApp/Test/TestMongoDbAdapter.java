@@ -10,6 +10,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 
 public class TestMongoDbAdapter {

@@ -1,8 +1,8 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-import java.util.ArrayList;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
+
+import java.util.ArrayList;
 
 public class StartPageModel {
 

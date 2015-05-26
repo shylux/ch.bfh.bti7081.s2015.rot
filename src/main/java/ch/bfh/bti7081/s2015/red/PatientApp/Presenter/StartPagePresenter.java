@@ -1,11 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-import java.util.ArrayList;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.StartPageModel;
-import ch.bfh.bti7081.s2015.red.PatientApp.View.NavigatorUI;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
+
+import java.util.ArrayList;
 
 public class StartPagePresenter  extends BasePresenter<CalendarEntry> {
 

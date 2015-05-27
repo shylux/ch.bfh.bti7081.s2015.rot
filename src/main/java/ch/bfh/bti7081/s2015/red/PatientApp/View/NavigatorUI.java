@@ -1,6 +1,6 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;

@@ -1,13 +1,13 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.DateUtils;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 
 public class Calendar {
 	private ArrayList<CalendarEntry> entries = new ArrayList<CalendarEntry>();

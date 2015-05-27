@@ -276,3 +276,25 @@ FH: Filip Hofer
 * Einführung und Sensibilisierung in Qualität und Sicherheit
 * Anwesende Teammitglieder: JM, TB, ML, FH, ST
 * Abwesende Teammitglieder: LK (VKU)
+
+### 22.05.2015
+* Daily Scrum Meeting
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST,LK
+
+### 23.05.2015
+* Generic Reminder Funktion implementierung (JM)
+
+### 20.05.2015
+* Daily Scrum Meeting
+* Vortrag State Pattern
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST
+* Abwesende Teammitglieder: LK (VKU)
+
+### 21 - 24.05.2015
+* Arbeit an Scrum Sprint 2
+
+### 26.05.2015
+* Daily Scrum Meeting
+* Präsentation State Pattern
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST
+* Abwesende Teammitglieder: LK (VKU)

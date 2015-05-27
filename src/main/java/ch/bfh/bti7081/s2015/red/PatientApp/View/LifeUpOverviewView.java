@@ -1,11 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button.ClickEvent;
+import java.util.ArrayList;
 
 public class LifeUpOverviewView extends BaseView<LifeUp>{
 

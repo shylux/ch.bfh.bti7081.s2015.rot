@@ -1,12 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;

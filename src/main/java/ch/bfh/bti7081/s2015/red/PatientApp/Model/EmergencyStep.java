@@ -1,11 +1,15 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-public class EmergencyStep
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+
+public class EmergencyStep implements Persistable
 {
 	private Contact contact;
 	private String description;
-	
-	public EmergencyStep() {
+    String id = "";
+    String type = this.getClass().toString();
+
+    public EmergencyStep() {
 		this("Hello World!");
 	}
 	public EmergencyStep(String desc)
@@ -14,7 +18,7 @@ public class EmergencyStep
 	}
 	public EmergencyStep(String desc, Contact cont)
 	{
-		this(desc);
+        this(desc);
 		this.contact = cont;
 	}
 	
@@ -25,5 +29,15 @@ public class EmergencyStep
 	public Contact getContact()
 	{
 		return this.contact;
+	}
+
+	@Override
+	public String getId() {
+		return id;
+	}
+
+	@Override
+	public void setId(String _id) {
+		this.id = _id;
 	}
 }

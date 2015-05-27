@@ -1,31 +1,17 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Set;
-
+import com.google.gson.Gson;
+import com.mongodb.*;
+import com.mongodb.util.JSON;
 import org.bson.types.ObjectId;
 import org.reflections.Reflections;
 
-import com.google.gson.Gson;
-import com.google.gwt.core.server.ServerGwtBridge.Properties;
-import com.mongodb.BasicDBList;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
-import com.mongodb.MongoClient;
-import com.mongodb.MongoCredential;
-import com.mongodb.ServerAddress;
-import com.mongodb.util.JSON;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Set;
 
 
 /**
@@ -44,11 +30,11 @@ public class MongoDbAdapter {
 		InputStream input = null;
 		java.util.Properties prop = new java.util.Properties();
 		try {
-			input = new FileInputStream("src/main/resources/ch/bfh/bti7081/s2015/red/PatientApp/db.properties");
+			input = new FileInputStream("db.properties");
 			
 			prop.load(input);
 		
-			/*MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"), 
+			/*MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"),
 					prop.getProperty("db"), prop.getProperty("pass").toCharArray());*/
 
 			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")));
@@ -119,7 +105,7 @@ public class MongoDbAdapter {
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		
-		return (Persistable)createdClass;
+		return createdClass;
 	}
 	/**
 	 * get a collection of the given datatype
@@ -140,11 +126,11 @@ public class MongoDbAdapter {
 			for(Object subtype : subTypes )
 			{
 				BasicDBObject query =new BasicDBObject("type",subtype.toString());
-				ArrayList<T> tmpList = (ArrayList<T>)((Object)getQueryResult(query,(Class<? extends Persistable>) subtype));
+				ArrayList<T> tmpList = (ArrayList<T>) getQueryResult(query,(Class<? extends Persistable>) subtype);
 				entries.addAll(tmpList);
 			}
 			
-			entries.addAll(((ArrayList<T>)(Object)getSpecificCollection(persistableClass)));
+			entries.addAll(((ArrayList<T>) getSpecificCollection(persistableClass)));
 			return entries;
 		}
 		else
@@ -160,7 +146,7 @@ public class MongoDbAdapter {
 	{
 		BasicDBObject query = new BasicDBObject();
 		query.put("type", persistableClass.toString());
-		return (ArrayList<T>)((Object)getQueryResult(query,persistableClass));
+		return (ArrayList<T>) getQueryResult(query,persistableClass);
 
 	}
 	/**
@@ -176,7 +162,7 @@ public class MongoDbAdapter {
 	 * insert a new collection into database
 	 * @param entries
 	 */
-	public void insertIntoDatabase(ArrayList<Persistable>entries)
+	public void insertIntoDatabase(ArrayList<? extends Persistable> entries)
 	{
 		for(Persistable entry: entries)
 		{

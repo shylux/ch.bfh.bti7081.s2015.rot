@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.junit.Test;
 import org.junit.Assert;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsLocationSimulator;
 
 public class TestGpsLocationSimulator {
 

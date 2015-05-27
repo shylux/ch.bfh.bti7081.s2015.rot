@@ -1,12 +1,16 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+
+import java.util.ArrayList;
+import java.util.Date;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-
-import java.util.ArrayList;
 
 public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 
@@ -17,6 +21,18 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);
 		
+		TimeActivityManager manager = TimeActivityManager.getInstance();
+		long SECONDS_IN_MS = 1000;
+		Date now = new Date();  
+		
+		for (int i = 0; i < activities.size(); i++) {
+			GpsActivity currentActivity = activities.get(i);
+			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (20 * SECONDS_IN_MS)));
+			currentActivity.setHardTimeLimit(new Date(now.getTime() + (50 * SECONDS_IN_MS)));
+			manager.addActivity(activities.get(i));
+			new TimeActivityReady(activities.get(i));
+		}			
+			
 		view.update(activities);
 	}
 

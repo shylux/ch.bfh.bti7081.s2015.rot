@@ -1,6 +1,15 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.*;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpOverviewPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
+
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
@@ -20,13 +29,21 @@ import com.vaadin.ui.VerticalLayout;
  */
 public class NavigatorUI extends UI {
 
-	protected Navigator navigator;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 614340462216711328L;
 
-	final public static String MEDICATIONINDEX = "MedicationIndex";
-	final public static String EMERGENCY = "Emergency";
-	final public static String LIFEUP = "LifeUp";
-	final public static String GPSACTIVTY ="GpsActivity";
-	final public static String LIFEUPINDEX = "LifeUpIndex";
+	Navigator navigator;
+
+	final public static String STARTSCREEN		= "StartScreen";
+	final public static String MEDICATIONINDEX 	= "MedicationIndex";
+	final public static String EMERGENCY 		= "Emergency";
+	final public static String GPSACTIVTY 		= "GpsActivity";
+	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
+	final public static String LIFEUPINDEX 		= "LifeUpIndex";
+	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
+	final public static String CALENDARINDEX 	= "Kalender";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -43,12 +60,12 @@ public class NavigatorUI extends UI {
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
 		
 		/*
-		 * startstreen MVP
+		 * Startstreen MVP
 		 */
 		StartPageView startPageView = new StartPageView();
 		StartPagePresenter startScreenPresenter = new StartPagePresenter(
 				startPageView);
-		startPageView.addListener("StartScreen", startScreenPresenter);
+		startPageView.addListener(STARTSCREEN, startScreenPresenter);
 
 		/*
 		 * Medication Index MVP
@@ -66,18 +83,9 @@ public class NavigatorUI extends UI {
 		emergView.addListener(EMERGENCY, emergPresenter);
 
 		navigator.addView("", startPageView);
+		navigator.addView(STARTSCREEN, startPageView);
 		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
-		
-		/*
-		 * LifeUp MVP
-		 */
-		LifeUpMainView lupMView = new LifeUpMainView();
-		LifeUpPresenter luPresenter = new LifeUpPresenter(lupMView);
-		lupMView.addListener(LIFEUP, luPresenter);
-		navigator.addView(LIFEUP, lupMView);
-
-		// navigator.navigateTo("");
 		
 		/*
 		 * Life Up Gps Activity
@@ -85,8 +93,15 @@ public class NavigatorUI extends UI {
 		GpsActivityView gpsActvitivyView = new GpsActivityView();
 		GpsActivityPresenter presenter= new GpsActivityPresenter(gpsActvitivyView);
 		gpsActvitivyView.addListener(GPSACTIVTY,presenter);
-		
 		navigator.addView(GPSACTIVTY, gpsActvitivyView);
+		
+		/*
+		 * Life Up Activity overview
+		 */
+		CalendarView calendarView = new CalendarView(navigator);
+		CalendarPresenter calendarPresenter = new CalendarPresenter(calendarView);
+		calendarView.addListener(CALENDARINDEX, calendarPresenter);
+		navigator.addView(CALENDARINDEX, calendarView);
 		
 		/*
 		 * Life Up Activity overview
@@ -95,6 +110,22 @@ public class NavigatorUI extends UI {
 		LifeUpIndexPresenter lifeUpIndexPresenter = new LifeUpIndexPresenter(lifeUpIndexView);
 		lifeUpIndexView.addListener(LIFEUPINDEX,lifeUpIndexPresenter);
 		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
+		
+		/*
+		 * Life Up detail view
+		 */
+		LifeUpDetailView lifeUpDetailView =  new LifeUpDetailView();
+		LifeUpDetailPreseter lifeUpDetailPresenter = new LifeUpDetailPreseter(lifeUpDetailView);
+		lifeUpDetailView.addListener(LIFEUPDETAIL, lifeUpDetailPresenter);
+		navigator.addView(LIFEUPDETAIL, lifeUpDetailView);
+		
+		/*
+		 * Life Up Overview
+		 */
+		LifeUpOverviewView lifeUpOverviewView = new LifeUpOverviewView();
+		LifeUpOverviewPresenter lifeUpOverviewPresenter = new LifeUpOverviewPresenter(lifeUpOverviewView);
+		lifeUpOverviewView.addListener(LIFEUPOVERVIEW, lifeUpOverviewPresenter);
+		navigator.addView(LIFEUPOVERVIEW, lifeUpOverviewView);
 		
 		//navigator.navigateTo(GPSACTIVTY+"/personalData");
 		 

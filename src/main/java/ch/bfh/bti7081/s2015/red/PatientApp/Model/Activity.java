@@ -1,6 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.ActivityState;
+
+import java.util.Date;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
+
 
 import java.util.Date;
 
@@ -8,8 +12,7 @@ public abstract class Activity extends CalendarEntry {
 	protected ActivityState activityState;
 	protected Date softTimeLimit;
 	protected Date hardTimeLimit;
-	int givenPoints  = 0;
-	boolean done;
+	private int givenPoints  = 0;
 
 	public Activity(){}
 	public Activity(String id){super(id);}
@@ -41,7 +44,6 @@ public abstract class Activity extends CalendarEntry {
 	
 	///////// STATE PATTERN
 	
-	
 	public Date getSoftTimeLimit() {
 		return softTimeLimit;
 	}
@@ -65,12 +67,9 @@ public abstract class Activity extends CalendarEntry {
 	public void setGivenPoints(int givenPoints) {
 		this.givenPoints = givenPoints;
 	}
-
+	
+	
 	public boolean isDone() {
-		return done;
-	}
-
-	public void setDone(boolean done) {
-		this.done = done;
+		return false;
 	}
 }

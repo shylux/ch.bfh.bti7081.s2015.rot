@@ -1,4 +1,4 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
+package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
@@ -11,7 +11,19 @@ public class Ready extends NormalActivity {
 	
 	@Override
 	public void handle() { 
-		new Started(this, activity); 
+		new Started(activity); 
+	}
+
+	@Override
+	protected void OnEnter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void OnExit() {
+		// TODO Auto-generated method stub
+		
 	}	 
 	
 }

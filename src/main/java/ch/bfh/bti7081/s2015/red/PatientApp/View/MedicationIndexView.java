@@ -23,6 +23,13 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
         //setContent(layout);
 
         Label label = new Label("Medication");
+        
+
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation	      
+        
         addComponent(label);
 	}
 
@@ -30,6 +37,10 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 	public void buttonClick(ClickEvent event) {
 		// TODO Auto-generated method stub
 		
+		// Navigate to startscreen
+		if (event.getButton().getCaption().equals(stringStartPage)) { 
+			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
+		}
 	}
 
 	@Override

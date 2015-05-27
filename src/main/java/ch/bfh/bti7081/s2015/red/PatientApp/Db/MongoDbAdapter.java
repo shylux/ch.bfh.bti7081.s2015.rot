@@ -34,8 +34,8 @@ public class MongoDbAdapter {
 			
 			prop.load(input);
 		
-			MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"),
-					prop.getProperty("db"), prop.getProperty("pass").toCharArray());
+			/*MongoCredential credential = MongoCredential.createCredential(prop.getProperty("user"),
+					prop.getProperty("db"), prop.getProperty("pass").toCharArray());*/
 
 			mongoDbClient = new MongoClient(new ServerAddress(prop.getProperty("server")));
 		} 

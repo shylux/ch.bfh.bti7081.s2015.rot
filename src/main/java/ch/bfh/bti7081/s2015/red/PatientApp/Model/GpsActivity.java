@@ -7,8 +7,6 @@ import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 
 
-import java.util.Date;
-
 public class GpsActivity extends Activity {
 
 	private Circle circle;

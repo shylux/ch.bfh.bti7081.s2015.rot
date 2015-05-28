@@ -20,6 +20,7 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 
 
+
 public class GpsActivityView extends BaseView<GpsActivity>{
 
 	GpsActivity activity;

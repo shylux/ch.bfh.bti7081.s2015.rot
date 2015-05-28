@@ -6,8 +6,6 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 
-import java.util.Date;
-
 public abstract class Activity extends CalendarEntry {
 	protected ActivityState activityState;
 	protected Date softTimeLimit;

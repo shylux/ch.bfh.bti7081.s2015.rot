@@ -98,6 +98,7 @@ public class StartPageView extends  BaseView<CalendarEntry>{
 		public void enter(ViewChangeEvent event) { 
 
 			String stringMenuButtonSize = "130px";
+			NavigatorUI.notificationThread.start();
 			
 			buttonSOS.setStyleName("red");
 			buttonSOS.setWidth("70px");

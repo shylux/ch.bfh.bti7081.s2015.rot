@@ -15,15 +15,15 @@ public class TestStatePattern {
 		
 		Activity activity = new GpsActivity();
 		activity.setActivityState(new Ready(activity)); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Ready", activity.getStateName());
+		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Ready", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Started", activity.getStateName());
+		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Started", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Finished", activity.getStateName());
+		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Finished", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Closed", activity.getStateName());
+		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Closed", activity.getStateName());
 		activity.nextState(); 
-		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Closed", activity.getStateName());
+		Assert.assertEquals("ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Closed", activity.getStateName());
 		
 	}
 	

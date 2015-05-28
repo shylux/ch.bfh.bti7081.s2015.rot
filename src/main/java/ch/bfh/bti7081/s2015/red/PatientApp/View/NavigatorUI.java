@@ -1,13 +1,9 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Enumeration;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
@@ -15,21 +11,14 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
-import com.google.gwt.dom.client.UListElement;
 import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
-import com.vaadin.server.ExternalResource;
-import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.shared.Position;
-import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
-import com.vaadin.ui.Link;
-import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -53,8 +42,9 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUP = "LifeUp";
 	final public static String GPSACTIVTY ="GpsActivity";
 	final public static String LIFEUPINDEX = "LifeUpIndex";
+	final public static String RESTORE = "Restore";
 	final protected VerticalLayout layout = new VerticalLayout();
-	
+	public static NotificationThread notificationThread = null;
 
 
 	
@@ -124,55 +114,68 @@ public class NavigatorUI extends UI {
 		lifeUpIndexView.addListener(LIFEUPINDEX,lifeUpIndexPresenter);
 		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
 		
-		//navigator.navigateTo(GPSACTIVTY+"/personalData");
-		new NotificationThread().start();
+		/**
+		 * View for restoring data
+		 * @TODO: Remove for production
+		 */
+		navigator.addView(RESTORE, new RestoreView());
+		
+		notificationThread = new NotificationThread(layout);
+		System.out.println("start...");
+	
+		
+		
+		
 		 
 	}
 	class NotificationThread extends Thread {
 	
 	ArrayList<Activity>entries;	
-
-	@Override
-    public void run() {
+	ReminderComponent reminderComponent = null;
+	boolean isRunning = true;
+	Layout layout;
+    
+	public NotificationThread(Layout layout)
+	{
+		this.layout = layout;
+	}
+	public void run() {
         try {
             // Update the data for a while
-            while (true) {
-                Thread.sleep(20000);
+            while (isRunning) {
+                Thread.sleep(2000);
                 entries = PatientApp.getInstance().getCalendar().getUnfinishedActivity();
                 access(new Runnable() {
                     @Override
                     public void run() 
                     {
-                    	
-                    	Label overlay = new Label();
-                    	layout.addComponent(new ReminderComponent());
-                    	
-                    	/*overlay.setContentMode(ContentMode.HTML);
-                    	StringBuilder reminderText = new StringBuilder();
-                    	reminderText.append("<strong>Reminder</strong>");
-                    	reminderText.append("</br>these things are to do:");
-                    	reminderText.append("<ul>");
-
-                    	for(CalendarEntry entry: entries)
+                    	if(isRunning)
                     	{
-                    		reminderText.append("<li><a href='"+entry.getUrl()+"'>"+entry.getShortName()+"</a></li>");
-                    	}
-                    	reminderText.append("</ul>");
-                    	Notification notification = new Notification(reminderText.toString());
-                    	notification.setPosition(Position.MIDDLE_CENTER);
-                    	notification.setDelayMsec(Notification.DELAY_FOREVER);
-                    	
-                    	notification.setHtmlContentAllowed(true);
-                    	notification.show(Page.getCurrent());*/
-                    	
-                    	
+	                    	if(reminderComponent != null)
+	                    	{
+	                    		layout.removeComponent(reminderComponent);
+	                    	}
+	                    	reminderComponent =new ReminderComponent(entries);
+	                    	layout.addComponent(reminderComponent);
+	                    }
                     }
                 });
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
+	}
+	public void stopThread()
+	{
+		access(new Runnable() {
+			public void run()
+			{
+				isRunning = false;
+			}
+		});
+	}
 }
 	
 }
+
+

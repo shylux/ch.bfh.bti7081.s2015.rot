@@ -2,7 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.Date;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.ActivityState;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 public abstract class Activity extends CalendarEntry {
 	protected ActivityState activityState;

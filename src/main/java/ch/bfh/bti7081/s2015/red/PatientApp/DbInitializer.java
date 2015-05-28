@@ -9,9 +9,9 @@ import java.util.Date;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
 
 public class DbInitializer 
 {

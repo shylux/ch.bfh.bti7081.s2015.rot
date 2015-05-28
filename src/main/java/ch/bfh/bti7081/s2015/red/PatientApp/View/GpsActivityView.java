@@ -30,12 +30,12 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Link;
 import com.vaadin.ui.Notification;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsLocationSimulator;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
 
 public class GpsActivityView extends BaseView<GpsActivity>{
 

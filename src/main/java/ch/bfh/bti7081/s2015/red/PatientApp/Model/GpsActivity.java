@@ -2,8 +2,8 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.Date;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 
 public class GpsActivity extends Activity {
 

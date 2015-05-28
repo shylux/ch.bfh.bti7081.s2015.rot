@@ -3,9 +3,9 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Test;
 import org.junit.Assert;
 import org.junit.Test;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Ready;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Ready;
 
 
 public class TestStatePattern {

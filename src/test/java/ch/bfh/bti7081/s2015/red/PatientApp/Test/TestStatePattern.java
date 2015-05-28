@@ -15,6 +15,7 @@ public class TestStatePattern {
 		
 		Activity activity = new GpsActivity();
 		activity.setActivityState(new Ready(activity)); 
+
 		Assert.assertEquals("Ready", activity.getStateName());
 		activity.nextState(); 
 		Assert.assertEquals("Started", activity.getStateName());
@@ -24,6 +25,7 @@ public class TestStatePattern {
 		Assert.assertEquals("Closed", activity.getStateName());
 		activity.nextState(); 
 		Assert.assertEquals("Closed", activity.getStateName());
+
 		
 	}
 	

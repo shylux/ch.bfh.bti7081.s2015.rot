@@ -77,6 +77,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		}
 		googleMap.removeMarker(positionMarker);
 		positionMarker.setPosition(new LatLon(currentLocation.getLatitude(),currentLocation.getLongitude()));
+		positionMarker.setAnimationEnabled(false);
 		googleMap.addMarker(positionMarker);
 		
 		//update distance too
@@ -108,7 +109,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		positionMarker = new GoogleMapMarker(
 		            "Your Position", new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()),
 		            true, null);
-		
+		positionMarker.setAnimationEnabled(false);
         googleMap.setCenter(new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()));
         googleMap.setZoom(16);
         googleMap.setSizeFull();
@@ -182,6 +183,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 	@Override
 	public void enter(ViewChangeEvent event) {
 		
+		NavigatorUI.notificationThread.stopThread();
 		//load gpsActivity
 		for(ViewListener listener: listeners)
 		{ 

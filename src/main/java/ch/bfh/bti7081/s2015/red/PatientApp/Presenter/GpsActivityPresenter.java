@@ -6,10 +6,7 @@ import java.util.ArrayList;
 
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 

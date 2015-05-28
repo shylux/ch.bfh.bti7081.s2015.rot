@@ -21,8 +21,8 @@ import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
-
 public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Receiver, Upload.SucceededListener{
+
 
 	GpsActivity activity;
 	GpsCoordinate currentLocation = new GpsCoordinate(46.9644149,7.4563786);

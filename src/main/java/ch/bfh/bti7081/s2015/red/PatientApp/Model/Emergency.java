@@ -16,7 +16,7 @@ public class Emergency implements Persistable{
 	private String type = this.getClass().toString(); 
 
 	public Emergency() {
-        DbInitializer.restore();
+        
         MongoDbAdapter dbAdapter = new MongoDbAdapter();
         steps = dbAdapter.getSpecificCollection(EmergencyStep.class);
 	}

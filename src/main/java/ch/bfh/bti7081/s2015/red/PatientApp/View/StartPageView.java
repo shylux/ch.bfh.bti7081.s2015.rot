@@ -141,6 +141,8 @@ public class StartPageView extends BaseView<CalendarEntry> {
 		lineMenu2.addComponent(buttonCalender);
 		layoutVertical.addComponent(lineMenu2);
 		addComponent(layoutVertical);
+		
+		NavigatorUI.notificationThread.start();
 
 	}
 

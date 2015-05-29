@@ -12,7 +12,7 @@ public class CalendarPresenter extends BasePresenter<CalendarEntry>{
 	private ArrayList<CalendarEntry> entries;
 	public CalendarPresenter(View<CalendarEntry> view) {
 		super(view);
-		DbInitializer.restore();
+		
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		entries = adapter.getSpecificCollection(CalendarEntry.class, true);
 		

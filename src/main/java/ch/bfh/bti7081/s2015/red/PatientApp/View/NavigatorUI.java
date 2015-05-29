@@ -170,6 +170,19 @@ public class NavigatorUI extends UI {
 	{
 		this.layout = layout;
 	}
+	public void start()
+	{
+		try
+		{
+			super.start();
+		}
+		catch(IllegalThreadStateException ex){}
+		catch(Exception ex)
+		{
+			System.out.println(ex.getMessage());
+			System.out.println(ex.getStackTrace());
+		}
+	}
 	public void run() {
         try {
             // Update the data for a while

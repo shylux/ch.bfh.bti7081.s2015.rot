@@ -7,11 +7,14 @@ import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 
 
+
 import java.util.Date;
+
+import com.google.gson.annotations.Expose;
 
 public class GpsActivity extends Activity {
 
-	private Circle circle;
+	@Expose private Circle circle;
 
 	public GpsActivity(){}
 	public GpsActivity(String id){super(id);}

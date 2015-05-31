@@ -2,8 +2,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mongodb.*;
 import com.mongodb.util.JSON;
+
 import org.bson.types.ObjectId;
 import org.reflections.Reflections;
 
@@ -101,7 +103,7 @@ public class MongoDbAdapter {
 	    query.put("_id", new ObjectId(persistable.getId()));
 	    DBObject dbObj = collection.findOne(query);
 	    
-		Gson gson = new Gson();
+		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		
@@ -195,7 +197,7 @@ public class MongoDbAdapter {
 	 */
 	private Persistable generateClassFromDbObject(DBObject record,Class<? extends Persistable> persistableClass)
 	{
-		Gson gson = new Gson();
+		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 		Persistable createdClass  =  gson.fromJson(record.toString(),persistableClass);
 		return createdClass;
 	}
@@ -216,7 +218,7 @@ public class MongoDbAdapter {
 	    	   while(cursor.hasNext()) 
 	    	   {
 	    		   DBObject record = cursor.next();
-	    		   Gson gson = new Gson();
+	    		   Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistableClass);
 	    		   createdClass.setId(record.get("_id").toString());
 	    		   persistables.add(createdClass);

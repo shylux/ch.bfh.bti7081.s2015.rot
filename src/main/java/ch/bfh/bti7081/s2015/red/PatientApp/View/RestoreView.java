@@ -30,7 +30,7 @@ public class RestoreView extends BaseView{
 	@Override
 	public void enter(ViewChangeEvent event) {
 		// TODO Auto-generated method stub
-		//DbInitializer.restore();
+		DbInitializer.restore();
 		System.out.println("Data successfull restored");
 	}
 

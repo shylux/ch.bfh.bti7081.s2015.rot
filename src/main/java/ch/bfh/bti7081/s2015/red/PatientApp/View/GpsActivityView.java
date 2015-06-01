@@ -182,8 +182,9 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		
+		System.out.println("stopped thread(gps Activity)");
 		NavigatorUI.notificationThread.stopThread();
+		
 		//load gpsActivity
 		for(ViewListener listener: listeners)
 		{ 

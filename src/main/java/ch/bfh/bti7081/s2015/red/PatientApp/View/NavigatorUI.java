@@ -154,71 +154,11 @@ public class NavigatorUI extends UI {
 		 */
 		navigator.addView(RESTORE, new RestoreView());
 		
-		notificationThread = new NotificationThread(layout);
+		//notificationThread = new NotificationThread(layout);
 		System.out.println("start...");
 
 		 
 	}
-	class NotificationThread extends Thread {
-	
-	ArrayList<Activity>entries;	
-	ReminderComponent reminderComponent = null;
-	boolean isRunning = true;
-	Layout layout;
-    
-	public NotificationThread(Layout layout)
-	{
-		this.layout = layout;
-	}
-	public void start()
-	{
-		try
-		{
-			super.start();
-		}
-		catch(IllegalThreadStateException ex){}
-		catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-			System.out.println(ex.getStackTrace());
-		}
-	}
-	public void run() {
-        try {
-            // Update the data for a while
-            while (isRunning) {
-                Thread.sleep(2000);
-                entries = PatientApp.getInstance().getCalendar().getUnfinishedActivity();
-                access(new Runnable() {
-                    @Override
-                    public void run() 
-                    {
-                    	if(isRunning)
-                    	{
-	                    	if(reminderComponent != null)
-	                    	{
-	                    		layout.removeComponent(reminderComponent);
-	                    	}
-	                    	reminderComponent =new ReminderComponent(entries);
-	                    	layout.addComponent(reminderComponent);
-	                    }
-                    }
-                });
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-	}
-	public void stopThread()
-	{
-		access(new Runnable() {
-			public void run()
-			{
-				isRunning = false;
-			}
-		});
-	}
-}
 	
 }
 

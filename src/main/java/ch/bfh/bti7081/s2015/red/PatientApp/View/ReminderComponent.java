@@ -8,6 +8,8 @@ import com.vaadin.server.ExternalResource;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Link;
+import com.vaadin.ui.Panel;
+import com.vaadin.ui.VerticalLayout;
 
 public class ReminderComponent extends CustomComponent {
 
@@ -17,10 +19,14 @@ public class ReminderComponent extends CustomComponent {
 		Label title = new Label("");
 		title.setCaption("Things to do");
 		this.setCompositionRoot(title);
+		
+		Panel panel = new Panel();
+		VerticalLayout content = new VerticalLayout();
 		for(CalendarEntry entry: entries)
 		{
 			String linkText = entry.getShortName();
-			this.setCompositionRoot(new Link(linkText,new ExternalResource(entry.getUrl())));
+			content.addComponent(new Link(linkText,new ExternalResource(entry.getUrl())));
 		}
+		this.setCompositionRoot(content);
 	}
 }

@@ -3,10 +3,8 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 
-import com.vaadin.ui.Component;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.UI;
 
@@ -38,7 +36,7 @@ public class NotificationThread extends Thread
 	                @Override
 	                public void run() 
 	                {
-	                	if(isRunning)
+	                	if(isRunning && entries.size() >0)
 	                	{
 	                    	if(reminderComponent != null)
 	                    	{

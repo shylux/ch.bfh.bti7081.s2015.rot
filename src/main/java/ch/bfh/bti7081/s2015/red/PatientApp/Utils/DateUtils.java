@@ -277,9 +277,12 @@ public class DateUtils {
     
     public static boolean startsSoon(Date d1,int minutes)
     {
+    	if(d1 == null)return false;
+    	
     	Calendar c = Calendar.getInstance();
+    	Date now = c.getTime();
     	c.add(Calendar.MINUTE, -minutes);
-    	return(d1.compareTo(c.getTime()) > 0);
+    	return(d1.compareTo(c.getTime()) > 0) && (d1.compareTo(now)<=0);
     		
     }
     

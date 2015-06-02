@@ -1,11 +1,14 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
+import com.google.gson.annotations.Expose;
+
 public class GpsCoordinate {
 
 	private static final int EARTH_RADIUS = 6371000;
 	
-	private double latitude;
-	private double longitude;
+	@Expose private double latitude;
+	@Expose private double longitude;
+	
 	public GpsCoordinate(double latitude, double longitude)
 	{
 		this.latitude = latitude;

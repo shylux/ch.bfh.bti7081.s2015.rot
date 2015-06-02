@@ -1,9 +1,11 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
+import com.google.gson.annotations.Expose;
+
 public class Circle extends Geofence{
 
-	private GpsCoordinate center;
-	private double radius;
+	@Expose private GpsCoordinate center;
+	@Expose private double radius;
 
 	
 	public Circle(GpsCoordinate center, double radius)

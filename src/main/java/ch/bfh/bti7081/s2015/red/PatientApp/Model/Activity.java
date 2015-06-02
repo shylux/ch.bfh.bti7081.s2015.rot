@@ -13,7 +13,7 @@ import java.util.Date;
 import com.google.gson.annotations.Expose;
 
 public abstract class Activity extends CalendarEntry {
-	protected ActivityState activityState;
+	@Expose protected ActivityState activityState;
 	@Expose protected Date softTimeLimit;
 	@Expose protected Date hardTimeLimit;
 	@Expose private int givenPoints  = 0;

@@ -275,4 +275,13 @@ public class DateUtils {
     /** The maximum date possible. */
     public static Date MAX_DATE = new Date(Long.MAX_VALUE);
     
+    public static boolean startsSoon(Date d1,int minutes)
+    {
+    	Calendar c = Calendar.getInstance();
+    	c.add(Calendar.MINUTE, -minutes);
+    	return(d1.compareTo(c.getTime()) > 0);
+    		
+    }
+    
+    
 }

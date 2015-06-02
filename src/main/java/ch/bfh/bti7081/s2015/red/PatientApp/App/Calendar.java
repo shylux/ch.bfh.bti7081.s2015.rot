@@ -12,6 +12,8 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.DateUtils;
 
 public class Calendar {
+	final private  static int  NOTIFACATION_MINUTES_ACTIVITY = 60;
+	final private static int NOTIFICATION_MINUTES_OTHER = 90;
 	private ArrayList<CalendarEntry> entries = new ArrayList<CalendarEntry>();
 
     /**
@@ -185,7 +187,36 @@ public class Calendar {
 
 		return activities;
 	}
-
+	public ArrayList<CalendarEntry>getNotifications()
+	{
+		ArrayList<CalendarEntry> notifications = new ArrayList<>();
+		for(int i =0; i < entries.size();i++)
+		{
+			
+			if(entries.get(i) instanceof Activity )
+			{
+				if(DateUtils.startsSoon(entries.get(i).getEndTime(), NOTIFACATION_MINUTES_ACTIVITY))
+				{
+					Activity currentActivity = (Activity) entries.get(i);
+					if(currentActivity.getActivityState() == null||currentActivity.getActivityState().getStateShortName().equals("Started") ||
+							currentActivity.getActivityState().getStateShortName().equals("Ready")||
+							currentActivity.getActivityState().getStateShortName().equals("InProgress")) 
+					{
+						notifications.add(currentActivity);
+					}
+				}
+			}
+			else
+			{
+				if(DateUtils.startsSoon(entries.get(i).getStartTime(), NOTIFICATION_MINUTES_OTHER))
+				{
+					notifications.add(entries.get(i));
+				}
+			}
+		}
+		return null;
+		
+	}
 
 	public void updateCalendarEntries()
 	{

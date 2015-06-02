@@ -190,31 +190,34 @@ public class Calendar {
 	public ArrayList<CalendarEntry>getNotifications()
 	{
 		ArrayList<CalendarEntry> notifications = new ArrayList<>();
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		entries =   mongoDb.getSpecificCollection(CalendarEntry.class,true);
 		for(int i =0; i < entries.size();i++)
 		{
-			
-			if(entries.get(i) instanceof Activity )
+			if(DateUtils.startsSoon(entries.get(i).getStartTime(), NOTIFICATION_MINUTES_OTHER))
 			{
-				if(DateUtils.startsSoon(entries.get(i).getEndTime(), NOTIFACATION_MINUTES_ACTIVITY))
-				{
-					Activity currentActivity = (Activity) entries.get(i);
-					if(currentActivity.getActivityState() == null||currentActivity.getActivityState().getStateShortName().equals("Started") ||
-							currentActivity.getActivityState().getStateShortName().equals("Ready")||
-							currentActivity.getActivityState().getStateShortName().equals("InProgress")) 
-					{
-						notifications.add(currentActivity);
-					}
-				}
-			}
-			else
-			{
-				if(DateUtils.startsSoon(entries.get(i).getStartTime(), NOTIFICATION_MINUTES_OTHER))
-				{
-					notifications.add(entries.get(i));
-				}
+				notifications.add(entries.get(i));
 			}
 		}
-		return null;
+		//get all activities
+		ArrayList<Activity> activities = mongoDb.getSpecificCollection(Activity.class,true);
+		for(int y =0; y < activities.size(); y++)
+		{
+
+			if(DateUtils.startsSoon(activities.get(y).getEndTime(), NOTIFACATION_MINUTES_ACTIVITY))
+			{
+				Activity currentActivity = (Activity) activities.get(y);
+				if(currentActivity.getActivityState() == null||currentActivity.getActivityState().getStateShortName().equals("Started") ||
+						currentActivity.getActivityState().getStateShortName().equals("Ready")||
+						currentActivity.getActivityState().getStateShortName().equals("InProgress")) 
+				{
+
+					notifications.add(currentActivity);
+				}
+			}
+
+		}
+		return notifications;
 		
 	}
 

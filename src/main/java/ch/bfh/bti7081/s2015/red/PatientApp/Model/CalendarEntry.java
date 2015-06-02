@@ -4,14 +4,16 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 
 import java.util.Date;
 
+import com.google.gson.annotations.Expose;
+
 public abstract class CalendarEntry implements Persistable{
 	
 	public abstract String display();
 	
-	protected Date endTime;
-	protected String shortName;
-	protected String description;
-	protected Date startTime;
+	@Expose protected Date endTime;
+	@Expose protected String shortName;
+	@Expose protected String description;
+	@Expose protected Date startTime;
 
 	public CalendarEntry(){}
 	public CalendarEntry(String shortName,String description)
@@ -28,17 +30,17 @@ public abstract class CalendarEntry implements Persistable{
 	public CalendarEntry(String id){this.id = id;}
 	public abstract String getUrl();
 	
-	protected String id =""; //unique id, necessary for db storage
+	@Expose protected String id =""; //unique id, necessary for db storage
 	/*
 	 * class type, necessary for type specific search in the database
 	 */
-	private String type = this.getClass().toString(); 
+	@Expose private String type = this.getClass().toString(); 
 	
 	/**
 	 * for testing only
 	 * @return
 	 */
-	protected String display;
+	@Expose protected String display;
 	
 	/**
 	 * for testing only 

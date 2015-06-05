@@ -21,7 +21,7 @@ public abstract class Activity extends CalendarEntry {
 
 	public Activity(){}
 	public Activity(String id){super(id);}
-	public Activity(String shortName,String description)
+	public Activity(String shortName, String description)
 	{
 		super(shortName,description);
 	}

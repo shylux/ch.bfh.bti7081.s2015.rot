@@ -43,7 +43,7 @@ public class CalendarView extends BaseView<CalendarEntry>
 		com.vaadin.ui.Calendar cal = new com.vaadin.ui.Calendar(m_provider);
 		cal.setReadOnly(true);
 		cal.setWidth("100%");
-		//cal.setHeight("300px");
+		cal.setHeight("100%");
 		cal.setHandler(new com.vaadin.ui.components.calendar.CalendarComponentEvents.EventClickHandler() {
 			public void eventClick(EventClick event) {
 				BasicEvent e = (BasicEvent) event.getCalendarEvent();
@@ -51,7 +51,7 @@ public class CalendarView extends BaseView<CalendarEntry>
 				m_navigator.navigateTo(NavigatorUI.LIFEUPINDEX);
 				// Do something with it
 				new Notification("Event clicked: " + e.getCaption(),
-						e.getDescription()).show(Page.getCurrent());
+						e.getDescription()).show(Page.getCurrent()+" Typ: "+e.getClass());
 			}
 		});
 		
@@ -95,13 +95,15 @@ public class CalendarView extends BaseView<CalendarEntry>
 		System.out.println(data.size()+" Elemente im Kalender");
 		for(int i = 0; i < data.size(); i++) {
 			CalendarEntry entry = data.get(i);
+			System.out.println(entry.getDescription()+" - "+entry.getStart());
+			m_provider.addEvent(entry);
 
-			BasicEvent be = new BasicEvent();
+			/*BasicEvent be = new BasicEvent();
 			be.setCaption(entry.getShortName());
 			be.setDescription(entry.getDescription());
 			be.setStart(entry.getStartTime());
 			be.setEnd(entry.getEndTime());
-			m_provider.addEvent(be);
+			m_provider.addEvent(be);*/
 		}
 
 	}

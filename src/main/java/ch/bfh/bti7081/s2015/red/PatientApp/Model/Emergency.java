@@ -6,14 +6,16 @@ import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 
 import java.util.ArrayList;
 
+import com.google.gson.annotations.Expose;
+
 public class Emergency implements Persistable{
 	private ArrayList<EmergencyStep> steps = new ArrayList<EmergencyStep>();
 	
-	private String id; //unique id, necessary for db storage
+	@Expose private String id; //unique id, necessary for db storage
 	/*
 	 * class type, necessary for type specific serach in the database
 	 */
-	private String type = this.getClass().toString(); 
+	@Expose private String type = this.getClass().toString(); 
 
 	public Emergency() {
         

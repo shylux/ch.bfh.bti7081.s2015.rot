@@ -7,10 +7,13 @@ import org.junit.Test;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Ready;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Appointment;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
+
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 
 public class TestMongoDbAdapter {
@@ -57,6 +60,8 @@ public class TestMongoDbAdapter {
 	@Test
 	public void testGetSpecificCollectionWithSubtypes()
 	{
+		
+		//Test if no exception is thrown
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		adapter.erase();
 		
@@ -100,5 +105,16 @@ public class TestMongoDbAdapter {
 		
 		Assert.assertEquals(((Appointment)persistables.get(0)).getDescription(), updatedAppointment.getDescription());
 		
+	}
+	@Test
+	public void testAvoidJsonSerializeCycles()
+	{
+		GpsActivity gps = new GpsActivity();
+		gps.setActivityState(new Ready(gps));
+		
+		MongoDbAdapter adapter = new MongoDbAdapter();
+		adapter.insertIntoDatabase(gps);
+		adapter.getEntryFromDatabase(gps);
+		adapter.updateEntry(gps);
 	}
 }

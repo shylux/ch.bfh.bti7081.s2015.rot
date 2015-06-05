@@ -1,11 +1,13 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
+import com.google.gson.annotations.Expose;
+
 public class PhotoActivity extends Activity{
 
 	/**
 	 * maybe take a image specific datatype
 	 */
-	private Object image;
+	@Expose private Object image;
 	
 
 	@Override

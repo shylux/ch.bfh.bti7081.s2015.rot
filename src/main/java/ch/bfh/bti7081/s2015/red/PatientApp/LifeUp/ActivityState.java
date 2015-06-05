@@ -1,9 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
+import com.google.gson.annotations.Expose;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
 public abstract class ActivityState {
 	
+
 	protected Activity activity;
 	
 	protected  void setActivityState(ActivityState activityState) { 

@@ -3,9 +3,9 @@ package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.*;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.FinishedInTime;
 
-
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.*; 
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -23,15 +23,15 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 		JsonObject jobject = (JsonObject) json; 
 		try {
 			
+			/*
+			 * NOTE: Reflection class Instantiate dosen't works very well
+			 * so we do it manually
+			 */
 			String[] count = jobject.get("type").toString().split("\\.");
-			String tmp = jobject.get("type").toString().split("\\.")[count.length - 1];			
-			tmp = jobject.get("type").toString();
+			String localName =count[count.length-1];	
 
-			//Class<?> clazz = Class.forName(jobject.get("type").getClass().toString());
-			//Constructor<?> ctor = clazz.getConstructor(jobject.get("type").getClass().toString());
-			//obj = (ActivityState) ctor.newInstance(); 
 			
-			switch (tmp) {
+			switch (localName) {
 			case "TimeActivityReady": 
 				obj = new TimeActivityReady();
 			break;
@@ -67,7 +67,7 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 		} catch (SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
+		}
 		// TODO Auto-generated method stub
 		return obj;
 	}

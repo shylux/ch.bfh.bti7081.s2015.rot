@@ -19,6 +19,10 @@ public class TimeActivityReady extends TimeActivity {
 		startProcess();
 	}	
 	 
+	public TimeActivityReady() {
+		// TODO Auto-generated constructor stub
+	}
+
 	private void startProcess() {  
 		new InProgress(activity); 
 	}	

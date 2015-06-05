@@ -6,6 +6,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
 public class InProgress extends TimeActivity { 
 	
+	// Empty Constructor for GSON-Libary for deserialisation
+	public InProgress() {
+		// nothing to be done
+	}		
+	
 	volatile TimeActivityManager manager;
 	
 	public InProgress(Activity activity) {  

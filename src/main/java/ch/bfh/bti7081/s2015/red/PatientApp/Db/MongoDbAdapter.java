@@ -1,6 +1,9 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityStateDeserializer;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mongodb.*;
@@ -104,6 +107,8 @@ public class MongoDbAdapter {
 	    DBObject dbObj = collection.findOne(query);
 	    
 		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+		System.out.println("MDB" + persistable.getClass());
+		
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		
@@ -197,7 +202,7 @@ public class MongoDbAdapter {
 	 */
 	private Persistable generateClassFromDbObject(DBObject record,Class<? extends Persistable> persistableClass)
 	{
-		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().registerTypeAdapter(ActivityState.class, new ActivityStateDeserializer()).create();
 		Persistable createdClass  =  gson.fromJson(record.toString(),persistableClass);
 		return createdClass;
 	}

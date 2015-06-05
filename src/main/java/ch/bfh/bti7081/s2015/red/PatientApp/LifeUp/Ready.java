@@ -9,6 +9,10 @@ public class Ready extends NormalActivity {
 		setActivityState(this);
 	}	
 	
+	public Ready() {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void handle() { 
 		new Started(activity); 

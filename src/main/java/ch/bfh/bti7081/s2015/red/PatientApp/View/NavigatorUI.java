@@ -7,6 +7,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpOverviewPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpProgressPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
@@ -44,6 +45,7 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUPINDEX 		= "LifeUpIndex";
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
 	final public static String CALENDARINDEX 	= "Kalender";
+	final public static String LIFEUPPROGRESS   = "Fortschritt";
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -126,6 +128,14 @@ public class NavigatorUI extends UI {
 		LifeUpOverviewPresenter lifeUpOverviewPresenter = new LifeUpOverviewPresenter(lifeUpOverviewView);
 		lifeUpOverviewView.addListener(LIFEUPOVERVIEW, lifeUpOverviewPresenter);
 		navigator.addView(LIFEUPOVERVIEW, lifeUpOverviewView);
+		
+		/*
+		 * Life Up Progress
+		 */
+		LifeUpProgressView lifeUpProgressView = new LifeUpProgressView();
+		LifeUpProgressPresenter lifeUpProgressPresenter = new LifeUpProgressPresenter(lifeUpProgressView);
+		lifeUpOverviewView.addListener(LIFEUPPROGRESS, lifeUpProgressPresenter);
+		navigator.addView(LIFEUPPROGRESS, lifeUpProgressView);
 		
 		//navigator.navigateTo(GPSACTIVTY+"/personalData");
 		 

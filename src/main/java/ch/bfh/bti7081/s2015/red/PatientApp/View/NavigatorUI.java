@@ -51,6 +51,7 @@ public class NavigatorUI extends UI {
 
 	final public static String STARTSCREEN		= "StartScreen";
 	final public static String MEDICATIONINDEX 	= "MedicationIndex";
+	final public static String MEDICATION 		= "Medication";
 	final public static String EMERGENCY 		= "Emergency";
 	final public static String GPSACTIVTY 		= "GpsActivity";
 	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
@@ -59,7 +60,7 @@ public class NavigatorUI extends UI {
 	final public static String CALENDARINDEX 	= "Kalender";
 	final public static String LIFEUPPROGRESS   = "Fortschritt";
 	final public static String LIFEUP = "LifeUp";
-	public static final String MEDICATION = "Medication";
+
 
 
 	final public static String RESTORE = "Restore";

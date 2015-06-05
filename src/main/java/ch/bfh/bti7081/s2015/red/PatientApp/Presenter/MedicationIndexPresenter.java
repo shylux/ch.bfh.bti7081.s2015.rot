@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
@@ -48,23 +47,5 @@ public class MedicationIndexPresenter extends BasePresenter<MedicationEntry> {
 	public void add(MedicationEntry o) {
 		entries.add(o);
 	}
-
-
-	public ArrayList<MedicationEntry> getData() {
-		// TODO Auto-generated method stub
-
-		ArrayList<String> tmp = new ArrayList<String>();
-		tmp.add("diese Zeit");
-		tmp.add("und diese Zeit");
-		entries.add(new MedicationEntry("name", "beschreibung", "so oft am tag", "oral",tmp));
-		entries.add(new MedicationEntry("name2", "beschreibung2", "so oft am tag 2", "oral 2",tmp));
-		return entries;
-	}
-	
-	public void update() {
-		
-		
-	}
-
 
 }

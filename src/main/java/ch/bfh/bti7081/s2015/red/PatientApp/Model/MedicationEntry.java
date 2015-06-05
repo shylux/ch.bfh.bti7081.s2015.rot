@@ -10,14 +10,11 @@ public class MedicationEntry extends CalendarEntry{
 	private ArrayList<String> times = new ArrayList<String>();
 	
 	public MedicationEntry(String name, String description, String howMuchADay, String howToTake, ArrayList<String> times) {
-		// TODO Auto-generated constructor stub
-		//super()
 		this.shortName = name;
 		this.description = description;
 		this.howMuchADay = howMuchADay;
 		this.howToTake = howToTake;
 		this.times = times;
-
 	}
 	public MedicationEntry(String id){super(id);}
 	public MedicationEntry(){}
@@ -38,6 +35,9 @@ public class MedicationEntry extends CalendarEntry{
 		
 	}
 
+	/*
+	 * Getter / Setter 
+	 */
 	public String getName() {
 		return shortName;
 	}

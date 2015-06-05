@@ -18,8 +18,6 @@ public class StartPageModel {
 		
 		Calendar calendar = new Calendar();
 		
-		System.out.println("CollectionSize() " + collection.size());
-		System.out.println("Calender() " + calendar);
 		collection = new ArrayList<CalendarEntry>();
 		//collection = calendar.getTodayEntries();
 		if ( collection.size() == 0 ) {
@@ -48,8 +46,6 @@ public class StartPageModel {
 			collection.add(dummy);
 		}
 
-		System.out.println("CollectionSize() " + collection.size());
-		
 		current = collection.get(0);
 	}
 	

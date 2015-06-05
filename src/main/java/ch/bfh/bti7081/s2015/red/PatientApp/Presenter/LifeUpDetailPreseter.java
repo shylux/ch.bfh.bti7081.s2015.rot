@@ -36,7 +36,6 @@ public class LifeUpDetailPreseter extends BasePresenter<Activity>{
 			currentActivity.setHardTimeLimit(new Date(now.getTime() + (180 * SECONDS_IN_MS)));
 			manager.addActivity(activities.get(i));
 			new TimeActivityReady(activities.get(i));	
-			System.out.println("Activitystatus restored:" + currentActivity.getStateName());
 		}	 
 		view.update(activities);
 	}

@@ -92,9 +92,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		this.removeAllComponents();
 		activity = model;
 		
-		System.out.println("Setze Zielaktivität");
-		System.out.println(model);
-
 		upload = new Upload("Bild hochladen", this);
 		upload.addSucceededListener(this);
 		image.setVisible(false);
@@ -183,7 +180,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		System.out.println("stopped thread(gps Activity)");
 		NavigatorUI.notificationThread.stopThread();
 		
 		//load gpsActivity

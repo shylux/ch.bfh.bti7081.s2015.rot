@@ -21,8 +21,8 @@ import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
-
 public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Receiver, Upload.SucceededListener{
+
 
 	GpsActivity activity;
 	GpsCoordinate currentLocation = new GpsCoordinate(46.9644149,7.4563786);
@@ -77,6 +77,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		}
 		googleMap.removeMarker(positionMarker);
 		positionMarker.setPosition(new LatLon(currentLocation.getLatitude(),currentLocation.getLongitude()));
+		positionMarker.setAnimationEnabled(false);
 		googleMap.addMarker(positionMarker);
 		
 		//update distance too
@@ -108,7 +109,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		positionMarker = new GoogleMapMarker(
 		            "Your Position", new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()),
 		            true, null);
-		
+		positionMarker.setAnimationEnabled(false);
         googleMap.setCenter(new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()));
         googleMap.setZoom(16);
         googleMap.setSizeFull();
@@ -181,6 +182,8 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void enter(ViewChangeEvent event) {
+		System.out.println("stopped thread(gps Activity)");
+		NavigatorUI.notificationThread.stopThread();
 		
 		//load gpsActivity
 		for(ViewListener listener: listeners)

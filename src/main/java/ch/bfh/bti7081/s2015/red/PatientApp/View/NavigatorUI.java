@@ -1,7 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
+
+import java.util.ArrayList;
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpOverviewPresenter;
@@ -10,11 +15,15 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
+import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
 import com.vaadin.server.VaadinRequest;
+
+import com.vaadin.ui.Label;
+import com.vaadin.ui.Layout;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -27,12 +36,15 @@ import com.vaadin.ui.VerticalLayout;
  * @author James Mayr
  *
  */
+
+@Push
 public class NavigatorUI extends UI {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 614340462216711328L;
+
 
 	Navigator navigator;
 
@@ -45,16 +57,24 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
 	final public static String CALENDARINDEX 	= "Kalender";
 
-	@Override
+	final public static String LIFEUP = "LifeUp";
+
+	final public static String RESTORE = "Restore";
+
+	final protected VerticalLayout layout = new VerticalLayout();
+	public static NotificationThread notificationThread = null;
+
+
+
+	
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
-
-
-		final VerticalLayout layout = new VerticalLayout();
+		
+		
 		layout.setMargin(true);
 		layout.setSpacing(true);
 		setContent(layout);
-
+		
 		ComponentContainerViewDisplay viewDisplay = new ComponentContainerViewDisplay(
 				layout);
 		navigator = new Navigator(UI.getCurrent(), viewDisplay);
@@ -128,6 +148,18 @@ public class NavigatorUI extends UI {
 		navigator.addView(LIFEUPOVERVIEW, lifeUpOverviewView);
 		
 		//navigator.navigateTo(GPSACTIVTY+"/personalData");
+
+		 /** View for restoring data
+		 * @TODO: Remove for production
+		 */
+		navigator.addView(RESTORE, new RestoreView());
+		
+		//notificationThread = new NotificationThread(layout);
+		System.out.println("start...");
+
 		 
 	}
+	
 }
+
+

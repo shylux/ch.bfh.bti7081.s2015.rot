@@ -1,9 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 
-import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
 
+
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
+import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 import java.util.ArrayList;
 
 public class LifeUpOverviewPresenter extends BasePresenter<LifeUp> {

@@ -17,8 +17,8 @@ public class StartPageModel {
 		
 		System.out.println("CollectionSize() " + collection.size());
 		System.out.println("Calender() " + calendar);
-		
-		collection = calendar.getTodayEntries();
+		collection = new ArrayList<CalendarEntry>();
+		//collection = calendar.getTodayEntries();
 		if ( collection.size() == 0 ) {
 			
 			Appointment dummy0 = new Appointment();

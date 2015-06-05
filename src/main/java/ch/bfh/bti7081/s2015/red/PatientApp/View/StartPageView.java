@@ -8,11 +8,12 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.*;
-import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 
@@ -72,6 +73,7 @@ public class StartPageView extends BaseView<CalendarEntry> {
 			for (ViewListener listener : listeners) {
 				listener.buttonClick(property, appointmentCurrent);
 			}
+
 		}
 	}
 
@@ -140,6 +142,12 @@ public class StartPageView extends BaseView<CalendarEntry> {
 		lineMenu2.addComponent(buttonCalender);
 		layoutVertical.addComponent(lineMenu2);
 		addComponent(layoutVertical);
+		
+		System.out.println("started in startview");
+		//System.out.println(NavigatorUI.notificationThread.getState());
+		NavigatorUI.notificationThread = new NotificationThread(layoutVertical);
+		NavigatorUI.notificationThread.start();
+		
 
 	}
 

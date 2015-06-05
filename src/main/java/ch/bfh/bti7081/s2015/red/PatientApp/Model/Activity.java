@@ -1,18 +1,23 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 
+import java.io.File;
 import java.util.Date;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 
+
 import java.util.Date;
 
+import com.google.gson.annotations.Expose;
+
 public abstract class Activity extends CalendarEntry {
-	protected ActivityState activityState;
-	protected Date softTimeLimit;
-	protected Date hardTimeLimit;
-	private int givenPoints  = 0;
+	@Expose protected ActivityState activityState;
+	@Expose protected Date softTimeLimit;
+	@Expose protected Date hardTimeLimit;
+	@Expose private int givenPoints  = 0;
+	@Expose public File photo;
 
 	public Activity(){}
 	public Activity(String id){super(id);}

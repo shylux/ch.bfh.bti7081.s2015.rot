@@ -1,8 +1,10 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
+import com.google.gson.annotations.Expose;
+
 public class Contact {
-	private String name;
-	private String phone_number;
+	@Expose private String name;
+	@Expose private String phone_number;
 
 	public Contact(String _name, String _phone_number)
 	{

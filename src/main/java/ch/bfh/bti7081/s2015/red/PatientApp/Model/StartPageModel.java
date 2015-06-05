@@ -4,6 +4,9 @@ import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
 
 import java.util.ArrayList;
 
+/**
+ * Holds default data for development.
+ */
 public class StartPageModel {
 
 	private ArrayList<CalendarEntry> collection = new ArrayList<CalendarEntry>(); 

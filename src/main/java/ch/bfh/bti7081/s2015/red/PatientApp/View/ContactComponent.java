@@ -3,6 +3,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Contact;
 import com.vaadin.ui.*;
 
+/**
+ * Renders a contact.
+ * Intended to be used in a view or another component.
+ */
 public class ContactComponent extends CustomComponent {
 
 	public ContactComponent(Contact contact)

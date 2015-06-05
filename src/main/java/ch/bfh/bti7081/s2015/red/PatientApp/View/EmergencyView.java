@@ -9,6 +9,10 @@ import com.vaadin.ui.Label;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Simple view to render all emergency steps in a list.
+ * The emergency step rendering is handled in his own component.
+ */
 public class EmergencyView extends BaseView<Emergency> {
 	
 	List<EmergencyStep> emergSteps = new ArrayList<EmergencyStep>();

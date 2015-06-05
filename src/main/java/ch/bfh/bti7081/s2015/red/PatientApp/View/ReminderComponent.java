@@ -16,17 +16,22 @@ public class ReminderComponent extends CustomComponent {
 	public ReminderComponent(ArrayList<CalendarEntry> entries)
 	{
 		this.setStyleName("custom-reminder-comp");
-		Label title = new Label("");
-		title.setCaption("Things to do");
-		this.setCompositionRoot(title);
+		Label title = new Label("Things to do");
+		title.setStyleName("custom-reminder-title");
+		
 		
 		Panel panel = new Panel();
+		
+		
 		VerticalLayout content = new VerticalLayout();
+		content.addComponent(title);
+		
 		for(CalendarEntry entry: entries)
 		{
 			String linkText = entry.getShortName();
 			content.addComponent(new Link(linkText,new ExternalResource(entry.getUrl())));
 		}
+		
 		this.setCompositionRoot(content);
 	}
 }

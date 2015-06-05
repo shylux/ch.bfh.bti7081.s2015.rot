@@ -29,7 +29,7 @@ public class NotificationThread extends Thread
 	    try {
 	        // Update the data for a while
 	        while (isRunning) {
-	            Thread.sleep(2000);
+	            Thread.sleep(5000);
 	            entries = PatientApp.getInstance().getCalendar().getNotifications();
 	            UI.getCurrent().access(new Runnable() 
 	            {

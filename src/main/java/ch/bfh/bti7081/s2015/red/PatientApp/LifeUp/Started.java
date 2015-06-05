@@ -9,6 +9,10 @@ public class Started extends NormalActivity {
 		setActivityState(this); 
 	}
  
+	public Started() {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void handle() {
 		new Finished(activity); 

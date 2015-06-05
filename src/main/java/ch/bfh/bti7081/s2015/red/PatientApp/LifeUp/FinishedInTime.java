@@ -4,10 +4,17 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
 public class FinishedInTime extends TimeActivity {
 
+	// Empty Constructor for GSON-Libary for deserialisation
+	public FinishedInTime() {
+		// nothing to be done
+	}	
+		
+	
 	public FinishedInTime(Activity activity) { 
 		this.activity = activity;
 		this.activity.setGivenPoints(FINISHED_IN_TIME);
 		setActivityState(this);
+		storeState();
 	}	 	
 	
 	@Override

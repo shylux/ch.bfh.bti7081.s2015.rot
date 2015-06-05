@@ -1,12 +1,12 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
-import java.util.ArrayList;
-
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Patient;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.LifeUp;
+
+import java.util.ArrayList;
 
 /**
  * public interface for the patient app

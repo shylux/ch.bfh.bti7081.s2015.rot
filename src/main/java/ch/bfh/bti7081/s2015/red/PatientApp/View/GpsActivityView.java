@@ -2,40 +2,23 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.ListIterator;
 
-import com.google.gson.JsonArray;
-import com.google.gwt.core.client.Callback;
-import com.google.gwt.dev.js.rhino.ObjToIntMap.Iterator;
-import com.google.gwt.geolocation.client.Geolocation;
-import com.google.gwt.geolocation.client.Position;
-import com.google.gwt.geolocation.client.PositionError;
-
-
-
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsLocationSimulator;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.server.ExternalResource;
-import com.vaadin.server.Page;
 import com.vaadin.tapio.googlemaps.GoogleMap;
 import com.vaadin.tapio.googlemaps.client.LatLon;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapCircle;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.JavaScript;
-import com.vaadin.ui.JavaScriptFunction;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Link;
-import com.vaadin.ui.Notification;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Label;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsLocationSimulator;
 
 public class GpsActivityView extends BaseView<GpsActivity>{
 
@@ -54,8 +37,12 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	private GpsLocationSimulator gpsLocationSimulator;
 	
 	@Override
-	public void buttonClick(ClickEvent event) {
+	public void buttonClick(ClickEvent event) { 
 		
+		// Navigate to startscreen
+		if (event.getButton().getCaption().equals(stringStartPage)) { 
+			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
+		}
 		
 		/*
 		 * Marker must detached and attached again 
@@ -77,6 +64,12 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 			/*
 			 * TODO: Insert GpsActivity Change here... 
 			 */
+			//load gpsActivity
+			for(ViewListener listener: listeners)
+			{
+				listener.triggerEvent("enteredToTarget", activity);
+			}
+			
 		}
 		googleMap.removeMarker(positionMarker);
 		positionMarker.setPosition(new LatLon(currentLocation.getLatitude(),currentLocation.getLongitude()));
@@ -92,6 +85,9 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 	{
 		this.removeAllComponents();
 		activity = model;
+		
+		System.out.println("Setze Zielaktivität");
+		System.out.println(model);
 		
 		gpsLocationSimulator = new GpsLocationSimulator(this.currentLocation,activity.getCirlce().getCenter());
 		gpsLocationSimulator.path(15);
@@ -136,11 +132,17 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		
 		walkBackward.addClickListener(this);
 		walkForward.addClickListener(this);
-
+	
 		
 		distance.setValue(getFormatedDistance());
 		line3.addComponent(distanceLabel);
 		line3.addComponent(distance);
+		
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation
+		
 		this.addComponent(line1);
 		this.addComponent(line2);
 		this.addComponent(line3);
@@ -169,8 +171,10 @@ public class GpsActivityView extends BaseView<GpsActivity>{
 		
 		//load gpsActivity
 		for(ViewListener listener: listeners)
-		{
+		{ 
+			
 			listener.triggerEvent("loadActivity", new GpsActivity(event.getParameters()));
+			// listener.triggerEvent("loadActivity", activity);
 		}
 
 	}

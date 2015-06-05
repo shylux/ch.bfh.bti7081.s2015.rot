@@ -1,14 +1,13 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.Button.ClickEvent;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Emergency;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
+import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Label;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmergencyView extends BaseView<Emergency> {
 	

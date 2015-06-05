@@ -2,6 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 public class MedicationEntry extends CalendarEntry{
 	
 	private String howMuchADay = "";
@@ -16,6 +17,9 @@ public class MedicationEntry extends CalendarEntry{
 		this.howMuchADay = howMuchADay;
 		this.howToTake = howToTake;
 		this.times = times;
+=======
+		display = "I think its disgusting and terrible how people treat Lance Armstrong, especially after winning 7 Tour de France Titles while on drugs!I can't even find my bike when I'm on drugs.";
+>>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 	}
 	public MedicationEntry(String id){super(id);}
 	public MedicationEntry(){}

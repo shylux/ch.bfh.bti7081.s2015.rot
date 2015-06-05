@@ -3,11 +3,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.Circle;
-import ch.bfh.bti7081.s2015.red.PatientApp.lifeUp.GpsCoordinate;
+
 
 public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 
@@ -21,23 +20,64 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public void buttonClick(String property, ArrayList<GpsActivity> data) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	@Override
 	public void triggerEvent(String event, GpsActivity data) {
 		if(event.equals("loadActivity"))
+<<<<<<< HEAD
 		{
 			System.out.println("DATA:"+data);
 			MongoDbAdapter adapter = new MongoDbAdapter();
 			data = (GpsActivity) adapter.getEntryFromDatabase(data);
+=======
+		{  
+			MongoDbAdapter adapter = new MongoDbAdapter();
+			data = (GpsActivity) adapter.getEntryFromDatabase(data);
+			
+			// TODO: AddCaleneder
+			TimeActivityManager manager = TimeActivityManager.getInstance();
+
+			/* System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			
+			
+			System.out.println(data.getId());
+			System.out.println(manager.getActivity(0).getId());
+			System.out.println(manager.getActivity(1).getId());
+			System.out.println(manager.getActivity(2).getId());
+			System.out.println(manager.getActivity(3).getId());
+			
+
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");
+			System.out.println(".....................");	*/		
+			
+			manager.chooseActivity(data);
+		
+			//data = (GpsActivity)manager.getActivity(manager.getActivityIndex());
+			data = (GpsActivity)manager.getActivity();
+
+>>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 			view.update(data);
 			
 		}
+		else if(event.equals("enteredToTarget")) { 
+			TimeActivityManager manager = TimeActivityManager.getInstance();
+			manager.chooseActivity(data);
+			manager.nextState();
+		}
+		
+	}
+
+	@Override
+	public void buttonClick(String property, ArrayList<GpsActivity> data) {
+		// TODO Auto-generated method stub
 		
 	}
 }

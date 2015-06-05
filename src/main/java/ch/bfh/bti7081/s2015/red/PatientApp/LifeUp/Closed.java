@@ -1,10 +1,10 @@
-package ch.bfh.bti7081.s2015.red.PatientApp.lifeUp;
+package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
  
 public class Closed extends ActivityState {
 
-	public Closed(ActivityState lastState, Activity activity) {
+	public Closed(Activity activity) {
 		this.activity = activity;
 		setActivityState(this); 
 	} 

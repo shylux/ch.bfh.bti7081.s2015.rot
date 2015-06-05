@@ -51,9 +51,8 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 	@Override
 	public void update(ArrayList<MedicationEntry> entries) {
 		// TODO Auto-generated method stub
-
-		//DbInitializer db = new DbInitializer();
-		//db.restore();
+		
+		// Set all Links to Detail View of Medication
 		for (MedicationEntry medication : entries) {
 			System.out.println(medication.getUrl());
 			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));

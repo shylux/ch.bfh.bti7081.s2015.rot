@@ -35,25 +35,17 @@ public class NavigatorUI extends UI {
 	 */
 	private static final long serialVersionUID = 614340462216711328L;
 
-<<<<<<< HEAD
-	final public static String MEDICATIONINDEX = "MedicationIndex";
-	final public static String EMERGENCY = "Emergency";
-	final public static String LIFEUP = "LifeUp";
-	final public static String GPSACTIVTY ="GpsActivity";
-	final public static String LIFEUPINDEX = "LifeUpIndex";
-	public static final String MEDICATION = "Medication";
-=======
 	Navigator navigator;
 
 	final public static String STARTSCREEN		= "StartScreen";
 	final public static String MEDICATIONINDEX 	= "MedicationIndex";
+	final public static String MEDICATION 		= "Medication";
 	final public static String EMERGENCY 		= "Emergency";
 	final public static String GPSACTIVTY 		= "GpsActivity";
 	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
 	final public static String LIFEUPINDEX 		= "LifeUpIndex";
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
 	final public static String CALENDARINDEX 	= "Kalender";
->>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -102,11 +94,6 @@ public class NavigatorUI extends UI {
 		emergView.addListener(EMERGENCY, emergPresenter);
 
 		navigator.addView("", startPageView);
-<<<<<<< HEAD
-=======
-		navigator.addView(STARTSCREEN, startPageView);
-		navigator.addView(MEDICATIONINDEX, mediIndexView);
->>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 		navigator.addView(EMERGENCY, emergView);
 		
 		/*

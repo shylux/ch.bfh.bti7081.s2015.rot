@@ -2,7 +2,6 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
 public class MedicationEntry extends CalendarEntry{
 	
 	private String howMuchADay = "";
@@ -10,16 +9,11 @@ public class MedicationEntry extends CalendarEntry{
 	private ArrayList<String> times = new ArrayList<String>();
 	
 	public MedicationEntry(String name, String description, String howMuchADay, String howToTake, ArrayList<String> times) {
-		// TODO Auto-generated constructor stub
-		//super()
 		this.shortName = name;
 		this.description = description;
 		this.howMuchADay = howMuchADay;
 		this.howToTake = howToTake;
 		this.times = times;
-=======
-		display = "I think its disgusting and terrible how people treat Lance Armstrong, especially after winning 7 Tour de France Titles while on drugs!I can't even find my bike when I'm on drugs.";
->>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 	}
 	public MedicationEntry(String id){super(id);}
 	public MedicationEntry(){}
@@ -40,6 +34,9 @@ public class MedicationEntry extends CalendarEntry{
 		
 	}
 
+	/*
+	 * Getter / Setter 
+	 */
 	public String getName() {
 		return shortName;
 	}

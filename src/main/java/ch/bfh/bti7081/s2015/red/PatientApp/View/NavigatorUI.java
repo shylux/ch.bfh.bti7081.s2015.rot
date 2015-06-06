@@ -3,7 +3,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
-import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpTodayPreseter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpOverviewPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
@@ -40,7 +40,8 @@ public class NavigatorUI extends UI {
 	final public static String MEDICATIONINDEX 	= "MedicationIndex";
 	final public static String EMERGENCY 		= "Emergency";
 	final public static String GPSACTIVTY 		= "GpsActivity";
-	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
+	final public static String LIFEUPTODAY	 	= "LifeUpToday";
+	final public static String LIFEUPTOMORROW	= "LifeUpTomorrow";
 	final public static String LIFEUPINDEX 		= "LifeUpIndex";
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
 	final public static String CALENDARINDEX 	= "Kalender";
@@ -112,12 +113,20 @@ public class NavigatorUI extends UI {
 		navigator.addView(LIFEUPINDEX, lifeUpIndexView);
 		
 		/*
+		 * Life Up today view
+		 */
+		LifeUpTodayView lifeUpTodayView =  new LifeUpTodayView();
+		LifeUpTodayPreseter lifeUpTodayPresenter = new LifeUpTodayPreseter(lifeUpTodayView);
+		lifeUpTodayView.addListener(LIFEUPTODAY, lifeUpTodayPresenter);
+		navigator.addView(LIFEUPTODAY, lifeUpTodayView);
+		
+		/*
 		 * Life Up detail view
 		 */
-		LifeUpDetailView lifeUpDetailView =  new LifeUpDetailView();
-		LifeUpDetailPreseter lifeUpDetailPresenter = new LifeUpDetailPreseter(lifeUpDetailView);
-		lifeUpDetailView.addListener(LIFEUPDETAIL, lifeUpDetailPresenter);
-		navigator.addView(LIFEUPDETAIL, lifeUpDetailView);
+		LifeUpTomorrowView lifeUpTomorrowView =  new LifeUpTomorrowView();
+		LifeUpTodayPreseter lifeUpTomorrowPresenter = new LifeUpTodayPreseter(lifeUpTomorrowView);
+		lifeUpTomorrowView.addListener(LIFEUPTOMORROW, lifeUpTomorrowPresenter);
+		navigator.addView(LIFEUPTOMORROW, lifeUpTomorrowView);
 		
 		/*
 		 * Life Up Overview

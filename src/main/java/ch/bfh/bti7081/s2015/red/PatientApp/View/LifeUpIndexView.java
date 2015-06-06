@@ -39,10 +39,10 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		}		
 		
 		if ( property.equals(strToday) ) {
-			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPDETAIL); 
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPTODAY); 
 		}
 		else if ( property.equals(strTomorrow) ) {
-			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPDETAIL); 
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPTOMORROW); 
 		}
 		else if ( property.equals(strOverview)){
 			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPOVERVIEW);

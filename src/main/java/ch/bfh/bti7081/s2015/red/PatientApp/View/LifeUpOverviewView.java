@@ -31,12 +31,15 @@ public class LifeUpOverviewView extends BaseView<Activity>{
 	Calendar localCalendar 		= Calendar.getInstance();
 	Date date 					= new Date();
 	DateFormat outputFormatter 	= new SimpleDateFormat("dd.MM.yyyy");
+	DateFormat timeFormatter	= new SimpleDateFormat("HH:mm");
 	
-	Label lblState;
+	Label lblSoftTime;
+	Label lblHardTime;
 	Label lblTitle;
 	Label lblStatusInProgress;
 	Label lblStatusFinished;
 	Label lblDate;
+	Label lblEmpty;
 
 	@Override
 	public void buttonClick(ClickEvent event) {
@@ -68,20 +71,17 @@ public class LifeUpOverviewView extends BaseView<Activity>{
 
         for(int i = 0; i < data.size(); i ++)
         {
-        	/*if(i == 0 ||data.get(i+1).getStartTime().getDay() != data.get(i).getStartTime().getDay())
-        	{
-        		lblDate = new Label("Datum: " + outputFormatter.format(data.get(i).getStartTime().getTime()));
-        		lblDate.addStyleName("h3");
-        		this.addComponent(lblDate);
-        	}*/
-        	
         	if(data.get(i).getStateName().equals("InProgress"))
         	{
         		this.addComponent(new Link(data.get(i).getShortName(), new ExternalResource(data.get(i).getUrl())));
             	lblDate = new Label("Datum: " + outputFormatter.format(data.get(i).getStartTime().getTime()));
         		this.addComponent(lblDate);
-    			lblState = new Label(data.get(i).getStateName());
-    			//this.addComponent(lblState);
+        		lblSoftTime = new Label("SoftTime: " + timeFormatter.format(data.get(i).getSoftTimeLimit().getTime()));
+    			this.addComponent(lblSoftTime);
+    			lblHardTime = new Label("HardTime: " + timeFormatter.format(data.get(i).getHardTimeLimit().getTime()));
+    			this.addComponent(lblHardTime);
+    			lblEmpty = new Label("");
+    			this.addComponent(lblEmpty);
         	}        	
         }
         
@@ -90,29 +90,17 @@ public class LifeUpOverviewView extends BaseView<Activity>{
         this.addComponent(lblStatusFinished);
         for(int i = 0; i < data.size(); i ++)
         {
-        	/*if(i == 0 ||data.get(i+1).getStartTime().getDay() != data.get(i).getStartTime().getDay())
-        	{
-        		lblDate = new Label("Datum: " + outputFormatter.format(data.get(i).getStartTime().getTime()));
-        		lblDate.addStyleName("h3");
-        		this.addComponent(lblDate);
-        	}*/
-        	
         	if(data.get(i).getStateName().equals("Finished"))
         	{
         		this.addComponent(new Link(data.get(i).getShortName(), new ExternalResource(data.get(i).getUrl())));
             	lblDate = new Label("Datum: " + outputFormatter.format(data.get(i).getStartTime().getTime()));
         		this.addComponent(lblDate);
-    			lblState = new Label(data.get(i).getStateName());
-    			this.addComponent(lblState);
+        		lblSoftTime = new Label("SoftTime: " + outputFormatter.format(data.get(i).getSoftTimeLimit().getTime()));
+    			this.addComponent(lblSoftTime);
+    			lblHardTime = new Label("HardTime: " + outputFormatter.format(data.get(i).getHardTimeLimit().getTime()));
+    			this.addComponent(lblHardTime);
         	}        	
         }
-        
-		/*for(Activity activity : data)
-		{
-			this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
-			lblState = new Label(activity.getStateName());
-			this.addComponent(lblState);
-		}*/
 	}
 
 	@Override

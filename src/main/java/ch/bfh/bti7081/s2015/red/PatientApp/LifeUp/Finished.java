@@ -14,11 +14,12 @@ public class Finished extends NormalActivity {
 		this.activity = activity;
 		setActivityState(this); 
 		storeState();
+		new Closed(activity);
 	}
  
 	@Override
 	public void handle() {
-		new Closed( activity); 
+
 	} 
   
 }

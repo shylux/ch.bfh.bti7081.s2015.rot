@@ -66,9 +66,7 @@ public class StartPageView extends BaseView<CalendarEntry> {
 			getUI().getNavigator().navigateTo(NavigatorUI.CALENDARINDEX);
 		} else if (property.equals(stringContacts)) {
 		} else if (property.equals(stringPrevious)
-				|| property.equals(stringNext)) {
-
-			System.out.println("DailyEventsButton");
+				|| property.equals(stringNext)) { 
 
 			for (ViewListener listener : listeners) {
 				listener.buttonClick(property, appointmentCurrent);
@@ -143,8 +141,7 @@ public class StartPageView extends BaseView<CalendarEntry> {
 		layoutVertical.addComponent(lineMenu2);
 		addComponent(layoutVertical);
 		
-		System.out.println("started in startview");
-		//System.out.println(NavigatorUI.notificationThread.getState());
+
 		NavigatorUI.notificationThread = new NotificationThread(layoutVertical);
 		NavigatorUI.notificationThread.start();
 		

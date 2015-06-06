@@ -10,6 +10,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.Link;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
+
 /**
  * an overlay component for notifications
  * @author James Mayr
@@ -30,6 +31,7 @@ public class ReminderComponent extends CustomComponent {
 		VerticalLayout content = new VerticalLayout();
 		content.addComponent(title);
 		
+
 		//add all notifications
 		for(CalendarEntry entry: entries)
 		{

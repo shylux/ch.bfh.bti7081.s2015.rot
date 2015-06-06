@@ -20,6 +20,10 @@ public abstract class ActivityState {
 		activity.setActivityState(activityState);
 	}
 	
+	public void setActivity(Activity activity) {
+		this.activity = activity;
+	}
+	
 	public String getStateName() {
 		String[] count = this.getClass().getName().split("\\.");
 		return this.getClass().getName().split("\\.")[count.length - 1];

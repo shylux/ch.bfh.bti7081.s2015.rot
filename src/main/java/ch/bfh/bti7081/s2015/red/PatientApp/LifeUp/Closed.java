@@ -7,6 +7,7 @@ public class Closed extends ActivityState {
 	public Closed(Activity activity) {
 		this.activity = activity;
 		setActivityState(this); 
+		storeState();
 	} 
 	
 	public Closed() {

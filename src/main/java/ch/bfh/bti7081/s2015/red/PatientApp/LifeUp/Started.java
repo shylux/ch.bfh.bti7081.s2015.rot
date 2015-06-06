@@ -7,6 +7,7 @@ public class Started extends NormalActivity {
 	public Started(ActivityState lastState, Activity activity) {
 		this.activity = activity;
 		setActivityState(this); 
+		storeState();
 	}
  
 	public Started() {

@@ -15,6 +15,7 @@ public class FinishedInTime extends TimeActivity {
 		this.activity.setGivenPoints(FINISHED_IN_TIME);
 		setActivityState(this);
 		storeState();
+		new Closed(activity);		
 	}	 	
 	
 	@Override

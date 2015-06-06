@@ -12,7 +12,6 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
 
-
 public class LifeUpDetailPreseter extends BasePresenter<Activity>{
 	private ArrayList<Activity> activities;
 	

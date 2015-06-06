@@ -8,8 +8,18 @@ import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 
 import com.google.gson.annotations.Expose;
 
+
+/**
+ * this class represents a gps based activity
+ * @author James
+ *
+ */
 public class GpsActivity extends Activity {
 
+	/**
+	 * a circle with the gps position of activity that must be 
+	 * reached to fullfil the activity
+	 */
 	@Expose private Circle circle;
 
 	public GpsActivity(){}
@@ -27,20 +37,24 @@ public class GpsActivity extends Activity {
 	
 	@Override
 	public String display() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void setDisplay(String data) {
-		// TODO Auto-generated method stub
 		
 	}
 	@Override
 	public boolean checkSuccess() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
+	/**
+	 * caclulate the distance between the gps activity 
+	 * and a given gps coordinate e.g user's current location
+	 * @param coordinate
+	 * @return
+	 */
 	public double getDistance(GpsCoordinate coordinate)
 	{
 		return this.circle.getDistance(coordinate);

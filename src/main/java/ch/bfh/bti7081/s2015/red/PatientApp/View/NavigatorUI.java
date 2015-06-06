@@ -147,16 +147,10 @@ public class NavigatorUI extends UI {
 		lifeUpOverviewView.addListener(LIFEUPOVERVIEW, lifeUpOverviewPresenter);
 		navigator.addView(LIFEUPOVERVIEW, lifeUpOverviewView);
 		
-		//navigator.navigateTo(GPSACTIVTY+"/personalData");
-
 		 /** View for restoring data
 		 * @TODO: Remove for production
 		 */
 		navigator.addView(RESTORE, new RestoreView());
-		
-		//notificationThread = new NotificationThread(layout);
-		System.out.println("start...");
-
 		 
 	}
 	

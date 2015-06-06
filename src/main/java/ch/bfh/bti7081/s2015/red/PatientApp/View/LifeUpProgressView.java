@@ -58,25 +58,25 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 		labelFinished.addStyleName("h2");
 		layoutVertical.addComponent(labelFinished);
 
-		HorizontalLayout layoutFinished = new HorizontalLayout();
+		VerticalLayout layoutFinishedTable = new VerticalLayout();
 		
 		for ( int i = 0; i < entries.size(); i++ ) {
 			Activity currentActivity = entries.get(i); 
-			
-			System.out.println("ERHALTENE ACTIVITYSTATE:"+currentActivity.getStateName());
-			
-			if ( currentActivity.getStateName() == "Closed" ) { 
+			if ( currentActivity.getStateName().equals("Closed") ) { 
+				HorizontalLayout layoutFinished = new HorizontalLayout();
+				System.out.println("ABC");
 				Label labelActivityName = new Label(currentActivity.getShortName());
 				labelActivityName.setWidth("300px");
 				Label labelActivityPoints = new Label("" + currentActivity.getGivenPoints());
 				labelActivityPoints.setWidth("50px");
 				layoutFinished.addComponent(labelActivityName);
 				layoutFinished.addComponent(labelActivityPoints);
+				layoutFinishedTable.addComponent(layoutFinished);
 			}
 		} 
 		
 
-		layoutVertical.addComponent(layoutFinished);
+		layoutVertical.addComponent(layoutFinishedTable);
 	    this.addComponent(layoutVertical);
 	}	
 	

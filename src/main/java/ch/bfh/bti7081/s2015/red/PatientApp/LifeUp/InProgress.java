@@ -18,6 +18,7 @@ public class InProgress extends TimeActivity {
 		manager = TimeActivityManager.getInstance();
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);	 
+		storeState();
 	}	 
 	
 	@Override

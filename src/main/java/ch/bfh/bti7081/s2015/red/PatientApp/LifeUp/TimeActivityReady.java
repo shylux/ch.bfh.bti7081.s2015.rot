@@ -15,7 +15,8 @@ public class TimeActivityReady extends TimeActivity {
 		manager = TimeActivityManager.getInstance();
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);
-		
+
+		storeState();
 		startProcess();
 	}	
 	 

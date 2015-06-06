@@ -91,8 +91,8 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		this.removeAllComponents();
 		activity = model;
 		
-		System.out.println("Setze Zielaktivität");
-		System.out.println(model);
+	/*	System.out.println("Setze Zielaktivität");
+		System.out.println(model);*/
 
 		upload = new Upload("Bild hochladen", this);
 		upload.addSucceededListener(this);

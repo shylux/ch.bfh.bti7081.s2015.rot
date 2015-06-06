@@ -7,6 +7,7 @@ public class Ready extends NormalActivity {
 	public Ready(Activity activity) { 
 		this.activity = activity;
 		setActivityState(this);
+		storeState();
 	}	
 	
 	public Ready() {

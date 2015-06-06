@@ -1,15 +1,20 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.App;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
-import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
-import ch.bfh.bti7081.s2015.red.PatientApp.Utils.DateUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
+import ch.bfh.bti7081.s2015.red.PatientApp.Utils.DateUtils;
+
 public class Calendar {
+	final private  static int  NOTIFACATION_MINUTES_ACTIVITY = 60;
+	final private static int NOTIFICATION_MINUTES_OTHER = 90;
 	private ArrayList<CalendarEntry> entries = new ArrayList<CalendarEntry>();
 
     /**
@@ -18,6 +23,13 @@ public class Calendar {
      * @return true if the first date day is after the second date day.
      * @throws IllegalArgumentException if the date is <code>null</code>
      */
+	
+	public Calendar()
+	{
+		
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		entries = mongoDb.getSpecificCollection(CalendarEntry.class,true);
+	}
 	
 	
 	/**
@@ -153,17 +165,20 @@ public class Calendar {
 	}
 
 	/**
-	 * Returns the first not finished Activity (also activities from the past are shown)
+	 * Returns all unfinished Activities
 	 * @return CalendarEntry
 	 */
-	public Activity getUnfinishedActivity()
+	public ArrayList<Activity> getUnfinishedActivity()
 	{
 		ArrayList<Activity> activities = new ArrayList<Activity>();
 
 		for(int i = 0; i < entries.size(); i++) {
 			if(entries.get(i) instanceof Activity){
 				Activity a = (Activity)entries.get(i);
-				if(!a.isDone()) {
+				if(a.getActivityState() == null||a.getActivityState().getStateShortName().equals("Started") ||
+					a.getActivityState().getStateShortName().equals("Ready")||
+					a.getActivityState().getStateShortName().equals("InProgress")) 
+				{
 					activities.add((Activity)entries.get(i));
 				}
 			}
@@ -171,7 +186,46 @@ public class Calendar {
 
 		Collections.sort(activities, new CalendarEntryComparator());
 
-		return activities.get(0);
+		return activities;
+	}
+	public ArrayList<CalendarEntry>getNotifications()
+	{
+		ArrayList<CalendarEntry> notifications = new ArrayList<>();
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		entries =   mongoDb.getSpecificCollection(CalendarEntry.class,true);
+		for(int i =0; i < entries.size();i++)
+		{
+			if(DateUtils.startsSoon(entries.get(i).getStartTime(), NOTIFICATION_MINUTES_OTHER))
+			{
+				notifications.add(entries.get(i));
+			}
+		}
+		//get all activities
+		ArrayList<Activity> activities = mongoDb.getSpecificCollection(Activity.class,true);
+		for(int y =0; y < activities.size(); y++)
+		{
+
+			if(DateUtils.startsSoon(activities.get(y).getEndTime(), NOTIFACATION_MINUTES_ACTIVITY))
+			{
+				Activity currentActivity = (Activity) activities.get(y);
+				if(currentActivity.getActivityState() == null||currentActivity.getActivityState().getStateShortName().equals("Started") ||
+						currentActivity.getActivityState().getStateShortName().equals("Ready")||
+						currentActivity.getActivityState().getStateShortName().equals("InProgress")) 
+				{
+
+					notifications.add(currentActivity);
+				}
+			}
+
+		}
+		return notifications;
+		
+	}
+	
+	public ArrayList<Activity>getAllActivites() {  
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		ArrayList<Activity> allActivities = mongoDb.getSpecificCollection(GpsActivity.class);
+		return allActivities;
 	}
 
 	public void updateCalendarEntries()

@@ -3,6 +3,8 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityStateDeserializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -204,6 +206,7 @@ public class MongoDbAdapter {
 	{
 		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().registerTypeAdapter(ActivityState.class, new ActivityStateDeserializer()).create();
 		Persistable createdClass  =  gson.fromJson(record.toString(),persistableClass);
+ 
 		return createdClass;
 	}
 	/**

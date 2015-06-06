@@ -28,8 +28,8 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 			 * so we do it manually
 			 */
 			String[] count = jobject.get("type").toString().split("\\.");
-			String localName =count[count.length-1];	
-
+			String localName =count[count.length-1];
+			localName = localName.substring(0, localName.length() - 1);
 			
 			switch (localName) {
 			case "TimeActivityReady": 
@@ -46,6 +46,7 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 			break;
 			case "FinishedTooLate": 
 				obj = new FinishedTooLate();
+				System.out.println("Created!");
 			break;
 			case "Ready": 
 				obj = new Ready();
@@ -68,7 +69,8 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
+		
 		return obj;
 	}
 	

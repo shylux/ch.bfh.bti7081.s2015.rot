@@ -6,6 +6,7 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
@@ -18,13 +19,8 @@ public class LifeUpDetailPreseter extends BasePresenter<Activity>{
 	
 	public LifeUpDetailPreseter(View view) {
 		super(view);
-		DbInitializer.restore();
-		MongoDbAdapter adapter = new MongoDbAdapter();
-		activities = adapter.getSpecificCollection(GpsActivity.class);
-		
- 
-		//activities = adapter.getSpecificCollection(Activity.class);
-		 
+
+        ArrayList<Activity> activities = PatientApp.getInstance().getCalendar().getAllActivites();
 		TimeActivityManager manager = TimeActivityManager.getInstance();
 		
 		long SECONDS_IN_MS = 1000;

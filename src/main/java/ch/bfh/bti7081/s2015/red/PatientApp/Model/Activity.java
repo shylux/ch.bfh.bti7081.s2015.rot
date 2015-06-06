@@ -7,9 +7,6 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 
-
-import java.util.Date;
-
 import com.google.gson.annotations.Expose;
 
 public abstract class Activity extends CalendarEntry {
@@ -77,4 +74,9 @@ public abstract class Activity extends CalendarEntry {
 	public boolean isDone() {
 		return false;
 	}
+	public ActivityState getActivityState()
+	{
+		return activityState;
+	}
+	
 }

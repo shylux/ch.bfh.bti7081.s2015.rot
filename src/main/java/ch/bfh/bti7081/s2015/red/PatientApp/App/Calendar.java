@@ -187,6 +187,11 @@ public class Calendar {
 
 		return activities;
 	}
+	/**
+	 * this method gets all relevant notifications from the database
+	 * 
+	 * @return
+	 */
 	public ArrayList<CalendarEntry>getNotifications()
 	{
 		ArrayList<CalendarEntry> notifications = new ArrayList<>();

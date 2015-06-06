@@ -3,16 +3,14 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
 /**
- * Base class of all presenters
+ * Base class of all presenters.
+ * The presenter is the glue between view and model. Consult the vaadin doc for further explanation.
+ * @param <T> the model class
  * @author James Mayr
- *
- * @param <T>
  */
 public abstract class BasePresenter<T> implements ViewListener<T>{
 
-	/**
-	 * presenter's view
-	 */
+	// The view to render the model
 	protected View view;
 	
 	/**

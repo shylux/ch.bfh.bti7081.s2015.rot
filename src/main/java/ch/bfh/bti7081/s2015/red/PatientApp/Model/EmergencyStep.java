@@ -4,6 +4,9 @@ import com.google.gson.annotations.Expose;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 
+/**
+ * An emergency step is a simple activity which a patient can complete to prevent a relapse.
+ */
 public class EmergencyStep implements Persistable
 {
 	@Expose private Contact contact;

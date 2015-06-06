@@ -6,6 +6,7 @@ import java.io.OutputStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
@@ -91,9 +92,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		this.removeAllComponents();
 		activity = model;
 		
-		System.out.println("Setze Zielaktivität");
-		System.out.println(model);
-
 		upload = new Upload("Bild hochladen", this);
 		upload.addSucceededListener(this);
 		image.setVisible(false);
@@ -182,7 +180,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		System.out.println("stopped thread(gps Activity)");
 		NavigatorUI.notificationThread.stopThread();
 		
 		//load gpsActivity
@@ -209,6 +206,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void uploadSucceeded(Upload.SucceededEvent succeededEvent) {
+		new MongoDbAdapter().updateEntry(this.activity);
 		image.setVisible(true);
 		image.setSource(new FileResource(this.activity.photo));
 	}

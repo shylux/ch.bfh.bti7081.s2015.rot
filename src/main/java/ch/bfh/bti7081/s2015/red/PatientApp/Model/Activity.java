@@ -9,6 +9,10 @@ import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * An activity in our LifeUp process.
+ * Gives an amount of points for completing the activity in a certain amount of time.
+ */
 public abstract class Activity extends CalendarEntry {
 	@Expose protected ActivityState activityState;
 	@Expose protected Date softTimeLimit;

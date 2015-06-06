@@ -2,6 +2,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * A contact of the patient related to his addiction.
+ * Eg. a therapist, a doctor or a close friend.
+ */
 public class Contact {
 	@Expose private String name;
 	@Expose private String phone_number;

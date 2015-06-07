@@ -60,6 +60,7 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 			//data = (GpsActivity)manager.getActivity(manager.getActivityIndex());
 			//data = (GpsActivity)manager.getActivity();
 
+
 			view.update(data);
 			
 		}

@@ -103,6 +103,9 @@ public class TestMongoDbAdapter {
 		
 		Assert.assertEquals(((Appointment)persistables.get(0)).getDescription(), updatedAppointment.getDescription());
 		
+		Persistable p = adapter.getEntryFromDatabase(persistables.get(5));
+		Assert.assertEquals(persistables.get(5).getId(),p.getId() );
+		
 	}
 	@Test
 	public void testAvoidJsonSerializeCycles()

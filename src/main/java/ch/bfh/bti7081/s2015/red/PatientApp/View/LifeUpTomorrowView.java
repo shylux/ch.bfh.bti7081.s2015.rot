@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
@@ -18,6 +19,8 @@ public class LifeUpTomorrowView extends BaseView<Activity>{
 	Calendar localCalendar 		= Calendar.getInstance();
 	Date dateTmr				= new Date();
 	DateFormat outputFormatter 	= new SimpleDateFormat("dd.MM.yyyy");
+	
+	private ArrayList<Activity> entries;
 
 	Label lblState;
 	Label lblTitle;
@@ -37,11 +40,17 @@ public class LifeUpTomorrowView extends BaseView<Activity>{
 
 	@Override
 	public void update(ArrayList<Activity> data) {
+
+	}
+
+	@Override
+	public void enter(ViewChangeEvent event) {
 		this.removeAllComponents();
-		
+		// add the default homescreen button
 		this.addComponent(addStartPageNavigation());
 		buttonStartPage.addClickListener(this);
-		
+		// end of adding default navigation		
+				
         localCalendar.setTime(dateTmr);
         localCalendar.add(Calendar.DATE, 1);
         dateTmr = localCalendar.getTime();
@@ -50,19 +59,22 @@ public class LifeUpTomorrowView extends BaseView<Activity>{
 		lblTitle.addStyleName("h2");
         this.addComponent(lblTitle);
 
-		for(Activity activity : data)
-		{
-			if(activity.getStartTime().getDate() == dateTmr.getDate())
-			{
-				this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
-				lblState = new Label(activity.getStateName());
-				this.addComponent(lblState);
-			}
+        entries = PatientApp.getInstance().getCalendar().getAllActivites();
+        for(int i = 0; i < entries.size(); i ++){
+        	Activity currentActivity = entries.get(i);
+        	
+        	// display only entries which are in progress
+        	if(currentActivity.getStateName().equals("InProgress"))
+        	{
+        		// check the day to make sure only tomorrows entries are displayed
+        		if(currentActivity.getStartTime().getDate() == dateTmr.getDate())
+    			{
+    				this.addComponent(new Link(currentActivity.getShortName(), new ExternalResource(currentActivity.getUrl())));
+    				lblState = new Label(currentActivity.getStateName());
+    				this.addComponent(lblState);
+    			}        		
+        	}
+			
 		}
-	}
-
-	@Override
-	public void enter(ViewChangeEvent event) {
-		
 	}
 }

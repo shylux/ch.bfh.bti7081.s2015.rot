@@ -28,16 +28,7 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-
-        Label label = new Label("Medication");
-        
-
-		// add the default homescreen button
-		this.addComponent(addStartPageNavigation());
-		buttonStartPage.addClickListener(this);
-		// end of adding default navigation	      
-        
-        addComponent(label);
+		
 
 	}
 
@@ -61,12 +52,25 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 
 	@Override
 	public void update(ArrayList<MedicationEntry> entries) {
-		
 		this.removeAllComponents();
+
+        Label label = new Label("Medication");
+        
+
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation	      
+        
+        addComponent(label);
+		
+		
 		// Set all Links to Detail View of Medication
 		for (MedicationEntry medication : entries) {
 			System.out.println(medication.getUrl());
 			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));
+			
+			
 		}
 	}
 

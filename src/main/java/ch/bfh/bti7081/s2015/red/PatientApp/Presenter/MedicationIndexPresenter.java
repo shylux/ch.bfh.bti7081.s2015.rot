@@ -14,7 +14,6 @@ public class MedicationIndexPresenter extends BasePresenter<MedicationEntry> {
 
 	public MedicationIndexPresenter(View<MedicationEntry> view) {
 		super(view);
-		DbInitializer.restore();
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		entries = adapter.getSpecificCollection(MedicationEntry.class);
 		view.update(entries);

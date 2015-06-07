@@ -83,8 +83,11 @@ public class Calendar {
 
 		for(int i = 0; i < entries.size(); i++) {
 			//Entry is starting or ending on this day
-			if(DateUtils.isSameDay(entries.get(i).getStartTime(), date)) {
-				selectedEntries.add(entries.get(i));
+			if(entries.get(i).getStartTime() !=null)
+			{
+				if(DateUtils.isSameDay(entries.get(i).getStartTime(), date)) {
+					selectedEntries.add(entries.get(i));
+				}
 			}
 		}
 		return selectedEntries;

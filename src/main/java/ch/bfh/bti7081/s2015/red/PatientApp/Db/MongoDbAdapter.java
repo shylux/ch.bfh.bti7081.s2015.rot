@@ -109,8 +109,7 @@ public class MongoDbAdapter {
 	    DBObject dbObj = collection.findOne(query);
 	    
 		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
-		System.out.println("MDB" + persistable.getClass());
-		
+
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
 		

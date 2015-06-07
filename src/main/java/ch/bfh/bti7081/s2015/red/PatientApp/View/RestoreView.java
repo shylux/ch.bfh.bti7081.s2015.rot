@@ -35,7 +35,6 @@ public class RestoreView extends BaseView{
 	public void enter(ViewChangeEvent event) {
 
 		DbInitializer.restore();
-		System.out.println("Data successfull restored");
 	}
 
 }

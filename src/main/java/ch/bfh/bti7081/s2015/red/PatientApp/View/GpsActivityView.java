@@ -6,9 +6,11 @@ import java.io.OutputStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GoogleMapsHelper;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsLocationSimulator;
 
@@ -91,9 +93,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		this.removeAllComponents();
 		activity = model;
 		
-	/*	System.out.println("Setze Zielaktivität");
-		System.out.println(model);*/
-
 		upload = new Upload("Bild hochladen", this);
 		upload.addSucceededListener(this);
 		image.setVisible(false);
@@ -110,8 +109,14 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 		            "Your Position", new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()),
 		            true, null);
 		positionMarker.setAnimationEnabled(false);
-        googleMap.setCenter(new LatLon(currentLocation.getLatitude(), currentLocation.getLongitude()));
-        googleMap.setZoom(16);
+		
+		
+		GpsCoordinate center = GoogleMapsHelper.calcMapCenter(currentLocation, activity.getCirlce().getCenter());
+        int zoom = GoogleMapsHelper.calcZoomLevel(currentLocation,  activity.getCirlce().getCenter(), 300, 500);
+		
+		googleMap.setCenter(new LatLon(center.getLatitude(),center.getLongitude()));
+        googleMap.setZoom(zoom);
+        
         googleMap.setSizeFull();
         googleMap.addMarker(positionMarker);
         
@@ -121,6 +126,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
         circle.setFillOpacity(0.5);
         googleMap.setHeight("500px");
         googleMap.setWidth("300px");
+        
         circle.setPosition(new LatLon(activityCircle.getCenter().getLatitude(),
         			activityCircle.getCenter().getLongitude()));
         circle.setRadius((int) activityCircle.getRadius());
@@ -182,7 +188,6 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		System.out.println("stopped thread(gps Activity)");
 		NavigatorUI.notificationThread.stopThread();
 		
 		//load gpsActivity
@@ -209,6 +214,7 @@ public class GpsActivityView extends BaseView<GpsActivity> implements Upload.Rec
 
 	@Override
 	public void uploadSucceeded(Upload.SucceededEvent succeededEvent) {
+		new MongoDbAdapter().updateEntry(this.activity);
 		image.setVisible(true);
 		image.setSource(new FileResource(this.activity.photo));
 	}

@@ -68,6 +68,7 @@ public class StartPageView extends BaseView<CalendarEntry> {
 		} else if (property.equals(stringPrevious)
 				|| property.equals(stringNext)) { 
 
+
 			for (ViewListener listener : listeners) {
 				listener.buttonClick(property, appointmentCurrent);
 			}

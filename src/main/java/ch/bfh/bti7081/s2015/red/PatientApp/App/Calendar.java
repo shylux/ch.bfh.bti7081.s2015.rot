@@ -4,10 +4,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.App;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.CalendarEntryComparator;
 import ch.bfh.bti7081.s2015.red.PatientApp.Utils.DateUtils;
 
@@ -82,8 +82,11 @@ public class Calendar {
 
 		for(int i = 0; i < entries.size(); i++) {
 			//Entry is starting or ending on this day
-			if(DateUtils.isSameDay(entries.get(i).getStartTime(), date)) {
-				selectedEntries.add(entries.get(i));
+			if(entries.get(i).getStartTime() !=null)
+			{
+				if(DateUtils.isSameDay(entries.get(i).getStartTime(), date)) {
+					selectedEntries.add(entries.get(i));
+				}
 			}
 		}
 		return selectedEntries;
@@ -187,6 +190,7 @@ public class Calendar {
 
 		return activities;
 	}
+
 	/**
 	 * this method gets all relevant notifications from the database
 	 * 
@@ -224,6 +228,12 @@ public class Calendar {
 		}
 		return notifications;
 		
+	}
+	
+	public ArrayList<Activity>getAllActivites() {  
+		MongoDbAdapter mongoDb = new MongoDbAdapter();
+		ArrayList<Activity> allActivities = mongoDb.getSpecificCollection(GpsActivity.class);
+		return allActivities;
 	}
 
 	public void updateCalendarEntries()

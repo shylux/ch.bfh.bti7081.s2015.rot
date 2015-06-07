@@ -13,11 +13,23 @@ public abstract class ActivityState {
 	
 	protected void storeState() {
 		MongoDbAdapter adapter = new MongoDbAdapter();
-		adapter.updateEntry(activity);
+		
+		if(activity.getId() == null || activity.getId().equals(""))
+		{
+			adapter.insertIntoDatabase(activity);
+		}
+		else
+		{
+			adapter.updateEntry(activity);
+		}
 	}
 	
 	protected  void setActivityState(ActivityState activityState) { 
 		activity.setActivityState(activityState);
+	}
+	
+	public void setActivity(Activity activity) {
+		this.activity = activity;
 	}
 	
 	public String getStateName() {

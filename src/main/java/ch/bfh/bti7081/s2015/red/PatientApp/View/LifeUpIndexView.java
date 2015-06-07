@@ -18,15 +18,18 @@ public class LifeUpIndexView extends BaseView <Activity>{
 	private String strToday		= "Heute";
 	private String strTomorrow	= "Morgen";
 	private String strOverview	= "Übersicht";
+	private String strProgress	= "Fortschritt";
 	
 	final Button btnToday		= new Button(strToday);
 	final Button btnTomorrow	= new Button(strTomorrow);
 	final Button btnOverview	= new Button(strOverview);
+	final Button btnProgress	= new Button(strProgress);
 	
 	public LifeUpIndexView(){
 		btnToday.addClickListener(this);
 		btnTomorrow.addClickListener(this);
-		btnOverview.addClickListener(this);		
+		btnOverview.addClickListener(this);	
+		btnProgress.addClickListener(this);
 	}
 	
 	@Override
@@ -46,6 +49,9 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		}
 		else if ( property.equals(strOverview)){
 			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPOVERVIEW);
+		}
+		else if ( property.equals(strProgress)){
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPPROGRESS);
 		}
 	}
 
@@ -83,18 +89,22 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		HorizontalLayout lineToday 		= new HorizontalLayout();
 		HorizontalLayout lineTomorrow 	= new HorizontalLayout();
 		HorizontalLayout lineOverview	= new HorizontalLayout();
+		HorizontalLayout lineProgress	= new HorizontalLayout();
 		
 		lineToday.addComponent(btnToday);
 		lineTomorrow.addComponent(btnTomorrow);
 		lineOverview.addComponent(btnOverview);
+		lineProgress.addComponent(btnProgress);
 		
 		btnToday.setWidth(strButtonWidth);
 		btnTomorrow.setWidth(strButtonWidth);
 		btnOverview.setWidth(strButtonWidth);
+		btnProgress.setWidth(strButtonWidth);
 		
 		buttonContainer.addComponent(lineToday);
 		buttonContainer.addComponent(lineTomorrow);		
 		buttonContainer.addComponent(lineOverview);
+		buttonContainer.addComponent(lineProgress);
 		 
 		
 		addComponent(buttonContainer);

@@ -3,6 +3,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Holds default data for development.
@@ -18,7 +19,13 @@ public class StartPageModel {
 		
 		Calendar calendar = new Calendar();
 		
-		collection = new ArrayList<CalendarEntry>();
+		System.out.println("CollectionSize() " + collection.size());
+		System.out.println("Calender() " + calendar);
+
+		 
+		collection = calendar.getEntriesStartingOnDay(new Date());
+		// collection = new ArrayList<CalendarEntry>();
+
 		//collection = calendar.getTodayEntries();
 		if ( collection.size() == 0 ) {
 			

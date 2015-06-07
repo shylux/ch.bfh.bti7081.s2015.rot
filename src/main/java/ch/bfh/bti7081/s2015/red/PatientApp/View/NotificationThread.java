@@ -9,6 +9,7 @@ import com.vaadin.ui.Layout;
 import com.vaadin.ui.UI;
 
 
+
 /**
  * a thread that creates a reminder overlay 
  * when a gps activty will end soon or a appointment / medication 
@@ -49,14 +50,15 @@ public class NotificationThread extends Thread
 	 * (is necessary for adding the reminder overlay)
 	 * @param layout
 	 */
+
 	public NotificationThread(Layout layout)
 	{
 		this.layout = layout;
 	}
-	
 	/**
 	 * start the thread
 	 */
+
 	public void start()
 	{	
 		isRunning=true;
@@ -66,9 +68,11 @@ public class NotificationThread extends Thread
 	    try {
 	        // Update the data for a while
 	        while (isRunning) {
+
 	            Thread.sleep(DELAY);
 	            
 	            //get all relevant notifications from the calendar
+
 	            entries = PatientApp.getInstance().getCalendar().getNotifications();
 	            UI.getCurrent().access(new Runnable() 
 	            {
@@ -77,9 +81,11 @@ public class NotificationThread extends Thread
 	                {
 	                	if(isRunning && entries.size() >0)
 	                	{
+
 	                		/*
 	                		 * create a reminder Component
 	                		 */
+
 	                    	if(reminderComponent != null)
 	                    	{
 	                    		layout.removeComponent(reminderComponent);
@@ -94,9 +100,11 @@ public class NotificationThread extends Thread
 	        e.printStackTrace();
 	    }
 	}
+
 	/**
 	 * stop the notifcation thread
 	 */
+
 	public void stopThread()
 	{
 		UI.getCurrent().access(new Runnable() {

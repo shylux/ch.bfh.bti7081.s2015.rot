@@ -18,6 +18,7 @@ public class Failed extends TimeActivity {
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);	 
 		setActivityState(this);
+		new Closed(activity);		
 	}	 			
 	
 	@Override

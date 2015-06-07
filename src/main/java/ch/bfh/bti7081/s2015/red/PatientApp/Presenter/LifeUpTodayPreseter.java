@@ -17,7 +17,6 @@ public class LifeUpTodayPreseter extends BasePresenter<Activity>{
 	
 	public LifeUpTodayPreseter(View view) {
 		super(view);
-		DbInitializer.restore();
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);
 		

@@ -3,10 +3,10 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.CalendarPresenter;
 
 import java.util.ArrayList;
+
 import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
-
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.EmergencyPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpDetailPreseter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpOverviewPresenter;
@@ -14,6 +14,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.GpsActivityPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpIndexPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.LifeUpProgressPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationPresenter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.StartPagePresenter;
 
 import com.vaadin.annotations.Push;
@@ -22,7 +23,6 @@ import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.Navigator.ComponentContainerViewDisplay;
 import com.vaadin.server.VaadinRequest;
-
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.UI;
@@ -51,7 +51,6 @@ public class NavigatorUI extends UI {
 
 	final public static String STARTSCREEN		= "StartScreen";
 	final public static String MEDICATIONINDEX 	= "MedicationIndex";
-	final public static String MEDICATION 		= "Medication";
 	final public static String EMERGENCY 		= "Emergency";
 	final public static String GPSACTIVTY 		= "GpsActivity";
 	final public static String LIFEUPDETAIL 	= "LifeUpDetail";
@@ -59,10 +58,8 @@ public class NavigatorUI extends UI {
 	final public static String LIFEUPOVERVIEW 	= "LifeUpOverview";
 	final public static String CALENDARINDEX 	= "Kalender";
 	final public static String LIFEUPPROGRESS   = "Fortschritt";
+	final public static String MEDICATION 		= "Medication";
 	final public static String LIFEUP = "LifeUp";
-
-
-
 	final public static String RESTORE = "Restore";
 
 	final protected VerticalLayout layout = new VerticalLayout();
@@ -103,13 +100,11 @@ public class NavigatorUI extends UI {
 		/*
 		 * Medication MVP
 		 */
-		/*@Filip Hofer plese fix these...
-		 */
-		/*
+		MedicationView mediView = new MedicationView();
 		MedicationPresenter mediPresenter = new MedicationPresenter(mediView);
 		mediView.addListener(MEDICATION, mediPresenter);
 		navigator.addView(MEDICATION, mediView);
-		*/
+		
 		
 		/*
 		 * Emergency MVP
@@ -119,7 +114,8 @@ public class NavigatorUI extends UI {
 		emergView.addListener(EMERGENCY, emergPresenter);
 
 		navigator.addView("", startPageView);
-
+		navigator.addView(STARTSCREEN, startPageView);
+		navigator.addView(MEDICATIONINDEX, mediIndexView);
 		navigator.addView(EMERGENCY, emergView);
 		
 		/*

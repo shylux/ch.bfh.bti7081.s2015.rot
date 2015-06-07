@@ -2,12 +2,14 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.ArrayList;
 
+import com.google.gson.annotations.Expose;
+
 
 public class MedicationEntry extends CalendarEntry{
 	
-	private String howMuchADay = "";
-	private String howToTake = "";
-	private ArrayList<String> times = new ArrayList<String>();
+	@Expose private String howMuchADay = "";
+	@Expose private String howToTake = "";
+	@Expose private ArrayList<String> times = new ArrayList<String>();
 	
 	public MedicationEntry(String name, String description, String howMuchADay, String howToTake, ArrayList<String> times) {
 		this.shortName = name;

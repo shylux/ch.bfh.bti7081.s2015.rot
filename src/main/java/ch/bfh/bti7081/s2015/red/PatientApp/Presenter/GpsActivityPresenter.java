@@ -23,47 +23,15 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 	@Override
 	public void triggerEvent(String event, GpsActivity data) {
 		if(event.equals("loadActivity"))
-<<<<<<< HEAD
-		{
-			System.out.println("DATA:"+data);
-			MongoDbAdapter adapter = new MongoDbAdapter();
-			data = (GpsActivity) adapter.getEntryFromDatabase(data);
-=======
 		{  
 			MongoDbAdapter adapter = new MongoDbAdapter();
 			data = (GpsActivity) adapter.getEntryFromDatabase(data);
 			
 			// TODO: AddCaleneder
 			TimeActivityManager manager = TimeActivityManager.getInstance();
-
-			/* System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			
-			
-			System.out.println(data.getId());
-			System.out.println(manager.getActivity(0).getId());
-			System.out.println(manager.getActivity(1).getId());
-			System.out.println(manager.getActivity(2).getId());
-			System.out.println(manager.getActivity(3).getId());
-			
-
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");	*/		
-			
 			manager.chooseActivity(data);
-		
-			//data = (GpsActivity)manager.getActivity(manager.getActivityIndex());
 			data = (GpsActivity)manager.getActivity();
 
->>>>>>> 96afefa576f20fc044f3d06bcf44943d691fa814
 			view.update(data);
 			
 		}

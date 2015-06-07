@@ -1,32 +1,26 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
-import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-
-
-
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
-import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
+import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
+
+public class LifeUpTomorrowPresenter extends BasePresenter<Activity>{
 	private ArrayList<Activity> activities;
 	
-	public LifeUpOverviewPresenter(View view) {
+	public LifeUpTomorrowPresenter(View view) {
 		super(view);
 		DbInitializer.restore();
 		MongoDbAdapter adapter = new MongoDbAdapter();
-		activities = adapter.getSpecificCollection(GpsActivity.class);		
+		activities = adapter.getSpecificCollection(GpsActivity.class);
+		
  
 		//activities = adapter.getSpecificCollection(Activity.class);
 		 

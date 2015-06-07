@@ -18,6 +18,7 @@ public class InProgress extends TimeActivity {
 		manager = TimeActivityManager.getInstance();
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);	 
+		storeState();
 	}	 
 	
 	@Override
@@ -38,13 +39,11 @@ public class InProgress extends TimeActivity {
 		int hardTimeLimitRest = (int) ((activity.getHardTimeLimit().getTime()-now.getTime()) / 1000); 
 		
 		if ( softTimeLimitRest > 0 ) {
-			System.out.println("-> FinishedInTime");
-			new FinishedInTime(activity); 
+			new FinishedInTime(activity);
 		}
 		else {
 			if ( hardTimeLimitRest > 0 ) {
-				System.out.println("-> FinishedTooLate");
-				new FinishedTooLate(activity); 
+				new FinishedTooLate(activity);
 			}
 			else {
 				new Failed(activity); 

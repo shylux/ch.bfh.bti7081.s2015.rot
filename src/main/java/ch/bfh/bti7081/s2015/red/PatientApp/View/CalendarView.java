@@ -92,7 +92,6 @@ public class CalendarView extends BaseView<CalendarEntry>
 	public void update(ArrayList<CalendarEntry> data) {
 		// TODO Auto-generated method stub
 
-		System.out.println(data.size()+" Elemente im Kalender");
 		for(int i = 0; i < data.size(); i++) {
 			CalendarEntry entry = data.get(i);
 

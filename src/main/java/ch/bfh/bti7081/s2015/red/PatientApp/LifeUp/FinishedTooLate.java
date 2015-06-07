@@ -15,6 +15,7 @@ public class FinishedTooLate extends TimeActivity {
 		this.activity.setGivenPoints(FINISHED_TOO_LATE);
 		setActivityState(this);
 		storeState();
+		new Closed(activity);		
 	}	 		
 	
 	@Override

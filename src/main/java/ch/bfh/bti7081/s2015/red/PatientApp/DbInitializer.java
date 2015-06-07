@@ -12,6 +12,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.Contact;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 
+/**
+ * A class that insert data into database. Used in development.
+ * This resets/restores the database to make sure everyone has the same state.
+ * @author James
+ */
 public class DbInitializer 
 {
 	/*
@@ -34,8 +39,10 @@ public class DbInitializer
 		dbentrys.add(new GpsActivity("Migros Einkaufen",
 				"a bootle a day...", new Circle(new GpsCoordinate(46.965806,7.4638448)), new Date(), end));
 		cal.setTime(new Date());
-		cal.add(Calendar.HOUR_OF_DAY, 3);
-		 end = cal.getTime();
+		cal.add(Calendar.MINUTE, 50);
+		end = cal.getTime();
+		 
+		
 		dbentrys.add(new GpsActivity("Auswärts essen",
 				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9646601,7.459328)), new Date(), end));
 

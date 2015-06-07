@@ -7,11 +7,12 @@ import java.util.Date;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 
 
-
-import java.util.Date;
-
 import com.google.gson.annotations.Expose;
 
+/**
+ * An activity in our LifeUp process.
+ * Gives an amount of points for completing the activity in a certain amount of time.
+ */
 public abstract class Activity extends CalendarEntry {
 	@Expose protected ActivityState activityState;
 	@Expose protected Date softTimeLimit;
@@ -77,4 +78,9 @@ public abstract class Activity extends CalendarEntry {
 	public boolean isDone() {
 		return false;
 	}
+	public ActivityState getActivityState()
+	{
+		return activityState;
+	}
+	
 }

@@ -1,35 +1,26 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-
-
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
-import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
-
-
-
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
-import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
+import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
+import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
+import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
+import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
+
+
+public class LifeUpDetailPreseter extends BasePresenter<Activity>{
 	private ArrayList<Activity> activities;
 	
-	public LifeUpOverviewPresenter(View view) {
+	public LifeUpDetailPreseter(View view) {
 		super(view);
-		DbInitializer.restore();
-		MongoDbAdapter adapter = new MongoDbAdapter();
-		activities = adapter.getSpecificCollection(GpsActivity.class);		
- 
-		//activities = adapter.getSpecificCollection(Activity.class);
-		 
+
+        ArrayList<Activity> activities = PatientApp.getInstance().getCalendar().getAllActivites();
 		TimeActivityManager manager = TimeActivityManager.getInstance();
 		
 		long SECONDS_IN_MS = 1000;
@@ -37,11 +28,10 @@ public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
 		
 		for (int i = 0; i < activities.size(); i++) {
 			Activity currentActivity = activities.get(i);
-			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (10 * SECONDS_IN_MS)));
-			currentActivity.setHardTimeLimit(new Date(now.getTime() + (180 * SECONDS_IN_MS)));
+			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (40 * SECONDS_IN_MS)));
+			currentActivity.setHardTimeLimit(new Date(now.getTime() + (60 * SECONDS_IN_MS)));
 			manager.addActivity(activities.get(i));
 			new TimeActivityReady(activities.get(i));	
-			System.out.println("Activitystatus restored:" + currentActivity.getStateName());
 		}	 
 		view.update(activities);
 	}

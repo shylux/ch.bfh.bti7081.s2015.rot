@@ -6,6 +6,10 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * Renders an EmergencyStep.
+ * The emergency steps consists of two components: The description and the contact component.
+ */
 public class EmergencyStepComponent extends CustomComponent {
 	public EmergencyStepComponent(EmergencyStep emergStep) {
 		Panel panel = new Panel();

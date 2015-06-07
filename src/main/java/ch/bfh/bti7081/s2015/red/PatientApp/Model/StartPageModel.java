@@ -3,7 +3,11 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
 
 import java.util.ArrayList;
+import java.util.Date;
 
+/**
+ * Holds default data for development.
+ */
 public class StartPageModel {
 
 	private ArrayList<CalendarEntry> collection = new ArrayList<CalendarEntry>(); 
@@ -17,8 +21,12 @@ public class StartPageModel {
 		
 		System.out.println("CollectionSize() " + collection.size());
 		System.out.println("Calender() " + calendar);
-		
-		collection = calendar.getTodayEntries();
+
+		 
+		collection = calendar.getEntriesStartingOnDay(new Date());
+		// collection = new ArrayList<CalendarEntry>();
+
+		//collection = calendar.getTodayEntries();
 		if ( collection.size() == 0 ) {
 			
 			Appointment dummy0 = new Appointment();
@@ -45,8 +53,6 @@ public class StartPageModel {
 			collection.add(dummy);
 		}
 
-		System.out.println("CollectionSize() " + collection.size());
-		
 		current = collection.get(0);
 	}
 	

@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 import com.google.gson.annotations.Expose;
 
+/**
+ * An emergency is when a patient fears a relapse.
+ * This class holds all steps to prevent that.
+ */
 public class Emergency implements Persistable{
 	private ArrayList<EmergencyStep> steps = new ArrayList<EmergencyStep>();
 	
@@ -18,7 +22,7 @@ public class Emergency implements Persistable{
 	@Expose private String type = this.getClass().toString(); 
 
 	public Emergency() {
-        DbInitializer.restore();
+        
         MongoDbAdapter dbAdapter = new MongoDbAdapter();
         steps = dbAdapter.getSpecificCollection(EmergencyStep.class);
 	}

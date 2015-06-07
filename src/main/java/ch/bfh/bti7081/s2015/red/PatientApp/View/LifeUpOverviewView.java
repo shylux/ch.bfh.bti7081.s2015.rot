@@ -7,24 +7,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;
-import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.LifeUp;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
-import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityReady;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
-
-
-
-import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.ExternalResource;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Link;
 import com.vaadin.ui.Button.ClickEvent;
-
-import java.util.ArrayList;
 
 public class LifeUpOverviewView extends BaseView<Activity>{
 	

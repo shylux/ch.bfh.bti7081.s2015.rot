@@ -20,7 +20,6 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.MedicationIndexPresenter;
 
-
 @Theme("mytheme")
 @Widgetset("ch.bfh.bti7081.s2015.red.PatientApp.MyAppWidgetset")
 public class MedicationIndexView extends BaseView<MedicationEntry>
@@ -28,8 +27,6 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		
-
 	}
 
 	@Override
@@ -54,24 +51,25 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 	public void update(ArrayList<MedicationEntry> entries) {
 		this.removeAllComponents();
 
-        Label label = new Label("Medication");
-        
-
 		// add the default homescreen button
 		this.addComponent(addStartPageNavigation());
 		buttonStartPage.addClickListener(this);
-		// end of adding default navigation	      
-        
-        addComponent(label);
+	
 		
+        Label label = new Label("Ihre Medikamente");
+        addComponent(label);
 		
 		// Set all Links to Detail View of Medication
 		for (MedicationEntry medication : entries) {
 			System.out.println(medication.getUrl());
-			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));
-			
-			
+			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));	
 		}
-	}
 
+	    
+        
+         
+        
+	}
+			
+			
 }

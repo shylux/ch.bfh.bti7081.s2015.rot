@@ -17,10 +17,7 @@ public class LifeUpTomorrowPresenter extends BasePresenter<Activity>{
 	
 	public LifeUpTomorrowPresenter(View view) {
 		super(view);
-<<<<<<< HEAD
 		DbInitializer.restore();
-=======
->>>>>>> 049c9aacdb695faa33d6a9a1748f72fd436a9c38
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);
 		

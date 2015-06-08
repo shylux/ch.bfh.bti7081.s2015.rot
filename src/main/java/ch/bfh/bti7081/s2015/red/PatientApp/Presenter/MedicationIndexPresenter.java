@@ -1,9 +1,5 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 049c9aacdb695faa33d6a9a1748f72fd436a9c38
 import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;

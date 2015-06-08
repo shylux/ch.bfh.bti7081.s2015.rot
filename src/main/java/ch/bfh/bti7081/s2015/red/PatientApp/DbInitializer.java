@@ -8,6 +8,7 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.Persistable;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Circle;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.GpsCoordinate;
+import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.Ready;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Contact;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
@@ -38,26 +39,34 @@ public class DbInitializer
 		
 		ArrayList<Persistable> dbentrys = new ArrayList<>();
 
-		dbentrys.add(new GpsActivity("Migros Einkaufen",
-				"a bootle a day...", new Circle(new GpsCoordinate(46.965806,7.4638448)), new Date(), end));
+		GpsActivity act0 = new  GpsActivity("Migros Einkaufen",
+				"a bootle a day...", new Circle(new GpsCoordinate(46.965806,7.4638448)), new Date(), end);
+		act0.setActivityState(new Ready());
+		dbentrys.add(act0);
 		cal.setTime(new Date());
 		cal.add(Calendar.MINUTE, 50);
 		end = cal.getTime();
 		 
+		GpsActivity act1 = new GpsActivity("Auswärts essen",
+				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9646601,7.459328)), new Date(), end);
+		act1.setActivityState(new Ready());
+		dbentrys.add(act1);
+
+		GpsActivity act2 =  new GpsActivity("Auswärts essen2",
+				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9656559,7.4569998)), new Date(), end);
 		
-		dbentrys.add(new GpsActivity("Auswärts essen",
-				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9646601,7.459328)), new Date(), end));
-
-
-		dbentrys.add(new GpsActivity("Auswärts essen",
-				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9656559,7.4569998)), new Date(), end));
+		act2.setActivityState(new Ready());		
+		dbentrys.add(act2);
 		cal.setTime(new Date());
 		cal.add(Calendar.HOUR_OF_DAY, 24);
 		Date start = cal.getTime();
 		cal.add(Calendar.HOUR_OF_DAY,2);
 		end = cal.getTime();
-		dbentrys.add(new GpsActivity("YB match besuchen",
-				"Inkl. Alkfreies Bier", new Circle(new GpsCoordinate(46.9646601,7.459328)), end, end));
+		
+		GpsActivity act3 = new GpsActivity("YB match besuchen",
+				"Inkl. Alkfreies Bier", new Circle(new GpsCoordinate(46.9646601,7.459328)), end, end);
+		act3.setActivityState(new Ready());
+		dbentrys.add(act3);
 
 
 		ArrayList<Persistable> activities = new ArrayList<>();

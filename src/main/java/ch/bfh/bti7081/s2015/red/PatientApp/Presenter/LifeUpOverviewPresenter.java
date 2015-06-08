@@ -27,8 +27,6 @@ public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);		
  
-		//activities = adapter.getSpecificCollection(Activity.class);
-		 
 		TimeActivityManager manager = TimeActivityManager.getInstance();
 		
 		long SECONDS_IN_MS = 1000;
@@ -36,11 +34,10 @@ public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
 		
 		for (int i = 0; i < activities.size(); i++) {
 			Activity currentActivity = activities.get(i);
-			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (10 * SECONDS_IN_MS)));
-			currentActivity.setHardTimeLimit(new Date(now.getTime() + (180 * SECONDS_IN_MS)));
+			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (30 * SECONDS_IN_MS)));
+			currentActivity.setHardTimeLimit(new Date(now.getTime() + (60 * SECONDS_IN_MS)));
 			manager.addActivity(activities.get(i));
-			new TimeActivityReady(activities.get(i));	
-			System.out.println("Activitystatus restored:" + currentActivity.getStateName());
+			new TimeActivityReady(activities.get(i));
 		}	 
 		view.update(activities);
 	}

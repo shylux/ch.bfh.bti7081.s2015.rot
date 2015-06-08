@@ -105,7 +105,8 @@ public class NavigatorUI extends UI {
 		MedicationPresenter mediPresenter = new MedicationPresenter(mediView);
 		mediView.addListener(MEDICATION, mediPresenter);
 		navigator.addView(MEDICATION, mediView);
-	
+
+		
 		/*
 		 * Emergency MVP
 		 */

@@ -64,7 +64,6 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 			Activity currentActivity = entries.get(i); 
 			if ( currentActivity.getStateName().equals("Closed") ) { 
 				HorizontalLayout layoutFinished = new HorizontalLayout();
-				System.out.println("ABC");
 				Label labelActivityName = new Label(currentActivity.getShortName());
 				labelActivityName.setWidth("300px");
 				Label labelActivityPoints = new Label("" + currentActivity.getGivenPoints());
@@ -92,10 +91,10 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 		}
 	
 		int currentLevel = calculateLevel(pointsGained); 
-		int pointsUntilNextLevel = (int)progressData.get(currentLevel + 1) - pointsGained;
+		int pointsUntilNextLevel = (int)progressData.get(currentLevel) - pointsGained;
 		labelTitle.setValue(strTitle + strLevel + currentLevel);
 		 
-		int nextLevelXP = (int) progressData.get(currentLevel + 1);
+		int nextLevelXP = (int) progressData.get(currentLevel);
 		
 		float progress = (float) ((float)pointsGained / (float)nextLevelXP);
 		barlifeUpProgress.setValue(progress);
@@ -104,6 +103,11 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 	}
 
 	private int calculateLevel(int pointsGained) {
+		
+
+		if ( pointsGained == 0 || (int)progressData.get(0) > pointsGained ) {
+			return 0;
+		}
 		
 		for ( int i = 0; i < progressData.size()-1; i++ ) {
 			if ( (int)(progressData.get(i)) < pointsGained && (int)(progressData.get(i+1)) >= pointsGained ) {

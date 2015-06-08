@@ -27,13 +27,9 @@ public class MedicationView extends BaseView<MedicationEntry>{
 	@Override
 	public void update(MedicationEntry medicatonEntry) {
 		this.removeAllComponents();
-		
 		medication = medicatonEntry;
-		lblTitle = new Label("Medikament: " + medicationEntry.getName());
-		lblTitle.addStyleName("h2");
-        this.addComponent(lblTitle);
-		
-        // Set Layout
+		addComponent(new Label("Medikation"));
+		// Set Layout
 		VerticalLayout content = new VerticalLayout();
 		content.addComponent(new Label(medication.getName()));
 		content.addComponent(new Label(medication.getDescription()));

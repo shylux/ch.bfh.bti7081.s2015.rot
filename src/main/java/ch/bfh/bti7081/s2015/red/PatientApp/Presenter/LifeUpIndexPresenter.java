@@ -17,6 +17,7 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 	private ArrayList<GpsActivity> activities;
 	public LifeUpIndexPresenter(View view) {
 		super(view);
+<<<<<<< HEAD
 		
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);
@@ -34,6 +35,8 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 		}			
 			
 		view.update(activities);
+=======
+>>>>>>> 049c9aacdb695faa33d6a9a1748f72fd436a9c38
 	}
 
 	@Override

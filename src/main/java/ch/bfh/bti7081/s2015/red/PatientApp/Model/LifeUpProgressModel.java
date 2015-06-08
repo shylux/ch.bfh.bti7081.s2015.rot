@@ -15,8 +15,7 @@ public class LifeUpProgressModel {
 	 * Returns the level data for the LifeUp
 	 *   
 	 * @return	ArrayList	the level data - each index represents a level, the value is the needed xp to reach it.
-	 * @see		LifeUpProgressView
-	 */	
+	 */
 	public ArrayList getProgressData() {
 		
 		ArrayList progressData = new ArrayList();

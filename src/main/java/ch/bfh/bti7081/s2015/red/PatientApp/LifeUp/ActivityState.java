@@ -36,7 +36,7 @@ public abstract class ActivityState {
 	/**
 	 * Sets the referencing ActivityState to it's activity
 	 *   
-	 * @param	ActivityState	the calling ActivityState - in most case, use 'this'
+	 * @param	activityState	the calling ActivityState - in most case, use 'this'
 	 * @see		Activity
 	 */		
 	protected  void setActivityState(ActivityState activityState) { 
@@ -46,7 +46,7 @@ public abstract class ActivityState {
 	/**
 	 * Sets the referencing Activity to it's state
 	 *   
-	 * @param	Activity	the calling Activity - in most case, use 'this'
+	 * @param	activity	the calling Activity - in most case, use 'this'
 	 * @see		Activity
 	 */	
 	public void setActivity(Activity activity) {

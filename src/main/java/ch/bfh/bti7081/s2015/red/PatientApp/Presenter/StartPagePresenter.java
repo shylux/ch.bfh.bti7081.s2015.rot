@@ -19,7 +19,7 @@ public class StartPagePresenter  extends BasePresenter<CalendarEntry> {
 	/**
 	 * Creates the StartPageModel an gets the data from the calendar.
 	 * 
-	 * @param	View forward the View to the super class.
+	 * @param	view forward the View to the super class.
 	 */	
 	public StartPagePresenter(View view) {
 		super(view);

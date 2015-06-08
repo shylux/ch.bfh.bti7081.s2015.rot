@@ -14,15 +14,13 @@ import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
 /**
  * Creates the LifeUpProgressPresenter forwards the view to the super class.
- * 
- * @param	View forward the View to the super class.
  */	
 public class LifeUpProgressPresenter extends BasePresenter<Activity>{
 
 	/**
 	 * Creates the LifeUpProgressPresenter forwards the view to the super class.
 	 * 
-	 * @param	View forward the View to the super class.
+	 * @param	view forward the View to the super class.
 	 */	
 	public LifeUpProgressPresenter(View view) {
 		super(view);

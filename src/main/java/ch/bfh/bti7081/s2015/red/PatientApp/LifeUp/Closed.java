@@ -7,8 +7,13 @@ public class Closed extends ActivityState {
 	public Closed(Activity activity) {
 		this.activity = activity;
 		setActivityState(this); 
+		storeState();
 	} 
 	
+	public Closed() {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void handle() {
 		// TODO Auto-generated method stub

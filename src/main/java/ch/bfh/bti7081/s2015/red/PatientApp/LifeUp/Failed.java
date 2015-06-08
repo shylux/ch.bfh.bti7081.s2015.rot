@@ -4,6 +4,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
 public class Failed extends TimeActivity {
 
+	// Empty Constructor for GSON-Libary for deserialisation
+	public Failed() {
+		// nothing to be done
+	}		
+	
 	volatile TimeActivityManager manager;
 	
 	public Failed(Activity activity) { 
@@ -13,6 +18,7 @@ public class Failed extends TimeActivity {
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);	 
 		setActivityState(this);
+		new Closed(activity);		
 	}	 			
 	
 	@Override

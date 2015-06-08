@@ -13,6 +13,13 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.EmergencyStep;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.MedicationEntry;
 
+
+
+/**
+ * A class that insert data into database. Used in development.
+ * This resets/restores the database to make sure everyone has the same state.
+ * @author James
+ */
 public class DbInitializer 
 {
 	/*
@@ -21,7 +28,6 @@ public class DbInitializer
 	public static void restore()
 	{
 
-		
 		Calendar cal = Calendar.getInstance(); 
 	    cal.setTime(new Date()); 
 	    cal.add(Calendar.HOUR_OF_DAY, 5); 
@@ -34,15 +40,32 @@ public class DbInitializer
 		ArrayList<Persistable> medications = new ArrayList<>();
 		ArrayList<Persistable> dbentrys = new ArrayList<>();
 		
-		medications.add(new MedicationEntry("mediname mongodb", "medidescription mongodb", "howMuchADay mongodb", "howToTake mongodb", new ArrayList<String>()));
-		medications.add(new MedicationEntry("mediname mongodb 1", "medidescription mongodb 1", "howMuchADay mongodb 1", "howToTake mongodb 1", new ArrayList<String>()));
-		medications.add(new MedicationEntry("mediname mongodb 2", "medidescription mongodb 2", "howMuchADay mongodb 2", "howToTake mongodb 2", new ArrayList<String>()));
+		// Taking times for the first medication
+		ArrayList<String> times1 = new ArrayList<String>();
+		times1.add("21:00 Uhr");
+		
+		// Taking times for the second medication
+		ArrayList<String> times2 = new ArrayList<String>();
+		times2.add("09:00 Uhr");
+		
+		// Taking times for the third medication
+		ArrayList<String> times3 = new ArrayList<String>();
+		times3.add("08:00 Uhr");
+		times3.add("12:00 Uhr");
+		times3.add("15:00 Uhr");
+		times3.add("19:00 Uhr");
+		
+		medications.add(new MedicationEntry("Sanalepsi N", "Schlafmittel und Antiallergikum", "Einmal am Tag vor dem Schlafen, mehrmals am Tag gegen ", "In den Mund tröpfeln lassen und schlucken", times1));
+		medications.add(new MedicationEntry("Methadon", "Ersatzdroge für Heroin", "Pro Tag bis zu 40mg", "Oral einfügen", times2));
+		medications.add(new MedicationEntry("Ipoprofen 600mg", "Schmerzmittel", "2,4g Täglich", "Tablette schlucken", times3));
 		
 		dbentrys.add(new GpsActivity("Migros Einkaufen",
 				"a bootle a day...", new Circle(new GpsCoordinate(46.965806,7.4638448)), new Date(), end));
 		cal.setTime(new Date());
-		cal.add(Calendar.HOUR_OF_DAY, 3);
-		 end = cal.getTime();
+		cal.add(Calendar.MINUTE, 50);
+		end = cal.getTime();
+		 
+		
 		dbentrys.add(new GpsActivity("Auswärts essen",
 				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9646601,7.459328)), new Date(), end));
 
@@ -51,11 +74,11 @@ public class DbInitializer
 				"Eingliedern in die Gesellschaft", new Circle(new GpsCoordinate(46.9656559,7.4569998)), new Date(), end));
 		cal.setTime(new Date());
 		cal.add(Calendar.HOUR_OF_DAY, 24);
-		Date start = cal.getTime();
 		cal.add(Calendar.HOUR_OF_DAY,2);
 		end = cal.getTime();
 		dbentrys.add(new GpsActivity("YB match besuchen",
 				"Inkl. Alkfreies Bier", new Circle(new GpsCoordinate(46.9646601,7.459328)), end, end));
+
 
 		/* EmergencySteps */
 		dbentrys.add(new EmergencyStep("Take a deep breath."));
@@ -70,5 +93,6 @@ public class DbInitializer
 		adapter.insertIntoDatabase(medications);
 
 		adapter.insertIntoDatabase(dbentrys);
+
 	}
 }

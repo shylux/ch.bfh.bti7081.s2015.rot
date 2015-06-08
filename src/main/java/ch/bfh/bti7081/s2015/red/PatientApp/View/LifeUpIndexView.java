@@ -18,15 +18,18 @@ public class LifeUpIndexView extends BaseView <Activity>{
 	private String strToday		= "Heute";
 	private String strTomorrow	= "Morgen";
 	private String strOverview	= "Übersicht";
+	private String strProgress	= "Fortschritt";
 	
 	final Button btnToday		= new Button(strToday);
 	final Button btnTomorrow	= new Button(strTomorrow);
 	final Button btnOverview	= new Button(strOverview);
+	final Button btnProgress	= new Button(strProgress);
 	
 	public LifeUpIndexView(){
 		btnToday.addClickListener(this);
 		btnTomorrow.addClickListener(this);
-		btnOverview.addClickListener(this);		
+		btnOverview.addClickListener(this);	
+		btnProgress.addClickListener(this);
 	}
 	
 	@Override
@@ -36,16 +39,26 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		// Navigate to startscreen
 		if (property.equals(stringStartPage)) { 
 			getUI().getNavigator().navigateTo(NavigatorUI.STARTSCREEN);		
-		}		
+		}
 		
+		// navigate to todays entries
 		if ( property.equals(strToday) ) {
-			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPDETAIL); 
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPTODAY); 
 		}
+		
+		// navigate to tomorrows entries
 		else if ( property.equals(strTomorrow) ) {
-			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPDETAIL); 
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPTOMORROW); 
 		}
+		
+		// navigate to an overview of all entries, in progress and already finished ones
 		else if ( property.equals(strOverview)){
 			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPOVERVIEW);
+		}
+		
+		// navigate to the progress page
+		else if ( property.equals(strProgress)){
+			getUI().getNavigator().navigateTo(NavigatorUI.LIFEUPPROGRESS);
 		}
 	}
 
@@ -58,6 +71,13 @@ public class LifeUpIndexView extends BaseView <Activity>{
 	@Override
 	public void update(ArrayList<Activity> data) {
 
+		Label title = new Label("Activities todo");
+		title.addStyleName("h2");
+		this.addComponent(title);
+		for(Activity activity : data)
+		{
+			this.addComponent(new Link(activity.getShortName(), new ExternalResource(activity.getUrl())));
+		}
 	}
 
 	@Override
@@ -72,22 +92,25 @@ public class LifeUpIndexView extends BaseView <Activity>{
 		
 		VerticalLayout buttonContainer	= new VerticalLayout();
 		
-		//HorizontalLayout lineTitle 		= new HorizontalLayout();
 		HorizontalLayout lineToday 		= new HorizontalLayout();
 		HorizontalLayout lineTomorrow 	= new HorizontalLayout();
 		HorizontalLayout lineOverview	= new HorizontalLayout();
+		HorizontalLayout lineProgress	= new HorizontalLayout();
 		
 		lineToday.addComponent(btnToday);
 		lineTomorrow.addComponent(btnTomorrow);
 		lineOverview.addComponent(btnOverview);
+		lineProgress.addComponent(btnProgress);
 		
 		btnToday.setWidth(strButtonWidth);
 		btnTomorrow.setWidth(strButtonWidth);
 		btnOverview.setWidth(strButtonWidth);
+		btnProgress.setWidth(strButtonWidth);
 		
 		buttonContainer.addComponent(lineToday);
 		buttonContainer.addComponent(lineTomorrow);		
 		buttonContainer.addComponent(lineOverview);
+		buttonContainer.addComponent(lineProgress);
 		 
 		
 		addComponent(buttonContainer);

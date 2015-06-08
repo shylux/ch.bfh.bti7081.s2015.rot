@@ -15,10 +15,15 @@ public class TimeActivityReady extends TimeActivity {
 		manager = TimeActivityManager.getInstance();
 		manager.chooseActivity(activity);
 		manager.setActivityState(this);
-		
+
+		storeState();
 		startProcess();
 	}	
 	 
+	public TimeActivityReady() {
+		// TODO Auto-generated constructor stub
+	}
+
 	private void startProcess() {  
 		new InProgress(activity); 
 	}	

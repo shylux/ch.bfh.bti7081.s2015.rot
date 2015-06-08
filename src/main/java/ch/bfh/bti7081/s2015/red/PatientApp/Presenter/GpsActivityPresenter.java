@@ -2,6 +2,9 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
 import java.util.ArrayList;
 
+
+
+
 import ch.bfh.bti7081.s2015.red.PatientApp.Db.MongoDbAdapter;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.TimeActivityManager;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.GpsActivity;
@@ -31,6 +34,10 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 			TimeActivityManager manager = TimeActivityManager.getInstance();
 			manager.chooseActivity(data);
 			data = (GpsActivity)manager.getActivity();
+			manager.chooseActivity(data);
+		
+			data = (GpsActivity)manager.getActivity();
+
 
 			view.update(data);
 			

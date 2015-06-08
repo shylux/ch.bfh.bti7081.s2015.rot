@@ -304,16 +304,25 @@ FH: Filip Hofer
 * Arbeit am letzten Scrum Sprint
 * Anwesende Teammitglieder: JM, TB, ML, FH, ST, LK 
 
+### 04.06.2015
+* Working on Deserializer (ST)
 
 ### 05.06.2015
 * Testen und mergen von diversen Branches
 * Zuteilen der letzten Aufgaben
+* Working on Progress for LifeUp (ST)
+* Working on Deserializer (ST)
 * Anwesende Teammitglieder: JM, TB, ML, FH, ST, LK 
 
 ### 06.06.2015
+* Working on Progress for LifeUp (ST)
 * Review von Medication / LifeUp (JM)
 * Bugfixing Reminder (JM)
 
+### 07.06.2015
+* Fixed some Bugs in Progress LifeUp (ST)
+
 ### 08.06.2015
+* Finishing Progress and Code (ST)
 * Erstellung Präsentation (Alle)
 * Erstellung ScreenCast (ST)

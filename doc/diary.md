@@ -313,3 +313,7 @@ FH: Filip Hofer
 ### 06.06.2015
 * Review von Medication / LifeUp (JM)
 * Bugfixing Reminder (JM)
+
+### 08.06.2015
+* Erstellung Präsentation (Alle)
+* Erstellung ScreenCast (ST)

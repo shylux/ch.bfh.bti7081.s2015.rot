@@ -2,6 +2,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.View;
 
 import java.util.ArrayList;
 
+
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
@@ -16,6 +17,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.Model.CalendarEntry;
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.LifeUpProgressModel;
 import ch.bfh.bti7081.s2015.red.PatientApp.Presenter.ViewListener;
 
+/**
+ * The view for the LifeUpProgress. Displays progress and finished activites
+ * @author Stefan Tanner
+ *
+ */		
 public class LifeUpProgressView  extends BaseView <Activity>{
 
 	final private String strTitle = "LifeUp-Fortschritt";
@@ -60,6 +66,7 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 
 		VerticalLayout layoutFinishedTable = new VerticalLayout();
 		
+		// loop through the ArrayList of Activites and all all Activites which are Closed.
 		for ( int i = 0; i < entries.size(); i++ ) {
 			Activity currentActivity = entries.get(i); 
 			if ( currentActivity.getStateName().equals("Closed") ) { 
@@ -74,12 +81,14 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 			}
 		} 
 		
-
 		layoutVertical.addComponent(layoutFinishedTable);
 	    this.addComponent(layoutVertical);
 	}	
 	
-	
+	/**
+	 * Display the xp of the patient. Show it as an progress bar
+	 *  
+	 */	
 	private String displayCurrentXP() {
 		// TODO Auto-generated method stub
 		
@@ -87,21 +96,27 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 		
 		for ( int i = 0; i < entries.size(); i++ ) {
 			pointsGained += (int)(entries.get(i)).getGivenPoints();	
-			System.out.println("ICH SAMMLE PUNKTE: "+(int)(entries.get(i)).getGivenPoints() + ", " + (entries.get(i)).getId());
 		}
 	
+		// calculate the current level's xp and the points needed until the next level.
 		int currentLevel = calculateLevel(pointsGained); 
 		int pointsUntilNextLevel = (int)progressData.get(currentLevel) - pointsGained;
 		labelTitle.setValue(strTitle + strLevel + currentLevel);
 		 
 		int nextLevelXP = (int) progressData.get(currentLevel);
-		
+
+		// set the progressbar to the percent reached of the current level
 		float progress = (float) ((float)pointsGained / (float)nextLevelXP);
 		barlifeUpProgress.setValue(progress);
 		
 		return pointsGained + " / " + nextLevelXP + " (" + pointsUntilNextLevel + " Punkte bis zum nächste Level)";
 	}
 
+	/**
+	 * Returns the current level
+	 * @param	pointsGained	the current points the patient has gained through the Activites
+	 * @return	level	the current level of the patient in LifeUp
+	 */		
 	private int calculateLevel(int pointsGained) {
 		
 		if ( pointsGained == 0 || (int)progressData.get(0) > pointsGained ) {
@@ -131,7 +146,6 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 	@Override
 	public void update(Activity model) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override

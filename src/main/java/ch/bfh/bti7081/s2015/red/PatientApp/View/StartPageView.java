@@ -16,7 +16,11 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-
+/**
+ * The view for the StartPage. Handles the all user inputs.
+ * @author Stefan Tanner
+ *
+ */		
 public class StartPageView extends BaseView<CalendarEntry> {
 
 	private String stringNext = "vorwärts";
@@ -40,6 +44,10 @@ public class StartPageView extends BaseView<CalendarEntry> {
 
 	private Appointment appointmentCurrent;
 
+	/**
+	 * Creates the StartPageModel and sets the ClickListener to the buttons.
+	 *  
+	 */	
 	public StartPageView() {
 		// Add all required listeners to the buttons
 		buttonDailyEventsNext.addClickListener(this);

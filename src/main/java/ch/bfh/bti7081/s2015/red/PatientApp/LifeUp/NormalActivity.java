@@ -2,7 +2,13 @@ package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
-public abstract class NormalActivity extends ActivityState {
+/**
+ * The state NormalActivity more specific state than ActivityState. 
+ * Every progress which is not time relevant goes here. 
+ * @author Stefan Tanner
+ *
+ */	
+public abstract class NormalActivity extends ActivityState {		
 	
 	@Override
 	protected void OnExit() {

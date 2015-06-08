@@ -2,8 +2,14 @@ package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
+/**
+ * The state Failed is a TimeActivity state. 
+ * Every progress which hard time limit is not ok goes to this. 
+ * @author Stefan Tanner
+ *
+ */		
 public class Failed extends TimeActivity {
-
+	
 	// Empty Constructor for GSON-Libary for deserialisation
 	public Failed() {
 		// nothing to be done

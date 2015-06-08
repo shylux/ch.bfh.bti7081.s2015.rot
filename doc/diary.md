@@ -303,3 +303,17 @@ FH: Filip Hofer
 * Teammeeting
 * Arbeit am letzten Scrum Sprint
 * Anwesende Teammitglieder: JM, TB, ML, FH, ST, LK 
+
+
+### 05.06.2015
+* Testen und mergen von diversen Branches
+* Zuteilen der letzten Aufgaben
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST, LK 
+
+### 06.06.2015
+* Review von Medication / LifeUp (JM)
+* Bugfixing Reminder (JM)
+
+### 08.06.2015
+* Erstellung Präsentation (Alle)
+* Erstellung ScreenCast (ST)

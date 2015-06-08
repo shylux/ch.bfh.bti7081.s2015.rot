@@ -1,6 +1,7 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.App.Calendar;
+import ch.bfh.bti7081.s2015.red.PatientApp.App.PatientApp;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,34 +18,13 @@ public class StartPageModel {
  
 	public StartPageModel() {
 		
-		Calendar calendar = new Calendar();
+		Calendar calendar = PatientApp.getInstance().getCalendar();
 		
 		System.out.println("CollectionSize() " + collection.size());
 		System.out.println("Calender() " + calendar);
 
-		 
-		collection = calendar.getEntriesStartingOnDay(new Date());
-		// collection = new ArrayList<CalendarEntry>();
-
-		//collection = calendar.getTodayEntries();
-		if ( collection.size() == 0 ) {
-			
-			Appointment dummy0 = new Appointment();
-			dummy0.setDescription("Besprechung Dr. Wechsler Rückfall"); 
-			dummy0.setShortName("Sprechstunde");
-			collection.add(dummy0);
-			
-			Appointment dummy1 = new Appointment();
-			dummy1.setShortName("Gehen Sie einkaufen!"); 
-			dummy1.setDescription("Sie haben dafür Zeit bis um 19:00");
-			collection.add(dummy1);
-			
-			Appointment dummy2 = new Appointment();
-			dummy2.setShortName("Wohnung aufräumen");
-			dummy2.setDescription("Putzen Sie Ihre Wohnung, entsorgen Sie ausserdem das Altglas");
-			collection.add(dummy2);		
-			
-		}
+		 collection = calendar.getEntriesStartingOnDay(new Date());
+		
 		
 		if ( collection.size() == 0 ) { 
 			Appointment dummy = new Appointment();

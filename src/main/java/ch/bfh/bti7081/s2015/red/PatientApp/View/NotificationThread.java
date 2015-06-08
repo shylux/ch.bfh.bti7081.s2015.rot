@@ -110,6 +110,8 @@ public class NotificationThread extends Thread
 		UI.getCurrent().access(new Runnable() {
 			public void run()
 			{
+				if(reminderComponent != null)
+					layout.removeComponent(reminderComponent);
 				isRunning = false;
 			}
 		});

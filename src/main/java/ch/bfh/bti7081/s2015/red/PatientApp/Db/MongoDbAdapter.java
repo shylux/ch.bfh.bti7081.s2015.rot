@@ -3,6 +3,7 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Db;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityState;
 import ch.bfh.bti7081.s2015.red.PatientApp.LifeUp.ActivityStateDeserializer;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mongodb.*;
@@ -14,6 +15,7 @@ import org.reflections.Reflections;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -201,7 +203,8 @@ public class MongoDbAdapter {
 	 */
 	private Persistable generateClassFromDbObject(DBObject record,Class<? extends Persistable> persistableClass)
 	{
-		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().registerTypeAdapter(ActivityState.class, new ActivityStateDeserializer()).create();
+		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().registerTypeAdapter(ActivityState.class, new ActivityStateDeserializer()).
+registerTypeAdapter(Date.class, new DateDeserializer()).create();
 		Persistable createdClass  =  gson.fromJson(record.toString(),persistableClass);
  
 		return createdClass;
@@ -224,6 +227,7 @@ public class MongoDbAdapter {
 	    	   {
 	    		   DBObject record = cursor.next();
 	    		   Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+	    		   
 	    		   Persistable createdClass  =  generateClassFromDbObject(record,persistableClass);
 	    		   createdClass.setId(record.get("_id").toString());
 	    		   persistables.add(createdClass);

@@ -20,6 +20,7 @@ public class ReminderComponent extends CustomComponent {
 
 	public ReminderComponent(ArrayList<CalendarEntry> entries)
 	{
+		
 		this.setStyleName("custom-reminder-comp");
 		Label title = new Label("Things to do");
 		title.setStyleName("custom-reminder-title");

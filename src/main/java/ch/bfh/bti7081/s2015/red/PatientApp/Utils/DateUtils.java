@@ -281,9 +281,9 @@ public class DateUtils {
     	
     	Calendar c = Calendar.getInstance();
     	Date now = c.getTime();
-    	c.add(Calendar.MINUTE, -minutes);
-    	return(d1.compareTo(c.getTime()) > 0) && (d1.compareTo(now)<=0);
-    		
+    	c.add(Calendar.MINUTE, minutes);
+    	return (d1.compareTo(c.getTime()) < 0 && now.compareTo(d1) <=0);
+		
     }
     
     

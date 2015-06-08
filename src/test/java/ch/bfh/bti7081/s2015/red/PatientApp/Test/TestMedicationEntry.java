@@ -15,7 +15,7 @@ public class TestMedicationEntry{
 		String name = "Sanalepsi N";
 		String description = "Zur Beruhigung und als Schlafhilfe";
 		String howMuchADay = "";
-		String howToTake = "Tropfen direkt in den Mund tröpfeln";
+		String howToTake = "Tropfen direkt in den Mund troepfeln";
 		ArrayList<String> times = new ArrayList<String>(); 
 		
 		times.add("21:00 Uhr");

@@ -18,8 +18,6 @@ public class Calendar {
 
     /**
      * <p>Checks if the date is after today ignoring time.</p>
-     * @param date1 the first date, not altered, not null
-     * @return true if the first date day is after the second date day.
      * @throws IllegalArgumentException if the date is <code>null</code>
      */
 	
@@ -33,7 +31,7 @@ public class Calendar {
 	
 	/**
 	 * Returns all CalendarEntries for today
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<CalendarEntry> getTodayEntries()
 	{
@@ -43,7 +41,7 @@ public class Calendar {
 	/**
 	 * Returns all CalendarEntries for date
      * @param date, not altered, not null
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<CalendarEntry> getEntriesForDay(Date date)
 	{
@@ -64,7 +62,7 @@ public class Calendar {
 
 	/**
 	 * Returns all entries starting today
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<CalendarEntry> getEntriesStartingToday()
 	{
@@ -74,7 +72,7 @@ public class Calendar {
 	/**
 	 * Returns all entries starting on date
 	 * @param date
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<CalendarEntry> getEntriesStartingOnDay(Date date)
 	{
@@ -94,7 +92,7 @@ public class Calendar {
 
 	/**
 	 * Returns all todays Activities without differentiate if they are finished
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<Activity> getActivityStartingToday()
 	{
@@ -103,7 +101,7 @@ public class Calendar {
 
 	/**
 	 * Returns all Activities of date without differentiate if they are finished
-	 * @return ArrayList<CalendarEntry>
+	 * @return ArrayList
 	 */
 	public ArrayList<Activity> getActivityStartingOnDay(Date date)
 	{

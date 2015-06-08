@@ -41,7 +41,6 @@ public abstract class CalendarEntry implements Persistable{
 	
 	/**
 	 * for testing only
-	 * @return
 	 */
 	@Expose protected String display;
 	

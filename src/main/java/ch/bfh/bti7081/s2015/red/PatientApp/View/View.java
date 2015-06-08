@@ -38,7 +38,7 @@ public interface View <T> extends Button.ClickListener
 
 	/**
 	 * update a specific model
-	 * @param models
+	 * @param data
 	 */
 	void update(ArrayList<T> data);
 	

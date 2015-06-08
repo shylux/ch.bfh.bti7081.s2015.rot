@@ -63,7 +63,6 @@ public class MongoDbAdapter {
 	
 	/**
 	 * update  a given collection and stores the updates in the database 
-	 * @param entries
 	 */
 	public void updateCollection(ArrayList<Persistable> entries)
 	{
@@ -78,7 +77,6 @@ public class MongoDbAdapter {
 	
 	/**
 	 * update  a given entry and stores the update into database 
-	 * @param entry
 	 */
 	public void updateEntry(Persistable entry)
 	{
@@ -97,8 +95,6 @@ public class MongoDbAdapter {
 	
 	/**
 	 * get the actual Data from an entry from the database
-	 * @param persistable
-	 * @return
 	 */
 	public Persistable getEntryFromDatabase(Persistable persistable)
 	{
@@ -118,7 +114,6 @@ public class MongoDbAdapter {
 	/**
 	 * get a collection of the given datatype
 	 * inclusive it's subtypes
-	 * @param persistable
 	 */
 	public <T>ArrayList<T> getSpecificCollection(Class<? extends Persistable> persistableClass,boolean withSubclasses)
 	{
@@ -148,7 +143,6 @@ public class MongoDbAdapter {
 	}
 	/**
 	 * get a collection of the given datatype
-	 * @param persistable
 	 */
 	public <T>ArrayList<T> getSpecificCollection(Class<? extends Persistable> persistableClass)
 	{
@@ -168,7 +162,6 @@ public class MongoDbAdapter {
 	
 	/**
 	 * insert a new collection into database
-	 * @param entries
 	 */
 	public void insertIntoDatabase(ArrayList<? extends Persistable> entries)
 	{
@@ -179,7 +172,6 @@ public class MongoDbAdapter {
 	}
 	/**
 	 * insert a single persistable entry into database
-	 * @param entry
 	 */
 	public void insertIntoDatabase(Persistable entry)
 	{
@@ -197,9 +189,6 @@ public class MongoDbAdapter {
 	}
 	/**
 	 * generate a object from a json string
-	 * @param record
-	 * @param persistable
-	 * @return
 	 */
 	private Persistable generateClassFromDbObject(DBObject record,Class<? extends Persistable> persistableClass)
 	{
@@ -211,9 +200,6 @@ registerTypeAdapter(Date.class, new DateDeserializer()).create();
 	}
 	/**
 	 * just converts a queryResult in a ArrayList of Persistables
-	 * @param query
-	 * @param persistable
-	 * @return
 	 */
 	private ArrayList<Persistable> getQueryResult(BasicDBObject query,Class<? extends Persistable> persistableClass)
 	{

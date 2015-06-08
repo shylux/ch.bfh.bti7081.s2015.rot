@@ -22,7 +22,6 @@ public interface Persistable {
 	
 	/**
 	 * a db specific unique hash id
-	 * @return
 	 */
     void setId(String id);
 

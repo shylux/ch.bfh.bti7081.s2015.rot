@@ -13,12 +13,11 @@ import ch.bfh.bti7081.s2015.red.PatientApp.View.View;
 
 public class MedicationPresenter extends BasePresenter<MedicationEntry>{
 
-	protected MedicationEntry medication;// = new MedicationEntry();
+	protected MedicationEntry medication;
 	
 	public MedicationPresenter(View view) {
 		super(view);
 		//view.update(medication);
-		// TODO Auto-generated constructor stub
 	}
 
 
@@ -37,6 +36,7 @@ public class MedicationPresenter extends BasePresenter<MedicationEntry>{
 	@Override
 	public void triggerEvent(String event, MedicationEntry data) {
 		// TODO Auto-generated method stub
+		System.out.println(data);
 		if(event.equals("loadActivity"))
 		{
 			MongoDbAdapter adapter = new MongoDbAdapter();

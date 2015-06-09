@@ -98,8 +98,12 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 			pointsGained += (int)(entries.get(i)).getGivenPoints();	
 		}
 	
+<<<<<<< HEAD
 		// calculate the current level's xp and the points needed until the next level.
 		int currentLevel = calculateLevel(pointsGained); 
+=======
+		int currentLevel = calculateLevel(pointsGained); 
+>>>>>>> ea0426ddbc9228ec23d9b4160cd723cd4c843ede
 		int pointsUntilNextLevel = (int)progressData.get(currentLevel) - pointsGained;
 		labelTitle.setValue(strTitle + strLevel + currentLevel);
 		 
@@ -119,6 +123,7 @@ public class LifeUpProgressView  extends BaseView <Activity>{
 	 */		
 	private int calculateLevel(int pointsGained) {
 		
+
 		if ( pointsGained == 0 || (int)progressData.get(0) > pointsGained ) {
 			return 0;
 		}

@@ -71,11 +71,26 @@ public class DbInitializer
 
 		ArrayList<Persistable> activities = new ArrayList<>();
 		ArrayList<Persistable> medications = new ArrayList<>();
-		
-		medications.add(new MedicationEntry("mediname mongodb", "medidescription mongodb", "howMuchADay mongodb", "howToTake mongodb", new ArrayList<String>()));
-		medications.add(new MedicationEntry("mediname mongodb 1", "medidescription mongodb 1", "howMuchADay mongodb 1", "howToTake mongodb 1", new ArrayList<String>()));
-		medications.add(new MedicationEntry("mediname mongodb 2", "medidescription mongodb 2", "howMuchADay mongodb 2", "howToTake mongodb 2", new ArrayList<String>()));
-		
+
+		// Taking times for the first medication
+		ArrayList<String> times1 = new ArrayList<String>();
+		times1.add("21:00 Uhr");
+
+		// Taking times for the second medication
+		ArrayList<String> times2 = new ArrayList<String>();
+		times2.add("09:00 Uhr");
+
+		// Taking times for the third medication
+		ArrayList<String> times3 = new ArrayList<String>();
+		times3.add("08:00 Uhr");
+		times3.add("12:00 Uhr");
+		times3.add("15:00 Uhr");
+		times3.add("19:00 Uhr");
+
+		medications.add(new MedicationEntry("Sanalepsi N", "Schlafmittel und Antiallergikum", "Einmal am Tag vor dem Schlafen, mehrmals am Tag gegen ", "In den Mund tröpfeln lassen und schlucken", times1));
+		medications.add(new MedicationEntry("Methadon", "Ersatzdroge für Heroin", "Pro Tag bis zu 40mg", "Oral einfügen", times2));
+		medications.add(new MedicationEntry("Ipoprofen 600mg", "Schmerzmittel", "2,4g Täglich", "Tablette schlucken", times3));
+
 		
 		/* EmergencySteps */
 		dbentrys.add(new EmergencyStep("Take a deep breath."));

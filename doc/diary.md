@@ -318,9 +318,11 @@ FH: Filip Hofer
 * Working on Progress for LifeUp (ST)
 * Review von Medication / LifeUp (JM)
 * Bugfixing Reminder (JM)
+* Working on LifeUp views (TB)
 
 ### 07.06.2015
 * Fixed some Bugs in Progress LifeUp (ST)
+* Working on LifeUp views (TB)
 
 ### 08.06.2015
 * Finishing Progress and Code (ST)

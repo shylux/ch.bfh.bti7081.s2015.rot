@@ -52,7 +52,6 @@ public class ActivityStateDeserializer implements JsonDeserializer<ActivityState
 			break;
 			case "FinishedTooLate": 
 				obj = new FinishedTooLate();
-				System.out.println("Created!");
 			break;
 			case "Ready": 
 				obj = new Ready();

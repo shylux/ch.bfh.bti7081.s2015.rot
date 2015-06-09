@@ -31,3 +31,8 @@ maven install
 maven run:jetty
 ```
 The app runs on port `8080`.
+
+
+Java Doc
+--------
+[Java Doc](https://github.com/shylux/ch.bfh.bti7081.s2015.rot/tree/master/doc/javadoc)

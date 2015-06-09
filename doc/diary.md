@@ -328,3 +328,9 @@ FH: Filip Hofer
 * Finishing Progress and Code (ST)
 * Erstellung Präsentation (Alle)
 * Erstellung ScreenCast (ST)
+
+### 09.06.2015
+* Vorbereitung Schlusspräsentation (Alle)
+* Abschluss JavaDoc (LK,ST,JM)
+* letztes Bugfixing (LK,JM)
+* Anwesende Teammitglieder: JM, TB, ML, FH, ST, LK 

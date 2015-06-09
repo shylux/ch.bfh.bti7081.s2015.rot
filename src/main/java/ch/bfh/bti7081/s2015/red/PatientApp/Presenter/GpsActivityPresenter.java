@@ -31,36 +31,12 @@ public class GpsActivityPresenter  extends BasePresenter<GpsActivity>{
 			data = (GpsActivity) adapter.getEntryFromDatabase(data);
 			
 			// TODO: AddCaleneder
-			//TimeActivityManager manager = TimeActivityManager.getInstance();
-
-			/* System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			
-			
-			System.out.println(data.getId());
-			System.out.println(manager.getActivity(0).getId());
-			System.out.println(manager.getActivity(1).getId());
-			System.out.println(manager.getActivity(2).getId());
-			System.out.println(manager.getActivity(3).getId());
-			
-
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");
-			System.out.println(".....................");	*/		
-			
-			//manager.chooseActivity(data);
+			TimeActivityManager manager = TimeActivityManager.getInstance();
+			manager.chooseActivity(data);
+			data = (GpsActivity)manager.getActivity();
+			manager.chooseActivity(data);
 		
-			//data = (GpsActivity)manager.getActivity(manager.getActivityIndex());
-			//data = (GpsActivity)manager.getActivity();
-
-
+			data = (GpsActivity)manager.getActivity();
 			view.update(data);
 			
 		}

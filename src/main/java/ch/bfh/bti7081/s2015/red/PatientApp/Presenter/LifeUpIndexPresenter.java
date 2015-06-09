@@ -17,6 +17,23 @@ public class LifeUpIndexPresenter extends BasePresenter<Activity>{
 	private ArrayList<GpsActivity> activities;
 	public LifeUpIndexPresenter(View view) {
 		super(view);
+		
+		MongoDbAdapter adapter = new MongoDbAdapter();
+		activities = adapter.getSpecificCollection(GpsActivity.class);
+		
+		TimeActivityManager manager = TimeActivityManager.getInstance();
+		long SECONDS_IN_MS = 1000;
+		Date now = new Date();  
+		
+		for (int i = 0; i < activities.size(); i++) {
+			GpsActivity currentActivity = activities.get(i);
+			currentActivity.setSoftTimeLimit(new Date(now.getTime() + (20 * SECONDS_IN_MS)));
+			currentActivity.setHardTimeLimit(new Date(now.getTime() + (50 * SECONDS_IN_MS)));
+			manager.addActivity(activities.get(i));
+			new TimeActivityReady(activities.get(i));
+		}			
+			
+		view.update(activities);
 	}
 
 	@Override

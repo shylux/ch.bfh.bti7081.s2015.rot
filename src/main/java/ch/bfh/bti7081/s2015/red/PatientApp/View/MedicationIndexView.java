@@ -65,10 +65,25 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));	
 		}
 
+<<<<<<< HEAD
 	    
         
          
         
+=======
+		// add the default homescreen button
+		this.addComponent(addStartPageNavigation());
+		buttonStartPage.addClickListener(this);
+		// end of adding default navigation	      
+        
+        addComponent(label);
+		
+		// Set all Links to Detail View of Medication
+		for (MedicationEntry medication : entries) {
+			System.out.println(medication.getUrl());
+			addComponent(new Link(medication.getShortName(), new ExternalResource(medication.getUrl())));
+		}
+>>>>>>> ea0426ddbc9228ec23d9b4160cd723cd4c843ede
 	}
 			
 			

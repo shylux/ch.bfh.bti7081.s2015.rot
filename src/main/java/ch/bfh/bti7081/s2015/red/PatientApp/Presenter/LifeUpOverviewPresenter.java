@@ -24,6 +24,7 @@ public class LifeUpOverviewPresenter extends BasePresenter<Activity> {
 	
 	public LifeUpOverviewPresenter(View view) {
 		super(view);
+		DbInitializer.restore();
 		MongoDbAdapter adapter = new MongoDbAdapter();
 		activities = adapter.getSpecificCollection(GpsActivity.class);		
  

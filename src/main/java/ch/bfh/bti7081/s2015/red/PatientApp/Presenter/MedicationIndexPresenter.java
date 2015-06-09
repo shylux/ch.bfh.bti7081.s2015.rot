@@ -1,6 +1,5 @@
 package ch.bfh.bti7081.s2015.red.PatientApp.Presenter;
 
-
 import java.util.ArrayList;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.DbInitializer;

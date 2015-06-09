@@ -107,7 +107,6 @@ public class MongoDbAdapter {
 
 		Persistable createdClass  =  generateClassFromDbObject(dbObj,persistable.getClass());
 		createdClass.setId(dbObj.get("_id").toString());
-
 		return createdClass;
 
 	}

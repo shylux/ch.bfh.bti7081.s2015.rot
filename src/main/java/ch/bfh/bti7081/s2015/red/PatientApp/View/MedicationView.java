@@ -51,6 +51,7 @@ public class MedicationView extends BaseView<MedicationEntry>{
 
 	@Override
 	public void enter(ViewChangeEvent event) {
+		this.removeAllComponents();
 		for(ViewListener<MedicationEntry> listener: listeners)
 		{
 			listener.triggerEvent("loadActivity", new MedicationEntry(event.getParameters()));

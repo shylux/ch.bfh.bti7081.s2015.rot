@@ -28,8 +28,6 @@ public class MedicationIndexView extends BaseView<MedicationEntry>
 
 	@Override
 	public void enter(ViewChangeEvent event) {
-		
-
 	}
 
 	@Override

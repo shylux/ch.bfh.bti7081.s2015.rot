@@ -18,25 +18,7 @@ public class LifeUpTodayPreseter extends BasePresenter<Activity>{
 	public LifeUpTodayPreseter(View view) {
 		super(view);
 		MongoDbAdapter adapter = new MongoDbAdapter();
-		activities = adapter.getSpecificCollection(GpsActivity.class);
-		
- 
-		//activities = adapter.getSpecificCollection(Activity.class);
-		 
-		TimeActivityManager manager = TimeActivityManager.getInstance();
-		
-		long SECONDS_IN_MS = 1000;
-		Date now = new Date();  
-		
-		for (int i = 0; i < activities.size(); i++) {
-			Activity currentActivity = activities.get(i);
-
-				currentActivity.setSoftTimeLimit(new Date(now.getTime() + (10 * SECONDS_IN_MS)));
-				currentActivity.setHardTimeLimit(new Date(now.getTime() + (180 * SECONDS_IN_MS)));
-				manager.addActivity(activities.get(i));
-				new TimeActivityReady(activities.get(i));	
-				System.out.println("Activitystatus restored:" + currentActivity.getStateName());
-		}	 
+		activities = adapter.getSpecificCollection(GpsActivity.class); 
 		view.update(activities);
 	}
 

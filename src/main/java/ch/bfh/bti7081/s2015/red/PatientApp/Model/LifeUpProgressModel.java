@@ -2,10 +2,20 @@ package ch.bfh.bti7081.s2015.red.PatientApp.Model;
 
 import java.util.ArrayList;
 
-public class LifeUpProgressModel {
+/**
+ * Calculates the level data for the progress in the LifeUp
+ * @author Stefan Tanner
+ *
+ */		
+public class LifeUpProgressModel {	
 	
 	private int initalPoints = 80;
 	
+	/**
+	 * Returns the level data for the LifeUp
+	 *   
+	 * @return	ArrayList	the level data - each index represents a level, the value is the needed xp to reach it.
+	 */
 	public ArrayList getProgressData() {
 		
 		ArrayList progressData = new ArrayList();

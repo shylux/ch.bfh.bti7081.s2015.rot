@@ -77,7 +77,7 @@ public class LifeUpOverviewView extends BaseView<Activity>{
 			if ( currentActivity.getStateName().equals("InProgress") ) { 
 				
 				// get the name, start time and end time of each entry and display it
-		 		this.addComponent(new Link(currentActivity.getShortName(), new ExternalResource(currentActivity.getUrl())));
+		 		this.addComponent(new Label(currentActivity.getShortName()));
             	lblDate = new Label("Datum: " + outputFormatter.format(currentActivity.getStartTime().getTime()));
         		this.addComponent(lblDate);
         		lblSoftTime = new Label("SoftTime: " + timeFormatter.format(currentActivity.getSoftTimeLimit().getTime()));
@@ -100,7 +100,7 @@ public class LifeUpOverviewView extends BaseView<Activity>{
         	if(currentActivity.getStateName().equals("Closed"))
         	{
 				// get the name, start time and end time of each entry and display it
-        		this.addComponent(new Link(currentActivity.getShortName(), new ExternalResource(currentActivity.getUrl())));
+        		this.addComponent(new Label(currentActivity.getShortName()));
             	lblDate = new Label("Erledigt am: " + outputFormatter.format(date.getTime()) + " um " + timeFormatter.format(date.getTime()));
         		this.addComponent(lblDate);
     			lblEmpty = new Label("");

@@ -7,24 +7,23 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Holds default data for development.
- */
+ * The model for the StartPage.
+ * @author Stefan Tanner
+ *
+ */		
 public class StartPageModel {
 
 	private ArrayList<CalendarEntry> collection = new ArrayList<CalendarEntry>(); 
-	
 	private CalendarEntry current;
 	private int intCurrentPosition = 0;
  
+	/**
+	 * Creates the StartPageModel an gets the data from the calendar.
+	 */	
 	public StartPageModel() {
 		
 		Calendar calendar = PatientApp.getInstance().getCalendar();
-		
-		System.out.println("CollectionSize() " + collection.size());
-		System.out.println("Calender() " + calendar);
-
-		 collection = calendar.getEntriesStartingOnDay(new Date());
-		
+		collection = calendar.getEntriesStartingOnDay(new Date());
 		
 		if ( collection.size() == 0 ) { 
 			Appointment dummy = new Appointment();
@@ -36,10 +35,23 @@ public class StartPageModel {
 		current = collection.get(0);
 	}
 	
+	/**
+	 * Returns the current CalendarEntry
+	 *   
+	 * @return	CalendarEntry	returns the current CalendarEntry
+	 * @see		CalendarEntry
+	 */	
 	public CalendarEntry current() { 
 		return current;
 	}
 	
+	
+	/**
+	 * Returns the next CalendarEntry
+	 *   
+	 * @return	CalendarEntry	returns the next CalendarEntry
+	 * @see		CalendarEntry
+	 */		
 	public CalendarEntry next(CalendarEntry data) { 
 		 
 		if ( collection.size() - 1 == intCurrentPosition ) {
@@ -52,9 +64,14 @@ public class StartPageModel {
 		}
  
 	}
-
-	public CalendarEntry previous(CalendarEntry data) {
-		// TODO Auto-generated method stub
+	
+	/**
+	 * Returns the previous CalendarEntry
+	 *   
+	 * @return	CalendarEntry	returns the previous CalendarEntry
+	 * @see		CalendarEntry
+	 */		
+	public CalendarEntry previous(CalendarEntry data) { 
 
 		if ( intCurrentPosition == 0 ) {
 			intCurrentPosition = collection.size() - 1;
@@ -64,15 +81,7 @@ public class StartPageModel {
 			intCurrentPosition--;
 			return collection.get(intCurrentPosition);
 		}
-
-		
+	
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }

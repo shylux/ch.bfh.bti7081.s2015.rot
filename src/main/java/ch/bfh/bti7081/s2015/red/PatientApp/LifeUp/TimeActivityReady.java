@@ -5,6 +5,12 @@ import java.util.Date;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
+/**
+ * The state TimeActivityReady is a TimeActivity state. 
+ * Every time relevant progress which is inital goes here
+ * @author Stefan Tanner
+ *
+ */	
 public class TimeActivityReady extends TimeActivity {
   
 	volatile TimeActivityManager manager;

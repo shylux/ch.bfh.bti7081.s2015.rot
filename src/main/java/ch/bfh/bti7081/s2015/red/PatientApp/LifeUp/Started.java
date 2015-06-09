@@ -2,8 +2,14 @@ package ch.bfh.bti7081.s2015.red.PatientApp.LifeUp;
 
 import ch.bfh.bti7081.s2015.red.PatientApp.Model.Activity;
 
-public class Started extends NormalActivity {
-
+/**
+ * The state Ready is a NormalActivity state. 
+ * Every not time relevant progress which has been started goes here. 
+ * @author Stefan Tanner
+ *
+ */		
+public class Started extends NormalActivity {	
+	
 	public Started(ActivityState lastState, Activity activity) {
 		this.activity = activity;
 		setActivityState(this); 

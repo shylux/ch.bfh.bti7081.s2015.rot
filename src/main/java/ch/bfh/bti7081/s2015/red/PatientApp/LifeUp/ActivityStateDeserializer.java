@@ -13,9 +13,15 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 
+/**
+ * this class is used to deserialize 
+ * all ActivityStates. It's an abstract class
+ * so it can be deserialized automatically
+ * @author Stefan Tanner
+ *
+ */
 public class ActivityStateDeserializer implements JsonDeserializer<ActivityState> {
 	 
- 
 	public ActivityState deserialize(JsonElement json, Type typeOfT,
 			JsonDeserializationContext context) throws JsonParseException {
  

@@ -17,6 +17,7 @@ import java.util.ArrayList;
 /**
  * Base Class for all Views
  * @author James Mayr
+ * @author Stefan Tanner
  *
  * @param <T>
  */
@@ -35,6 +36,11 @@ public abstract class BaseView<T> extends VerticalLayout implements View<T>,com.
 	final protected String stringStartPage = "Hauptmenü";
 	final protected Button buttonStartPage = new Button(stringStartPage);
 	
+	/**
+	 * Add the startPage button to the current View
+	 * 
+	 * @return Component	returns the Button for the StartPageView
+	 */
 	protected Component addStartPageNavigation() {
 		buttonStartPage.setWidth("300px");
 		HorizontalLayout lineStartPageHolder = new HorizontalLayout();

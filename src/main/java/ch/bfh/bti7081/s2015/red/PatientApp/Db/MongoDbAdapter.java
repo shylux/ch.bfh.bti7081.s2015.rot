@@ -98,7 +98,6 @@ public class MongoDbAdapter {
 	 */
 	public Persistable getEntryFromDatabase(Persistable persistable)
 	{
-		System.out.println("PERSISTABLE: "+persistable.getClass());
 		BasicDBObject query = new BasicDBObject();
 	    query.put("_id", new ObjectId(persistable.getId()));
 	    DBObject dbObj = collection.findOne(query);

@@ -1,58 +1,58 @@
-#Dokumentation Design Thinking
+# Dokumentation Design Thinking
 
-#Iteration1
+# Iteration1
 
-##Scoping
+## Scoping
 
-###Terminverwaltung
-####Scope
+### Terminverwaltung
+#### Scope
 * Anzeigen
 * Erinnern
 
-####Out-of-scope
+#### Out-of-scope
 * Termine vereinbaren
 
-###Behandlung
-####Scope
+### Behandlung
+#### Scope
 * An Handlung erinnern
 
 
-###Verwaltung medikamentöse Behandlung
-####Scope
+### Verwaltung medikamentöse Behandlung
+#### Scope
 * "Medikation"
 * Ausdruck um Rezepte abzuholen
 
-####Out-of-scope
+#### Out-of-scope
 * Rezeptverwaltung
 * Rezeptdatenkbank
 
-###Success measures
+### Success measures
 * Weniger Termine gehen vergessen
 * Keine/weniger Rezepte gehen verloren
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 
-##Research
+## Research
 
-###Interview 
+### Interview 
 Wir haben ein Konzept für ein Interview erarbeitet. Die Fragen sollten aber nur die Grundstruktur des Interviews festlegen. [Download Interview Fragen](Interview Fragen.md)
 
 Interview mit Anna V.(Name geändert) Wir hatten ein spannendes Interview mit Anna V. Die strukturierte Auswertung des Interviews befindet sich im Repository. [Auswertung Interview](auswertung Inverview.md)
 
-###digitales Rezept
+### digitales Rezept
 Wir haben eine Internetrecherche durchgeführt um herauszufinden, ob ein digitales Rezept überhaupt gesetzlich erlaubt ist.
 Die Auswertung der Recherche befindet sich im Repository. [Auswertung Recherche digitales Rezept](normen.md)
 **Fazit:** Wenn die Daten ausreichend geschützt (verschlüsselt) werden, ist ein digitales Rezept umsetzbar.
 
 
-##Synthesize
+## Synthesize
 
-###Generell
+### Generell
 Das digitale Rezept kann umgesetzt werden, sofern die Daten entsprechend verschlüsselt werden.
 
-###Personas
+### Personas
 Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 
-####Persona "Heinz"
+#### Persona "Heinz"
 * Arbeitslos / lebt seit sieben Jahren vom Sozialamt
 * Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und Sonstiges wird dann zur Nebensache
 * Alter: 47
@@ -65,7 +65,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 * Ist verschuldet, Wohnung ist schmutzig und chaotisch
 * hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
 
-####Persona "Ingrit"
+#### Persona "Ingrit"
 * Arbeitet 40% bei einem Sozialhilfeprogramm
 * Methadonabhängig
 * Ist in einem Methadonprogramm (2x pro Tag besucht sie die Methadonabgabestelle)
@@ -81,7 +81,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 * Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
 
 
-###Main features
+### Main features
 
 **Generell**
 * Gute Navigationsstruktur, um alle Bereiche zu erreichen
@@ -105,7 +105,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 * Dosierung der Notfall-Medikamente anzeigen
 * Verwaltung von digitalen Rezepten
 
-##4. Design
+## 4. Design
 
 ### Storyboards
 * [Storyboard 1](storyboard1.png)
@@ -120,7 +120,7 @@ Aufgrund der Interviewauswertungen haben wir folgende Personas angefertigt:
 * [Storyboard 10](storyboard10.png)
 * [Storyboard 11](storyboard11.png)
 
-##5. Prototype
+## 5. Prototype
 
 Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
 * [Prototype 1](prototype1.png)
@@ -133,9 +133,9 @@ Aufgrund der Storyboards haben wir folgende Prototypen erarbeitet:
 * [Prototype 8](prototype8.png)
 * [Prototype 9](prototype9.png)
 
-##6. Validate
+## 6. Validate
 
-###Validierung der Prototypen
+### Validierung der Prototypen
 
 Wie haben im Plenum die Prototypes validiert.
 
@@ -157,7 +157,7 @@ Wie haben im Plenum die Prototypes validiert.
 
 **Prototpye 9:**OK
 
-###Validierung der "Success Measures"
+### Validierung der "Success Measures"
 * [x] Weniger Termine gehen vergessen
 
 * [x] Keine/weniger Rezepte gehen verloren
@@ -173,31 +173,31 @@ Ansonsten ist der Research in dieser Phase nicht notwendig, da wir in der vorher
 * Genauer über Drogen informieren.
 
 
-#Iteration 2
+# Iteration 2
 
-##Scoping
+## Scoping
 * Rezept lässt sich ausdrucken und der Arzt muss es unterschreiben (Digitales Rezept ist Out of Scope)
 * Idee mit Treatment ausarbeiten, verbessern
 
-###Success measures
+### Success measures
 * Weniger Termine gehen vergessen (bisher)
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen) (bisher)
 * Hilfe bei Sturktierung des Tages (neu)
 * Erleichterte Bedienung (neu)
 
-###Out of Scope
+### Out of Scope
 * digitales Rezept mit QR-Code
 Das System würde unnötig komplizierter (sowohl für die Entwickler als auch für die Patienten, Apotheken, ect). Zudem gehen die Rezepte bei Suchtpatienten kaum verloren und ein Trend des Medikamentenmissbrauchs ist nicht festzustellen. Quelle: [Interview mit Anna V.](auswertung Inverview.md).
 * alle Patienten, die keine Suchtpatienten sind.
 
-##Research
+## Research
 Um den Notfallplan genauer bestimmen zu können, haben wir uns von Anna V. den Notfallplan genauer beschreiben lassen. Der Notfallplan ist eine normale **Checkliste** mit Punkten, welche der Patient bei einem Notfall abarbeiten kann.
 
-##Synthesize
+## Synthesize
 
 Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Personas erstellen können:
 
-###Persona "Hans"
+### Persona "Hans"
 * Ist arbeitslos
 * Heroinabhängig
 * Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
@@ -210,7 +210,7 @@ Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Per
 * Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
 
 
-###Persona "Carin"
+### Persona "Carin"
 * Kifft, nimmt Extasy
 * Hat grosse Probleme sich zu konzentrieren
 * Arbeitet Teilzeit bei einem Detailhändler im Lager
@@ -222,45 +222,45 @@ Aufgrund der [Internetrecherche](Entzug%20Drogen.md) haben wir noch weintere Per
 
 [Quelle Drogenentzug](Entzug%20Drogen.md)
 
-##Main Features dieser Iteration
+## Main Features dieser Iteration
 * **Gute Navigationsstruktur, um alle Bereiche zu erreichen**
 * Treatment für Patient verbessern.
 * Alle noch vorhandenen Features aus Iteration1 vertiefen und verbessern.
 
-##Design
+## Design
 Die überarbeiteten Storyboards:
 * [Storyboard 1, Iteration2](Iteration 2/i2_storyboard1.png)
 * [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
 
-##Prototype
+## Prototype
 Die überarbeiteten Prototypen:
 * [Prottype 8, Iteration2](Iteration 2/i2_prototype0.png)
 * [Prottype 8, Iteration2](Iteration 2/i2_prototype2.png)
 * [Prottype 9, Iteration2](Iteration 2/i2_prototype1.png)
 
-##Validate
+## Validate
 Alle Fehler der Prototypen / Storyboards von Iteration1 konnten ausgemerzt werden.
 Allgemein ist aufgefallen, dass das Navigationskonzept noch nicht vollständig geklärt ist.
 In Iteration3 werden wir deshalb die Navigation in den Prototypes noch besser integrieren.
 
-#Iteration3
+# Iteration3
 
-##Scoping
+## Scoping
 Der Scope hat sich seit Iteration2 nicht verändert.
 
-##Research
+## Research
 In dieser Iteration war kein Research notwendig.
 
-##Synthesize
+## Synthesize
 In dieser Iteration sind keine neuen Informationen dazugekommen/ haben sich geändert.
 Der Scope hat sich seit Iteration2 nicht geändert.
 
 Deshalb sind in dieser Iteration aus den bestehenden Storyboards die überarbeiteten Prototypes zu erstellen.
 
-##Design
+## Design
 Keine Storyboardanpassungen in dieser Iteration.
 
-##Prototype
+## Prototype
 
 Generell kann immer mit dem Zurück-Button (ganz oben) zu einer übergeordneten Stufe gewechselt werden.
 
@@ -282,66 +282,66 @@ Beim Klick auf die LifeUp-Kachel im Hauptmenü öffnet sich das Treatment-Progra
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 Beim Klick auf die Kalender-Kachel im Hauptmenü öffnet sich die Terminübersicht (Screen mitte). Im oberen dritten kann zwischen der Monatsansicht, die den ganzen Monat auf dem Bildschirm anzeigt und Tage mit Terminen fett druckt (Bei Klick darauf wird zum jeweiligen chronologischen Eintrag gesprungen (Screen rechts)), und der Chronologie gewechslet werden (Screen rechts). In der chronologischen Ansicht sind die Termine nacht Datum sortiert. Bei jedem Termin sind Informationen und Details ersichtlich. Ein Link zum Öffnen von Google Maps ist auch vorhanden.
 
-##Validate
+## Validate
 Keine weiteren Fehler / neue Fragen sind aufgetaucht. Der Design-Thinking Prozess ist beendet.
 
-#Resultate
+# Resultate
 
-##Scoping
+## Scoping
 
 Unsere App bezieht sich auf **Suchtpatienten**
-###Terminverwaltung
-####Scope
+### Terminverwaltung
+#### Scope
 * Anzeigen
 * Erinnern
 
-####Out-of-scope
+#### Out-of-scope
 * Termine vereinbaren
 
-###Behandlung
-####Scope
+### Behandlung
+#### Scope
 * An Behandlung erinnern
 * Iteraktive Behandlung mit Life Up Behandlungsmethode
 * Übersicht Errungenschaften im Life UP Behandlungssystem
 
-###Verwaltung medikamentöse Behandlung
-####Scope
+### Verwaltung medikamentöse Behandlung
+#### Scope
 * Medikation
 * Medikamentenübersicht
 
-####Out-of-scope
+#### Out-of-scope
 * Rezeptverwaltung
 * Rezeptdatenkbank
 * Digitales Rezept
 * Rezept als QR-Code
 
-###Notfall
-###Scope
+### Notfall
+### Scope
 * Notfallplan anzeigen
 * Notfallmedikamentenübersicht anzeigen
 * Notfalltelefon wählen
 * Kontakte von Angehörigen anrufen
 
-###Success measures
+### Success measures
 * Weniger Termine gehen vergessen
 * Patient wird selbstständiger
 * Tagesstruktur des Patienten wird verbessert.
 * Patienten müssen zur Behandlung weniger nachfragen (anrufen)
 * Patient kann sich besser in Rückfasssituationen beruhigen
 
-##Research
+## Research
 * [Interview Fragen](Interview Fragen.md) erstellt.
 * Interview mit Anna V.,Stationsleiterin Psychiatrische Klinik Langnau i.E. durchgeführt: [Auswertung Interview](auswertung Inverview.md)
 * Recherche rechtliche [Normen bei Rezepten](normen.md)
 * Nachfrage bei Anna V: Der Notfallplan ist eine normale Checkliste. 
 * Internetrecherche Drogen allgemein: [Dokument](Entzug%20Drogen.md)
 
-##Synthesize
+## Synthesize
 Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona erstellt werden, anhand derer wir die Applikation entwickeln werden.
 
-###Personas
+### Personas
 
-####Persona "Heinz"
+#### Persona "Heinz"
 * Arbeitslos / lebt seit 7 Jahren vom Sozialamt
 * Alkoholsüchtig; Die Sucht bestimmt sein Leben; Nahrungsaufnahme und restliches wird dann zur Nebensache
 * Alter: 47
@@ -354,7 +354,7 @@ Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona
 * Ist verschuldet, Wohnung ist schmutzig und chaotisch
 * hat bereits 7x einen Entzug à 3 Wochen durchgefüht, ist aber immer wieder rückfällig geworden.
 
-####Persona "Ingrit"
+#### Persona "Ingrit"
 * Arbeitet 40% bei einem Sozialhilfeprogramm
 * Methadonabhängig
 * Ist in einem Methadonprogramm (2x pro Tag besucht sie die Methadonabgabestelle)
@@ -369,7 +369,7 @@ Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona
 * Sie schämt sich für ihre Sucht und meidet deshalb Personen aus dem "Nicht-Drogen-Millieu"
 * Ihr Leben ist teilweise strukturiert, sie möchte aber selbstständiger werden
 
-###Persona "Hans"
+### Persona "Hans"
 * Ist arbeitslos
 * Heroinabhängig
 * Hat 2 stationäre Entzugsprogramme gemacht, wurde wieder rückfällig
@@ -382,7 +382,7 @@ Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona
 * Wohnt allein in einer 1-Zimmer Wohnung, kann keine Ordnung halten
 
 
-###Persona "Carin"
+### Persona "Carin"
 * Kifft, nimmt Extasy
 * Hat grosse Probleme, sich zu konzentrieren
 * Arbeitet Teilzeit bei einem Detailhändler im Lager
@@ -394,7 +394,7 @@ Dank eines Interviews mit einer Mitarbeitering einer Psychiatrie konnten Persona
 
 
 
-##Design
+## Design
 Folgene Storyboards haben wir in unserem Design-Prozess erarbeitet.
 
 * [Storyboard 1](storyboard1.png)
@@ -412,7 +412,7 @@ Folgene Storyboards haben wir in unserem Design-Prozess erarbeitet.
 * [Storyboard 2, Iteration2](Iteration 2/i2_storyboard2.png)
 
 
-##Prototype
+## Prototype
 Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche anhand der verschiedenen Prototypen erstellt.
 
 * [Prototype 1](prototype1.png)
@@ -436,6 +436,6 @@ Mockup für die bessere visuelle Darstellung der einzelnen Anwendungsbereiche an
 * [Prototype Treatment](Iteration 3/it3_prototype_lifeUp.png)
 * [Prototype Kalender](Iteration 3/it3_prototype_kalender.png)
 
-##Validate
+## Validate
 In dieser Phase haben wir die Prototypen getestet und validiert. Für genauere Informationen konsultieren sie das Kapitel Validate der jeweiligen Iterationen.
 (Die meisten der Prototypen haben wir als valid betrachtet. Nicht benötigt wird [Prototype 1 IT 1](prototype1.png) und [Prototype 3 IT 1](prototype3.png). Die Restlichen haben wir überarbeitet.
